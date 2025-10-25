@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 32 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-dollar-sign mr-2"></i>Ch. 32: Fraud
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (Subch. A)
+                </button>
+                <button data-tab="forgery" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-signature mr-2"></i> Forgery (Subch. B)
+                </button>
+                <button data-tab="credit-fraud" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-credit-card mr-2"></i> Credit Fraud (Subch. C)
+                </button>
+                <button data-tab="deceptive-practices-1" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-store mr-2"></i> Deceptive Practices (D1)
+                </button>
+                <button data-tab="identity-exploitation" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-shield mr-2"></i> Identity & Exploitation (D2)
+                </button>
+                <button data-tab="other-frauds" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-copy mr-2"></i> Other Frauds (D3)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab (Subchapter A) -->
+            <div id="key-definitions" class="tab-content active space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 32.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Financial institution</span>
+                            <p class="definition-desc">Bank, trust, insurance co., credit union, savings/loan, investment trust, etc., held out for public deposit/investment.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Property</span>
+                            <p class="definition-desc">(A) Real property; (B) Tangible/intangible personal property; (C) A document (including money) that represents value.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Service</span>
+                            <p class="definition-desc">Includes: (A) Labor; (B) Telecommunication, utility, transport; (C) Lodging, restaurant, entertainment; (D) Supply of motor vehicle for use.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Steal</span>
+                            <p class="definition-desc">To acquire property or service by theft.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.02" target="_blank" class="text-red-600 hover:underline">Sec. 32.02. Value</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Default (a):</strong> (1) Fair market value at time/place of offense; OR (2) If no market value, cost of replacing.</li>
+                        <li><strong class="font-semibold">Documents (b):</strong> (1) For debt (check, etc.): amount due/collectible; (2) Other docs: greatest amount of economic loss owner might suffer.</li>
+                        <li><strong class="font-semibold">Cannot Ascertain (c):</strong> If value can't be found by (a) or (b), it is <strong class="text-red-700">deemed to be $750 or more but less than $2,500</strong>.</li>
+                        <li><strong class="font-semibold">Deduction (d):</strong> If actor proves they gave consideration or had legal interest, that amount is <strong class="font-semibold">deducted</strong> from the total value.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.03" target="_blank" class="text-red-600 hover:underline">Sec. 32.03. Aggregation</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>Amounts obtained via <strong class="font-semibold">one scheme or continuing course of conduct</strong> can be combined (aggregated) into one offense to determine the penalty grade.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Forgery Tab (Subchapter B) -->
+            <div id="forgery" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.21" target="_blank" class="text-red-600 hover:underline">Sec. 32.21. Forgery</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Forge" (a)(1):</strong> (A) Alter, make, complete, execute, or authenticate a writing to purport it's: (i) by another who didn't authorize it; (ii) executed at a different time/place; (iii) a copy of a non-existent original. (B) Issue, transfer, pass, or utter a forged writing. (C) Possess a forged writing with intent to utter.</li>
+                        <li><strong class="font-semibold">"Writing" (a)(2):</strong> Includes printing, money, coins, tokens, stamps, seals, credit cards, badges, trademarks, and symbols of value/ID.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Commits offense if he <strong class="font-semibold">forges a writing with intent to defraud or harm another.</strong></li>
+                        <li><strong class="font-semibold">Penalties:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">State Jail Felony:</strong> Base offense (c).</li>
+                                <li><strong class="text-red-700">Felony of the Third Degree (d):</strong> If writing is a: will, codicil, deed, deed of trust, mortgage, security instrument, credit card, check, debit authorization, or similar commercial instrument.</li>
+                                <li><strong class="text-red-800">Felony of the Second Degree (e):</strong> If writing is: (1) Money, securities, stamps; (2) Govt record (37.01(2)(C)); (3) Other instrument issued by state/national govt.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Value-Based Penalties (e-1):</strong> If done to <strong class="font-semibold">obtain property/service</strong>, the offense is punished by the standard <strong class="font-semibold">theft ladder</strong> (Class B up to F1).
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">Class B Misdemeanor:</strong> < $100</li>
+                                <li><strong class="text-red-700">Class A Misdemeanor:</strong> $100 - $749.99</li>
+                                <li><strong class="text-red-700">State Jail Felony:</strong> $750 - $2,499.99</li>
+                                <li><strong class="text-red-700">Felony 3:</strong> $2,500 - $29,999.99</li>
+                                <li><strong class="text-red-800">Felony 2:</strong> $30,000 - $149,999.99</li>
+                                <li><strong class="text-red-800">Felony 1:</strong> $150,000 or more</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Elderly Enhancement (e-2):</strong> Increased to <strong class="font-semibold">next higher category</strong> if victim is elderly (does not apply to F1).</li>
+                        <li><strong class="font-semibold">Presumption (f):</strong> Intent to defraud is presumed if actor has <strong class="font-semibold">2 or more forged government records</strong> (37.01(2)(C)).</li>
+                        <li><strong class="font-semibold">Presumption (f-1):</strong> Possession of forged money is presumed intent to obtain property/service equal to the total purported value.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.22" target="_blank" class="text-red-600 hover:underline">Sec. 32.22. Criminal Simulation</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to defraud or harm: (1) Makes/alters an object so it appears to have <strong class="font-semibold">value due to age, antiquity, rarity, source, or authorship</strong> it doesn't have; (2) Possesses such an object with intent to sell/pass; (3) Authenticates such an object as genuine.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.23" target="_blank" class="text-red-600 hover:underline">Sec. 32.23. Trademark Counterfeiting</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Counterfeit mark" (a)(1):</strong> A mark identical/indistinguishable from a protected mark, used without authorization.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally manufactures, displays, advertises, distributes, offers for sale, sells, or possesses with intent to sell a <strong class="font-semibold">counterfeit mark or an item/service bearing a counterfeit mark</strong>, knowing or should have known it was counterfeit.</li>
+                        <li><strong class="font-semibold">Aggregation (d):</strong> Amounts from one scheme/continuing course of conduct may be aggregated.</li>
+                        <li><strong class="font-semibold">Penalties (e):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1, but with higher top-end values).
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">Class C:</strong> < $100</li>
+                                <li><strong class="text-red-700">Class B:</strong> $100 - $749.99</li>
+                                <li><strong class="text-red-700">Class A:</strong> $750 - $2,499.99</li>
+                                <li><strong class="text-red-700">SJF:</strong> $2,500 - $29,999.99</li>
+                                <li><strong class="text-red-700">F3:</strong> $30,000 - $149,999.99</li>
+                                <li><strong class="text-red-800">F2:</strong> $150,000 - $299,999.99</li>
+                                <li><strong class="text-red-800">F1:</strong> $300,000 or more</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.24" target="_blank" class="text-red-600 hover:underline">Sec. 32.24. Stealing or Receiving Stolen Check...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> (1) Steals an <strong class="font-semibold">unsigned check</strong> or similar sight order; OR (2) <strong class="font-semibold">With knowledge</strong> it was stolen, receives it with <strong class="font-semibold">intent to use, sell, or transfer it</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Credit Fraud Tab (Subchapter C) -->
+            <div id="credit-fraud" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.31" target="_blank" class="text-red-600 hover:underline">Sec. 32.31. Credit Card or Debit Card Abuse</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Commits offense if:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>(b)(1) <strong class="font-semibold">With intent to obtain benefit fraudulently</strong>, uses a card knowing it's not issued to him, expired, revoked, or cancelled.</li>
+                                <li>(b)(2) Uses a fictitious card or number.</li>
+                                <li>(b)(3) Receives a benefit knowing it was obtained in violation.</li>
+                                <li>(b)(4) <strong class="font-semibold">Steals a card</strong>, or <strong class="font-semibold">receives a stolen card</strong> with intent to use/sell/transfer.</li>
+                                <li>(b)(8) Not the cardholder, <strong class="font-semibold">possesses a card with intent to use it</strong>.</li>
+                                <li>(b)(9) Possesses <strong class="font-semibold">two or more incomplete cards</strong> with intent to complete them.</li>
+                                <li>(b)(10) Authorized merchant, with intent to defraud, furnishes goods on a card obtained in violation (stolen, forged, expired).</li>
+                                <li>(b)(11) Authorized merchant, with intent to defraud, <strong class="font-semibold">fails to furnish goods</strong> he represents in writing he did furnish.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Presumption (c):</strong> Knowledge of revocation/cancellation is presumed if notice was sent (oral, mail, telegram). Notice presumed received 5 days after sending.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="text-red-700">State Jail Felony</strong>.</li>
+                        <li><strong class="font-semibold">Elderly Enhancement (d):</strong> Becomes a <strong class="text-red-700">Felony of the Third Degree</strong> if committed against an elderly individual.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.315" target="_blank" class="text-red-600 hover:underline">Sec. 32.315. Fraudulent Use/Possession of Card Info</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> With intent to harm/defraud, <strong class="font-semibold">obtains, possesses, transfers, or uses</strong>: (1) a counterfeit card; (2) card number + expiration date (w/o consent); (3) data from digital imprint (w/o consent).</li>
+                        <li><strong class="font-semibold">Presumption (c):</strong> If actor possesses <strong class="font-semibold">5 or more</strong> items (b)(2) or (b)(3), presumed to possess w/o consent.</li>
+                        <li><strong class="font-semibold">Penalties (e):</strong> Based on <strong class="font-semibold">number of items</strong>.
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">State Jail Felony:</strong> < 5 items</li>
+                                <li><strong class="text-red-700">Felony 3:</strong> 5 to 9 items</li>
+                                <li><strong class="text-red-800">Felony 2:</strong> 10 to 49 items</li>
+                                <li><strong class="text-red-800">Felony 1:</strong> 50 or more items</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.32" target="_blank" class="text-red-600 hover:underline">Sec. 32.32. False Statement to Obtain Property/Credit</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally/knowingly makes a <strong class="font-semibold">materially false or misleading written statement</strong> to obtain property or credit (including a mortgage loan).</li>
+                        <li><strong class="font-semibold">Offense (b-1):</strong> Intentionally/knowingly makes a materially false/misleading written statement in <strong class="font-semibold">providing an appraisal</strong> of real property for compensation.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.33" target="_blank" class="text-red-600 hover:underline">Sec. 32.33. Hindering Secured Creditors</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Person who signed security agreement, with <strong class="font-semibold">intent to hinder enforcement</strong>, <strong class="font-semibold">destroys, removes, conceals, encumbers</strong>, or otherwise harms/reduces value of the property.</li>
+                        <li><strong class="font-semibold">Presumption (c):</strong> Intent to hinder is presumed if debt was due AND person failed to (1) pay and (2) deliver property after demand.</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                        <li><strong class="font-semibold">Offense (e):</strong> Debtor sells/disposes of property (or fails to account for proceeds) <strong class="font-semibold">with intent to appropriate</strong> the proceeds/value.</li>
+                        <li><strong class="font-semibold">Penalties (e):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.34" target="_blank" class="text-red-600 hover:underline">Sec. 32.34. Fraudulent Transfer of a Motor Vehicle</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Person acquires/accepts a motor vehicle under agreement to transfer to 3rd party AND:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>(b)(1) Knowing vehicle is subject to lien/lease, transfers w/o written authorization from lienholder.</li>
+                                <li>(b)(2) Intending to defraud owner, transfers to 3rd party.</li>
+                                <li>(b)(4) Fails to disclose location of vehicle on request of owner/lienholder.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (f):</strong> For (b)(1), (b)(2), (b)(3):
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">State Jail Felony:</strong> Value < $30,000</li>
+                                <li><strong class="text-red-700">Felony 3:</strong> $30,000 - $149,999.99</li>
+                                <li><strong class="text-red-800">Felony 2:</strong> $150,000 - $299,999.99</li>
+                                <li><strong class="text-red-800">Felony 1:</strong> $300,000 or more</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Penalty (g):</strong> For (b)(4) (failure to disclose location): <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.35" target="_blank" class="text-red-600 hover:underline">Sec. 32.35. Credit Card Transaction Record Laundering</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Authorized vendor, with intent to defraud, presents a <strong class="font-semibold">record of a sale that was not made</strong> by the vendor.</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Person causes a vendor to present a record of a sale that was not made by the vendor.</li>
+                        <li><strong class="font-semibold">Penalties (e):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Deceptive Practices (D1) Tab -->
+            <div id="deceptive-practices-1" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.41" target="_blank" class="text-red-600 hover:underline">Sec. 32.41. Issuance of Bad Check</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Issues/passes a check <strong class="font-semibold">knowing</strong> the issuer does not have <strong class="font-semibold">sufficient funds</strong>.</li>
+                        <li><strong class="font-semibold">Presumption (b):</strong> Knowledge presumed if: (1) No account; OR (2) Payment refused for NSF within 30 days, AND issuer <strong class="font-semibold">failed to pay within 10 days</strong> after receiving notice of refusal.</li>
+                        <li><strong class="font-semibold">Penalty (f):</strong> <strong class="text-red-700">Class C Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (f):</strong> Becomes <strong class="text-red-700">Class B Misdemeanor</strong> if the check was for <strong class="font-semibold">child support</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.42" target="_blank" class="text-red-600 hover:underline">Sec. 32.42. Deceptive Business Practices</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> In course of business, w/ I, K, R, or CN, commits:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>(1) Using false weight/measure.</li>
+                                <li>(2) Selling less than represented quantity.</li>
+                                <li>(4) Selling adulterated/mislabeled commodity.</li>
+                                <li>(6) Representing used commodity as new.</li>
+                                <li>(8) Advertising w/ intent not to sell as advertised.</li>
+                                <li>(11) Conducting a deceptive sales contest.</li>
+                                <li>(12) Making materially false/misleading statement.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> For (b)(1-6):
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">Class C Misdemeanor:</strong> If done w/ Criminal Negligence (and no prior).</li>
+                                <li><strong class="text-red-700">Class A Misdemeanor:</strong> If done w/ I, K, R (or has prior).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (d):</strong> For (b)(7-12): <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.43" target="_blank" class="text-red-600 hover:underline">Sec. 32.43. Commercial Bribery</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> <strong class="font-semibold">Fiduciary</strong> (agent, employee, trustee, lawyer, etc.) <strong class="font-semibold">solicits, accepts, or agrees to accept</strong> a benefit <strong class="font-semibold">without beneficiary's consent</strong>, on agreement it will influence his conduct.</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Person <strong class="font-semibold">offers, confers, or agrees to confer</strong> a benefit, the acceptance of which is an offense.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.44" target="_blank" class="text-red-600 hover:underline">Sec. 32.44. Rigging Publicly Exhibited Contest</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to affect outcome: (1) Offers benefit / threatens harm to participant or official; (2) Tampers with person, animal, or thing.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Solicits, accepts, or agrees to accept benefit from (a).</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.441" target="_blank" class="text-red-600 hover:underline">Sec. 32.441. Illegal Recruitment of an Athlete</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> W/o consent of university, <strong class="font-semibold">solicits, accepts, or agrees to accept</strong> benefit on agreement it will influence enrollment/participation in intercollegiate athletics.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> <strong class="font-semibold">Offers, confers, or agrees to confer</strong> a benefit from (a).</li>
+                        <li><strong class="font-semibold">Penalties (e):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.45" target="_blank" class="text-red-600 hover:underline">Sec. 32.45. Misapplication of Fiduciary Property...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Misapply" (a)(2):</strong> Deal with property contrary to (A) agreement or (B) law.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally, knowingly, or recklessly <strong class="font-semibold">misapplies property</strong> held as fiduciary (or property of financial institution) in a manner involving <strong class="font-semibold">substantial risk of loss</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                        <li><strong class="font-semibold">Elderly Enhancement (d):</strong> Increased to <strong class="font-semibold">next higher category</strong> if victim is elderly (does not apply to F1).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.46" target="_blank" class="text-red-600 hover:underline">Sec. 32.46. Fraudulent Securing of Document Execution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a)(1):</strong> With intent to defraud/harm, causes another, <strong class="font-semibold">without effective consent</strong>, to <strong class="font-semibold">sign or execute any document</strong> affecting property, service, or pecuniary interest.</li>
+                        <li><strong class="font-semibold">Offense (a)(2):</strong> Causes public servant (w/o effective consent) to file/record a <strong class="font-semibold">purported judgment or document</strong> from a <strong class="font-semibold">purported court</strong> (not a real court).</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong> For (a)(1): Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class C up to F1).</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> For (a)(2): <strong class="text-red-700">State Jail Felony</strong>.</li>
+                        <li><strong class="font-semibold">Elderly/Medicaid Enhancement (c-1):</strong> Increased to <strong class="font-semibold">next higher category</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.47" target="_blank" class="text-red-600 hover:underline">Sec. 32.47. Fraudulent Destruction... of Writing</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to defraud/harm, <strong class="font-semibold">destroys, removes, conceals, alters, substitutes</strong>, or otherwise impairs the verity/legibility/availability of a <strong class="font-semibold">writing</strong> (non-govt record).</li>
+                        <li><strong class="font-semibold">"Writing" (b):</strong> Includes money, coins, credit cards, trademarks, UPCs, labels, price tags.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> Becomes <strong class="text-red-700">State Jail Felony</strong> if writing is a <strong class="font-semibold">will, codicil, deed, mortgage</strong>, or other publicly recorded document.</li>
+                        <li><strong class="font-semibold">Price Tag Switch (e):</strong> If actor alters a price tag to get a lesser price, penalty follows the standard <strong class="font-semibold">theft value ladder</strong> based on the *difference* in price.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Identity & Exploitation (D2) Tab -->
+            <div id="identity-exploitation" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.51" target="_blank" class="text-red-600 hover:underline">Sec. 32.51. Fraudulent Use/Possession of Identifying Info</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Identifying information" (a)(1):</strong> Name, DOB, biometric data, unique electronic ID/account number, SSN, etc.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> With intent to harm/defraud, <strong class="font-semibold">obtains, possesses, transfers, or uses</strong>: (1) ID info of another (w/o consent); (2) ID info of a deceased person (w/o legal auth); (3) ID info of a child < 18.</li>
+                        <li><strong class="font-semibold">Presumption (b-1):</strong> Intent to harm/defraud presumed if actor possesses ID info of <strong class="font-semibold">3 or more</strong> other persons.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> Based on <strong class="font-semibold">number of items</strong> of ID info.
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-700">State Jail Felony:</strong> < 5 items</li>
+                                <li><strong class="text-red-700">Felony 3:</strong> 5 to 9 items</li>
+                                <li><strong class="text-red-800">Felony 2:</strong> 10 to 49 items</li>
+                                <li><strong class="text-red-800">Felony 1:</strong> 50 or more items</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Enhancement (c-1):</strong> Increased to <strong class="font-semibold">next higher category</strong> if victim is <strong class="font-semibold">elderly</strong> or used to facilitate a sex offender reg. offense.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.53" target="_blank" class="text-red-600 hover:underline">Sec. 32.53. Exploitation of Child, Elderly, or Disabled</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Exploitation" (a)(2):</strong> Illegal or improper use of the person or their resources for monetary or personal benefit, profit, or gain.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person intentionally, knowingly, or recklessly <strong class="font-semibold">causes the exploitation</strong> of a child, elderly, or disabled individual.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.55" target="_blank" class="text-red-600 hover:underline">Sec. 32.55. Financial Abuse of Elderly Individual</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Financial abuse" (a)(2):</strong> Wrongful taking, appropriation, obtaining, retention, or use of money/property, including by undue influence.</li>
+                        <li><strong class="font-semibold">"Financial exploitation" (a)(3):</strong> Wrongful taking by a person in a <strong class="font-semibold">relationship of confidence or trust</strong> (relative, caregiver, fiduciary, etc.).</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Person <strong class="font-semibold">knowingly engages</strong> in the financial abuse of an elderly individual.</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong> Follows the standard <strong class="font-semibold">theft value ladder</strong> (Class B up to F1).</li>
+                        <li><strong class="font-semibold">Presumption (f):</strong> If actor is a caregiver (b)(5) and victim has dementia/Alzheimer's, transfer is <strong class="font-semibold">rebuttably presumed wrongful</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other Frauds (D3) Tab -->
+            <div id="other-frauds" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.48" target="_blank" class="text-red-600 hover:underline">Sec. 32.48. Simulating Legal Process</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Recklessly causes delivery of a document that <strong class="font-semibold">simulates a summons, complaint, judgment</strong>, etc. with intent to (1) induce payment or (2) cause person to submit to its authority.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (f):</strong> Becomes <strong class="text-red-700">State Jail Felony</strong> if actor has prior conviction under this section.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.49" target="_blank" class="text-red-600 hover:underline">Sec. 32.49. Refusal to Execute Release of Fraudulent Lien</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to defraud/harm, holds a <strong class="font-semibold">fraudulent lien</strong> AND, <strong class="font-semibold">refuses to execute a release</strong> within 21 days of receiving notice.</li>
+                        <li><strong class="font-semibold">Presumption (b):</strong> Failure to release within 21 days presumes intent to harm/defraud.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (c):</strong> Becomes <strong class="text-red-700">Felony of the Third Degree</strong> if property owner is a <strong class="font-semibold">public servant</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.50" target="_blank" class="text-red-600 hover:underline">Sec. 32.50. Deceptive Preparation/Marketing of Academic Product</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> With <strong class="font-semibold">intent to make a profit</strong>, prepares, sells, or offers an academic product (term paper, thesis, etc.) knowing it will be submitted by another person for credit.</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Advertises they will prepare such a product.</li>
+                        <li><strong class="font-semibold">Penalty (g):</strong> <strong class="text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.52" target="_blank" class="text-red-600 hover:underline">Sec. 32.52. Fraudulent, Substandard, or Fictitious Degree</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Uses/claims to hold a postsecondary degree knowing it is fraudulent, fictitious, or revoked AND uses it to: (A) promote a business; or (B) get employment, a license, a promotion, admission to education, or a govt position.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.54" target="_blank" class="text-red-600 hover:underline">Sec. 32.54. Fraudulent or Fictitious Military Record</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Uses/claims to hold a military record (medal, award, etc.) knowing it is fraudulent, fictitious, or revoked AND uses it to: (A) promote a business; or (B) get priority services, employment preference, a license, promotion, benefit/donation, admission to education, or a govt position.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Multiple "32.56" Sections (New Offenses)</h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-3">
+                        <li><strong class="font-semibold">Sec. 32.56 (Gift Card Fraud):</strong> (b) With intent to harm/defraud: (1) Acquires/possesses gift card/info w/o consent; (2) Alters/tampers with card/packaging; (3) Uses counterfeit/stolen card/info. (c) Presumption if possesses 3 or more. (e) Penalties based on <strong class="font-semibold">number of cards</strong> (SJF: < 5; F3: 5-9; F2: 10-49; F1: 50+).</li>
+                        <li><strong class="font-semibold">Sec. 32.56 (Mail Receptacle Key):</strong> (b) With intent to harm/defraud, obtains, possesses, duplicates, transfers, or uses a <strong class="font-semibold">postal service key or lock</strong>. (c) Penalty: <strong class="text-red-700">Felony of the Third Degree</strong> (F2 if prior conviction).</li>
+                        <li><strong class="font-semibold">Sec. 32.56 (Fictitious Doc Conveying Real Property):</strong> (a) With intent to enter/remain on real property, knowingly presents a <strong class="font-semibold">false/fraudulent/fictitious lease, deed</strong>, or other instrument. (b) Penalty: <strong class="text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Sec. 32.56 (Financial Abuse via AI/Phishing):</strong> (b) Knowingly engages in financial abuse through: (1) <strong class="font-semibold">Artificially generated media</strong> (deepfake); or (2) <strong class="font-semibold">Phishing</strong> (email, etc. to get info). (c) Penalties: Follows standard <strong class="font-semibold">theft value ladder</strong> (Class B to F1).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.57" target="_blank" class="text-red-600 hover:underline">Sec. 32.57. Fraudulent Sale/Rental of Residential Property</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly: (1) <strong class="font-semibold">Lists or advertises</strong> residential property for sale/rent knowing person has <strong class="font-semibold">no legal title/authority</strong>; or (2) <strong class="font-semibold">Sells, rents, or leases</strong> property to another w/o legal title/authority.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="text-red-800">Felony of the First Degree</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.60" target="_blank" class="text-red-600 hover:underline">Sec. 32.60. Real Property Fraud (Effective Dec 2025)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> (1) I/K makes <strong class="font-semibold">false written statement</strong> to obtain real property; OR (2) With intent to defraud/harm: (A) Causes person w/o effective consent to <strong class="font-semibold">sign document affecting real property</strong>; (B) Causes public servant to file/record <strong class="font-semibold">false document affecting title/lien</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="text-red-800">Felony 2:</strong> Value < $300,000</li>
+                                <li><strong class="text-red-800">Felony 1:</strong> Value $300,000 or more</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> Increased to <strong class="font-semibold">next higher category</strong> if owner is <strong class="font-semibold">elderly, disabled, or a non-profit</strong>, or if property is a <strong class="font-semibold">residence homestead</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.61" target="_blank" class="text-red-600 hover:underline">Sec. 32.61. Malicious Solicitation of Disaster Victim (Effective Dec 2025)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> With intent to defraud/harm: (1) Solicits donation for disaster relief (but doesn't use it for that); (2) Solicits for donee but keeps donations; (3) Solicits payment from victim after inducing belief actor is a <strong class="font-semibold">volunteer providing free services</strong>; (4) Solicits payment from victim to <strong class="font-semibold">search for missing relative</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> For (b)(1-3): <strong class="text-red-700">Felony 3</strong> (F2 if prior conviction).</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> For (b)(4): <strong class="text-red-800">Felony 1</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 32)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (90 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 32) ---
+            const quizData = [
+                {
+                    question: "Under 32.01, which of these is NOT included in the definition of 'Financial Institution'?",
+                    options: ["A bank or credit union.", "An insurance company.", "An investment company.", "A private individual holding funds for another."],
+                    answer: "A private individual holding funds for another.",
+                    explanation: "Sec. 32.01(1) lists organizations held out to the public, like banks, trust companies, and insurance companies, not private individuals."
+                },
+                {
+                    question: "What does 'Steal' mean in Chapter 32?",
+                    options: ["To acquire property or service by theft.", "To acquire property by force.", "To acquire property by deception only.", "To acquire property without consent."],
+                    answer: "To acquire property or service by theft.",
+                    explanation: "Sec. 32.01(4) defines 'Steal' as 'to acquire property or service by theft.'"
+                },
+                {
+                    question: "What is the primary method for determining 'Value' under 32.02?",
+                    options: ["The cost of replacement.", "The fair market value at the time and place of the offense.", "The original purchase price.", "The value is always $750."],
+                    answer: "The fair market value at the time and place of the offense.",
+                    explanation: "Sec. 32.02(a)(1) states value is the fair market value. Replacement cost is only used if market value cannot be ascertained."
+                },
+                {
+                    question: "If the value of property or service cannot be reasonably ascertained, what value is it deemed to have under 32.02(c)?",
+                    options: ["$100 or more but less than $750.", "$750 or more but less than $2,500.", "$2,500 or more but less than $30,000.", "Less than $100."],
+                    answer: "$750 or more but less than $2,500.",
+                    explanation: "Sec. 32.02(c) sets this specific value range (SJF level) when value is otherwise impossible to determine."
+                },
+                {
+                    question: "What is the value of a stolen check that has not been satisfied, according to 32.02(b)?",
+                    options: ["The cost to print a new check.", "The greatest economic loss the owner might suffer.", "The amount due and collectible at maturity.", "$750."],
+                    answer: "The amount due and collectible at maturity.",
+                    explanation: "Sec. 32.02(b)(1) states the value of a document evidencing debt is 'the amount due and collectible at maturity'."
+                },
+                {
+                    question: "What does Sec. 32.03 allow regarding offenses committed as part of 'one scheme or continuing course of conduct'?",
+                    options: ["The offenses must be tried separately.", "The amounts can be aggregated into one offense to determine the grade.", "The penalty is automatically a State Jail Felony.", "The actor can only be charged with one count."],
+                    answer: "The amounts can be aggregated into one offense to determine the grade.",
+                    explanation: "Sec. 32.03 allows for aggregation of amounts in fraud cases."
+                },
+                {
+                    question: "Which of these is NOT part of the definition of 'Forge' under 32.21(a)(1)?",
+                    options: ["To alter a writing to be the act of another who did not authorize it.", "To possess a forged writing with intent to utter it.", "To make a writing that purports to be a copy of a non-existent original.", "To destroy a writing with intent to harm another."],
+                    answer: "To destroy a writing with intent to harm another.",
+                    explanation: "Destroying a writing is a different offense (32.47). 'Forge' involves creating, altering, or passing a false writing."
+                },
+                {
+                    question: "What is the offense under 32.21(b)?",
+                    options: ["A person forges a writing.", "A person possesses a forged writing.", "A person forges a writing with intent to defraud or harm another.", "A person utters a writing they know is forged."],
+                    answer: "A person forges a writing with intent to defraud or harm another.",
+                    explanation: "Sec. 32.21(b) requires the specific 'intent to defraud or harm another' in addition to the act of forging."
+                },
+                {
+                    question: "What is the base penalty for Forgery (32.21) if no other subsection applies?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class C Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.21(c) establishes the base penalty as a state jail felony."
+                },
+                {
+                    question: "What is the penalty for forging a check under 32.21(d)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.21(d) lists checks, wills, deeds, and credit cards as F3 offenses."
+                },
+                {
+                    question: "What is the penalty for forging part of an issue of money under 32.21(e)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 32.21(e) lists money, government records, and postage stamps as F2 offenses."
+                },
+                {
+                    question: "A person forges a check for $5,000 to obtain property. What is the penalty under 32.21(e-1)?",
+                    options: ["Felony of the Third Degree (for check)", "Felony of the Third Degree (for value)", "State Jail Felony (for check)", "State Jail Felony (for value)"],
+                    answer: "Felony of the Third Degree (for value)",
+                    explanation: "Sec. 32.21(e-1) applies when property/service is obtained. The value of $5,000 falls into the F3 category ($2,500 - $29,999.99), which happens to be the same as the penalty for a check, but the value ladder is used."
+                },
+                {
+                    question: "A person forges a document to obtain a service valued at $800. What is the penalty under 32.21(e-1)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.21(e-1) applies. The value of $800 falls into the State Jail Felony category ($750 - $2,499.99)."
+                },
+                {
+                    question: "A person commits Forgery (32.21) against an elderly person to obtain $10,000 in services. What is the penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "The value of $10,000 is an F3 under (e-1). Sec. 32.21(e-2) enhances the offense to the 'next higher category,' making it an F2."
+                },
+                {
+                    question: "Under 32.21(f), intent to defraud is presumed if a person acts with respect to two or more writings of what type?",
+                    options: ["Checks", "Credit cards", "Government records listed in 37.01(2)(C)", "Wills or codicils"],
+                    answer: "Government records listed in 37.01(2)(C)",
+                    explanation: "Sec. 32.21(f) provides this specific presumption for two or more forged government records."
+                },
+                {
+                    question: "What is the offense of 'Criminal Simulation' (32.22)?",
+                    options: ["Forging a check.", "Using a computer to defraud.", "Making an object appear to have value due to age, antiquity, or rarity that it does not have.", "Possessing a counterfeit trademark."],
+                    answer: "Making an object appear to have value due to age, antiquity, or rarity that it does not have.",
+                    explanation: "Sec. 32.22(a)(1) defines the offense as faking an object's value based on characteristics like age, rarity, or source."
+                },
+                {
+                    question: "What is the penalty for Criminal Simulation (32.22)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.22(b) sets the penalty as a Class A Misdemeanor."
+                },
+                {
+                    question: "Under 32.23 (Trademark Counterfeiting), what is a 'Counterfeit mark'?",
+                    options: ["Any mark that is not registered.", "A mark that is identical to or substantially indistinguishable from a protected mark, used without authorization.", "A mark used by a competitor.", "A trademark that has expired."],
+                    answer: "A mark that is identical to or substantially indistinguishable from a protected mark, used without authorization.",
+                    explanation: "Sec. 32.23(a)(1) provides this definition."
+                },
+                {
+                    question: "What is the penalty for Trademark Counterfeiting (32.23) if the retail value is $40,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.23(e) follows the theft ladder. $40,000 falls in the F3 range ($30,000 - $149,999.99)."
+                },
+                {
+                    question: "What is the offense under 32.24 (Stealing or Receiving Stolen Check)?",
+                    options: ["Stealing a *signed* check.", "Stealing an *unsigned* check or receiving a stolen *unsigned* check with intent to use/sell/transfer.", "Forging a signature on a stolen check.", "Cashing a stolen check."],
+                    answer: "Stealing an *unsigned* check or receiving a stolen *unsigned* check with intent to use/sell/transfer.",
+                    explanation: "Sec. 32.24(a) specifically applies to *unsigned* checks or similar sight orders."
+                },
+                {
+                    question: "What is the penalty for Stealing or Receiving a Stolen Check (32.24)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class C Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.24(b) sets the penalty as a State Jail Felony."
+                },
+                {
+                    question: "Which of these is NOT an offense under 32.31 (Credit Card Abuse)?",
+                    options: ["Stealing a credit card.", "Possessing two or more incomplete credit cards with intent to complete them.", "With intent to defraud, using a card you know is expired.", "Finding a card and returning it to the issuer."],
+                    answer: "Finding a card and returning it to the issuer.",
+                    explanation: "Returning a card is not an offense. The other options are listed in 32.31(b)."
+                },
+                {
+                    question: "What is the base penalty for Credit Card or Debit Card Abuse (32.31)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.31(d) sets the base penalty as a State Jail Felony."
+                },
+                {
+                    question: "What is the penalty for Credit Card or Debit Card Abuse (32.31) if the offense is committed against an elderly individual?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.31(d) enhances the SJF base offense to an F3 if the victim is elderly."
+                },
+                {
+                    question: "Under 32.31(c), knowledge of card revocation is presumed if notice was sent. How long after sending is notice presumed received?",
+                    options: ["Immediately", "3 days", "5 days", "10 days"],
+                    answer: "5 days",
+                    explanation: "Sec. 32.31(c) states it is 'presumed that the notice was received by the cardholder no later than five days after sent.'"
+                },
+                {
+                    question: "Under 32.315, what is a 'Counterfeit credit card or debit card'?",
+                    options: ["A card that has been reported stolen.", "A card that has been altered to contain a different digital imprint or account info.", "A card that has expired.", "A card used by someone other than the cardholder."],
+                    answer: "A card that has been altered to contain a different digital imprint or account info.",
+                    explanation: "Sec. 32.315(a)(1) defines it as a card that is fake, has an altered digital imprint, or has mismatched info."
+                },
+                {
+                    question: "What is the penalty under 32.315 (Fraudulent Use of Card Info) if a person possesses 7 counterfeit cards?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.315(e) bases the penalty on the number of items. 7 items falls in the F3 range (5 or more but less than 10)."
+                },
+                {
+                    question: "What is the penalty under 32.315 (Fraudulent Use of Card Info) if a person possesses 50 counterfeit cards?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 32.315(e)(4) makes possession of 50 or more items an F1."
+                },
+                {
+                    question: "Possession of how many items under 32.315(b)(2) or (b)(3) creates a rebuttable presumption of possession without consent?",
+                    options: ["Two or more", "Three or more", "Five or more", "Ten or more"],
+                    answer: "Five or more",
+                    explanation: "Sec. 32.315(c) establishes this presumption at 5 or more items."
+                },
+                {
+                    question: "Under 32.32 (False Statement to Obtain Credit), what is the offense?",
+                    options: ["Verbally lying to get a loan.", "Intentionally or knowingly making a materially false or misleading *written* statement.", "Failing to pay back a loan.", "Having a bad credit score."],
+                    answer: "Intentionally or knowingly making a materially false or misleading *written* statement.",
+                    explanation: "Sec. 32.32(b) requires the statement to be *written*."
+                },
+                {
+                    question: "What is the penalty under 32.32 (False Statement) if the credit sought was $1,000?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Class C Misdemeanor"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.32(c) follows the theft ladder. $1,000 falls in the Class A range ($750 - $2,499.99)."
+                },
+                {
+                    question: "What is the offense of Hindering Secured Creditors (32.33)?",
+                    options: ["Failing to make a payment on a loan.", "Arguing with a repo man.", "With intent to hinder enforcement, destroying, removing, or concealing secured property.", "Selling property you own outright."],
+                    answer: "With intent to hinder enforcement, destroying, removing, or concealing secured property.",
+                    explanation: "Sec. 32.33(b) lists the elements as intent to hinder plus an act like destroying, removing, or concealing."
+                },
+                {
+                    question: "Under 32.33(c), intent to hinder is presumed if the person failed to pay the due debt AND...",
+                    options: ["Filed for bankruptcy.", "Failed to deliver possession of the property after the secured party made demand.", "Moved to another county.", "Sold the property to a friend."],
+                    answer: "Failed to deliver possession of the property after the secured party made demand.",
+                    explanation: "Sec. 32.33(c)(2) requires both failure to pay AND failure to deliver after demand for the presumption."
+                },
+                {
+                    question: "What is the penalty for Hindering Secured Creditors (32.33) if the property value is $5,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.33(d) follows the theft ladder. $5,000 falls in the SJF range ($2,500 - $29,999.99)."
+                },
+                {
+                    question: "A person acquires a car under agreement to transfer it to a 3rd party, knowing it has a lien. They transfer it without the lienholder's written permission. What offense?",
+                    options: ["Theft", "Fraudulent Transfer of a Motor Vehicle (32.34)", "Hindering Secured Creditors (32.33)", "No offense if they intended to pay."],
+                    answer: "Fraudulent Transfer of a Motor Vehicle (32.34)",
+                    explanation: "This matches the elements of Sec. 32.34(b)(1)."
+                },
+                {
+                    question: "What is the penalty for Fraudulent Transfer of a Motor Vehicle (32.34) if the vehicle is worth $25,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.34(f)(1) makes the offense an SJF if the value is less than $30,000."
+                },
+                {
+                    question: "What is the penalty for Fraudulent Transfer of a Motor Vehicle (32.34) if the actor *only* fails to disclose the vehicle's location?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No offense"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.34(g) makes the offense under (b)(4) (failure to disclose location) a Class A Misdemeanor."
+                },
+                {
+                    question: "What is Credit Card Transaction Record Laundering (32.35)?",
+                    options: ["Using a stolen credit card.", "An authorized vendor presenting a credit card transaction record for a sale that was not made.", "A cardholder disputing a valid charge.", "A bank failing to process a transaction."],
+                    answer: "An authorized vendor presenting a credit card transaction record for a sale that was not made.",
+                    explanation: "Sec. 32.35(b) defines this offense, often called 'factoring'."
+                },
+                {
+                    question: "What is the base offense for Issuance of a Bad Check (32.41)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 32.41(f) sets the base penalty as a Class C Misdemeanor."
+                },
+                {
+                    question: "When does Issuance of a Bad Check (32.41) become a Class B Misdemeanor?",
+                    options: ["If the check is over $100.", "If the actor has a prior conviction.", "If the check was for a child support payment.", "If the check was given to an elderly person."],
+                    answer: "If the check was for a child support payment.",
+                    explanation: "Sec. 32.41(f) provides this specific enhancement."
+                },
+                {
+                    question: "Under 32.41(b), knowledge of insufficient funds is presumed if payment is refused AND the issuer fails to pay within how many days of notice?",
+                    options: ["3 days", "5 days", "10 days", "30 days"],
+                    answer: "10 days",
+                    explanation: "Sec. 32.41(b)(2) gives the issuer 10 days after receiving notice to pay the holder in full."
+                },
+                {
+                    question: "Which of these is a Deceptive Business Practice (32.42)?",
+                    options: ["Selling less than the represented quantity of a service.", "Having a going-out-of-business sale.", "Charging a high price for a service.", "Refusing service to a customer."],
+                    answer: "Selling less than the represented quantity of a service.",
+                    explanation: "Sec. 32.42(b)(2) lists this as a deceptive business practice."
+                },
+                {
+                    question: "A person commits Deceptive Business Practice (32.42) by selling used items as new. If done *intentionally*, what is the penalty?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.42(c)(2) makes offenses under (b)(1-6) a Class A Misdemeanor if committed intentionally, knowingly, or recklessly."
+                },
+                {
+                    question: "What is the penalty for conducting a 'deceptive sales contest' under 32.42(d)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.42(d) makes offenses under (b)(7-12), which includes deceptive sales contests, a Class A Misdemeanor."
+                },
+                {
+                    question: "What is Commercial Bribery (32.43)?",
+                    options: ["Bribing a public servant.", "A fiduciary (like an employee) accepting a benefit to influence his conduct, without the beneficiary's consent.", "Offering a customer a discount.", "A business paying for advertising."],
+                    answer: "A fiduciary (like an employee) accepting a benefit to influence his conduct, without the beneficiary's consent.",
+                    explanation: "Sec. 32.43(b) defines the offense by the fiduciary."
+                },
+                {
+                    question: "What is the penalty for Commercial Bribery (32.43)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.43(d) sets the penalty as a State Jail Felony."
+                },
+                {
+                    question: "A person offers a basketball player $10,000 to intentionally miss free throws to affect the game's outcome. What offense?",
+                    options: ["Theft", "Commercial Bribery (32.43)", "Rigging Publicly Exhibited Contest (32.44)", "Gambling"],
+                    answer: "Rigging Publicly Exhibited Contest (32.44)",
+                    explanation: "This matches Sec. 32.44(a)(1)(A), offering a benefit to a participant to induce him not to use his best efforts."
+                },
+                {
+                    question: "What is the penalty for Rigging a Publicly Exhibited Contest (32.44)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.44(c) sets the penalty as a Class A Misdemeanor."
+                },
+                {
+                    question: "A person offers a high school athlete a car to influence them to enroll at a specific university. What offense is this under 32.441?",
+                    options: ["Commercial Bribery", "Rigging Publicly Exhibited Contest", "Illegal Recruitment of an Athlete", "No offense, this is common."],
+                    answer: "Illegal Recruitment of an Athlete",
+                    explanation: "Sec. 32.441(b) makes it an offense to offer a benefit to influence enrollment for intercollegiate athletics."
+                },
+                {
+                    question: "The penalty for Illegal Recruitment of an Athlete (32.441) is based on what?",
+                    options: ["A flat State Jail Felony.", "The age of the athlete.", "The value of the benefit (following the theft ladder).", "A flat Class A Misdemeanor."],
+                    answer: "The value of the benefit (following the theft ladder).",
+                    explanation: "Sec. 32.441(e) provides a value ladder from Class C Misdemeanor up to F1."
+                },
+                {
+                    question: "What is 'Misapply' under 32.45 (Misapplication of Fiduciary Property)?",
+                    options: ["To steal property.", "To deal with property contrary to an agreement or law.", "To use property for personal gain.", "To accidentally lose property."],
+                    answer: "To deal with property contrary to an agreement or law.",
+                    explanation: "Sec. 32.45(a)(2) defines 'misapply' this way."
+                },
+                {
+                    question: "The offense of Misapplication of Fiduciary Property (32.45) requires the misapplication to be done in a manner that involves what?",
+                    options: ["Personal profit.", "Substantial risk of loss to the owner.", "A value over $2,500.", "Deception or coercion."],
+                    answer: "Substantial risk of loss to the owner.",
+                    explanation: "Sec. 32.45(b) requires the act to involve a 'substantial risk of loss'."
+                },
+                {
+                    question: "A trustee misapplies $40,000 from a trust for an elderly person. What is the penalty under 32.45?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "The value of $40,000 is an F3. Sec. 32.45(d) enhances the offense to the 'next higher category' (F2) because the victim is elderly."
+                },
+                {
+                    question: "A person tricks someone into signing a document transferring property, without their effective consent. What offense?",
+                    options: ["Forgery (32.21)", "Fraudulent Securing of Document Execution (32.46)", "Theft (31.03)", "Deceptive Business Practice (32.42)"],
+                    answer: "Fraudulent Securing of Document Execution (32.46)",
+                    explanation: "This matches Sec. 32.46(a)(1)."
+                },
+                {
+                    question: "A person files a fake judgment from a 'Sovereign Citizen' court at the county clerk's office. What offense?",
+                    options: ["Forgery (32.21)", "Fraudulent Securing of Document Execution (32.46)", "Simulating Legal Process (32.48)", "Contempt of Court"],
+                    answer: "Fraudulent Securing of Document Execution (32.46)",
+                    explanation: "This matches Sec. 32.46(a)(2), causing a public servant to file a document from a 'purported court'."
+                },
+                {
+                    question: "What is the penalty for causing a public servant to file a fake judgment from a fake court under 32.46(c)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "It follows the value ladder."],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.46(c) makes an offense under (a)(2) a State Jail Felony."
+                },
+                {
+                    question: "A person, with intent to defraud, switches a $50 price tag on an item with a $10 price tag. What offense?",
+                    options: ["Theft (31.03)", "Fraudulent Destruction, Removal, or Concealment of Writing (32.47)", "Deceptive Business Practice (32.42)", "Robbery (29.02)"],
+                    answer: "Fraudulent Destruction, Removal, or Concealment of Writing (32.47)",
+                    explanation: "This is a form of 'price tag switching' covered by Sec. 32.47(a) and penalized under (e)."
+                },
+                {
+                    question: "If a person switches a $50 price tag for a $10 tag, what is the penalty under 32.47(e)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "The penalty under 32.47(e) is based on the *difference* in price ($50 - $10 = $40). Since $40 is less than $100, it's a Class C Misdemeanor."
+                },
+                {
+                    question: "What is the penalty for destroying a will, with intent to defraud, under 32.47(d)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No offense if the person is alive."],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.47(d)(1) makes it an SJF to destroy a will or codicil, 'whether or not the maker is alive or dead'."
+                },
+                {
+                    question: "A person sends a document that looks like a real court summons to scare someone into paying a debt. What offense?",
+                    options: ["Forgery (32.21)", "Fraudulent Securing of Document Execution (32.46)", "Simulating Legal Process (32.48)", "Harassment (42.07)"],
+                    answer: "Simulating Legal Process (32.48)",
+                    explanation: "Sec. 32.48(a) covers recklessly delivering a document that 'simulates' court process to induce payment."
+                },
+                {
+                    question: "What is the penalty for Simulating Legal Process (32.48) if the actor has a prior conviction for the same offense?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.48(f) enhances the offense to an SJF for a previous conviction."
+                },
+                {
+                    question: "A person files a fraudulent lien and refuses to release it 30 days after receiving a mailed notice. What offense?",
+                    options: ["Refusal to Execute Release of Fraudulent Lien (32.49)", "Hindering Secured Creditors (32.33)", "Theft (31.03)", "No offense, 30 days is not long enough."],
+                    answer: "Refusal to Execute Release of Fraudulent Lien (32.49)",
+                    explanation: "Sec. 32.49(a) sets a 21-day limit. Refusing after 30 days (and thus after 21 days) completes the offense."
+                },
+                {
+                    question: "The offense of Refusal to Release Fraudulent Lien (32.49) is a Class A Misdemeanor, *unless* the owner of the property is a...",
+                    options: ["Corporation", "Elderly individual", "Public servant", "Financial institution"],
+                    answer: "Public servant",
+                    explanation: "Sec. 32.49(c) enhances the penalty to an F3 if the owner is a public servant."
+                },
+                {
+                    question: "A person runs a business selling term papers to students, knowing they will be used for course credit. What offense?",
+                    options: ["Theft (31.03)", "Deceptive Preparation and Marketing of Academic Product (32.50)", "Deceptive Business Practice (32.42)", "No offense, this is just tutoring."],
+                    answer: "Deceptive Preparation and Marketing of Academic Product (32.50)",
+                    explanation: "Sec. 32.50(b) prohibits preparing or selling academic products for profit when knowing they'll be submitted by another."
+                },
+                {
+                    question: "What is the penalty for Deceptive Preparation/Marketing of Academic Product (32.50)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 32.50(g) sets the penalty as a Class C Misdemeanor."
+                },
+                {
+                    question: "Which of these is 'Identifying information' under 32.51?",
+                    options: ["A person's favorite color.", "A person's name and date of birth.", "A person's public social media post.", "A person's place of employment."],
+                    answer: "A person's name and date of birth.",
+                    explanation: "Sec. 32.51(a)(1)(A) explicitly lists 'name and date of birth'."
+                },
+                {
+                    question: "A person possesses the names, DOBs, and SSNs of 4 people without their consent, with intent to defraud. What is the penalty under 32.51?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.51(c)(1) makes possession of 'less than five' items an SJF."
+                },
+                {
+                    question: "A person possesses the identifying information of 12 people. What is the penalty under 32.51?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 32.51(c)(3) makes possession of '10 or more but less than 50' items an F2."
+                },
+                {
+                    question: "Under 32.51, intent to harm or defraud is presumed if the actor possesses the ID info of how many other persons?",
+                    options: ["2 or more", "3 or more", "5 or more", "10 or more"],
+                    answer: "3 or more",
+                    explanation: "Sec. 32.51(b-1)(1) sets this presumption at 3 or more."
+                },
+                {
+                    question: "A person commits 32.51 (ID Fraud) by possessing 6 items of ID info from an elderly person. What is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Possession of 6 items is an F3 under (c)(2). Sec. 32.51(c-1)(1) enhances the offense to the 'next higher category' (F2) because the victim is elderly."
+                },
+                {
+                    question: "A person uses a fake diploma from a non-existent university to get a job. What offense?",
+                    options: ["Forgery (32.21)", "Fraudulent, Substandard, or Fictitious Degree (32.52)", "Deceptive Business Practice (32.42)", "No offense"],
+                    answer: "Fraudulent, Substandard, or Fictitious Degree (32.52)",
+                    explanation: "Sec. 32.52(b) prohibits using a fictitious degree with the intent to obtain employment."
+                },
+                {
+                    question: "What is the penalty for using a Fraudulent Degree (32.52)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 32.52(c) sets the penalty as a Class B Misdemeanor."
+                },
+                {
+                    question: "What is 'Exploitation' under 32.53?",
+                    options: ["The illegal or improper use of a child, elderly, or disabled person or their resources for monetary or personal benefit.", "Causing bodily injury to a child.", "Failing to report abuse.", "Only the financial abuse of an elderly person."],
+                    answer: "The illegal or improper use of a child, elderly, or disabled person or their resources for monetary or personal benefit.",
+                    explanation: "Sec. 32.53(a)(2) provides this definition."
+                },
+                {
+                    question: "What is the penalty for Exploitation of a Child, Elderly, or Disabled Individual (32.53)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "It follows the theft value ladder."],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.53(c) sets the penalty as a flat F3."
+                },
+                {
+                    question: "A person falsely claims to have a Silver Star to get a promotion at work. What offense?",
+                    options: ["No offense, this is free speech.", "Fraudulent or Fictitious Military Record (32.54)", "Fraudulent Degree (32.52)", "Theft by Deception (31.03)"],
+                    answer: "Fraudulent or Fictitious Military Record (32.54)",
+                    explanation: "Sec. 32.54(b) prohibits using a fraudulent military record (award) to obtain a promotion."
+                },
+                {
+                    question: "What is the penalty for Fraudulent or Fictitious Military Record (32.54)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 32.54(c) sets the penalty as a Class B Misdemeanor."
+                },
+                {
+                    question: "What is 'Financial exploitation' under 32.55?",
+                    options: ["Any theft from an elderly person.", "Wrongful taking of property by a person in a relationship of confidence or trust.", "Charging a high price for services.", "Asking for a loan."],
+                    answer: "Wrongful taking of property by a person in a relationship of confidence or trust.",
+                    explanation: "Sec. 32.55(a)(3) defines it as abuse by someone with a trust relationship (caregiver, relative, etc.)."
+                },
+                {
+                    question: "What is the penalty for Financial Abuse of an Elderly Individual (32.55) if the value taken is $1,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.55(d) follows the theft ladder, but starts at Class B. $1,000 falls in the SJF range ($750 - $2,499.99)."
+                },
+                {
+                    question: "A caregiver takes $500 from an elderly person who has dementia. What presumption applies under 32.55(f)?",
+                    options: ["The caregiver is presumed to have a trust relationship.", "The transfer is rebuttably presumed to be wrongful.", "The value is presumed to be an F3.", "No presumption applies."],
+                    answer: "The transfer is rebuttably presumed to be wrongful.",
+                    explanation: "Sec. 32.55(f) creates this rebuttable presumption for caregivers of individuals with dementia/Alzheimer's."
+                },
+                {
+                    question: "Under 32.56 (Gift Card Fraud), what is the penalty for possessing 4 altered gift cards with intent to defraud?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.56(e)(1) sets the penalty for 'fewer than five' cards as an SJF."
+                },
+                {
+                    question: "Under 32.56 (Gift Card Fraud), what is the penalty for possessing 20 altered gift cards?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 32.56(e)(3) sets the penalty for '10 or more but fewer than 50' as an F2."
+                },
+                {
+                    question: "What is the offense under 32.56 (Mail Receptacle Key)?",
+                    options: ["Stealing mail.", "Possessing a US Postal Service key or lock with intent to harm or defraud.", "Damaging a mailbox.", "Possessing mail of 3 or more persons."],
+                    answer: "Possessing a US Postal Service key or lock with intent to harm or defraud.",
+                    explanation: "Sec. 32.56(b) (as added by SB 1281) defines the offense as obtaining, possessing, duplicating, etc., a key or lock."
+                },
+                {
+                    question: "What is the base penalty for 32.56 (Unlawful Conduct Involving Mail Receptacle Key)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.56(c) (as added by SB 1281) sets the base penalty as an F3."
+                },
+                {
+                    question: "A person presents a fake lease agreement to someone to convince them they can live on a property. What offense?",
+                    options: ["Theft of Service", "Forgery", "False, Fraudulent, or Fictitious Document Conveying Real Property Interest (32.56)", "Simulating Legal Process"],
+                    answer: "False, Fraudulent, or Fictitious Document Conveying Real Property Interest (32.56)",
+                    explanation: "This matches Sec. 32.56(a) (as added by SB 1333)."
+                },
+                {
+                    question: "What is the penalty for 32.56 (False, Fraudulent, or Fictitious Document Conveying Real Property Interest)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 32.56(b) (as added by SB 1333) sets the penalty as a Class A Misdemeanor."
+                },
+                {
+                    question: "A person uses a 'deepfake' (artificially generated media) to mimic a person's voice to get their relative to send $1,000. What offense?",
+                    options: ["Theft (31.03)", "Financial Abuse Using Artificially Generated Media or Phishing (32.56)", "Exploitation (32.53)", "Forgery (32.21)"],
+                    answer: "Financial Abuse Using Artificially Generated Media or Phishing (32.56)",
+                    explanation: "This matches Sec. 32.56(b)(1) (as added by SB 2373)."
+                },
+                {
+                    question: "What is the penalty for 32.56 (Financial Abuse via AI/Phishing) if the value is $1,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 32.56(c) (as added by SB 2373) follows the theft ladder (starting at Class B). $1,000 falls in the SJF range ($750 - $2,499.99)."
+                },
+                {
+                    question: "A person lists a house for rent on Craigslist, knowing they have no legal title or authority to do so. What offense?",
+                    options: ["Theft of Service (31.04)", "Deceptive Business Practice (32.42)", "Fraudulent Sale, Rental, or Lease of Residential Real Property (32.57)", "No offense until money is exchanged."],
+                    answer: "Fraudulent Sale, Rental, or Lease of Residential Real Property (32.57)",
+                    explanation: "Sec. 32.57(a)(1) makes it an offense to *list or advertise* the property, even before a transaction."
+                },
+                {
+                    question: "What is the penalty for Fraudulent Sale, Rental, or Lease of Residential Real Property (32.57)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 32.57(b) sets the penalty as an F1."
+                },
+                {
+                    question: "Under 32.60 (Real Property Fraud), a person causes an owner, without effective consent, to sign a deed. The property is valued at $200,000. What is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 32.60(c)(1) sets the penalty as an F2 if the value is less than $300,000."
+                },
+                {
+                    question: "A person commits 32.60 (Real Property Fraud) against an elderly individual's residence homestead (value $200,000). What is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The base offense is an F2. Sec. 32.60(d) enhances the offense to the 'next higher category' (F1) because the victim is elderly AND it's a residence homestead."
+                },
+                {
+                    question: "A person solicits payment from a disaster victim to search for a missing relative. What offense under 32.61?",
+                    options: ["Malicious Solicitation (b)(1)", "Malicious Solicitation (b)(2)", "Malicious Solicitation (b)(3)", "Malicious Solicitation (b)(4)"],
+                    answer: "Malicious Solicitation (b)(4)",
+                    explanation: "Sec. 32.61(b)(4) specifically prohibits soliciting payment to search for a missing relative."
+                },
+                {
+                    question: "What is the penalty for soliciting payment from a disaster victim to search for a missing relative (32.61e)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 32.61(e) makes an offense under (b)(4) an F1."
+                },
+                {
+                    question: "What is the base penalty for soliciting disaster donations but keeping them (32.61c)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 32.61(c)(1) makes a first offense under (b)(1), (2), or (3) an F3."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 32 - Fraud", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions (General)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Penal Code Sec. 22.04 - Injury to Child, Elderly, Disabled", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm#22.04" },
+                 { name: "Penal Code Sec. 31.01 - Definitions (Theft)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm#31.01" },
+                 { name: "Penal Code Sec. 37.01 - Definitions (Perjury/Govt)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.01" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
