@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 50 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-firework mr-2"></i>Ch. 50: Fireworks
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (50.01)
+                </button>
+                <button data-tab="key-sections" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Key Sections (50.02)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 50.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Consumer firework / Fireworks</span>
+                            <p class="definition-desc">Have the meanings assigned by <strong>49 C.F.R. Section 173.59</strong>.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Law enforcement officer</span>
+                            <p class="definition-desc">A person who is:
+                                <br>(1) a peace officer under <strong>Article 2A.001, Code of Criminal Procedure</strong>, or
+                                <br>(2) a federal law enforcement officer, as defined by <strong>5 U.S.C. Section 8331(20)</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Sections Tab -->
+            <div id="key-sections" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.50.htm#50.02" target="_blank" class="text-red-600 hover:underline">Sec. 50.02. Unlawful Use of Fireworks</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if the person explodes or ignites fireworks with the *intent* to:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li><strong>Interfere</strong> with the lawful performance of an official duty by a law enforcement officer; OR</li>
+                                <li><strong>Flee</strong> from a person the actor knows is a law enforcement officer attempting to lawfully arrest or detain the actor.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Base Penalty (b):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (c):</strong> <strong class="font-semibold text-red-700">Second Degree Felony</strong> if the offense involves any firework that is *not a consumer firework*.</li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> <strong class="font-semibold text-red-700">First Degree Felony</strong> if the offense causes *serious bodily injury* to a person the actor *knows is a law enforcement officer* while the LEO is lawfully discharging an official duty (or in retaliation for it).</li>
+                        <li><strong class="font-semibold">Concurrent Prosecution (e):</strong> If the conduct also violates another law, the actor may be prosecuted under this section, the other law, or both.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 50)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (16 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 50) ---
+            const quizData = [
+                {
+                    question: "Under 50.01, where does the definition of 'fireworks' come from?",
+                    options: ["Chapter 2154, Occupations Code", "49 C.F.R. Section 173.59", "Texas Health and Safety Code", "Chapter 48, Penal Code"],
+                    answer: "49 C.F.R. Section 173.59",
+                    explanation: "Sec. 50.01(1) states that 'Consumer firework' and 'fireworks' have the meanings assigned by 49 C.F.R. Section 173.59."
+                },
+                {
+                    question: "Does the definition of 'Law enforcement officer' in 50.01 include federal officers?",
+                    options: ["Yes, if they are defined as such by 5 U.S.C. Section 8331(20).", "No, it only includes Texas peace officers.", "Yes, it includes all federal, state, and local officers.", "No, it only includes officers under CCP Art. 2.12."],
+                    answer: "Yes, if they are defined as such by 5 U.S.C. Section 8331(20).",
+                    explanation: "Sec. 50.01(2) explicitly includes Texas peace officers (under CCP 2A.001) AND federal law enforcement officers (under 5 U.S.C. Section 8331(20))."
+                },
+                {
+                    question: "A person commits an offense under 50.02(a)(1) if they explode fireworks with what intent?",
+                    options: ["With intent to celebrate a holiday after a burn ban.", "With intent to interfere with the lawful performance of an LEO's duty.", "With intent to cause serious bodily injury to any person.", "With intent to damage property."],
+                    answer: "With intent to interfere with the lawful performance of an LEO's duty.",
+                    explanation: "Sec. 50.02(a)(1) requires the specific intent to 'interfere with the lawful performance of an official duty by a law enforcement officer.'"
+                },
+                {
+                    question: "A person commits an offense under 50.02(a)(2) if they ignite fireworks with what intent?",
+                    options: ["With intent to flee from a known LEO attempting a lawful arrest or detention.", "With intent to create a diversion to help someone else flee.", "With intent to flee from any person, not just an LEO.", "With intent to destroy evidence while fleeing."],
+                    answer: "With intent to flee from a known LEO attempting a lawful arrest or detention.",
+                    explanation: "Sec. 50.02(a)(2) requires the actor knows the person is an LEO and that the LEO is attempting a lawful arrest or detention."
+                },
+                {
+                    question: "What is the base penalty for Unlawful Use of Fireworks (50.02) if consumer fireworks are used and no one is injured?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "State Jail Felony", "Second Degree Felony"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 50.02(b) states that 'Except as provided by Subsections (c) and (d), an offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "What is the penalty under 50.02(c) if the offense involves a firework that is *not* a consumer firework?",
+                    options: ["State Jail Felony", "First Degree Felony", "Third Degree Felony", "Second Degree Felony"],
+                    answer: "Second Degree Felony",
+                    explanation: "Sec. 50.02(c) enhances the penalty to a second-degree felony if the firework is not a consumer firework (e.g., professional-grade explosives)."
+                },
+                {
+                    question: "A person ignites a consumer firework (Roman candle) with intent to flee a lawful detention, and it causes SBI to the officer. What is the penalty?",
+                    options: ["State Jail Felony", "Second Degree Felony", "First Degree Felony", "Third Degree Felony"],
+                    answer: "First Degree Felony",
+                    explanation: "Sec. 50.02(d) enhances the offense to a first-degree felony if it 'causes serious bodily injury' to a known LEO, regardless of the firework type."
+                },
+                {
+                    question: "The enhancement to a First Degree Felony under 50.02(d) applies if the offense causes serious bodily injury to who?",
+                    options: ["Any person", "A bystander", "A person the actor knows is a law enforcement officer", "Any public servant"],
+                    answer: "A person the actor knows is a law enforcement officer",
+                    explanation: "Sec. 50.02(d) specifically requires that the victim is 'a person the actor knows is a law enforcement officer' who is lawfully discharging a duty."
+                },
+                {
+                    question: "What kind of firework triggers the Second Degree Felony enhancement under 50.02(c)?",
+                    options: ["Any firework that is not a consumer firework", "Any consumer firework, like a bottle rocket", "Any firework that makes a loud noise", "Only M-80s or 'quarter-sticks'"],
+                    answer: "Any firework that is not a consumer firework",
+                    explanation: "Sec. 50.02(c) broadly applies to 'any firework that is not a consumer firework.'"
+                },
+                {
+                    question: "What is the required mental state for an offense under Sec. 50.02?",
+                    options: ["Knowingly or Intentionally", "Recklessly", "Criminal Negligence", "No culpable mental state is required"],
+                    answer: "Knowingly or Intentionally",
+                    explanation: "Sec. 50.02(a) states 'A person commits an offense if the person explodes or ignites fireworks *with the intent to*...' which establishes an intentional culpable mental state."
+                },
+                {
+                    question: "A person ignites a large, professional-grade (non-consumer) firework to interfere with officers making an arrest. No one is hurt. What is the offense?",
+                    options: ["State Jail Felony", "Second Degree Felony", "First Degree Felony", "Class A Misdemeanor"],
+                    answer: "Second Degree Felony",
+                    explanation: "The base offense is a State Jail Felony. However, Sec. 50.02(c) enhances it to a Second Degree Felony because it involves a 'firework that is not a consumer firework.'"
+                },
+                {
+                    question: "Does Sec. 50.01 define 'Law enforcement officer' as only a Texas peace officer?",
+                    options: ["Yes, only officers under CCP 2A.001", "No, it also includes federal law enforcement officers", "No, it also includes military police", "Yes, and only those listed in CCP 2.12"],
+                    answer: "No, it also includes federal law enforcement officers",
+                    explanation: "Sec. 50.01(2) includes both Texas peace officers (CCP 2A.001) and federal law enforcement officers (5 U.S.C. Section 8331(20))."
+                },
+                {
+                    question: "A person flees from a lawful arrest (Evading Arrest, 38.04) and *also* ignites fireworks to interfere with the officer (50.02). Can they be prosecuted for both?",
+                    options: ["No, they can only be prosecuted for one or the other.", "Yes, Sec. 50.02(e) allows for prosecution under this section, the other law, or both.", "Yes, but only if the Evading Arrest was a felony.", "No, 50.02 is the more specific statute and must be used."],
+                    answer: "Yes, Sec. 50.02(e) allows for prosecution under this section, the other law, or both.",
+                    explanation: "Sec. 50.02(e) explicitly states 'the actor may be prosecuted under this section, the other law, or both.'"
+                },
+                {
+                    question: "What definition of 'fireworks' does Chapter 50 use?",
+                    options: ["The definition from the federal Code of Federal Regulations (C.F.R.)", "A definition written in Sec. 50.01(a)", "The definition from the Health and Safety Code", "The common dictionary definition"],
+                    answer: "The definition from the federal Code of Federal Regulations (C.F.R.)",
+                    explanation: "Sec. 50.01(1) points to 49 C.F.R. Section 173.59 for the definition."
+                },
+                {
+                    question: "To commit an offense under 50.02(a)(2), must the actor *know* the person they are fleeing from is a law enforcement officer?",
+                    options: ["Yes, the statute says 'a person the actor knows is a law enforcement officer'.", "No, knowledge of their status is not required.", "Only if the officer is in uniform.", "Only if the officer has their lights and sirens on."],
+                    answer: "Yes, the statute says 'a person the actor knows is a law enforcement officer'.",
+                    explanation: "Sec. 50.02(a)(2) explicitly requires this knowledge as an element of the offense."
+                },
+                {
+                    question: "The First Degree Felony enhancement under 50.02(d) requires the LEO victim to be...",
+                    options: ["Lawfully discharging an official duty or in retaliation for it", "On or off duty, as long as they are an LEO", "In uniform and in a marked patrol car", "Actively attempting an arrest"],
+                    answer: "Lawfully discharging an official duty or in retaliation for it",
+                    explanation: "Sec. 50.02(d) applies if the LEO is 'lawfully discharging an official duty or in retaliation or on account of an exercise of official power or performance of an official duty'."
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    // --- BEGIN FIX ---
+                    // Add a check to ensure q and q.options are valid
+                    if (!q || !q.options) {
+                        console.error('Skipping invalid question object at index ' + index + ':', q);
+                        return; // Skip this iteration
+                    }
+                    // --- END FIX ---
+
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 50 - Fireworks", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.50.htm" },
+                 { name: "CCP Art. 2A.001 (Peace Officer Def)", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.2A.htm#2A.001" },
+                 { name: "49 C.F.R. Sec 173.59 (Firework Def - external)", url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-C/part-173/subpart-C/section-173.59" },
+                 { name: "5 U.S.C. Sec 8331(20) (Federal LEO Def - external)", url: "https://www.govinfo.gov/app/details/USCODE-2011-title5/USCODE-2011-title5-partIII-subpartG-chap83-subchapIII-sec8331" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+                // This link may be for a specific year, check for the most current version.
+            });
+        });
+    </script>
+</body>
+</html>
+

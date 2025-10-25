@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 48 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-heartbeat mr-2"></i>Ch. 48: Conduct Affecting Public Health
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Key Definitions
+                </button>
+                <button data-tab="smoking" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-smoking-ban mr-2"></i> Smoking/Cigarettes (48.01-015)
+                </button>
+                <button data-tab="human-tissue" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-dna mr-2"></i> Human Tissue/Cells (48.02-04)
+                </button>
+                <button data-tab="camping" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-campground mr-2"></i> Prohibited Camping (48.05)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Ch. 48)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">E-cigarette (48.01)</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 161.081, Health and Safety Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Human organ (48.02)</span>
+                            <p class="definition-desc">Human kidney, liver, heart, lung, pancreas, eye, bone, skin, or other organ/tissue. *Does not* include hair, blood, blood components, or human fetal tissue.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Human fetal tissue (48.03)</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 173.001, Health and Safety Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Adult stem cell (48.04)</span>
+                            <p class="definition-desc">An undifferentiated cell found in differentiated tissue, able to renew itself and differentiate into specialized cell types of that tissue.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Investigational stem cell treatment (48.04)</span>
+                            <p class="definition-desc">An adult stem cell treatment under investigation in a clinical trial and not yet approved for general use by the FDA.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Camp (48.05)</span>
+                            <p class="definition-desc">To reside temporarily in a place, with shelter.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Shelter (48.05)</span>
+                            <p class="definition-desc">A tent, tarpaulin, lean-to, sleeping bag, bedroll, blankets, or any temporary/permanent shelter. *Does not* include clothing or handheld devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smoking/Cigarettes Tab -->
+            <div id="smoking" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.01" target="_blank" class="text-red-600 hover:underline">Sec. 48.01. Smoking Tobacco</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a-1):</strong> A person commits an offense if they possess a burning tobacco product, smoke tobacco, or operate an e-cigarette in:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Facility of a public primary or secondary school</li>
+                                <li>Elevator, enclosed theater/movie house, library, museum, hospital</li>
+                                <li>Transit system bus, intrastate bus, plane, or train (which is a public place)</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Defense (b):</strong> No "Smoking Prohibited" notice (stating state law, fine not to exceed $500) is prominently displayed.</li>
+                         <li><strong class="font-semibold">Defense (c):</strong> The conveyance or public place is not equipped with facilities for extinguishment of smoking materials.</li>
+                         <li><strong class="font-semibold">Exception (d):</strong> Actor is exclusively within a designated smoking/vaping area OR is a participant in an authorized theatrical performance.</li>
+                         <li><strong class="font-semibold">Note (e):</strong> On transit (bus/plane/train), a designated area *must* also include the operator's area.</li>
+                        <li><strong class="font-semibold">Penalty (f):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.015" target="_blank" class="text-red-600 hover:underline">Sec. 48.015. Prohibitions Relating to Certain Cigarettes</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person may not acquire, hold, possess, transport, or import *for sale or distribution* in this state:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Cigarettes that do not comply with all applicable federal laws; OR</li>
+                                <li>Cigarettes to which stamps may not be affixed (per Sec. 154.0415, Tax Code).</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Exceptions (a)(2):</strong> Does not apply to cigarettes lawfully imported for *personal use* or as *duty-free* merchandise.</li>
+                        <li><strong class="font-semibold">Mental State (b):</strong> Actor commits the offense *knowing or having reason to know* they are doing so.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Human Tissue/Cells Tab -->
+            <div id="human-tissue" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.02" target="_blank" class="text-red-600 hover:underline">Sec. 48.02. Prohibition of the Purchase and Sale of Human Organs</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they *knowingly or intentionally* offer to buy, sell, acquire, receive, or transfer any human organ for *valuable consideration*.</li>
+                        <li><strong class="font-semibold">Exceptions (c):</strong> "Valuable consideration" does *not* include:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Fees paid to medical personnel/hospitals for services.</li>
+                                <li>Reimbursement of legal or medical expenses for the *receiver*.</li>
+                                <li>Reimbursement of travel, housing, and lost wages for the *donor*.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.03" target="_blank" class="text-red-600 hover:underline">Sec. 48.03. Prohibition on Purchase and Sale of Human Fetal Tissue</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they *knowingly* offer to buy, sell, acquire, receive, or transfer any human fetal tissue for *economic benefit*.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                        <li><strong class="font-semibold">Defense (d):</strong> Actor is an employee/contractor of an *accredited institution of higher education* AND acquires/receives/transfers the tissue *solely* for an authorized donation (per H&S Code 173.005).</li>
+                        <li><strong class="font-semibold">Exceptions (e):</strong> Does *not* apply to tissue:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Solely for diagnostic or pathological testing.</li>
+                                <li>Solely for a criminal investigation.</li>
+                                <li>Solely for disposal.</li>
+                                <li>Acquired during pregnancy/delivery for approved research.</li>
+                                <li>Cell lines existing before Sept 1, 2017, used for approved research.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Jurisdiction (f):</strong> The Attorney General has concurrent jurisdiction with a local prosecutor's consent.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.04" target="_blank" class="text-red-600 hover:underline">Sec. 48.04. Prohibition on Purchase and Sale of Adult Stem Cells...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they *knowingly* offer to buy, sell, acquire, receive, or transfer any adult stem cells for *valuable consideration* for use in an *investigational stem cell treatment*.</li>
+                        <li><strong class="font-semibold">Exceptions (c):</strong> Same as 48.02 (medical fees, legal/medical expenses, donor travel/housing/lost wages).</li>
+                        <li><strong class="font-semibold">Exception (d):</strong> Conduct is authorized under Chapter 162, Health and Safety Code.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Prohibited Camping Tab -->
+            <div id="camping" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm#48.05" target="_blank" class="text-red-600 hover:underline">Sec. 48.05. Prohibited Camping</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they *intentionally or knowingly* camp in a *public place* without the effective consent of the managing officer or agency.</li>
+                        <li><strong class="font-semibold">Evidence (c):</strong> Intent/knowledge can be established by activities like cooking, making a fire, storing personal belongings for an extended period, digging, or sleeping.</li>
+                        <li><strong class="font-semibold">Ineffective Consent (d):</strong> Consent from a political subdivision is *NOT* effective *unless* it's for:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Recreational purposes.</li>
+                                <li>Sheltering homeless individuals (under an approved Govt Code Ch. 2306 plan).</li>
+                                <li>Purposes permitted by a Beach Access Plan (Nat. Res. Code 61.015).</li>
+                                <li>Emergency shelter during a declared disaster.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Preemption (f):</strong> This section does *not* preempt a state/local ordinance that is *equal to or more stringent*.</li>
+                        <li><strong class="font-semibold">Officer Duty (g):</strong> *Before* issuing a citation, an officer must make a reasonable effort to:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Advise the person of an alternative, lawful place to camp; AND</li>
+                                <li>Contact a local official or nonprofit to request services for the person (e.g., human trafficking info, etc.).</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Exception (h):</strong> The officer's duty in (g) does not apply if there is an *imminent threat to health or safety* making it impracticable.</li>
+                        <li><strong class="font-semibold">Personal Property (i):</strong> If a person is arrested *solely* for this offense, the officer must preserve their personal property (by letting them take it or by taking custody of it for later retrieval).</li>
+                        <li><strong class="font-semibold">No Fee (j):</strong> A fee may not be charged for storing or releasing property under (i)(2).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 48)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (60 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 48) ---
+            const quizData = [
+                {
+                    question: "What is the source for the definition of 'e-cigarette' used in Sec. 48.01?",
+                    options: ["Sec. 161.081, Health and Safety Code", "Sec. 48.01(a) itself", "The Texas Tax Code", "Federal FDA regulations"],
+                    answer: "Sec. 161.081, Health and Safety Code",
+                    explanation: "Sec. 48.01(a) explicitly states the meaning is 'assigned by Section 161.081, Health and Safety Code.'"
+                },
+                {
+                    question: "Which of these is NOT a prohibited act in a public primary school under 48.01(a-1)?",
+                    options: ["Possession of a burning tobacco product", "Smoking tobacco", "Operating an e-cigarette", "Possessing an unlit, packaged tobacco product"],
+                    answer: "Possessing an unlit, packaged tobacco product",
+                    explanation: "Sec. 48.01(a-1) prohibits 'possession of a burning tobacco product, smokes tobacco, or operates an e-cigarette.' Simple possession of an unlit product is not listed."
+                },
+                {
+                    question: "Which location is NOT listed in 48.01(a-1) where smoking is prohibited?",
+                    options: ["An elevator", "A library", "A hospital", "A public park"],
+                    answer: "A public park",
+                    explanation: "Sec. 48.01(a-1) lists specific indoor or transit locations like elevators, libraries, and hospitals. Public parks are not on this list."
+                },
+                {
+                    question: "What is the penalty for an offense under Sec. 48.01 (Smoking Tobacco)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "A fine not to exceed $200", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 48.01(f) states 'An offense under this section is punishable as a Class C misdemeanor.'"
+                },
+                {
+                    question: "What is a defense to prosecution under 48.01(b) (Smoking Tobacco)?",
+                    options: ["The person was unaware of the law.", "The place does not have a 'Smoking Prohibited' notice displayed.", "The person was over 21.", "The e-cigarette was nicotine-free."],
+                    answer: "The place does not have a 'Smoking Prohibited' notice displayed.",
+                    explanation: "Sec. 48.01(b) provides a defense if the conveyance or public place 'does not have prominently displayed a reasonably sized notice that smoking is prohibited'."
+                },
+                {
+                    question: "What maximum fine should be listed on the notice required by 48.01(b)?",
+                    options: ["$100", "$250", "$500", "$1,000"],
+                    answer: "$500",
+                    explanation: "Sec. 48.01(b) specifies the notice must state 'that an offense is punishable by a fine not to exceed $500.'"
+                },
+                {
+                    question: "What is a defense under 48.01(c) regarding facilities?",
+                    options: ["The place is not equipped with facilities for extinguishment of smoking materials.", "The place does not have a designated smoking area.", "The ventilation system was broken.", "The fire alarm was not working."],
+                    answer: "The place is not equipped with facilities for extinguishment of smoking materials.",
+                    explanation: "Sec. 48.01(c) provides a defense 'if the conveyance or public place... is not so equipped.'"
+                },
+                {
+                    question: "What is an *exception* to the smoking prohibition in 48.01(a-1)?",
+                    options: ["The person is a student over 18.", "The person is a participant in an authorized theatrical performance.", "The person is an employee on break.", "The person is a parent of a student."],
+                    answer: "The person is a participant in an authorized theatrical performance.",
+                    explanation: "Sec. 48.01(d) provides an exception for 'an area designated for smoking' or 'as a participant in an authorized theatrical performance.'"
+                },
+                {
+                    question: "On a transit bus or intrastate plane, what must a designated smoking area also include?",
+                    options: ["The baggage compartment.", "The restroom.", "The area occupied by the operator.", "The emergency exits."],
+                    answer: "The area occupied by the operator.",
+                    explanation: "Sec. 48.01(e) specifies the designated area 'must also include the area occupied by the operator'."
+                },
+                {
+                    question: "What is the offense under Sec. 48.015 (Certain Cigarettes)?",
+                    options: ["Possessing/transporting/importing non-compliant or unstamped cigarettes for sale or distribution.", "Purchasing a single non-compliant cigarette for personal use.", "Smoking an unstamped cigarette.", "Failing to pay taxes on imported cigarettes."],
+                    answer: "Possessing/transporting/importing non-compliant or unstamped cigarettes for sale or distribution.",
+                    explanation: "Sec. 48.015(a) prohibits acquiring, holding, possessing, etc., certain cigarettes 'for sale or distribution'."
+                },
+                {
+                    question: "What is an exception to the prohibition in 48.015(a)(2) (Unstamped Cigarettes)?",
+                    options: ["Cigarettes for personal use or duty-free.", "Cigarettes purchased on a military base.", "Cigarettes purchased in another state.", "Cigarettes that are a gift."],
+                    answer: "Cigarettes for personal use or duty-free.",
+                    explanation: "Sec. 48.015(a)(2) provides exceptions for 'cigarettes lawfully imported or brought into the state for personal use' and 'duty-free merchandise'."
+                },
+                {
+                    question: "What is the mental state required for Sec. 48.015 (Certain Cigarettes)?",
+                    options: ["Intentionally", "Recklessly", "Criminal Negligence", "Knowing or having reason to know"],
+                    answer: "Knowing or having reason to know",
+                    explanation: "Sec. 48.015(b) specifies 'knowing or having reason to know that the person is doing so'."
+                },
+                {
+                    question: "What is the penalty for an offense under Sec. 48.015 (Certain Cigarettes)?",
+                    options: ["Class C Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 48.015(b) states the offense 'is guilty of a Class A misdemeanor.'"
+                },
+                {
+                    question: "Which of the following is *NOT* included in the Sec. 48.02 definition of 'human organ'?",
+                    options: ["Human kidney", "Bone", "Skin", "Blood or hair"],
+                    answer: "Blood or hair",
+                    explanation: "Sec. 48.02(a) explicitly states the term 'does not include hair or blood, blood components...'"
+                },
+                {
+                    question: "What is the offense under Sec. 48.02(b) (Human Organs)?",
+                    options: ["Knowingly/intentionally buying/selling/transferring a human organ for valuable consideration.", "Donating a kidney to a family member.", "Receiving a legal organ transplant.", "Reimbursing a donor for travel expenses."],
+                    answer: "Knowingly/intentionally buying/selling/transferring a human organ for valuable consideration.",
+                    explanation: "Sec. 48.02(b) prohibits the transfer 'for valuable consideration.'"
+                },
+                {
+                    question: "What is the penalty for an offense under Sec. 48.02 (Human Organs)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 48.02(d) states 'An offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "Which is *NOT* an exception for 'valuable consideration' under Sec. 48.02(c)?",
+                    options: ["A fee paid to a physician for services.", "Reimbursement of medical expenses for the receiver.", "Reimbursement of lost wages for the donor.", "A $10,000 'thank you' payment to the donor's family."],
+                    answer: "A $10,000 'thank you' payment to the donor's family.",
+                    explanation: "Sec. 48.02(c) lists exceptions for medical fees and reimbursement of specific expenses for the receiver or donor. A direct payment to the family is not listed."
+                },
+                {
+                    question: "Under 48.02(c)(3), reimbursement of what expenses for the *donor* is an exception?",
+                    options: ["Travel, housing, and lost wages", "Legal fees only", "A new car", "Medical fees for the donor's family"],
+                    answer: "Travel, housing, and lost wages",
+                    explanation: "Sec. 48.02(c)(3) allows 'reimbursement of expenses of travel, housing, and lost wages incurred by the donor'."
+                },
+                {
+                    question: "What is the offense under Sec. 48.03(b) (Human Fetal Tissue)?",
+                    options: ["Knowingly buying/selling/transferring human fetal tissue for economic benefit.", "Donating fetal tissue for authorized research.", "Disposing of human fetal tissue.", "Performing diagnostic testing on fetal tissue."],
+                    answer: "Knowingly buying/selling/transferring human fetal tissue for economic benefit.",
+                    explanation: "Sec. 48.03(b) prohibits the transfer 'for economic benefit.'"
+                },
+                {
+                    question: "What is the penalty for an offense under Sec. 48.03 (Human Fetal Tissue)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 48.03(c) states 'An offense under this section is a state jail felony.'"
+                },
+                {
+                    question: "What is a defense to prosecution under Sec. 48.03(d)?",
+                    options: ["The actor is an employee of an accredited institution of higher education acquiring tissue solely for an authorized donation.", "The actor was unaware of the law.", "The tissue was for personal study.", "The economic benefit was less than $100."],
+                    answer: "The actor is an employee of an accredited institution of higher education acquiring tissue solely for an authorized donation.",
+                    explanation: "Sec. 48.03(d) provides this specific defense for employees/contractors of higher ed."
+                },
+                {
+                    question: "Which is *NOT* an exception to Sec. 48.03 (Human Fetal Tissue) under 48.03(e)?",
+                    options: ["Tissue used solely for diagnostic testing.", "Tissue used solely for a criminal investigation.", "Tissue used for research at a private, non-accredited facility.", "Pre-existing cell lines (before 9/1/2017) used in approved research."],
+                    answer: "Tissue used for research at a private, non-accredited facility.",
+                    explanation: "Sec. 48.03(e) provides exceptions for testing, investigation, disposal, and research at *accredited* institutions."
+                },
+                {
+                    question: "Who has concurrent jurisdiction with a local prosecutor (with their consent) to prosecute Sec. 48.03?",
+                    options: ["The Governor", "The Attorney General", "The Texas Rangers", "The FBI"],
+                    answer: "The Attorney General",
+                    explanation: "Sec. 48.03(f) grants the attorney general concurrent jurisdiction 'with the consent of the appropriate local county or district attorney'."
+                },
+                {
+                    question: "What is an 'adult stem cell' under Sec. 48.04(a)?",
+                    options: ["An undifferentiated cell found in differentiated tissue.", "An embryonic stem cell.", "A cell from human fetal tissue.", "A cell from blood or hair."],
+                    answer: "An undifferentiated cell found in differentiated tissue.",
+                    explanation: "Sec. 48.04(a)(1) defines it as 'an undifferentiated cell that is: (A) found in differentiated tissue; and (B) able to renew itself...'"
+                },
+                {
+                    question: "What is an 'investigational stem cell treatment' under Sec. 48.04(a)?",
+                    options: ["A treatment in a clinical trial and not yet FDA approved.", "Any treatment using stem cells.", "A cosmetic procedure.", "A fully approved and common medical treatment."],
+                    answer: "A treatment in a clinical trial and not yet FDA approved.",
+                    explanation: "Sec. 48.04(a)(2) defines it as a treatment 'under investigation in a clinical trial' and 'has not yet been approved for general use by the... FDA.'"
+                },
+                {
+                    question: "What is the offense under Sec. 48.04(b) (Adult Stem Cells)?",
+                    options: ["Knowingly buying/selling adult stem cells for valuable consideration for use in an investigational treatment.", "Receiving an approved stem cell treatment.", "Donating adult stem cells.", "Reimbursing a donor for lost wages."],
+                    answer: "Knowingly buying/selling adult stem cells for valuable consideration for use in an investigational treatment.",
+                    explanation: "Sec. 48.04(b) prohibits the transfer 'for valuable consideration' specifically 'for use in an investigational stem cell treatment.'"
+                },
+                {
+                    question: "What is the penalty for an offense under Sec. 48.04 (Adult Stem Cells)?",
+                    options: ["Class C Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "No penalty"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 48.04(e) states 'A violation of this section is a Class A misdemeanor.'"
+                },
+                {
+                    question: "What is an exception under Sec. 48.04(c)?",
+                    options: ["A fee paid to a physician for services.", "A payment for 'pain and suffering' to the donor.", "A bonus payment for high-quality cells.", "A transfer to a relative for non-medical use."],
+                    answer: "A fee paid to a physician for services.",
+                    explanation: "Sec. 48.04(c)(1) provides an exception for 'a fee paid to a physician or to other medical personnel for services rendered'."
+                },
+                {
+                    question: "What other conduct is excepted from Sec. 48.04?",
+                    options: ["Conduct authorized under Chapter 162, Health and Safety Code.", "Conduct authorized by the Texas Medical Board.", "Conduct for cosmetic purposes only.", "Conduct outside of Texas."],
+                    answer: "Conduct authorized under Chapter 162, Health and Safety Code.",
+                    explanation: "Sec. 48.04(d) provides an exception for 'conduct authorized under Chapter 162, Health and Safety Code.'"
+                },
+                {
+                    question: "What is the definition of 'Camp' in Sec. 48.05?",
+                    options: ["To reside temporarily in a place, with shelter.", "To sleep outdoors for one night.", "To set up a tent for any reason.", "To have a picnic in a public park."],
+                    answer: "To reside temporarily in a place, with shelter.",
+                    explanation: "Sec. 48.05(a)(1) defines 'Camp' as 'to reside temporarily in a place, with shelter.'"
+                },
+                {
+                    question: "Which of the following is *NOT* included in the definition of 'Shelter' in Sec. 48.05?",
+                    options: ["A tent", "A sleeping bag", "Blankets", "Clothing or a handheld device"],
+                    answer: "Clothing or a handheld device",
+                    explanation: "Sec. 48.05(a)(2) explicitly excludes 'clothing or any handheld device' from the definition of shelter."
+                },
+                {
+                    question: "What is the offense under Sec. 48.05(b) (Prohibited Camping)?",
+                    options: ["Intentionally or knowingly camping in a public place without effective consent.", "Accidentally falling asleep on a public bench.", "Setting up a tent for recreational purposes with a permit.", "Camping on private property."],
+                    answer: "Intentionally or knowingly camping in a public place without effective consent.",
+                    explanation: "Sec. 48.05(b) defines the offense with the elements: (1) intentionally or knowingly (2) camps (3) in a public place (4) without effective consent."
+                },
+                {
+                    question: "What is the penalty for Sec. 48.05 (Prohibited Camping)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No penalty, warning only"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 48.05(e) states 'An offense under this section is a Class C misdemeanor.'"
+                },
+                {
+                    question: "Which of these is *NOT* listed as evidence that may establish intent for camping under 48.05(c)?",
+                    options: ["Cooking", "Making a fire", "Storing personal belongings for an extended period", "Sitting on a bench for several hours"],
+                    answer: "Sitting on a bench for several hours",
+                    explanation: "Sec. 48.05(c) lists 'cooking', 'making a fire', 'storing personal belongings...', 'digging', or 'sleeping.' Just sitting is not listed."
+                },
+                {
+                    question: "When is consent from a political subdivision *NOT* effective for camping under 48.05(d)?",
+                    options: ["For recreational purposes.", "For sheltering homeless individuals under an approved plan.", "For an emergency shelter during a declared disaster.", "For a homeless individual given verbal permission by a city, but not under an approved plan."],
+                    answer: "For a homeless individual given verbal permission by a city, but not under an approved plan.",
+                    explanation: "Sec. 48.05(d)(2) requires the sheltering of homeless individuals to be 'subject to a plan approved under Subchapter PP, Chapter 2306, Government Code'."
+                },
+                {
+                    question: "Consent for homeless sheltering under 48.05(d)(2) is only effective if...",
+                    options: ["It is on property subject to an approved Govt Code Ch. 2306 plan.", "It is for less than 24 hours.", "It is personally approved by the mayor.", "It is on church property."],
+                    answer: "It is on property subject to an approved Govt Code Ch. 2306 plan.",
+                    explanation: "Sec. 48.05(d)(2) explicitly links effective consent to an approved plan under Subchapter PP, Chapter 2306, Government Code."
+                },
+                {
+                    question: "Does Sec. 48.05 (Prohibited Camping) preempt a city ordinance that is *more* stringent?",
+                    options: ["Yes, the state law is exclusive.", "No, it does not preempt an ordinance that is equal to or more stringent.", "Only if the city ordinance includes a fine.", "Yes, it preempts all local ordinances."],
+                    answer: "No, it does not preempt an ordinance that is equal to or more stringent.",
+                    explanation: "Sec. 48.05(f)(1) states it does not preempt an ordinance that is 'compatible with and equal to or more stringent than' the state law."
+                },
+                {
+                    question: "What must a peace officer do *before* or at the time of issuing a citation under 48.05(g)?",
+                    options: ["Offer the person food and water.", "Arrest the person immediately.", "Make a reasonable effort to advise the person of an alternative, lawful place to camp.", "Confiscate the person's shelter."],
+                    answer: "Make a reasonable effort to advise the person of an alternative, lawful place to camp.",
+                    explanation: "Sec. 48.05(g)(1) requires the officer to 'advise the person of an alternative place at which the person may lawfully camp'."
+                },
+                {
+                    question: "What is another duty of an officer under 48.05(g)?",
+                    options: ["Contact a local official or nonprofit to request services for the person.", "Take the person's photograph for a database.", "Give the person a warning.", "Ask the person to leave the city."],
+                    answer: "Contact a local official or nonprofit to request services for the person.",
+                    explanation: "Sec. 48.05(g)(2) requires the officer to 'contact... an appropriate official... or... nonprofit organization... and request... services'."
+                },
+                {
+                    question: "When does the officer's duty in 48.05(g) (advising alternatives, contacting services) *not* apply?",
+                    options: ["If the person refuses services.", "If it is nighttime.", "If the officer determines there is an imminent threat to health or safety.", "If the person has prior convictions."],
+                    answer: "If the officer determines there is an imminent threat to health or safety.",
+                    explanation: "Sec. 48.05(h) provides an exception 'if the peace officer determines there is an imminent threat to the health or safety of any person'."
+                },
+                {
+                    question: "If a person is arrested *solely* for 48.05 (Prohibited Camping), what must the officer do with their property?",
+                    options: ["Confiscate and destroy it as contraband.", "Preserve it by letting the person take it or by storing it for later retrieval.", "Sell it at auction.", "Donate it to a local shelter."],
+                    answer: "Preserve it by letting the person take it or by storing it for later retrieval.",
+                    explanation: "Sec. 48.05(i) requires the officer to 'ensure that all of the person's personal property... is preserved' by one of the two listed methods."
+                },
+                {
+                    question: "Can a police department charge a fee for storing and releasing personal property taken under 48.05(i)(2)?",
+                    options: ["Yes, a standard storage fee.", "Yes, but only if held for more than 24 hours.", "No, a fee may not be charged.", "Only if the property is valued over $100."],
+                    answer: "No, a fee may not be charged.",
+                    explanation: "Sec. 48.05(j) explicitly states, 'A fee may not be charged for the storage or release of property under Subsection (i)(2).'"
+                },
+                {
+                    question: "Which of these IS a location listed in 48.01(a-1) where smoking is prohibited?",
+                    options: ["A public university classroom", "An enclosed theater or movie house", "A restaurant", "A private office building"],
+                    answer: "An enclosed theater or movie house",
+                    explanation: "Sec. 48.01(a-1) specifically lists 'an elevator, enclosed theater or movie house, library, museum, hospital...' among others."
+                },
+                {
+                    question: "What must be true about a 'transit system bus' for 48.01(a-1) to apply?",
+                    options: ["It must be a public place", "It must be crossing state lines", "It must be owned by the city", "It must not have an operator"],
+                    answer: "It must be a public place",
+                    explanation: "Sec. 48.01(a-1) lists 'transit system bus... which is a public place.'"
+                },
+                {
+                    question: "Besides not complying with federal law, what is the other cigarette prohibition in 48.015(a)?",
+                    options: ["Cigarettes to which stamps may not be affixed under the Tax Code", "Cigarettes that are flavored", "Cigarettes sold individually", "Cigarettes with more than 10mg of tar"],
+                    answer: "Cigarettes to which stamps may not be affixed under the Tax Code",
+                    explanation: "Sec. 48.015(a)(2) prohibits 'cigarettes to which stamps may not be affixed under Section 154.0415, Tax Code'."
+                },
+                {
+                    question: "The prohibition in 48.015 applies to cigarettes held for what purpose?",
+                    options: ["Sale or distribution", "Personal use", "Artistic display", "Scientific research"],
+                    answer: "Sale or distribution",
+                    explanation: "Sec. 48.015(a) limits the prohibition to cigarettes acquired, held, etc. 'for sale or distribution in this state'."
+                },
+                {
+                    question: "Which specific organ is NOT listed in the definition of 'human organ' in 48.02(a)?",
+                    options: ["Kidney", "Liver", "Heart", "Brain"],
+                    answer: "Brain",
+                    explanation: "Sec. 48.02(a) lists 'kidney, liver, heart, lung, pancreas, eye, bone, skin, or any other human organ or tissue,' but 'brain' is not explicitly listed."
+                },
+                {
+                    question: "What mental state is required for the offense of selling human organs under 48.02(b)?",
+                    options: ["Knowingly or Intentionally", "Recklessly", "Criminal Negligence", "Intentionally only"],
+                    answer: "Knowingly or Intentionally",
+                    explanation: "Sec. 48.02(b) states 'if he or she knowingly or intentionally offers to buy...'"
+                },
+                {
+                    question: "Under 48.02(c), reimbursement of legal or medical expenses for whose benefit is an exception?",
+                    options: ["The ultimate receiver of the organ", "The donor's family", "The hospital's shareholders", "The physician's legal team"],
+                    answer: "The ultimate receiver of the organ",
+                    explanation: "Sec. 48.02(c)(2) allows 'reimbursement of legal or medical expenses incurred for the benefit of the ultimate receiver of the organ'."
+                },
+                {
+                    question: "What term for payment is used in 48.03 (Fetal Tissue) that differs from 48.02 (Organs)?",
+                    options: ["Economic benefit", "Valuable consideration", "Reasonable fee", "Monetary gift"],
+                    answer: "Economic benefit",
+                    explanation: "Sec. 48.03(b) uses the term 'for economic benefit,' whereas Sec. 48.02(b) uses 'for valuable consideration.'"
+                },
+                {
+                    question: "What is a valid exception for acquiring human fetal tissue under 48.03(e)?",
+                    options: ["Solely for the purpose of disposing of the tissue.", "For cosmetic research.", "For transplantation.", "For sale to another research lab."],
+                    answer: "Solely for the purpose of disposing of the tissue.",
+                    explanation: "Sec. 48.03(e)(3) provides an exception for tissue 'acquired, received, or transferred solely for the purpose of disposing of the tissue'."
+                },
+                {
+                    question: "The defense in 48.03(d) applies to an employee of what type of institution?",
+                    options: ["An accredited public or private institution of higher education", "Any hospital", "A state-run laboratory", "Any non-profit organization"],
+                    answer: "An accredited public or private institution of higher education",
+                    explanation: "Sec. 48.03(d)(1) specifies 'an accredited public or private institution of higher education'."
+                },
+                {
+                    question: "Under 48.03(e)(5), cell lines derived from human fetal tissue are excepted if they existed before what date?",
+                    options: ["September 1, 2017", "September 1, 2000", "January 1, 2010", "September 1, 2020"],
+                    answer: "September 1, 2017",
+                    explanation: "Sec. 48.03(e)(5) provides an exception for 'cell lines derived from human fetal tissue... existing on September 1, 2017'."
+                },
+                {
+                    question: "An 'adult stem cell' in 48.04(a) is defined as a cell found in differentiated tissue that is able to do what?",
+                    options: ["Renew itself and differentiate", "Be used in cosmetics", "Be sold for economic benefit", "Fight infection only"],
+                    answer: "Renew itself and differentiate",
+                    explanation: "Sec. 48.04(a)(1)(B) states it is 'able to renew itself and differentiate to yield all or nearly all of the specialized cell types...'"
+                },
+                {
+                    question: "The offense in 48.04(b) applies *only* if the stem cells are for use in what?",
+                    options: ["An investigational stem cell treatment", "Any medical treatment", "A treatment approved by the FDA", "A cosmetic treatment"],
+                    answer: "An investigational stem cell treatment",
+                    explanation: "Sec. 48.04(b) specifically prohibits the sale 'for use in an investigational stem cell treatment.'"
+                },
+                {
+                    question: "Which of these is listed in 48.05(c) as evidence of intent to camp?",
+                    options: ["Digging", "Exercising", "Waiting for a bus", "Reading a book"],
+                    answer: "Digging",
+                    explanation: "Sec. 48.05(c)(4) lists 'digging' as one of the activities that may establish intent."
+                },
+                {
+                    question: "Besides recreation and homeless sheltering, when is consent from a political subdivision effective for camping under 48.05(d)?",
+                    options: ["For purposes permitted by a Beach Access Plan OR during a declared disaster", "For any city-sponsored event", "For any protest or assembly", "For any purpose, if the mayor approves it"],
+                    answer: "For purposes permitted by a Beach Access Plan OR during a declared disaster",
+                    explanation: "Sec. 48.05(d)(3) and (4) list 'purposes permitted by a beach access plan' and 'emergency shelter during a disaster'."
+                },
+                {
+                    question: "The emergency shelter exception in 48.05(d)(4) applies during a disaster declared under what Government Code section?",
+                    options: ["Sec. 418.014 or 418.108", "Sec. 2306.001", "Sec. 101.001", "Sec. 551.001"],
+                    answer: "Sec. 418.014 or 418.108",
+                    explanation: "Sec. 48.05(d)(4) references 'a disaster declared under Section 418.014, Government Code, or a local disaster declared under Section 418.108 of that code.'"
+                },
+                {
+                    question: "What type of information is an officer specifically suggested to request for a person under 48.05(g)(2)?",
+                    options: ["Information regarding the prevention of human trafficking", "A bus ticket out of town", "A job application", "A list of local churches"],
+                    answer: "Information regarding the prevention of human trafficking",
+                    explanation: "Sec. 48.05(g)(2)(A) specifically mentions 'information regarding the prevention of human trafficking'."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 48 - Conduct Affecting Public Health", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.48.htm" },
+                 { name: "H&S Code Sec. 161.081 (E-Cig Def)", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.161.htm#161.081" },
+                 { name: "H&S Code Sec. 173.001 (Fetal Tissue Def)", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.173.htm#173.001" },
+                 { name: "H&S Code Ch. 162 (Stem Cell Exception)", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.162.htm" },
+                 { name: "Tax Code Sec. 154.0415 (Cig Stamps)", url: "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.154.htm#154.0415" },
+                 { name: "Govt Code Ch. 2306, Subch PP (Homeless Plan)", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2306.htm#PP" },
+                 { name: "Nat Res Code Sec. 61.015 (Beach Access Plan)", url: "https://statutes.capitol.texas.gov/Docs/NR/htm/NR.61.htm#61.015" },
+                 { name: "Govt Code Sec. 418.014 (Disaster Declaration)", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.418.htm#418.014" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

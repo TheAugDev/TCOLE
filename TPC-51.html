@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 51 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-passport mr-2"></i>Ch. 51: Illegal Entry Into This State
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (51.01)
+                </button>
+                <button data-tab="illegal-entry" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-door-open mr-2"></i> Illegal Entry (51.02)
+                </button>
+                <button data-tab="illegal-reentry" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-undo-alt mr-2"></i> Illegal Reentry (51.03)
+                </button>
+                <button data-tab="refusal-to-comply" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hand-paper mr-2"></i> Refusal to Return (51.04)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 51.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Alien</span>
+                            <p class="definition-desc">Has the meaning assigned by 8 U.S.C. Section 1101, as that provision existed on January 1, 2023.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Port of entry</span>
+                            <p class="definition-desc">A port of entry in the United States as designated by 19 C.F.R. Part 101.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Illegal Entry Tab -->
+            <div id="illegal-entry" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.51.htm#51.02" target="_blank" class="text-red-600 hover:underline">Sec. 51.02. Illegal Entry From Foreign Nation</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person who is an <strong>alien</strong> commits an offense if the person <strong>enters or attempts to enter</strong> this state directly from a foreign nation at any location <strong>other than a lawful port of entry</strong>.</li>
+                        
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">Class B Misdemeanor:</strong> Base offense.</li>
+                                <li><strong class="font-semibold text-red-700">State Jail Felony:</strong> If it is shown... the defendant has been <strong>previously convicted</strong> of an offense under this section.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong class="font-semibold">Affirmative Defense (c):</strong> It is an affirmative defense to prosecution that:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>The federal government has granted the defendant:
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>(A) <strong>lawful presence</strong> in the United States; OR</li>
+                                        <li>(B) <strong>asylum</strong> under 8 U.S.C. Section 1158;</li>
+                                    </ul>
+                                </li>
+                                <li>The defendant's conduct does <strong>not</strong> constitute a violation of <strong>8 U.S.C. Section 1325(a)</strong>; OR</li>
+                                <li>The defendant was approved for benefits under <strong>DACA</strong> (between June 15, 2012, and July 16, 2021).</li>
+                            </ol>
+                        </li>
+                        
+                         <li><strong class="font-semibold">NOT an Affirmative Defense (d):</strong> The following federal programs do *not* provide an affirmative defense for purposes of Subsection (c)(1):
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(1) The <strong>DAPA</strong> program (Deferred Action for Parents of Americans...).</li>
+                                <li>(2) Any program <strong>not enacted by the United States Congress</strong> that is a successor to or materially similar to DACA or DAPA.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Illegal Reentry Tab -->
+            <div id="illegal-reentry" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.51.htm#51.03" target="_blank" class="text-red-600 hover:underline">Sec. 51.03. Illegal Reentry by Certain Aliens</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person who is an <strong>alien</strong> commits an offense if the person enters, attempts to enter, or is at any time <strong>found in this state</strong> after the person:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>(1) Has been <strong>denied admission to or excluded, deported, or removed</strong> from the United States; OR</li>
+                                <li>(2) Has <strong>departed</strong> from the United States while an order of exclusion, deportation, or removal is <strong>outstanding</strong>.</li>
+                            </ol>
+                        </li>
+                        
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor:</strong> Base offense.</li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong> If:
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>(A) Removal was subsequent to a conviction for <strong>2 or more misdemeanors</strong> involving drugs, crimes against a person, or both;</li>
+                                        <li>(B) Excluded under 8 U.S.C. 1182(a)(3)(B) (terrorism-related);</li>
+                                        <li>(C) Removed under 8 U.S.C. Chapter 12, Subchapter V (alien terrorist removal); OR</li>
+                                        <li>(D) Removed under 8 U.S.C. 1231(a)(4)(B) (supervision of removable aliens).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-red-800">Felony of the Second Degree:</strong> If the defendant was removed subsequent to a conviction for the commission of a <strong>felony</strong>.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong class="font-semibold">"Removal" Definition (c):</strong> For purposes of this section, "removal" includes an order issued under <strong>Article 5B.002, Code of Criminal Procedure</strong>, or any other agreement in which an alien <strong>stipulates to removal</strong> pursuant to a criminal proceeding under either federal or state law.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Refusal to Comply Tab -->
+            <div id="refusal-to-comply" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.51.htm#51.04" target="_blank" class="text-red-600 hover:underline">Sec. 51.04. Refusal to Comply With Order to Return to Foreign Nation</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person who is an <strong>alien</strong> commits an offense if:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>(1) The person has been <strong>charged with or convicted of</strong> an offense under this chapter (Ch. 51);</li>
+                                <li>(2) A magistrate or judge... has issued an <strong>order under Article 5B.002, CCP</strong>, for the person to <strong>return to the foreign nation</strong> from which the person entered or attempted to enter; AND</li>
+                                <li>(3) The person <strong>refuses to comply</strong> with the order.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-800">Felony of the Second Degree</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 51)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (35 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 51) ---
+            const quizData = [
+                {
+                    question: "In Chapter 51, what is the source for the definition of 'Alien'?",
+                    options: ["8 U.S.C. Section 1101, as that provision existed on January 1, 2023.", "19 C.F.R. Part 101.", "Texas Penal Code Sec. 1.07.", "Article 5B.002, Code of Criminal Procedure."],
+                    answer: "8 U.S.C. Section 1101, as that provision existed on January 1, 2023.",
+                    explanation: "Sec. 51.01(1) defines 'Alien' using this specific federal statute and date."
+                },
+                {
+                    question: "What is the source for the definition of 'Port of entry' under Sec. 51.01?",
+                    options: ["8 U.S.C. Section 1101.", "19 C.F.R. Part 101.", "8 U.S.C. Section 1325(a).", "Texas Penal Code Sec. 1.07."],
+                    answer: "19 C.F.R. Part 101.",
+                    explanation: "Sec. 51.01(2) defines 'Port of entry' using this federal regulation."
+                },
+                {
+                    question: "A person commits an offense under Sec. 51.02 if they are an alien and enter this state directly from a foreign nation at any location *other than* a...?",
+                    options: ["Designated border crossing.", "Lawful port of entry.", "Federal checkpoint.", "Location approved by DACA."],
+                    answer: "Lawful port of entry.",
+                    explanation: "Sec. 51.02(a) requires entry at a 'lawful port of entry' to avoid the offense."
+                },
+                {
+                    question: "Who is specified as the actor who can commit an offense under Sec. 51.02 (Illegal Entry)?",
+                    options: ["Any person.", "A person who is an alien.", "Any person without a Texas ID.", "A person who has been deported."],
+                    answer: "A person who is an alien.",
+                    explanation: "Sec. 51.02(a) begins 'A person who is an alien...'"
+                },
+                {
+                    question: "What is the base penalty for Sec. 51.02 (Illegal Entry)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 51.02(b) states the base offense is a Class B misdemeanor."
+                },
+                {
+                    question: "The offense under Sec. 51.02 (Illegal Entry) is enhanced to a State Jail Felony if...?",
+                    options: ["The defendant has been previously convicted of an offense under this section.", "The defendant was carrying a weapon.", "The defendant entered in a vehicle.", "The defendant intended to commit theft."],
+                    answer: "The defendant has been previously convicted of an offense under this section.",
+                    explanation: "Sec. 51.02(b) provides this enhancement for a prior conviction under the same section."
+                },
+                {
+                    question: "Which of the following is an affirmative defense to prosecution under Sec. 51.02?",
+                    options: ["The defendant has applied for DAPA.", "The defendant has a pending asylum claim.", "The federal government has granted the defendant lawful presence or asylum.", "The defendant has lived in Texas for 10 years."],
+                    answer: "The federal government has granted the defendant lawful presence or asylum.",
+                    explanation: "Sec. 51.02(c)(1) lists granted lawful presence or granted asylum (under 8 U.S.C. 1158) as an affirmative defense."
+                },
+                {
+                    question: "It is an affirmative defense under Sec. 51.02 if the defendant's conduct does *not* violate what federal law?",
+                    options: ["8 U.S.C. Section 1325(a)", "8 U.S.C. Section 1101", "19 C.F.R. Part 101", "8 U.S.C. Section 1158"],
+                    answer: "8 U.S.C. Section 1325(a)",
+                    explanation: "Sec. 51.02(c)(2) provides this defense."
+                },
+                {
+                    question: "To be a valid affirmative defense under 51.02, DACA benefits must have been approved between which dates?",
+                    options: ["At any time before 2023.", "June 15, 2012, and July 16, 2021.", "Only after January 1, 2023.", "Between 2010 and 2020."],
+                    answer: "June 15, 2012, and July 16, 2021.",
+                    explanation: "Sec. 51.02(c)(3) specifies this exact date range for the DACA defense."
+                },
+                {
+                    question: "Which federal program is explicitly listed as *NOT* providing an affirmative defense under 51.02(c)(1)?",
+                    options: ["DACA", "Asylum (8 U.S.C. 1158)", "The DAPA program", "Lawful Presence"],
+                    answer: "The DAPA program",
+                    explanation: "Sec. 51.02(d)(1) specifically excludes DAPA (Deferred Action for Parents of Americans and Lawful Permanent Residents) from being an affirmative defense."
+                },
+                {
+                    question: "A successor program to DACA *is not* an affirmative defense if it was...?",
+                    options: ["Passed after 2021.", "Not enacted by the United States Congress.", "Vetoed by the President.", "Only a temporary program."],
+                    answer: "Not enacted by the United States Congress.",
+                    explanation: "Sec. 51.02(d)(2) states successor programs must be 'enacted by the United States Congress' to be considered for a defense."
+                },
+                {
+                    question: "A person commits Sec. 51.03 (Illegal Reentry) if they are an alien and are found in this state after...?",
+                    options: ["Committing a Class B misdemeanor.", "The person has been denied admission, excluded, deported, or removed from the U.S.", "Entering without inspection.", "Their visa has expired."],
+                    answer: "The person has been denied admission, excluded, deported, or removed from the U.S.",
+                    explanation: "Sec. 51.03(a)(1) lists this as a primary element. (a)(2) is also correct (departed while order is outstanding)."
+                },
+                {
+                    question: "Besides 'enters' or 'attempts to enter', what other action can constitute an offense under Sec. 51.03(a)?",
+                    options: ["'is at any time found in this state'", "'is employed in this state'", "'resides in this state'", "'applies for benefits in this state'"],
+                    answer: "'is at any time found in this state'",
+                    explanation: "Sec. 51.03(a) states 'enters, attempts to enter, or is at any time found in this state'..."
+                },
+                {
+                    question: "What is the base penalty for Sec. 51.03 (Illegal Reentry)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 51.03(b) states the base offense is a Class A misdemeanor."
+                },
+                {
+                    question: "The offense under Sec. 51.03 (Illegal Reentry) becomes a Felony of the Second Degree if...?",
+                    options: ["The defendant has two or more misdemeanor convictions.", "The defendant was removed subsequent to a conviction for the commission of a felony.", "The defendant refused to comply with an order.", "The defendant has a prior conviction under 51.02."],
+                    answer: "The defendant was removed subsequent to a conviction for the commission of a felony.",
+                    explanation: "Sec. 51.03(b)(2) provides the F2 enhancement for a prior felony-based removal."
+                },
+                {
+                    question: "The offense under Sec. 51.03 (Illegal Reentry) becomes a Felony of the Third Degree if the defendant's removal was subsequent to a conviction for...?",
+                    options: ["Any felony.", "Any Class A misdemeanor.", "A single misdemeanor involving drugs.", "Two or more misdemeanors involving drugs, crimes against a person, or both."],
+                    answer: "Two or more misdemeanors involving drugs, crimes against a person, or both.",
+                    explanation: "Sec. 51.03(b)(1)(A) provides this F3 enhancement."
+                },
+                {
+                    question: "Which of these is NOT a condition for a Felony of the Third Degree enhancement under 51.03(b)(1)?",
+                    options: ["Removal subsequent to 2+ drug/person misdemeanors.", "Exclusion under 8 U.S.C. 1182(a)(3)(B).", "Removal subsequent to a conviction for a single felony.", "Removal under 8 U.S.C. 1231(a)(4)(B)."],
+                    answer: "Removal subsequent to a conviction for a single felony.",
+                    explanation: "Removal subsequent to a felony is an F2 enhancement under (b)(2), not an F3 enhancement under (b)(1)."
+                },
+                {
+                    question: "For purposes of Sec. 51.03 (Illegal Reentry), 'removal' includes an order issued under...?",
+                    options: ["Article 5B.002, Code of Criminal Procedure.", "8 U.S.C. Section 1325(a).", "Sec. 51.02 of this chapter.", "19 C.F.R. Part 101."],
+                    answer: "Article 5B.002, Code of Criminal Procedure.",
+                    explanation: "Sec. 51.03(c) explicitly includes this state-level order in the definition of 'removal'."
+                },
+                {
+                    question: "Under Sec. 51.03(c), 'removal' also includes any other agreement where an alien...?",
+                    options: ["Receives DACA.", "Stipulates to removal pursuant to a criminal proceeding.", "Is granted asylum.", "Enters a port of entry."],
+                    answer: "Stipulates to removal pursuant to a criminal proceeding.",
+                    explanation: "Sec. 51.03(c) includes this provision for stipulated removals in criminal cases."
+                },
+                {
+                    question: "What is the offense under Sec. 51.04?",
+                    options: ["Illegal Entry.", "Illegal Reentry.", "Refusal to Comply With Order to Return to Foreign Nation.", "Smuggling of Persons."],
+                    answer: "Refusal to Comply With Order to Return to Foreign Nation.",
+                    explanation: "This is the title and subject of Sec. 51.04."
+                },
+                {
+                    question: "To commit Sec. 51.04, a person must first be charged with or convicted of an offense under...?",
+                    options: ["Any federal law.", "Chapter 51.", "Chapter 30 (Burglary).", "Any felony."],
+                    answer: "Chapter 51.",
+                    explanation: "Sec. 51.04(a)(1) requires the person to 'has been charged with or convicted of an offense under this chapter'."
+                },
+                {
+                    question: "To commit Sec. 51.04, a judge must have issued an order under which statute?",
+                    options: ["Art. 5B.002, Code of Criminal Procedure", "8 U.S.C. Section 1101", "TPC Sec. 51.02", "8 U.S.C. Section 1325"],
+                    answer: "Art. 5B.002, Code of Criminal Procedure",
+                    explanation: "Sec. 51.04(a)(2) explicitly references this CCP article for the 'order to return'."
+                },
+                {
+                    question: "What is the final element of Sec. 51.04, after an order to return is issued?",
+                    options: ["The person is found in this state again.", "The person refuses to comply with the order.", "The person commits another offense.", "The person's removal is subsequent to a felony."],
+                    answer: "The person refuses to comply with the order.",
+                    explanation: "Sec. 51.04(a)(3) is 'the person refuses to comply with the order'."
+                },
+                {
+                    question: "What is the penalty for Sec. 51.04 (Refusal to Comply With Order to Return)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 51.04(b) states the offense is a felony of the second degree."
+                },
+                {
+                    question: "A person is charged with 51.02 (Illegal Entry). It is their second offense. What is the penalty?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 51.02(b) enhances the penalty to a State Jail Felony if the defendant has been previously convicted under this section."
+                },
+                {
+                    question: "What is the specific 'as of' date for the definition of 'Alien' under 8 U.S.C. Section 1101?",
+                    options: ["January 1, 2023", "July 16, 2021", "June 15, 2012", "March 5, 2024"],
+                    answer: "January 1, 2023",
+                    explanation: "Sec. 51.01(1) specifies 'as that provision existed on January 1, 2023.'"
+                },
+                {
+                    question: "Besides *entering* the state, what other action at a location other than a lawful port of entry constitutes an offense under Sec. 51.02?",
+                    options: ["'attempts to enter'", "'is found in'", "'resides in'", "'works in'"],
+                    answer: "'attempts to enter'",
+                    explanation: "Sec. 51.02(a) states 'enters or attempts to enter'."
+                },
+                {
+                    question: "To be an affirmative defense under 51.02(c)(1)(B), asylum must be granted under which specific federal statute?",
+                    options: ["8 U.S.C. Section 1158", "8 U.S.C. Section 1101", "8 U.S.C. Section 1325(a)", "8 U.S.C. Section 1231"],
+                    answer: "8 U.S.C. Section 1158",
+                    explanation: "Sec. 51.02(c)(1)(B) specifically references 'asylum under 8 U.S.C. Section 1158'."
+                },
+                {
+                    question: "An alien commits an offense under 51.03 if they are found in this state after they have departed the U.S. while what is outstanding?",
+                    options: ["An order of exclusion, deportation, or removal.", "A pending criminal charge.", "A civil lawsuit.", "An application for DACA."],
+                    answer: "An order of exclusion, deportation, or removal.",
+                    explanation: "Sec. 51.03(a)(2) covers departing 'while an order of exclusion, deportation, or removal is outstanding'."
+                },
+                {
+                    question: "An F3 enhancement under 51.03(b)(1)(B) applies if the defendant was excluded pursuant to which US Code section related to terrorism?",
+                    options: ["8 U.S.C. Section 1182(a)(3)(B)", "8 U.S.C. Section 1325(a)", "8 U.S.C. Section 1101", "8 U.S.C. Section 1158"],
+                    answer: "8 U.S.C. Section 1182(a)(3)(B)",
+                    explanation: "Sec. 51.03(b)(1)(B) provides this enhancement, referencing this specific U.S. Code."
+                },
+                {
+                    question: "Illegal Reentry (51.03) is an F3 if the defendant was removed under 8 U.S.C. Chapter 12, Subchapter...?",
+                    options: ["Subchapter V", "Subchapter II", "Subchapter I", "Subchapter X"],
+                    answer: "Subchapter V",
+                    explanation: "Sec. 51.03(b)(1)(C) references '8 U.S.C. Chapter 12, Subchapter V'."
+                },
+                {
+                    question: "An F3 enhancement under 51.03(b)(1)(D) applies if the defendant was removed pursuant to 8 U.S.C. Section...?",
+                    options: ["1231(a)(4)(B)", "1101", "1158", "1325(a)"],
+                    answer: "1231(a)(4)(B)",
+                    explanation: "Sec. 51.03(b)(1)(D) references '8 U.S.C. Section 1231(a)(4)(B)'."
+                },
+                {
+                    question: "What is the prerequisite status of a person who can be charged with 51.04 (Refusal to Comply)?",
+                    options: ["The person has been charged with or convicted of an offense under Chapter 51.", "The person has been charged with any felony.", "The person has been removed for a felony.", "The person has applied for asylum."],
+                    answer: "The person has been charged with or convicted of an offense under Chapter 51.",
+                    explanation: "Sec. 51.04(a)(1) requires the person to have 'been charged with or convicted of an offense under this chapter'."
+                },
+                {
+                    question: "The order to return to a foreign nation (referenced in Sec. 51.04) must be issued by whom?",
+                    options: ["A magistrate or judge", "A peace officer", "A federal DHS agent", "The Governor"],
+                    answer: "A magistrate or judge",
+                    explanation: "Sec. 51.04(a)(2) specifies 'a magistrate or judge, as applicable' issues the order."
+                },
+                {
+                    question: "Under 51.03(c), the definition of 'removal' includes a stipulated removal pursuant to a criminal proceeding under which law?",
+                    options: ["Either federal or state law", "Federal law only", "State law only", "Immigration court only"],
+                    answer: "Either federal or state law",
+                    explanation: "Sec. 51.03(c) includes stipulation 'pursuant to a criminal proceeding under either federal or state law'."
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 51 - Illegal Entry", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.51.htm" },
+                 { name: "CCP Art. 5B.002 - Order to Return", url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.5B.htm#5B.002" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "8 U.S.C. Sec. 1101 - Definitions (Alien)", url: "https://www.law.cornell.edu/uscode/text/8/1101" },
+                 { name: "8 U.S.C. Sec. 1325 - Improper entry by alien", url: "https://www.law.cornell.edu/uscode/text/8/1325" },
+                 { name: "8 U.S.C. Sec. 1158 - Asylum", url: "https://www.law.cornell.edu/uscode/text/8/1158" },
+                 { name: "19 C.F.R. Part 101 - Ports of Entry", url: "https://www.ecfr.gov/current/title-19/chapter-I/part-101" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

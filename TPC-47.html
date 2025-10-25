@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 47 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-dice mr-2"></i>Ch. 47: Gambling
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+             <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (47.01)
+                </button>
+                 <button data-tab="gambling" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-cards mr-2"></i> Gambling (47.02)
+                </button>
+                 <button data-tab="promotion-keeping" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-building mr-2"></i> Promotion / Keeping Place (47.03+)
+                </button>
+                <button data-tab="possession-comms" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-mobile-alt mr-2"></i> Possession / Comms (47.05+)
+                </button>
+                <button data-tab="defenses-evidence" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shield-alt mr-2"></i> Defenses / Evidence / Immunity (47.07+)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 47.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Bet</span>
+                            <p class="definition-desc">Agreement to win/lose something of value solely/partially by chance. Excludes insurance, prizes in bona fide skill contests, certain small carnival merchandise prizes ($25 max).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Bookmaking</span>
+                            <p class="definition-desc">(A) Receive/record/forward > 5 bets in 24 hrs; (B) Receive/record/forward bets > $1,000 in 24 hrs; OR (C) Scheme by 3+ persons to receive/record/forward bets.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Gambling Place</span>
+                            <p class="definition-desc">Any property (real estate, room, vehicle, boat, etc.) one use of which is making/settling bets, bookmaking, conducting lottery, or playing gambling devices.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Gambling Device</span>
+                            <p class="definition-desc">Electronic/electromechanical/mechanical contrivance that for consideration affords chance to obtain anything of value, determined solely/partially by chance (even if skill involved). Includes versions of bingo, keno, blackjack, etc. Excludes bona fide amusement devices rewarding only noncash prizes (toys/novelties) with wholesale value <= 10x play cost or $5 (whichever less).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Altered Gambling Equipment</span>
+                            <p class="definition-desc">Contrivance altered to enhance winning chances (e.g., shaved/loaded dice, marked cards, electronic sensors).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Gambling Paraphernalia</span>
+                            <p class="definition-desc">Book, instrument, apparatus for recording/registering bets; record, ticket, token, scratch sheet, etc., for carrying on bookmaking, lotteries, numbers games, etc.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Lottery</span>
+                            <p class="definition-desc">Scheme where prize(s) distributed by chance among persons who paid/promised consideration for chance to win anything of value (regardless of name: pool, raffle, gift enterprise, etc.).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Private Place</span>
+                            <p class="definition-desc">Place public does not have access. Excludes streets, highways, restaurants, taverns, schools, hospitals, common areas of apartments/hotels/offices, transport facilities, shops.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Thing of Value</span>
+                            <p class="definition-desc">Any benefit. Excludes unrecorded/immediate right of replay not exchangeable for value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gambling Tab -->
+            <div id="gambling" class="tab-content">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.02" target="_blank" class="text-red-600 hover:underline">Sec. 47.02. Gambling</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person commits offense if they:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Make bet on partial/final result of game/contest or participant performance.</li>
+                                <li>Make bet on result of political nomination/appointment/election or candidate success.</li>
+                                <li>Play and bet money/thing of value at game played with cards, dice, balls, or other gambling device.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Defense (b) - Private Place Defense:</strong> Actor engaged in gambling in private place; AND no person received economic benefit other than personal winnings; AND risks/chances were same for all (except skill/luck).</li>
+                        <li><strong class="font-semibold">Defense (c) - Statutory Exceptions:</strong> Actor reasonably believed conduct permitted under laws governing: Bingo (Occ Code 2001), Charitable Raffles (Occ Code 2002), Promotional Activities (Occ Code 2004), State Lottery (Gov Code 466), Horse/Greyhound Racing (Occ Code Title 13, Subtitle A-1), or PWD recreational event drawings.</li>
+                        <li><strong class="font-semibold">Defense (e) - Amusement Machine Defense:</strong> Person played for something of value (other than money) using device excluded under 47.01(4)(B) (bona fide amusement device awarding limited noncash prizes).</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Promotion / Keeping Place Tab -->
+            <div id="promotion-keeping" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.03" target="_blank" class="text-red-600 hover:underline">Sec. 47.03. Gambling Promotion</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Person I/K does any of the following:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Operates or participates in earnings of a gambling place.</li>
+                                <li>Engages in bookmaking.</li>
+                                <li>For gain, becomes custodian of anything of value bet or offered to be bet.</li>
+                                <li>Sells chances on result/margin of game/contest/performance or political event.</li>
+                                <li>For gain, sets up/promotes lottery or sells/offers/possesses for transfer/transfers lottery evidence (ticket, etc.).</li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.04" target="_blank" class="text-red-600 hover:underline">Sec. 47.04. Keeping a Gambling Place</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person knowingly uses or permits another to use property owned/controlled by them as gambling place; OR rents/lets property expecting it to be so used.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (b):</strong> Gambling occurred in private place; AND no person received economic benefit other than personal winnings; AND risks/chances same for all (except skill/luck). (Same elements as 47.02(b) defense).</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Possession / Comms Tab -->
+            <div id="possession-comms" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.05" target="_blank" class="text-red-600 hover:underline">Sec. 47.05. Communicating Gambling Information</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to further gambling, knowingly communicates info on bets/odds/changes OR knowingly provides/installs/maintains equipment for transmission/receipt of such info.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Exception (b):</strong> Info intended for lawful wager under Occ Code Ch 2027 (Fantasy Sports?) and not communicated violating Occ Code 2033.013.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.06" target="_blank" class="text-red-600 hover:underline">Sec. 47.06. Possession of Gambling Device, Equipment, or Paraphernalia</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> W/ intent to further gambling, knowingly owns, manufactures, transfers, or possesses gambling device known designed for gambling OR equipment known as subassembly/essential part.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> W/ intent to further gambling, knowingly owns, manufactures, transfers commercially, or possesses altered gambling equipment known designed for gambling OR equipment known as subassembly/essential part.</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> W/ intent to further gambling, knowingly owns, manufactures, transfers commercially, or possesses gambling paraphernalia.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (for all subsections).</li>
+                         <li><strong class="font-semibold">Defense (d) - Private Place:</strong> For (a) [Device/Equip] & (c) [Paraphernalia]: Used/intended for gambling entirely in private place; AND no economic benefit other than winnings; AND risks/chances same for all (except skill/luck).</li>
+                        <li><strong class="font-semibold">Defense (f) - Shipping:</strong> For (a) & (c): Owned/manufactured/transferred/possessed *solely* for shipping to jurisdiction where legal.</li>
+                         <li><strong class="font-semibold">Inspection (g):</strong> DA/CA not required to have warrant/subpoena to inspect gambling items on ocean-going vessel calling at TX port.</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Defenses / Evidence Tab -->
+            <div id="defenses-evidence" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.09" target="_blank" class="text-red-600 hover:underline">Sec. 47.09. Other Defenses</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Defense (a) - Authorized Conduct:</strong> It is a defense that conduct was authorized under laws governing:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Bingo (Occ Code 2001)</li>
+                                <li>Charitable Raffles (Occ Code 2002)</li>
+                                <li>Promotional Activities (Occ Code 2004)</li>
+                                <li>Horse/Greyhound Racing (Occ Code Title 13, Subtitle A-1)</li>
+                                <li>Savings Promotion Raffles (Finance Code 280)</li>
+                                <li>Or consisted entirely of participation in State Lottery (Gov Code 466)</li>
+                                <li>Or was necessary incident to State Lottery operation authorized by law/TDLR/Exec Director.</li>
+                             </ul>
+                        </li>
+                        <li><strong class="font-semibold">Affirmative Defense (b) - Ocean Vessel:</strong> For 47.04 (Keeping Place), 47.06(a) (Poss Device), 47.06(c) (Poss Paraph.), device/equip/paraph is aboard ocean vessel calling at TX port IF:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>DA/CA receives prior notice of items and dates in territorial waters.</li>
+                                <li>Items are disabled remotely/securely while in TX waters.</li>
+                                <li>Disabling device only removed for inspection/repair.</li>
+                                <li>Items not used for gambling while in TX waters.</li>
+                             </ol>
+                         </li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.10" target="_blank" class="text-red-600 hover:underline">Sec. 47.10. American Documentation of Vessel Required</a></h2>
+                     <p class="text-sm text-gray-700">If federal law 18 USC 1082 is repealed, the ocean vessel affirmative defense (47.09b) applies only if the vessel is documented under US law.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.11" target="_blank" class="text-red-600 hover:underline">Sec. 47.11. Deposits in Certain Accounts Not Consideration</a></h2>
+                    <p class="text-sm text-gray-700">Opening/depositing in savings account/program subject to Savings Promotion Raffle (Finance Code 280) does NOT constitute "consideration" for gambling purposes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.07" target="_blank" class="text-red-600 hover:underline">Sec. 47.07. Evidence</a></h2>
+                     <p class="text-sm text-gray-700">Published report of sporting event in daily newspaper/magazine/periodical is admissible & prima facie evidence the event occurred.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm#47.08" target="_blank" class="text-red-600 hover:underline">Sec. 47.08. Testimonial Immunity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(a) Party to Ch 47 offense may be required to furnish evidence/testify.</li>
+                        <li>(b) If required, party may not be prosecuted for offense testified about (except Aggravated Perjury), and testimony can't be used against them.</li>
+                        <li>(d) Conviction under Ch 47 may be had on uncorroborated testimony of party to offense.</li>
+                    </ul>
+                </div>
+                <!-- Include defenses from specific sections if not covered elsewhere -->
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Defenses from Specific Sections (Recap)</h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">47.02 (Gambling):</strong> (b) Private place/no benefit/equal risk; (c) Reasonable belief conduct permitted by Bingo/Raffle/Racing/Lottery/etc. statutes; (e) Playing excluded amusement device for noncash value.</li>
+                        <li><strong class="font-semibold">47.04 (Keeping Gambling Place):</strong> (b) Affirmative defense: Private place/no benefit/equal risk.</li>
+                        <li><strong class="font-semibold">47.06 (Possession):</strong> (d) Private place/no benefit/equal risk (for device/paraph); (f) Sole purpose of shipping where legal (for device/paraph).</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 47)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (110 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 47) ---
+            const quizData = [
+                // 47.01 Definitions
+                {
+                    question: "Under 47.01, which is explicitly EXCLUDED from the definition of a 'Bet'?",
+                    options: ["Agreement to win money by chance", "Life insurance contract", "Wager on a sports game", "Poker hand for cash"],
+                    answer: "Life insurance contract",
+                    explanation: "Sec. 47.01(1)(A) excludes contracts of indemnity or guaranty, or life, health, property, or accident insurance."
+                },
+                {
+                    question: "Offering a prize in a bona fide contest of skill (e.g., a marathon) is considered a 'Bet' under 47.01.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 47.01(1)(B) excludes offers of prizes/awards to contestants in bona fide contests for skill, speed, strength, or endurance."
+                },
+                {
+                    question: "A carnival prize of merchandise valued at $30 offered by the proprietor to the person performing the contest is excluded from the definition of a 'Bet' under 47.01.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 47.01(1)(C) excludes such offers only if the merchandise value is *not greater than $25* and other conditions (nonprofit sponsor) are met."
+                },
+                {
+                    question: "Which constitutes 'Bookmaking' under 47.01?",
+                    options: ["Receiving 3 bets totaling $500 in 24 hours", "Forwarding 6 bets in 24 hours", "A scheme by 2 people to forward bets", "Recording one bet for $2,000"],
+                    answer: "Forwarding 6 bets in 24 hours",
+                    explanation: "Sec. 47.01(2)(A) defines bookmaking as receiving/recording/forwarding *more than five* bets in 24 hours. (B) requires >$1000 total. (C) requires a scheme by *three or more* persons."
+                },
+                {
+                    question: "Can a private vehicle be considered a 'Gambling Place' under 47.01?",
+                    options: ["Yes", "No", "Only if modified", "Only if used commercially"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.01(3) defines 'Gambling place' broadly to include 'any real estate, building, room, tent, vehicle, boat, or other property whatsoever' if one use is gambling activity."
+                },
+                {
+                    question: "A machine offers a player, for $1 consideration, a chance to win credits determined partially by chance, which can be recorded. Is this potentially a 'Gambling Device' under 47.01?",
+                    options: ["Yes", "No, only if solely by chance", "No, credits are not 'value'", "No, if skill is involved"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.01(4) defines it as a contrivance affording opportunity to obtain 'anything of value', determined 'solely or partially by chance', even with skill. (4)(A) includes devices awarding credits."
+                },
+                {
+                    question: "An arcade claw machine costs $0.50 to play and rewards players exclusively with plush toys having a wholesale value of $4. Is this EXCLUDED from the definition of 'Gambling Device' under 47.01(4)(B)?",
+                    options: ["Yes", "No"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.01(4)(B) excludes amusement devices rewarding exclusively noncash merchandise/toys/novelties if the wholesale value is not more than 10x play cost ($5 in this case) or $5, whichever is less. Here, $4 is less than both 10x $0.50 ($5) and $5."
+                },
+                 {
+                    question: "An arcade game costs $1 to play and rewards players exclusively with tickets redeemable for a prize with a wholesale value of $12. Is this EXCLUDED from the definition of 'Gambling Device' under 47.01(4)(B)?",
+                    options: ["Yes", "No"],
+                    answer: "No",
+                    explanation: "Sec. 47.01(4)(B) requires the prize value to be not more than 10x play cost ($10 here) or $5, whichever is less. Since $12 exceeds both $10 and $5, it doesn't meet the exclusion criteria."
+                },
+                {
+                    question: "Which item fits the definition of 'Altered Gambling Equipment' under 47.01?",
+                    options: ["Standard deck of cards", "Regular casino dice", "Loaded dice", "Poker chips"],
+                    answer: "Loaded dice",
+                    explanation: "Sec. 47.01(5) defines it as equipment altered to enhance winning chances, listing 'loaded dice' as an example."
+                },
+                {
+                    question: "A scratch sheet used for recording horse race bets is considered what under 47.01?",
+                    options: ["Gambling device", "Altered gambling equipment", "Gambling paraphernalia", "Thing of value"],
+                    answer: "Gambling paraphernalia",
+                    explanation: "Sec. 47.01(6) defines 'Gambling paraphernalia' to include instruments for recording bets, specifically mentioning 'scratch sheet'."
+                },
+                {
+                    question: "A church holds a raffle where tickets are sold for $1 each for a chance to win a donated quilt. Is this considered a 'Lottery' under 47.01?",
+                    options: ["Yes", "No, it's for charity", "No, quilt isn't 'value'", "No, it's called a raffle"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.01(7) defines 'Lottery' as any scheme distributing prizes by chance among persons paying consideration for the chance, regardless of name (including 'raffle'). Charitable purpose doesn't negate the definition, though defenses may apply elsewhere."
+                },
+                {
+                    question: "Which location is considered a 'Private Place' according to 47.01?",
+                    options: ["Restaurant Bar", "Public Highway", "Inside a person's home", "Hotel Lobby"],
+                    answer: "Inside a person's home",
+                    explanation: "Sec. 47.01(8) defines 'Private place' as one the public doesn't access, and explicitly *excludes* public places like restaurants, highways, and common areas of hotels."
+                },
+                {
+                    question: "Does an 'unrecorded and immediate right of replay not exchangeable for value' count as a 'Thing of Value' under 47.01?",
+                    options: ["Yes", "No"],
+                    answer: "No",
+                    explanation: "Sec. 47.01(9) defines 'Thing of value' as any benefit but explicitly excludes such replays."
+                },
+
+                // 47.02 Gambling
+                {
+                    question: "Making a bet on the final score of a football game is an offense under which section?",
+                    options: ["47.02 Gambling", "47.03 Gambling Promotion", "47.06 Possession", "No offense if small bet"],
+                    answer: "47.02 Gambling",
+                    explanation: "Sec. 47.02(a)(1) prohibits making a bet on the partial or final result of a game or contest."
+                },
+                {
+                    question: "What is the penalty for simple Gambling under 47.02?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No penalty if first offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 47.02(d) sets the penalty as Class C Misdemeanor."
+                },
+                {
+                    question: "Which is required for the 'Private Place' defense to Gambling (47.02b)?",
+                    options: ["Bet amount was under $100", "No person received any economic benefit other than personal winnings", "Only two players involved", "Game was based purely on skill"],
+                    answer: "No person received any economic benefit other than personal winnings",
+                    explanation: "Sec. 47.02(b) requires (1) private place, (2) no economic benefit other than winnings, AND (3) equal risks/chances (except skill/luck)."
+                },
+                {
+                    question: "Playing poker for money in a public bar where the house takes a percentage ('rake') qualifies for the private place defense under 47.02(b).",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "The defense fails on two points: a public bar is not a private place (47.01(8)), and the house receiving an economic benefit (rake) violates 47.02(b)(2)."
+                },
+                 {
+                    question: "Is it a defense to Gambling (47.02) that the actor reasonably believed they were participating in the authorized State Lottery?",
+                    options: ["Yes", "No", "Only if they won", "Only for scratch-offs"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.02(c)(4) provides a defense if the actor reasonably believed the conduct consisted entirely of participation in the state lottery."
+                },
+                 {
+                    question: "Is it a defense to Gambling (47.02) that the actor was playing a claw machine (excluded amusement device) for tickets redeemable for a small toy?",
+                    options: ["Yes", "No", "Only if no money was used", "Only if under 18"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.02(e) provides a defense if a person played for something of value *other than money* using a device excluded under 47.01(4)(B)."
+                },
+                {
+                    question: "Betting on the outcome of a presidential election is an offense under 47.02.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 47.02(a)(2) prohibits making a bet on the result of any political nomination, appointment, or election."
+                },
+                {
+                    question: "Playing dice for money in a private home with friends, where no one takes a cut, is generally defensible under 47.02(b).",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "This scenario typically meets the elements of the 47.02(b) defense: private place, no economic benefit other than winnings, and equal risks/chances (assuming standard dice)."
+                },
+
+                // 47.03 Gambling Promotion
+                {
+                    question: "Knowingly operating a 'card room' where players bet against each other and the operator charges a fee to play constitutes which offense?",
+                    options: ["47.02 Gambling", "47.03 Gambling Promotion", "47.04 Keeping a Gambling Place", "47.06 Possession"],
+                    answer: "47.03 Gambling Promotion",
+                    explanation: "Sec. 47.03(a)(1) prohibits operating or participating in the earnings of a gambling place. Charging fees for players to gamble constitutes participating in earnings."
+                },
+                {
+                    question: "What is the penalty for Gambling Promotion (47.03)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 47.03(b) sets the penalty as Class A Misdemeanor."
+                },
+                {
+                    question: "Acting 'for gain' as a custodian of money that is being bet is an offense under 47.03.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 47.03(a)(3) prohibits 'for gain, becomes a custodian of anything of value bet or offered to be bet'."
+                },
+                {
+                    question: "Selling tickets for an office football pool where prizes are awarded based on scores constitutes Gambling Promotion under 47.03.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 47.03(a)(4) prohibits selling chances on game results/margins, and 47.01(7) defines 'Lottery' broadly to include pools where consideration is paid for a chance to win."
+                },
+                 {
+                    question: "Engaging in 'Bookmaking' as defined in 47.01 is an offense under which section?",
+                    options: ["47.02", "47.03", "47.04", "47.06"],
+                    answer: "47.03",
+                    explanation: "Sec. 47.03(a)(2) explicitly lists 'engages in bookmaking' as a way to commit Gambling Promotion."
+                },
+
+                // 47.04 Keeping Gambling Place
+                {
+                    question: "Knowingly renting out a building with the expectation it will be used as an illegal casino is an offense under:",
+                    options: ["47.02 Gambling", "47.03 Gambling Promotion", "47.04 Keeping a Gambling Place", "No offense, lessee is responsible"],
+                    answer: "47.04 Keeping a Gambling Place",
+                    explanation: "Sec. 47.04(a) prohibits knowingly using or permitting use OR renting/letting property 'with a view or expectation that it be so used' as a gambling place."
+                },
+                {
+                    question: "What is the penalty for Keeping a Gambling Place (47.04)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 47.04(c) sets the penalty as Class A Misdemeanor."
+                },
+                {
+                    question: "Is the 'private place' defense available for Keeping a Gambling Place (47.04)?",
+                    options: ["Yes, as an affirmative defense", "No", "Yes, as a standard defense", "Only if no money involved"],
+                    answer: "Yes, as an affirmative defense",
+                    explanation: "Sec. 47.04(b) provides the same private place/no benefit/equal risk elements as an *affirmative* defense to prosecution under this section."
+                },
+
+                // 47.05 Communicating Gambling Info
+                {
+                    question: "Knowingly installing phone lines intended to be used for transmitting betting odds, with intent to further gambling, is an offense under:",
+                    options: ["47.03 Gambling Promotion", "47.04 Keeping Gambling Place", "47.05 Communicating Gambling Information", "47.06 Possession"],
+                    answer: "47.05 Communicating Gambling Information",
+                    explanation: "Sec. 47.05(a) prohibits knowingly providing, installing, or maintaining equipment for transmitting/receiving gambling information with intent to further gambling."
+                },
+                {
+                    question: "What is the penalty for Communicating Gambling Information (47.05)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 47.05(c) sets the penalty as Class A Misdemeanor."
+                },
+                {
+                    question: "Is communicating betting odds intended for placing lawful parimutuel wagers under the Texas Racing Act an exception to 47.05?",
+                    options: ["Yes", "No", "Only if broadcast", "Only if odds are fixed"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.05(b) provides an exception if the information is intended for a lawful wager under Chapter 2027, Occupations Code (which relates to fantasy sports, though the reference seems potentially misaligned; historically racing was referenced), and not communicated in violation of specific racing communication laws."
+                },
+
+                // 47.06 Possession
+                {
+                    question: "Knowingly possessing a slot machine (knowing it's designed for gambling) with intent to use it for gambling is an offense under:",
+                    options: ["47.02 Gambling", "47.03 Gambling Promotion", "47.04 Keeping Gambling Place", "47.06 Possession"],
+                    answer: "47.06 Possession",
+                    explanation: "Sec. 47.06(a) prohibits knowingly possessing a gambling device known designed for gambling purposes, with intent to further gambling."
+                },
+                {
+                    question: "What is the penalty for Possession of a Gambling Device (47.06a)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 47.06(e) sets the penalty for all offenses under this section as Class A Misdemeanor."
+                },
+                {
+                    question: "Knowingly possessing marked cards with intent to use them to cheat in a poker game is an offense under:",
+                    options: ["47.06(a) Possession of Device", "47.06(b) Possession of Altered Equipment", "47.06(c) Possession of Paraphernalia", "No offense if private game"],
+                    answer: "47.06(b) Possession of Altered Equipment",
+                    explanation: "Sec. 47.06(b) prohibits possessing altered gambling equipment (47.01(5) includes marked cards) with intent to further gambling."
+                },
+                {
+                    question: "Knowingly possessing betting slips with intent to use them for bookmaking is an offense under:",
+                    options: ["47.06(a) Possession of Device", "47.06(b) Possession of Altered Equipment", "47.06(c) Possession of Paraphernalia", "47.03 Bookmaking"],
+                    answer: "47.06(c) Possession of Paraphernalia",
+                    explanation: "Sec. 47.06(c) prohibits possessing gambling paraphernalia (47.01(6) includes betting slips) with intent to further gambling."
+                },
+                {
+                    question: "Is it a defense to possessing gambling paraphernalia (47.06c) that it was intended for use in a private poker game where no one took a cut?",
+                    options: ["Yes", "No", "Only if stakes were low", "Only if fewer than 7 players"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.06(d) provides the private place/no benefit/equal risk defense for prosecution under subsection (c) [Paraphernalia] and (a) [Device/Equip]."
+                },
+                {
+                    question: "Is it a defense to possessing *altered* gambling equipment (47.06b) that it was intended for a private game?",
+                    options: ["Yes", "No", "Only if owner consented", "Only if equipment failed"],
+                    answer: "No",
+                    explanation: "Sec. 47.06(d) provides the private place defense only for subsections (a) and (c). It does NOT apply to subsection (b) [Altered Equipment]."
+                },
+                {
+                    question: "Is it a defense to possessing a gambling device (47.06a) that the person possessed it solely for shipping it to Nevada where it is legal?",
+                    options: ["Yes", "No", "Only if shipped via common carrier", "Only if disassembled"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.06(f) provides a defense if owned/manufactured/transferred/possessed for the sole purpose of shipping to another jurisdiction where legal."
+                },
+
+                // 47.07 Evidence
+                {
+                    question: "Under 47.07, what can be used as prima facie evidence that a specific football game occurred?",
+                    options: ["Eyewitness testimony", "Official league records", "A published report in a daily newspaper", "Video recording of the game"],
+                    answer: "A published report in a daily newspaper",
+                    explanation: "Sec. 47.07 allows a published report in a daily newspaper, magazine, or other periodically printed publication of general circulation to be admissible and serve as prima facie evidence of the event's occurrence."
+                },
+
+                // 47.08 Testimonial Immunity
+                {
+                    question: "Under 47.08, can a person charged with Gambling Promotion be required to testify against their co-conspirators?",
+                    options: ["Yes", "No, 5th Amendment applies", "Only if granted immunity", "Only if pleads guilty"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.08(a) states a party to an offense under Ch 47 'may be required to furnish evidence or testify about the offense'."
+                },
+                {
+                    question: "If a person is required to testify about a gambling offense under 47.08, can their testimony be used against them in a prosecution for that offense?",
+                    options: ["Yes", "No", "Only if lying", "Only for sentencing"],
+                    answer: "No",
+                    explanation: "Sec. 47.08(b) grants immunity: the party 'may not be prosecuted for any offense about which he is required to furnish evidence or testify, and the evidence and testimony may not be used against the party...' (except Agg Perjury)."
+                },
+                {
+                    question: "Can a person be convicted of Gambling Promotion (47.03) based solely on the uncorroborated testimony of someone who placed bets with them?",
+                    options: ["Yes", "No", "Only if testimony is sworn", "Only for misdemeanors"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.08(d) states 'A conviction under this chapter may be had upon the uncorroborated testimony of a party to the offense'."
+                },
+
+                // 47.09 Other Defenses
+                {
+                    question: "It is a defense under 47.09 that the conduct was authorized under the statutes governing:",
+                    options: ["Private poker clubs", "Charitable Raffles", "Online sports betting", "Casino nights"],
+                    answer: "Charitable Raffles",
+                    explanation: "Sec. 47.09(a)(1)(B) lists Chapter 2002, Occupations Code (Charitable Raffle Enabling Act) as providing a defense."
+                },
+                {
+                    question: "For the ocean vessel affirmative defense (47.09b) to apply, must the gambling devices be disabled while in Texas waters?",
+                    options: ["Yes", "No", "Only if passengers are aboard", "Only at night"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.09(b)(2) requires that 'at all times while the vessel is in the territorial waters of this state all devices... are disabled...'"
+                },
+                {
+                    question: "Must prior notice be given to the local DA/CA for the ocean vessel affirmative defense (47.09b) to apply?",
+                    options: ["Yes", "No", "Only if requested", "Only for foreign vessels"],
+                    answer: "Yes",
+                    explanation: "Sec. 47.09(b)(1) requires the DA/CA receive notice *before* the vessel enters territorial waters."
+                },
+                {
+                    question: "Does the ocean vessel affirmative defense (47.09b) apply to prosecution for possessing *altered* gambling equipment (47.06b)?",
+                    options: ["Yes", "No"],
+                    answer: "No",
+                    explanation: "Sec. 47.09(b) explicitly lists the sections it applies to: 47.04, 47.06(a), and 47.06(c). It does *not* list 47.06(b)."
+                },
+
+                // 47.10 American Documentation
+                {
+                    question: "Sec. 47.10 states that if a specific US Code section (18 USC 1082) is repealed, the ocean vessel defense applies only if...",
+                    options: ["The vessel is inspected", "The vessel pays a fee", "The vessel is documented under US law", "The vessel has no prior violations"],
+                    answer: "The vessel is documented under US law",
+                    explanation: "Sec. 47.10 makes the defense conditional on the vessel being documented under US law if the specified federal statute is repealed."
+                },
+
+                // 47.11 Savings Promotion
+                {
+                    question: "Does making a deposit into a savings account as part of a bank's 'Savings Promotion Raffle' constitute paying 'consideration' for a lottery under Chapter 47?",
+                    options: ["Yes", "No"],
+                    answer: "No",
+                    explanation: "Sec. 47.11 explicitly states that opening or making a deposit in such an account subject to Finance Code Ch 280 'does not constitute consideration' for purposes of Chapter 47."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Update quiz description with the current number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                 if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                 }
+
+                // Shuffle the quiz data array randomly
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear existing questions
+                
+                // Create HTML for each question
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Keep track of the original index before shuffling to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Build options HTML, ensuring values are properly escaped
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                         optionsHtml += `<label class="block"><input type="radio" name="q${index}" value="${escapedOptionValue}" data-original-index="${originalIndex}" class="mr-2">${escapedOptionText}</label>`;
+                    });
+                    
+                    // Escape question text
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Load the quiz initially
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered'); // Reset feedback classes
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex; // Get original index
+                        const q = quizData[originalIndex]; // Get the correct question data
+                        
+                        // Escape answer and explanation for safe HTML insertion
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = `<strong>Correct!</strong> ${escapedExplanation}`;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = `<strong>Incorrect.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find original question index even if unanswered to show correct answer
+                         const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         if (firstRadio) {
+                             const originalIndex = firstRadio.dataset.originalIndex;
+                             const q = quizData[originalIndex];
+                             const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             feedback.innerHTML = `<strong>Unanswered.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                         } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.'; // Fallback
+                         }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden'); // Show feedback
+                    
+                    // Disable radio buttons after checking
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Display final score and percentage
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden'); // Show results div
+                checkAnswersBtn.classList.add('hidden'); // Hide submit button
+                retakeQuizBtn.classList.remove('hidden'); // Show retake button
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden'); // Hide results
+                retakeQuizBtn.classList.add('hidden'); // Hide retake button
+                checkAnswersBtn.classList.remove('hidden'); // Show submit button
+                loadQuiz(); // Reload the quiz (questions will be reshuffled)
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 47 - Gambling", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.47.htm" },
+                 { name: "Occupations Code Ch. 2001 - Bingo", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.2001.htm"},
+                 { name: "Occupations Code Ch. 2002 - Charitable Raffles", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.2002.htm"},
+                 { name: "Occupations Code Title 13, Subtitle A-1 - Texas Racing Act", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.2021.htm"}, // Link to start of Subtitle A-1
+                 { name: "Government Code Ch. 466 - State Lottery Act", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.466.htm"}
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                // Escape resource name for safe HTML insertion
+                const escapedName = res.name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${escapedName}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>

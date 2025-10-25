@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 72 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-file-invoice-dollar mr-2"></i>Ch. 72: Racketeering and Unlawful Debt Collection
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (72.01)
+                </button>
+                <button data-tab="offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Offenses (72.02-04)
+                </button>
+                <button data-tab="fine" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-dollar-sign mr-2"></i> Alternative Fine (72.05)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 72.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Pattern of racketeering</span>
+                            <p class="definition-desc">Engaging in at least <strong>2 incidents</strong> of racketeering conduct with similar intents, results, etc. The last incident must occur not later than the <strong>5th anniversary</strong> of a previous incident.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Pecuniary value</span>
+                            <p class="definition-desc">(A) Anything of value (money, negotiable instrument, etc.) with economic advantage; OR (B) Any other property or service with a value <strong>in excess of $100</strong>.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Racketeering</span>
+                            <p class="definition-desc">To <strong>commit, attempt to commit, conspire to commit, or solicit, coerce, or intimidate</strong> another to commit listed offenses (e.g., felony securities act, kidnapping, agg kidnapping, operation of stash house, felony perjury, felony resisting, felony hindering, felony public indecency, or engaging in organized crime).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Unlawful debt</span>
+                            <p class="definition-desc">Money/value from a debt that is unenforceable because it was contracted in violation of laws (e.g., Racing Act, Gambling), OR a usurious rate that is <strong>at least twice the enforceable rate</strong>.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Enterprise</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 140B.001, Civil Practice and Remedies Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Money</span>
+                            <p class="definition-desc">Means funds as defined by Sec. 34.01.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Real property</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 140B.001, Civil Practice and Remedies Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offenses Tab -->
+            <div id="offenses" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.72.htm#72.02" target="_blank" class="text-red-600 hover:underline">Sec. 72.02. Use of Proceeds Derived from Racketeering...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person intentionally <strong>uses or invests</strong> any proceeds <strong>knowingly derived</strong> from a pattern of racketeering or unlawful debt collection... in <strong>acquiring title</strong> to real property or in the <strong>establishment or operation</strong> of any enterprise.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>Felony of the Second Degree</strong>.</li>
+                        <li><strong class="font-semibold">Prosecution (c):</strong> May be prosecuted under this section, other laws, or both.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.72.htm#72.03" target="_blank" class="text-red-600 hover:underline">Sec. 72.03. Acquisition of Interest... Through Racketeering...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person, <strong>knowingly through a pattern of racketeering</strong> or unlawful debt, <strong>acquires or maintains</strong>... any interest in or control of any enterprise or real property.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>Felony of the Second Degree</strong>.</li>
+                        <li><strong class="font-semibold">Prosecution (c):</strong> May be prosecuted under this section, other laws, or both.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.72.htm#72.04" target="_blank" class="text-red-600 hover:underline">Sec. 72.04. Participation in Enterprise Through Racketeering...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person is <strong>employed by or associated with</strong> an enterprise and <strong>knowingly conducts or participates</strong>... in that enterprise through a pattern of racketeering or collection of unlawful debt.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>Felony of the Second Degree</strong>.</li>
+                        <li><strong class="font-semibold">Prosecution (c):</strong> May be prosecuted under this section, other laws, or both.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Alternative Fine Tab -->
+            <div id="fine" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.72.htm#72.05" target="_blank" class="text-red-600 hover:underline">Sec. 72.05. Alternative Fine</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">A court may impose an alternative fine on a person convicted under 72.02, 72.03, or 72.04. This fine can be up to:</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-2">
+                        <li>The greater of:
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong>Three times the gross value gained</strong>; OR</li>
+                                <li><strong>Three times the gross loss caused</strong>.</li>
+                            </ul>
+                        </li>
+                        <li>PLUS the amount of court costs and reasonable costs of investigation and prosecution.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 72)</h2>
+                    <p id="quiz-message" class="mb-6 text-gray-600">Test your understanding of the material. (35 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div id="quiz-buttons" class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 72) ---
+            const quizData = [
+                {
+                    question: "Under 72.01, a 'Pattern of racketeering' means engaging in at least how many incidents of racketeering conduct?",
+                    options: ["One", "Two", "Three", "Five"],
+                    answer: "Two",
+                    explanation: "Sec. 72.01(3) defines it as 'engaging in at least two incidents of racketeering conduct'."
+                },
+                {
+                    question: "What is the time limit for a 'Pattern of racketeering' under 72.01?",
+                    options: ["The last incident occurred not later than the 1st anniversary of a previous incident.", "The last incident occurred not later than the 3rd anniversary of a previous incident.", "The last incident occurred not later than the 5th anniversary of a previous incident.", "There is no time limit specified."],
+                    answer: "The last incident occurred not later than the 5th anniversary of a previous incident.",
+                    explanation: "Sec. 72.01(3) requires 'the last of which occurred not later than the fifth anniversary of the date of a previous incident'."
+                },
+                {
+                    question: "Under 72.01, 'Pecuniary value' includes property or service that has a value...?",
+                    options: ["of at least $100.", "in excess of $100.", "of at least $50.", "in excess of $50."],
+                    answer: "in excess of $100.",
+                    explanation: "Sec. 72.01(4)(B) specifies 'any other property or service that has a value in excess of $100.'"
+                },
+                {
+                    question: "Which of the following is NOT part of the definition of 'Racketeering' under 72.01(5)?",
+                    options: ["To commit an offense.", "To attempt to commit an offense.", "To conspire to commit an offense.", "To fail to report an offense."],
+                    answer: "To fail to report an offense.",
+                    explanation: "Sec. 72.01(5) lists 'to commit, to attempt to commit, to conspire to commit, or to solicit, coerce, or intimidate another person to commit'."
+                },
+                {
+                    question: "Which of the following is listed as an underlying offense for 'Racketeering' in 72.01(5)?",
+                    options: ["Theft (Class B)", "Driving While Intoxicated", "Engaging in Organized Criminal Activity (71.02)", "Assault (Class C)"],
+                    answer: "Engaging in Organized Criminal Activity (71.02)",
+                    explanation: "Sec. 72.01(5)(I) lists 'an offense under Section 71.02 (engaging in organized criminal activity)'."
+                },
+                {
+                    question: "Which of these is also listed as an underlying offense for 'Racketeering' in 72.01(5)?",
+                    options: ["Aggravated Kidnapping (20.04)", "Burglary of a Habitation", "Robbery", "Terroristic Threat"],
+                    answer: "Aggravated Kidnapping (20.04)",
+                    explanation: "Sec. 72.01(5)(C) lists 'an offense under Section 20.04 (aggravated kidnapping)'."
+                },
+                {
+                    question: "Under 72.01(7), an 'Unlawful debt' can be a debt from gambling or a usurious rate that is...?",
+                    options: ["Any amount over the enforceable rate.", "At least twice the enforceable rate.", "At least three times the enforceable rate.", "At least $100 over the enforceable rate."],
+                    answer: "At least twice the enforceable rate.",
+                    explanation: "Sec. 72.01(7)(B) specifies 'at a rate usurious under state law if the usurious rate is at least twice the enforceable rate.'"
+                },
+                {
+                    question: "What is the offense under 72.02?",
+                    options: ["Acquiring control of an enterprise through racketeering.", "Participating in an enterprise through racketeering.", "Intentionally using or investing proceeds from racketeering to acquire property or operate an enterprise.", "Committing an act of racketeering."],
+                    answer: "Intentionally using or investing proceeds from racketeering to acquire property or operate an enterprise.",
+                    explanation: "Sec. 72.02(a) covers the *use or investment* of proceeds in an enterprise or real property."
+                },
+                {
+                    question: "What is the offense under 72.03?",
+                    options: ["Acquiring or maintaining control of an enterprise or real property through racketeering.", "Participating in an enterprise through racketeering.", "Using or investing proceeds from racketeering.", "Collecting any unlawful debt."],
+                    answer: "Acquiring or maintaining control of an enterprise or real property through racketeering.",
+                    explanation: "Sec. 72.03(a) covers *acquiring or maintaining* an interest or control through a pattern of racketeering."
+                },
+                {
+                    question: "What is the offense under 72.04?",
+                    options: ["Acquiring control of an enterprise through racketeering.", "Being employed by or associated with an enterprise and knowingly participating in it through racketeering.", "Using or investing proceeds from racketeering.", "Committing an underlying act of racketeering."],
+                    answer: "Being employed by or associated with an enterprise and knowingly participating in it through racketeering.",
+                    explanation: "Sec. 72.04(a) covers *conducting or participating* in an enterprise (while employed/associated) through racketeering."
+                },
+                {
+                    question: "What is the penalty for an offense under 72.02 (Use of Proceeds)?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 72.02(b) states 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "What is the penalty for an offense under 72.03 (Acquisition of Interest)?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 72.03(b) states 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "What is the penalty for an offense under 72.04 (Participation in Enterprise)?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 72.04(b) states 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "True or False: If a person's conduct violates Sec. 72.02, they can *only* be prosecuted under 72.02 and not any other law.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 72.02(c) states 'the actor may be prosecuted under this section, the other law, or both.'"
+                },
+                {
+                    question: "The alternative fine in 72.05 can be imposed on a person convicted of which offense?",
+                    options: ["72.02 only", "72.02 or 72.03 only", "72.02, 72.03, or 72.04", "Any offense in the Penal Code"],
+                    answer: "72.02, 72.03, or 72.04",
+                    explanation: "Sec. 72.05 explicitly lists 'an offense under Section 72.02, 72.03, or 72.04'."
+                },
+                {
+                    question: "The alternative fine under 72.05 can be up to the greater of three times the gross value gained OR...?",
+                    options: ["Three times the gross loss caused.", "Two times the gross value gained.", "Two times the gross loss caused.", "$1,000,000."],
+                    answer: "Three times the gross loss caused.",
+                    explanation: "Sec. 72.05(1) lists '(A) three times the gross value gained... or (B) three times the gross loss caused'."
+                },
+                {
+                    question: "What *else* can be added to the alternative fine under 72.05?",
+                    options: ["Punitive damages.", "The amount of court costs and reasonable costs of investigation and prosecution.", "Attorney's fees for the victim.", "A mandatory 10-year prison sentence."],
+                    answer: "The amount of court costs and reasonable costs of investigation and prosecution.",
+                    explanation: "Sec. 72.05(2) adds 'the amount of the court costs and the reasonably incurred costs of investigation and prosecution.'"
+                },
+                {
+                    question: "The definitions for 'Enterprise' and 'Real property' are referenced from which code?",
+                    options: ["The Penal Code", "The Code of Criminal Procedure", "The Civil Practice and Remedies Code", "The Finance Code"],
+                    answer: "The Civil Practice and Remedies Code",
+                    explanation: "Sec. 72.01(1) and (6) both reference 'Section 140B.001, Civil Practice and Remedies Code.'"
+                },
+                {
+                    question: "The definition for 'Money' is referenced from which section?",
+                    options: ["Sec. 34.01", "Sec. 1.07", "Sec. 71.01", "Sec. 140B.001"],
+                    answer: "Sec. 34.01",
+                    explanation: "Sec. 72.01(2) states 'Money means funds as defined by Section 34.01.'"
+                },
+                {
+                    question: "Which of these is NOT an underlying offense for 'Racketeering' in 72.01(5)?",
+                    options: ["Felony offense under Chapter 37 (Perjury)", "Felony offense under Sec. 38.03 (Resisting Arrest)", "Felony offense under Chapter 43 (Public Indecency)", "Misdemeanor offense under Chapter 43 (Public Indecency)"],
+                    answer: "Misdemeanor offense under Chapter 43 (Public Indecency)",
+                    explanation: "Sec. 72.01(5)(H) specifies 'a *felony* offense under Chapter 43'."
+                },
+                {
+                    question: "To be an 'Unlawful debt,' a debt from usury must be at a rate that is at least...",
+                    options: ["10% over the legal rate.", "20% over the legal rate.", "Twice the enforceable rate.", "Any amount over the enforceable rate."],
+                    answer: "Twice the enforceable rate.",
+                    explanation: "Sec. 72.01(7)(A)(ii) and (B) both specify 'at least twice the enforceable rate.'"
+                },
+                {
+                    question: "Sec. 72.02 (Use of Proceeds) requires that the person *knowingly* derived the proceeds from racketeering.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.02(a) states 'intentionally uses or invests... any part of any proceeds *knowingly derived*...'"
+                },
+                {
+                    question: "Sec. 72.03 (Acquisition of Interest) requires that the person *knowingly* acquired the interest through a pattern of racketeering.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.03(a) states 'A person commits an offense if the person, *knowingly* through a pattern of racketeering...'"
+                },
+                {
+                    question: "Sec. 72.04 (Participation in Enterprise) requires that the person *knowingly* conducts or participates in the enterprise through racketeering.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.04(a) states '...and *knowingly* conducts or participates...'"
+                },
+                {
+                    question: "The alternative fine in Sec. 72.05 is imposed instead of what?",
+                    options: ["Jail time.", "An otherwise applicable fine.", "Community service.", "Probation."],
+                    answer: "An otherwise applicable fine.",
+                    explanation: "Sec. 72.05 states 'a court... may impose a fine, *instead of an otherwise applicable fine*...'"
+                },
+                {
+                    question: "Which of these is listed as an underlying offense for 'Racketeering' under 72.01(5)?",
+                    options: ["Operation of stash house (20.07)", "Aggravated Robbery", "Theft of Firearm", "Money Laundering"],
+                    answer: "Operation of stash house (20.07)",
+                    explanation: "Sec. 72.01(5)(D) lists 'an offense under Section 20.07 (operation of stash house)'."
+                },
+                {
+                    question: "Which of these is also listed as an underlying offense for 'Racketeering' under 72.01(5)?",
+                    options: ["Kidnapping (20.03)", "Unlawful Restraint", "Smuggling of Persons", "Trafficking of Persons"],
+                    answer: "Kidnapping (20.03)",
+                    explanation: "Sec. 72.01(5)(B) lists 'an offense under Section 20.03 (kidnapping)'."
+                },
+                {
+                    question: "The definition of 'Racketeering' includes 'to solicit, coerce, or intimidate' another person to commit a listed offense.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.01(5) includes this language along with commit, attempt to commit, and conspire to commit."
+                },
+                {
+                    question: "An 'Unlawful debt' can be a debt incurred in violation of the Texas Racing Act.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.01(7)(A)(i) specifically lists 'the Texas Racing Act' as a source of unlawful debt."
+                },
+                {
+                    question: "Which offense involves being 'employed by or associated with' an enterprise and participating in it through racketeering?",
+                    options: ["Sec. 72.02 (Use of Proceeds)", "Sec. 72.03 (Acquisition of Interest)", "Sec. 72.04 (Participation in Enterprise)", "Sec. 72.05 (Alternative Fine)"],
+                    answer: "Sec. 72.04 (Participation in Enterprise)",
+                    explanation: "Sec. 72.04(a) is the only section that uses the 'employed by or associated with' language."
+                },
+                {
+                    question: "Which of the following is listed as an underlying offense for 'Racketeering' in 72.01(5)?",
+                    options: ["Felony offense under Sec. 38.05 (Hindering Apprehension)", "Misdemeanor offense under Sec. 38.03 (Resisting Arrest)", "Any offense under Chapter 37 (Perjury)", "Evading Arrest (Felony)"],
+                    answer: "Felony offense under Sec. 38.05 (Hindering Apprehension)",
+                    explanation: "Sec. 72.01(5)(G) lists 'a felony offense under Section 38.05 (hindering apprehension or prosecution)'."
+                },
+                {
+                    question: "A debt from gambling in violation of Chapter 47 can be considered an 'Unlawful debt' under 72.01(7).",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 72.01(7)(A)(iii) lists 'Chapter 47, relating to gambling' as a source of unlawful debt."
+                },
+                {
+                    question: "The definition of 'Racketeering' includes committing a felony offense under what Act?",
+                    options: ["The Securities Act", "The Health and Safety Act", "The Civil Practice and Remedies Act", "The Occupations Act"],
+                    answer: "The Securities Act",
+                    explanation: "Sec. 72.01(5)(A) lists 'a felony offense under The Securities Act (Title 12, Government Code)'."
+                },
+                {
+                    question: "Before imposing the 'Alternative Fine' under 72.05, the court must...",
+                    options: ["Get approval from the District Attorney.", "Hold a hearing.", "Notify the Comptroller.", "Ensure the defendant has a prior conviction."],
+                    answer: "Hold a hearing.",
+                    explanation: "Sec. 72.05 states 'a court, *after a hearing*, may impose a fine...'"
+                },
+                {
+                    question: "Which of these is NOT an underlying offense for 'Racketeering' in 72.01(5)?",
+                    options: ["Felony Resisting Arrest (38.03)", "Felony Perjury (Ch. 37)", "Felony Public Indecency (Ch. 43)", "Misdemeanor Perjury (Ch. 37)"],
+                    answer: "Misdemeanor Perjury (Ch. 37)",
+                    explanation: "Sec. 72.01(5)(E) specifies 'a *felony* offense under Chapter 37'."
+                }
+            ];
+
+            // --- Quiz Elements ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+            const quizButtons = document.getElementById('quiz-buttons');
+            const quizMessage = document.getElementById('quiz-message');
+
+            function loadQuiz() {
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                if (quizData.length === 0) {
+                    quizMessage.textContent = 'There are no questions available for this chapter as it does not contain any substantive sections.';
+                    quizButtons.classList.add('hidden'); // Hide submit/retake buttons
+                    return;
+                }
+                
+                quizMessage.textContent = 'Test your understanding of the material. (' + quizData.length + ' Questions)';
+                quizButtons.classList.remove('hidden');
+
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                if (totalQuestions === 0) return; // Don't do anything if no questions
+                
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 72 - Racketeering...", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.72.htm" },
+                 { name: "CPRC Sec. 140B.001 (Definitions)", url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.140B.htm#140B.001" },
+                 { name: "Penal Code Sec. 34.01 (Money Laundering Defs)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.34.htm#34.01" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

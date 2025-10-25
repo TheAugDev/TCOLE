@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 42 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-bullhorn mr-2"></i>Ch. 42: Disorderly Conduct & Related Offenses
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+             <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="disorderly" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-volume-up mr-2"></i> Disorderly Conduct (42.01)
+                </button>
+                 <button data-tab="riot-obstruct" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-users-slash mr-2"></i> Riot / Obstruction (42.02+)
+                </button>
+                 <button data-tab="false-reports" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-phone-slash mr-2"></i> False Reports / Calls (42.06+)
+                </button>
+                <button data-tab="harassment" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-ninja mr-2"></i> Harassment / Stalking (42.07+)
+                </button>
+                 <button data-tab="animal-cruelty" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-dog mr-2"></i> Animal Cruelty / Fighting (42.09+)
+                </button>
+                <button data-tab="other-offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-asterisk mr-2"></i> Other Offenses (42.08+)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Disorderly Conduct Tab -->
+            <div id="disorderly" class="tab-content active space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.01" target="_blank" class="text-red-600 hover:underline">Sec. 42.01. Disorderly Conduct</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person I/K:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Uses abusive/indecent/profane/vulgar language in public place & it tends to incite immediate breach of peace ("Fighting Words").</li>
+                                <li>Makes offensive gesture/display in public place & it tends to incite immediate breach of peace.</li>
+                                <li>Creates noxious/unreasonable odor (chemical) in public place.</li>
+                                <li>Abuses/threatens person in public place in obviously offensive manner. (Defense: Significant provocation (b)).</li>
+                                <li>Makes unreasonable noise in public place (not shooting range) or near private residence they can't occupy. (Presumed unreasonable if > 85dB after notice (c)(2)).</li>
+                                <li>Fights with another in public place.</li>
+                                <li>Discharges firearm in public place (not public road or shooting range).</li>
+                                <li>Displays firearm/DW in public place in manner calculated to alarm.</li>
+                                <li>Discharges firearm on or across public road.</li>
+                                <li>Exposes anus/genitals in public place & is reckless if another offended/alarmed.</li>
+                                <li>For lewd/unlawful purpose: (A) Enters property & looks into dwelling; (B) Looks into hotel guest room (not own); (C) Looks into private area (restroom, etc.) in public place.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(7) [Discharge Firearm Public Place] or (a)(8) [Display Firearm Alarmingly]: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>All others: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Public Place (a-1):</strong> Includes public school campus/grounds.</li>
+                        <li><strong class="font-semibold">Defense (e):</strong> For (a)(7) & (a)(9) [Discharge Firearm], reasonable fear of BI from dangerous wild animal.</li>
+                         <li><strong class="font-semibold">Exception (e-1):</strong> (a)(9) [Discharge Across Road] doesn't apply to PWD employee on duty per PWC 12.013(c).</li>
+                        <li><strong class="font-semibold">Exception (f):</strong> Subsections (a)(1, 2, 3, 5, 6) do NOT apply to student < 12 on public school campus during school hours.</li>
+                         <li><strong class="font-semibold">Exception (g):</strong> Lawful space flight activities noise is not "unreasonable noise".</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Riot / Obstruction Tab -->
+            <div id="riot-obstruct" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.02" target="_blank" class="text-red-600 hover:underline">Sec. 42.02. Riot</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Riot" Definition (a):</strong> Assemblage of <strong>7 or more persons</strong> resulting in conduct which: (1) Creates immediate danger of property damage/injury; (2) Substantially obstructs LE/gov functions; OR (3) By force/threat/action deprives person of legal right or disturbs enjoyment of right.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person knowingly participates in a riot.</li>
+                        <li><strong class="font-semibold">Penalties (e, f):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense (f): Same classification as any higher grade offense committed by *anyone* engaged in the riot IF offense was in furtherance of assembly's purpose OR should have been anticipated.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Defense (c):</strong> Assembly was initially lawful & actor retired when someone manifested intent to engage in riotous conduct.</li>
+                         <li><strong class="font-semibold">No Defense (d):</strong> Not a defense that another party was acquitted, not arrested, immune, etc.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.03" target="_blank" class="text-red-600 hover:underline">Sec. 42.03. Obstructing Highway or Other Passageway</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Without legal privilege/authority, person I/K/R: (1) Obstructs public highway, street, sidewalk, railway, waterway, elevator, aisle, hallway, entrance, exit, etc.; OR (2) Disobeys reasonable request/order to move from peace officer/firefighter/person w/ authority to prevent obstruction OR maintain safety near hazard.</li>
+                        <li><strong class="font-semibold">"Obstruct" Definition (b):</strong> Render impassable or unreasonably inconvenient or hazardous.</li>
+                        <li><strong class="font-semibold">Penalties (c, c-1, d, e):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>Enhancement (c-1): <strong class="font-semibold text-red-700">State Jail Felony</strong> if actor knowingly prevents passage of authorized emergency vehicle w/ signals OR obstructs access to hospital/emergency facility.</li>
+                                <li>Enhancement (d): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if operating motor vehicle during reckless driving exhibition.</li>
+                                <li>Enhancement (e): <strong class="font-semibold text-red-700">State Jail Felony</strong> if operating motor vehicle during reckless driving exhibition AND has prior under (d), OR was intoxicated, OR caused BI.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">"Reckless Driving Exhibition" (f):</strong> Operator intentionally breaks traction, spins tires, rotates vehicle on highway/street in presence of 2+ spectators.</li>
+                         <li><strong class="font-semibold">Prosecution Note (g):</strong> If conduct also violates another law, can be prosecuted under either, but not both.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.04" target="_blank" class="text-red-600 hover:underline">Sec. 42.04. Defense When Conduct Consists of Speech or Other Expression</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Applicability (a):</strong> Applies if conduct violating 42.01(a)(5) [Noise], 42.03 [Obstruction], or 42.055 [Funeral] consists of speech, communication, gathering to hear/observe, or nonviolent picketing/expression.</li>
+                        <li><strong class="font-semibold">Requirement (a):</strong> Actor must be ordered to move/disperse/remedy *before* arrest if they haven't yet intentionally harmed interests protected by those sections.</li>
+                        <li><strong class="font-semibold">Who Can Order (b):</strong> Peace officer, fireman, person w/ authority over premises, or person directly affected.</li>
+                        <li><strong class="font-semibold">Defense (c):</strong> It is a defense if: (1) Required order not given; (2) Order was manifestly unreasonable; OR (3) Order was promptly obeyed.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.05" target="_blank" class="text-red-600 hover:underline">Sec. 42.05. Disrupting Meeting or Procession</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to prevent/disrupt lawful meeting/procession/gathering (in person or virtual), obstructs/interferes by: (1) Physical action; (2) Verbal utterance; OR (3) Electronic disturbance (hacking) of virtual component.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.055" target="_blank" class="text-red-600 hover:underline">Sec. 42.055. Funeral Service Disruptions</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Picketing" (a)(3):</strong> Includes displaying signs, loud chanting/yelling, or blocking access.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Engages in picketing within <strong>1,000 feet</strong> of facility/cemetery used for funeral service during period <strong>3 hours before to 3 hours after</strong> service.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- False Reports / Calls Tab -->
+            <div id="false-reports" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.06" target="_blank" class="text-red-600 hover:underline">Sec. 42.06. False Alarm or Report</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly initiates/communicates/circulates report of bombing/fire/offense/emergency that actor knows is false/baseless AND ordinarily would: (1) Cause action by emergency agency; (2) Place person in fear of imminent SBI; OR (3) Prevent/interrupt occupation of building, public place, conveyance.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong> IF report involves higher ed institution, public school, public comms/transport/utilities.</li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.0601" target="_blank" class="text-red-600 hover:underline">Sec. 42.0601. False Report to Induce Emergency Response (Swatting)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person makes/causes false report of crime/emergency to authorized entity, knows report is false, report causes emergency response, AND person is reckless whether response may directly result in BI to another.</li>
+                         <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>Enhancement (b)(1): <strong class="font-semibold text-red-700">State Jail Felony</strong> if 2+ prior convictions under this section.</li>
+                                <li>Enhancement (b)(2): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if report was of crime, LE/emergency responded, AND person suffered SBI/death as direct result of lawful conduct from that response.</li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.061" target="_blank" class="text-red-600 hover:underline">Sec. 42.061. Silent or Abusive Calls to 9-1-1 Service</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Makes call/request to 9-1-1 when no emergency & K/I: (1) Remains silent; OR (2) Makes abusive/harassing statements to PSAP employee.</li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Knowingly permits device under control to be used by another for (b).</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.062" target="_blank" class="text-red-600 hover:underline">Sec. 42.062. Interference With Emergency Request for Assistance</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly prevents/interferes with another's ability to place emergency call/request for assistance.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Recklessly renders unusable electronic communication device that would otherwise be used for emergency call/request.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong> if actor has previous conviction under this section.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">"Emergency" Definition (d):</strong> Condition where individual fears imminent assault OR property in imminent danger.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Harassment / Stalking Tab -->
+             <div id="harassment" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.07" target="_blank" class="text-red-600 hover:underline">Sec. 42.07. Harassment</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to harass, annoy, alarm, abuse, torment, or embarrass another, person:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Initiates communication & makes obscene comment/request/etc.</li>
+                                <li>Threatens BI or felony (manner likely to alarm).</li>
+                                <li>Conveys false report of death/SBI (manner likely to alarm).</li>
+                                <li>Causes phone to ring repeatedly / makes repeated anonymous calls (manner likely to harass, etc.).</li>
+                                <li>Makes call & intentionally fails to hang up.</li>
+                                <li>Knowingly permits phone under control to be used for (1-5).</li>
+                                <li>Sends repeated electronic communications (manner likely to harass, etc.).</li>
+                                <li>Publishes repeated electronic communications online (manner likely to cause emotional distress, etc.; unless public concern).</li>
+                                <li>Tracks/monitors personal property/vehicle without consent (using app/device OR physically following).</li>
+                                <li>Makes obscene/intimidating/threatening calls/comms from temp/disposable number.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> IF: (1) Prior conviction under this section; OR (2) Offense under (a)(7)/(8) against child < 18 w/ intent child commit suicide/SBI OR actor previously violated cyberbullying TRO; OR (3) Offense against known utility worker on duty. (Future enhancements for court employees/judges noted but not yet effective).</li>
+                             </ul>
+                        </li>
+                         <li><strong class="font-semibold">"Obscene" Definition (b)(3):</strong> Patently offensive description/solicitation of ultimate sex act or description of excretory function.</li>
+                         <li><strong class="font-semibold">Tracking Presumption (e):</strong> No effective consent presumed if PO filed/issued against actor OR parties are married w/ divorce filed / previously married & divorced.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.072" target="_blank" class="text-red-600 hover:underline">Sec. 42.072. Stalking</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> On <strong>more than one occasion</strong> & pursuant to same scheme/course of conduct directed at specific person, knowingly engages in conduct that:
+                             <ol class="list-decimal list-inside ml-4 space-y-1">
+                                 <li>Constitutes offense under 42.07 (Harassment) OR actor knows/should know victim will regard as threatening BI/death or offense against family/household/dating partner/property; AND</li>
+                                 <li>Causes victim (or family/household/dating partner) to be placed in fear of BI/death/offense against person/property OR feel harassed/terrified/intimidated/etc.; AND</li>
+                                 <li>Would cause reasonable person to fear BI/death/offense against person/property OR feel harassed/terrified/intimidated/etc.</li>
+                             </ol>
+                         </li>
+                         <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if actor previously convicted of Stalking (this section or substantially similar law from another jurisdiction).</li>
+                             </ul>
+                         </li>
+                         <li><strong class="font-semibold">Course of Conduct (c):</strong> Trier of fact may find different types of conduct under (a) engaged in >1 occasion constitute same scheme/course.</li>
+                         <li><strong class="font-semibold">Property (d)(2):</strong> Includes pet, companion animal, or assistance animal.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.074" target="_blank" class="text-red-600 hover:underline">Sec. 42.074. Unlawful Disclosure of Residence Address or Telephone Number</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person posts on publicly accessible website OR discloses via electronic communication residence address/phone # of individual with intent to cause harm/threat of harm to individual or family/household member.</li>
+                         <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if offense results in BI to individual or family/household member.</li>
+                             </ul>
+                         </li>
+                         <li><strong class="font-semibold">Exception (c):</strong> Does not apply to public servant posting/disclosing in performance of duties required by law.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.075" target="_blank" class="text-red-600 hover:underline">Sec. 42.075. Disclosure of Confidential Information Regarding Family Violence or Victims of Trafficking Shelter Center</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> With intent to threaten safety of any inhabitant, discloses or publicizes location or physical layout of family violence or victims of trafficking shelter center.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                 </div>
+             </div>
+
+            <!-- Animal Cruelty / Fighting Tab -->
+            <div id="animal-cruelty" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.09" target="_blank" class="text-red-600 hover:underline">Sec. 42.09. Cruelty to Livestock Animals</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Livestock Animal" Definition (b)(5):</strong> Cattle, sheep, swine, goats, ratites, poultry (human consumption); horse, pony, mule, donkey, hinny; native/nonnative hoofstock (ag practices); native/nonnative fowl (ag practices).</li>
+                        <li><strong class="font-semibold">Offenses (a):</strong> Person I/K: (1) Tortures; (2) Unreasonably fails to provide necessary food/water/care; (3) Unreasonably abandons; (4) Transports/confines cruelly; (5) Poisons (not cattle/horse/etc.) belonging to another; (6) Causes fight w/ another livestock/animal; (7) Uses live lure for dogs; (8) Trips horse; (9) Seriously overworks.</li>
+                         <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(2, 3, 4, 9) - Failure/Abandon/Transport/Overwork: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (SJF if 2+ priors under 42.09/42.092).</li>
+                                <li>(a)(1, 5, 6, 7, 8) - Torture/Poison/Fight/Lure/Trip: <strong class="font-semibold text-red-700">State Jail Felony</strong> (F3 if 2+ priors under 42.09/42.092).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Defenses:</strong> (d) For tripping horse: ID ownership or vet care. (e) Bona fide scientific research.</li>
+                        <li><strong class="font-semibold">Exceptions (f):</strong> Generally accepted/lawful fishing/hunting/trapping, wildlife management/control, or animal husbandry/ag practices.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.091" target="_blank" class="text-red-600 hover:underline">Sec. 42.091. Attack on Assistance Animal</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Assistance Animal" Definition (e)(1):</strong> Per HRC 121.002.</li>
+                        <li><strong class="font-semibold">Offense (a):</strong> Person I/K/R attacks, injures, or kills assistance animal.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person I/K/R incites/permits own animal to attack/injure/kill assistance animal, and it does.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Attack: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>Injury: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                                <li>Kill: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Restitution (d):</strong> Court shall order restitution for vet bills, replacement/retraining costs, other reasonable expenses.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.092" target="_blank" class="text-red-600 hover:underline">Sec. 42.092. Cruelty to Nonlivestock Animals</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">"Animal" Definition (a)(2):</strong> Domesticated living creature (incl stray/feral cat/dog) & wild creature previously captured. Excludes uncaptured wild creatures & livestock.</li>
+                         <li><strong class="font-semibold">Offenses (b):</strong> Person I/K/R/CN: (1) Tortures or cruelly kills/causes SBI; (2) Kills/poisons/causes SBI to another's animal w/o consent; (3) Unreasonably fails to provide necessary food/water/care/shelter; (4) Unreasonably abandons; (5) Transports/confines cruelly; (6) Causes BI to another's animal w/o consent; (7) Causes non-dog animal fight; (8) Uses live lure for dogs; (9) Seriously overworks.</li>
+                         <li><strong class="font-semibold">Penalties (c, c-1, c-2):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(b)(3, 4, 5, 6, 9) - Failure/Abandon/Transport/BI/Overwork: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (SJF if 2+ priors under 42.09/42.092).</li>
+                                <li>(b)(1, 2) - Torture/Cruel Kill/SBI / Kill/Poison/SBI Another's: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> (F2 if prior under b1, b2, b7, b8 or 42.09).</li>
+                                <li>(b)(7, 8) - Non-Dog Fight / Live Lure: <strong class="font-semibold text-red-700">State Jail Felony</strong> (F3 if prior under this section or 42.09).</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Defenses:</strong> (d) Reasonable fear of BI from dangerous wild animal; Bona fide scientific research; (d-1) Vet/assistant acting in scope of duties (defense to CN only); (e) Animal discovered injuring/killing livestock or crops; Actor was public servant/utility worker in scope of employment; (e-1) Releasing stray/feral per Trap-Neuter-Return Program; (e-2) Releasing trapped wild creature per wildlife laws.</li>
+                         <li><strong class="font-semibold">Exceptions (f):</strong> Same as 42.09(f) (fishing/hunting/trapping, wildlife management, animal husbandry).</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.10" target="_blank" class="text-red-600 hover:underline">Sec. 42.10. Dog Fighting</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offenses (a):</strong> Person I/K: (1) Causes dog to fight another dog; (2) Participates in earnings/operates facility; (3) Uses/permits property use; (4) Possesses dog-fighting equipment w/ intent; (5) Owns/trains dog w/ intent; (6) Attends as spectator.</li>
+                         <li><strong class="font-semibold">Penalties (e):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(4, 5, 6) - Equip/Own/Train/Attend: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>(a)(1, 2, 3) - Cause Fight/Earnings/Facility/Property: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Defense (d):</strong> For (a)(1) Cause Fight: Actor caused fight solely to protect livestock/property/person from other dog.</li>
+                         <li><strong class="font-semibold">Testimony (c):</strong> Conviction under (a)(2) or (3) can be had on uncorroborated party testimony.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.105" target="_blank" class="text-red-600 hover:underline">Sec. 42.105. Cockfighting</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offenses (b):</strong> Knowingly: (1) Causes cock fight; (2) Participates in earnings; (3) Uses/permits property; (4) Owns/trains w/ intent; (5) Manufactures/buys/sells/possesses gaff/slasher w/ intent; (6) Attends as spectator.</li>
+                         <li><strong class="font-semibold">Penalties (g):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li>(b)(1, 2) - Cause Fight / Earnings: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                                <li>(b)(3, 4, 5) - Property / Own/Train / Gaffs: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>(b)(6) - Attend: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong> (MA if prior under (b)(6)).</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Affirmative Defense (c):</strong> Conduct solely for breeding for poultry shows OR incidental to collecting equipment (Not available if evidence shows cockfighting use (d)).</li>
+                         <li><strong class="font-semibold">Defense (e):</strong> Bona fide scientific research OR accepted/lawful animal husbandry.</li>
+                         <li><strong class="font-semibold">Exception (f):</strong> For (b)(6) Attend: Actor is 15 or younger.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.107" target="_blank" class="text-red-600 hover:underline">Sec. 42.107. Possession of Animal by Person Convicted of Animal Cruelty</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Possesses/exercises control over animal AND within preceding 5 yrs, convicted of 42.091 (Attack Assist Animal), 42.092 (Cruelty Nonlivestock), 42.10 (Dog Fighting), or similar federal/state law.</li>
+                         <li><strong class="font-semibold">Penalties (b):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong> if prior conviction under this section.</li>
+                             </ul>
+                         </li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Other Offenses Tab -->
+             <div id="other-offenses" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.08" target="_blank" class="text-red-600 hover:underline">Sec. 42.08. Abuse of Corpse</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offenses (a):</strong> Without legal authority, knowingly: (1) Disinters, disturbs, damages, dissects, carries away, treats offensively corpse; (2) Conceals illegally disinterred corpse; (3) Sells/buys/traffics corpse; (4) Transmits corpse out of state; (5) Vandalizes/damages/treats offensively place of interment.</li>
+                        <li><strong class="font-semibold">"Human Corpse" (c):</strong> Includes portion, cremated remains, or portion of cremated remains.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(5) - Vandalize Interment Space: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>All others: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Defense (e):</strong> Actor was member/agent of cemetery org removing/damaging item placed in violation of rules OR item that became wrecked/unsightly/dilapidated.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.11" target="_blank" class="text-red-600 hover:underline">Sec. 42.11. Destruction of Flag</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> I/K damages, defaces, mutilates, or burns flag of US or Texas.</li>
+                        <li><strong class="font-semibold">"Flag" Definition (b):</strong> Official/recognized emblem/banner capable of being flown. Excludes representations on documents, photos, clothing, jewelry, etc.</li>
+                        <li><strong class="font-semibold">Exception (c):</strong> Act done in conformity w/ statutes regarding proper disposal of damaged flags.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.12" target="_blank" class="text-red-600 hover:underline">Sec. 42.12. Discharge of Firearm in Certain Municipalities</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Recklessly discharges firearm inside corporate limits of municipality having population <strong>100,000 or more</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Note (d):</strong> Does not affect municipality's authority to enact stricter ordinance.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.13" target="_blank" class="text-red-600 hover:underline">Sec. 42.13. Use of Laser Pointers</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly directs light from laser pointer at uniformed safety officer (peace officer, security guard, firefighter, EMS, etc.).</li>
+                         <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>If causes BI: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>If causes SBI: <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.14" target="_blank" class="text-red-600 hover:underline">Sec. 42.14. Illumination of Aircraft by Intense Light</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Intentionally directs light from laser pointer/other source at aircraft AND light has intensity sufficient to impair operator's ability to control aircraft.</li>
+                         <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>If intensity impairs operator's ability to control: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Affirmative Defense (b):</strong> Actor was using light to send emergency distress signal.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.42.htm#42.15" target="_blank" class="text-red-600 hover:underline">Sec. 42.15. Operation of Unmanned Aircraft Over Airport, Military Installation, or Spaceport</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (b):</strong> I/K: (1) Operates unmanned aircraft over airport/military installation/spaceport; (2) Allows contact w/ facility/person/object; OR (3) Operates interfering w/ or causing disturbance to facility.</li>
+                         <li><strong class="font-semibold">Penalties (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if prior conviction under this section.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Defense (c):</strong> Conduct by gov entity, person under contract w/ gov, LE, person under contract w/ LE, owner/operator, person under contract w/ owner/operator, person w/ written authorization (owner/operator or FAA), or owner/occupant of property w/ consent.</li>
+                    </ul>
+                 </div>
+             </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 42)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (210 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 42) ---
+            const quizData = [
+                // 42.01 Disorderly Conduct
+                {
+                    question: "Under 42.01(a)(1), using language that 'tends to incite an immediate breach of the peace' refers to which legal concept?",
+                    options: ["Obscenity", "Fighting Words", "Hate Speech", "Slander"],
+                    answer: "Fighting Words",
+                    explanation: "Sec. 42.01(a)(1) mirrors the 'fighting words' doctrine, which are words likely to provoke a violent reaction."
+                },
+                // ... existing questions 2-12 ...
+                {
+                    question: "For an act to be considered Disorderly Conduct under 42.01(c)(1), where must its offensive or proscribed consequences occur?",
+                    options: ["Only in a public place", "Only near a private residence", "In the public place or near the private residence", "Where the actor intended them to occur"],
+                    answer: "In the public place or near the private residence",
+                    explanation: "Sec. 42.01(c)(1) states an act is deemed to occur in a public place or near a private residence if it produces its consequences there."
+                },
+                 {
+                    question: "Does the exception under 42.01(f) for students younger than 12 apply to discharging a firearm (a)(7) on campus during school hours?",
+                    options: ["Yes", "No", "Only if unloaded", "Only if accidental"],
+                    answer: "No",
+                    explanation: "Sec. 42.01(f) lists the exceptions as (a)(1), (2), (3), (5), and (6). It does *not* include (a)(7) [Discharge Firearm] or (a)(8) [Display Firearm]."
+                },
+                 {
+                    question: "Does the defense under 42.01(e) regarding fear of a dangerous wild animal apply to discharging a firearm *in* a public place (a)(7)?",
+                    options: ["Yes", "No", "Only if animal was attacking", "Only for specific animals"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.01(e) explicitly provides the defense for offenses under Subsection (a)(7) or (9)."
+                },
+                // 42.02 Riot
+                {
+                    question: "What is the minimum number of persons required for an assemblage to potentially constitute a 'riot' under 42.02?",
+                    options: ["Three or more", "Five or more", "Seven or more", "Ten or more"],
+                    answer: "Seven or more",
+                    explanation: "Sec. 42.02(a) defines 'riot' as 'the assemblage of seven or more persons'."
+                },
+                // ... existing questions 16-19 ...
+                 {
+                    question: "Is it a defense to prosecution for Riot (42.02) that the person who committed the higher grade offense during the riot was later acquitted?",
+                    options: ["Yes", "No", "Only if acquitted due to immunity", "Only if the actor retired from the assembly"],
+                    answer: "No",
+                    explanation: "Sec. 42.02(d) states 'It is no defense... that another who was a party to the riot has been acquitted...'"
+                },
+                // 42.03 Obstructing Highway
+                {
+                    question: "Under 42.03, 'Obstruct' means to render impassable or to render passage...",
+                    options: ["Difficult", "Slow", "Unreasonably inconvenient or hazardous", "Completely blocked"],
+                    answer: "Unreasonably inconvenient or hazardous",
+                    explanation: "Sec. 42.03(b) provides this definition."
+                },
+                // ... existing questions 22-29 ...
+                 {
+                    question: "Disobeying a reasonable order from a firefighter to move away from a dangerous fire constitutes an offense under which section?",
+                    options: ["42.01 Disorderly Conduct", "42.02 Riot", "42.03 Obstructing Highway or Other Passageway", "42.05 Disrupting Meeting"],
+                    answer: "42.03 Obstructing Highway or Other Passageway",
+                    explanation: "Sec. 42.03(a)(2)(B) includes disobeying a reasonable request from a fireman 'to maintain public safety by dispersing those gathered in dangerous proximity to a fire...'"
+                },
+                // 42.04 Defense for Speech
+                {
+                    question: "The defense under 42.04 (requiring an order to move before arrest) applies to which offense?",
+                    options: ["42.01(a)(1) - Fighting Words", "42.01(a)(5) - Unreasonable Noise", "42.01(a)(7) - Discharge Firearm", "42.02 - Riot"],
+                    answer: "42.01(a)(5) - Unreasonable Noise",
+                    explanation: "Sec. 42.04(a) explicitly lists 42.01(a)(5), 42.03, and 42.055 as the sections where this defense applies if the conduct is speech/expression."
+                },
+                // ... existing questions 32-33 ...
+                // 42.05 Disrupting Meeting
+                {
+                    question: "What is the penalty for Disrupting a Meeting or Procession (42.05)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 42.05(b) sets the penalty as Class B Misdemeanor."
+                },
+                // ... existing question 35 ...
+                // 42.055 Funeral Disruptions
+                {
+                    question: "The prohibition against picketing near a funeral service under 42.055 applies within what distance?",
+                    options: ["100 feet", "300 feet", "500 feet", "1,000 feet"],
+                    answer: "1,000 feet",
+                    explanation: "Sec. 42.055(b) prohibits picketing 'within 1,000 feet' of the facility or cemetery."
+                },
+                // ... existing questions 37-39 ...
+                // 42.06 False Alarm/Report
+                {
+                    question: "Making a false report of a bombing is a Class A Misdemeanor under 42.06, unless it involves certain public facilities/services, making it a...",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "State Jail Felony", "Class A Misdemeanor still"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 42.06(b) enhances the offense to SJF if the report involves higher ed, public school, public comms, public transport, public utilities, etc."
+                },
+                // ... existing question 41 ...
+                 {
+                    question: "Circulating a report of a past emergency that you know is baseless and would ordinarily cause action by an emergency agency is an offense under 42.06.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 42.06(a) applies to reports of 'present, past, or future' emergencies known to be false or baseless."
+                },
+                // 42.0601 Swatting
+                {
+                    question: "False Report to Induce Emergency Response (Swatting) (42.0601) requires the actor make a false report, know it's false, it causes response, AND the actor is _____ whether the response may result in BI.",
+                    options: ["Intentional", "Knowing", "Reckless", "Criminally Negligent"],
+                    answer: "Reckless",
+                    explanation: "Sec. 42.0601(a)(4) requires the actor be 'reckless with regard to whether the emergency response... may directly result in bodily injury'."
+                },
+                // ... existing questions 44-46 ...
+                 {
+                    question: "Can a person be prosecuted under both 42.06 (False Alarm) and 42.0601 (Swatting) if their conduct meets the elements of both?",
+                    options: ["Yes", "No", "Only if SBI/Death results", "Only if against a school"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.0601(c) states 'If conduct constituting an offense under this section also constitutes an offense under another section of this code, the actor may be prosecuted under either section or both sections'."
+                },
+                // 42.061 911 Abuse
+                {
+                    question: "Making a silent call to 911 when there is no emergency is what level offense under 42.061?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 42.061(b)(1) prohibits remaining silent, and (d) sets the penalty as Class B Misdemeanor."
+                },
+                // ... existing question 49 ...
+                 {
+                    question: "Making abusive statements to a 9-1-1 PSAP employee during a non-emergency call is an offense under 42.061.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 42.061(b)(2) prohibits making abusive or harassing statements to a PSAP employee when there is not an emergency."
+                },
+                // 42.062 Interference w/ Emergency Call
+                {
+                    question: "What is the base penalty for knowingly preventing someone from making an emergency call (42.062)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.062(c) sets the base penalty as Class A Misdemeanor."
+                },
+                // ... existing questions 52-54 ...
+                // 42.07 Harassment
+                {
+                    question: "Which of these acts constitutes Harassment under 42.07, if done with intent to harass, annoy, etc.?",
+                    options: ["Sending one offensive text message", "Making repeated anonymous telephone communications likely to offend", "Disagreeing strongly in an online forum", "Accidentally calling the wrong number multiple times"],
+                    answer: "Making repeated anonymous telephone communications likely to offend",
+                    explanation: "Sec. 42.07(a)(4) prohibits making repeated anonymous calls or calls in a manner likely to harass, etc."
+                },
+                // ... existing questions 56-61 ...
+                {
+                    question: "What is the definition of 'Obscene' specifically for the Harassment statute (42.07)?",
+                    options: ["Appeals to prurient interest and lacks value", "Contains patently offensive description/solicitation of ultimate sex act or excretory function", "Depicts nudity", "Uses profane language"],
+                    answer: "Contains patently offensive description/solicitation of ultimate sex act or excretory function",
+                    explanation: "Sec. 42.07(b)(3) provides a specific definition including ultimate sex acts (intercourse, masturbation, cunnilingus, fellatio, anilingus) or excretory functions."
+                },
+                 {
+                    question: "Under 42.07(c), Harassment (MB) against a person the actor knows is a utility worker performing their duties is enhanced to:",
+                    options: ["Class B Misdemeanor (no change)", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.07(c)(3) enhances the offense to Class A Misdemeanor under these circumstances."
+                },
+                 {
+                    question: "Publishing repeated electronic communications on a website likely to cause emotional distress is Harassment under 42.07(a)(8), unless the communications are made in connection with:",
+                    options: ["Personal disputes", "Commercial advertising", "A matter of public concern", "Private chat groups"],
+                    answer: "A matter of public concern",
+                    explanation: "Sec. 42.07(a)(8) includes the exception 'unless the communications are made in connection with a matter of public concern'."
+                },
+                // 42.072 Stalking
+                {
+                    question: "Stalking (42.072) requires conduct directed at a specific person on how many occasions?",
+                    options: ["One or more", "More than one", "Three or more", "Repeatedly over 30 days"],
+                    answer: "More than one",
+                    explanation: "Sec. 42.072(a) requires conduct 'on more than one occasion'."
+                },
+                // ... existing questions 66-70 ...
+                 {
+                    question: "Does the definition of 'Property' for Stalking (42.072) include pets or assistance animals?",
+                    options: ["Yes", "No", "Only if valuable", "Only assistance animals"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.072(d)(2) explicitly states 'Property' includes a pet, companion animal, or assistance animal."
+                },
+                 {
+                    question: "Can different types of harassing conduct (e.g., calls one week, following the next) be considered part of the 'same scheme or course of conduct' for Stalking (42.072)?",
+                    options: ["Yes", "No", "Only if identical conduct", "Only if occurs within 24 hours"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.072(c) allows the trier of fact to find that different types of conduct described in (a), if done on more than one occasion, constitute the same scheme or course."
+                },
+                // 42.074 Unlawful Disclosure
+                {
+                    question: "Unlawful Disclosure (42.074) involves posting address/phone number online OR disclosing via electronic communication with intent to cause...",
+                    options: ["Embarrassment", "Financial loss", "Harm or a threat of harm", "Public ridicule"],
+                    answer: "Harm or a threat of harm",
+                    explanation: "Sec. 42.074(a) requires 'intent to cause harm or a threat of harm to the individual or a member of the individual's family or household'."
+                },
+                // ... existing questions 74-75 ...
+                 {
+                    question: "Does 42.074 (Unlawful Disclosure) apply to a county clerk posting required public records containing addresses online?",
+                    options: ["Yes", "No", "Only if requested", "Only with redaction"],
+                    answer: "No",
+                    explanation: "Sec. 42.074(c) provides an exception for public servants posting information 'in the performance of the public servant's duties as required by or in accordance with state or federal law'."
+                },
+                // 42.075 Shelter Disclosure
+                {
+                    question: "Disclosure of Shelter Info (42.075) requires intent to...",
+                    options: ["Help someone find shelter", "Threaten the safety of any inhabitant", "Raise awareness", "Report violations"],
+                    answer: "Threaten the safety of any inhabitant",
+                    explanation: "Sec. 42.075(b) requires 'intent to threaten the safety of any inhabitant' of the shelter."
+                },
+                // ... existing question 78 ...
+                 {
+                    question: "Disclosing the physical layout of a victims of trafficking shelter center with intent to threaten inhabitants is an offense under 42.075.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 42.075(b) prohibits disclosing the 'location or physical layout' of either family violence or victims of trafficking shelter centers with the requisite intent."
+                },
+                // 42.08 Abuse of Corpse
+                {
+                    question: "Which act constitutes Abuse of Corpse under 42.08?",
+                    options: ["Attending a funeral", "Taking photos at a cemetery", "Knowingly concealing an illegally disinterred corpse", "Placing flowers on a grave"],
+                    answer: "Knowingly concealing an illegally disinterred corpse",
+                    explanation: "Sec. 42.08(a)(2) lists concealing a human corpse knowing it to be illegally disinterred."
+                },
+                // ... existing questions 81-84 ...
+                 {
+                    question: "Knowingly transmitting a human corpse to a place outside Texas without legal authority is an offense under 42.08.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 42.08(a)(4) prohibits knowingly transmitting or conveying a human corpse to a place outside the state without legal authority."
+                },
+                // 42.09 Cruelty to Livestock
+                {
+                    question: "Which animal is NOT included in the definition of 'Livestock Animal' under 42.09?",
+                    options: ["Cattle", "Horse", "Dog", "Goat"],
+                    answer: "Dog",
+                    explanation: "Sec. 42.09(b)(5) lists specific types like cattle, horses, sheep, swine, goats, ratites, poultry, hoofstock, fowl raised under ag practices. Dogs are covered under 42.092."
+                },
+                // ... existing questions 87-93 ...
+                 {
+                    question: "Under 42.09, what does 'Necessary food, water, or care' include?",
+                    options: ["Minimum subsistence levels", "Food, water, or care to maintain the animal in a state of good health", "Shelter from elements", "Veterinary visits"],
+                    answer: "Food, water, or care to maintain the animal in a state of good health",
+                    explanation: "Sec. 42.09(b)(6) defines it as that required 'to maintain the livestock animal in a state of good health'."
+                },
+                 {
+                    question: "Is causing one livestock animal (e.g., a goat) to fight with a non-livestock animal (e.g., a dog) an offense under 42.09?",
+                    options: ["Yes", "No", "Only if betting occurs", "Only if injury results"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.09(a)(6) prohibits causing one livestock animal to fight with 'another livestock animal or with an animal as defined by Section 42.092'."
+                },
+                // 42.091 Attack Assist Animal
+                {
+                    question: "Intentionally *injuring* an assistance animal (42.091) is what level offense?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 42.091(c)(2) sets the penalty for injury as SJF."
+                },
+                // ... existing questions 97-98 ...
+                 {
+                    question: "Is a defendant convicted of attacking an assistance animal (42.091) required to pay restitution for the cost of retraining the injured animal?",
+                    options: ["Yes", "No", "Only if killed", "At the court's discretion"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.091(d) states the court *shall* order restitution, including costs for retraining an injured animal by a reputable organization (d)(2)(B)."
+                },
+                // 42.092 Cruelty Nonlivestock
+                {
+                    question: "Which creature is EXCLUDED from the definition of 'Animal' under 42.092?",
+                    options: ["Stray dog", "Captured wild raccoon", "Pet cat", "Uncaptured wild deer"],
+                    answer: "Uncaptured wild deer",
+                    explanation: "Sec. 42.092(a)(2) defines 'Animal' to include domesticated creatures and previously captured wild creatures, but 'does not include an uncaptured wild living creature'."
+                },
+                // ... existing questions 101-108 ...
+                {
+                    question: "What mental state(s) can apply to the offense of Cruelty to Nonlivestock Animals under 42.092(b)?",
+                    options: ["Intentional only", "Intentional or Knowing only", "Intentional, Knowing, or Reckless only", "Intentional, Knowing, Reckless, or Criminal Negligence"],
+                    answer: "Intentional, Knowing, Reckless, or Criminal Negligence",
+                    explanation: "Sec. 42.092(b) begins 'A person commits an offense if the person intentionally, knowingly, recklessly, or with criminal negligence...'"
+                },
+                 {
+                    question: "Is there a defense under 42.092 for a veterinarian whose alleged criminal negligence occurred during the discharge of their duties?",
+                    options: ["Yes", "No", "Only if assisting vet", "Only for minor errors"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.092(d-1) provides a defense to prosecution for alleged criminal negligence if the conduct occurred during the actual discharge of duties as a licensed vet or assistant."
+                },
+                 {
+                    question: "What does 'Trap-Neuter-Return Program' involve under 42.092?",
+                    options: ["Trapping and euthanizing", "Trapping, sterilizing, vaccinating, marking, and returning", "Trapping and relocating", "Trapping and adopting out"],
+                    answer: "Trapping, sterilizing, vaccinating, marking, and returning",
+                    explanation: "Sec. 42.092(a)(9) defines the steps: trapped, evaluated by vet, vaccinated if needed, sterilized if needed, marked by vet, returned to trap location."
+                },
+                // 42.10 Dog Fighting
+                {
+                    question: "Attending a dog fight as a spectator (42.10a6) is what level offense?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.10(e) sets the penalty for (a)(6) as Class A Misdemeanor."
+                },
+                // ... existing questions 113-114 ...
+                 {
+                    question: "Possessing dog-fighting equipment (e.g., treadmills, breaking sticks) with intent it be used for training or fighting (42.10a4) is what level offense?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.10(e) sets the penalty for (a)(4) as Class A Misdemeanor."
+                },
+                // 42.105 Cockfighting
+                {
+                    question: "Knowingly owning or training a cock with intent it be used in cockfighting (42.105b4) is what level offense?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.105(g) sets the penalty for (b)(4) as Class A Misdemeanor."
+                },
+                // ... existing questions 117-120 ...
+                {
+                    question: "Knowingly manufacturing or possessing a 'gaff' or 'slasher' with intent it be used in cockfighting (42.105b5) is what level offense?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 42.105(g) sets the penalty for (b)(5) as Class A Misdemeanor."
+                },
+                 {
+                    question: "Attending a cockfight (42.105b6 - MC) is enhanced to a Class A Misdemeanor if...",
+                    options: ["Betting occurs", "Actor is over 18", "Actor has prior conviction under (b)(6)", "Cocks are injured"],
+                    answer: "Actor has prior conviction under (b)(6)",
+                    explanation: "Sec. 42.105(g) enhances attending (b)(6) from Class C to Class A 'if it is shown... that the person has been previously convicted of an offense under that subdivision'."
+                },
+                // 42.107 Poss Animal After Conviction
+                {
+                    question: "Possession of Animal After Cruelty Conviction (42.107) applies if the prior conviction occurred within how many years?",
+                    options: ["One year", "Three years", "Five years", "Ten years"],
+                    answer: "Five years",
+                    explanation: "Sec. 42.107(a)(2) specifies 'within the five-year period preceding the date of the instant offense'."
+                },
+                // ... existing questions 124-125 ...
+                 {
+                    question: "Does 42.107 (Possession After Cruelty) apply if the prior conviction was for Attack on Assistance Animal (42.091)?",
+                    options: ["Yes", "No", "Only if animal killed", "Only if felony conviction"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.107(a)(2)(A) explicitly lists Section 42.091 as a qualifying prior conviction."
+                },
+                // 42.11 Destruction of Flag
+                {
+                    question: "Which act constitutes Destruction of Flag under 42.11?",
+                    options: ["Wearing a flag patch", "Flying a torn flag", "Intentionally burning a Texas flag", "Printing a flag on a napkin"],
+                    answer: "Intentionally burning a Texas flag",
+                    explanation: "Sec. 42.11(a) prohibits intentionally or knowingly damaging, defacing, mutilating, or burning the US or Texas flag. (b) excludes representations on documents, clothing, etc. (c) exempts proper disposal."
+                },
+                // ... existing question 128 ...
+                 {
+                    question: "Is properly disposing of a damaged US flag according to federal statute an exception to 42.11?",
+                    options: ["Yes", "No", "Only for Texas flag", "Only if done publicly"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.11(c) provides an exception if the act 'is done in conformity with statutes of the United States or of this state relating to the proper disposal of damaged flags'."
+                },
+                // 42.12 Discharge Firearm Municipality
+                {
+                    question: "Discharge of Firearm in Certain Municipalities (42.12) applies to municipalities with a population of...",
+                    options: ["10,000 or more", "50,000 or more", "100,000 or more", "Any population"],
+                    answer: "100,000 or more",
+                    explanation: "Sec. 42.12(a) specifies 'a municipality having a population of 100,000 or more'."
+                },
+                // ... existing questions 131-132 ...
+                 {
+                    question: "If a person recklessly discharges a firearm inside Dallas city limits (pop > 100k), can they be prosecuted under both 42.12 and a city ordinance prohibiting discharge?",
+                    options: ["Yes, under 42.12(c)", "No, only state law applies", "No, only city ordinance applies", "Yes, but punished only once"],
+                    answer: "No, only state law applies",
+                    explanation: "While 42.12(d) preserves the city's authority to enact ordinances, 42.12(c) states if conduct violates 42.12 *and another section of this code* (meaning the Penal Code), they can be prosecuted under either. It doesn't allow dual prosecution under state law and city ordinance for the same act. Generally, state law preempts conflicting local ordinances unless specified."
+                },
+                // 42.13 Laser Pointers
+                {
+                    question: "What is the base penalty for knowingly directing a laser pointer at a uniformed peace officer (42.13)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 42.13(c) sets the base penalty as Class C Misdemeanor."
+                },
+                // ... existing questions 135-136 ...
+                {
+                    question: "Does 42.13 (Use of Laser Pointers) apply to directing a laser at a uniformed security guard?",
+                    options: ["Yes", "No", "Only if guard is armed", "Only if guard requests stop"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.13(a) lists 'uniformed safety officer, including a peace officer, security guard, firefighter, emergency medical service worker, or other uniformed municipal, state, or federal officer'."
+                },
+                // 42.14 Illumination of Aircraft
+                {
+                    question: "Illumination of Aircraft (42.14) requires intentionally directing a light source AND the light has intensity sufficient to...",
+                    options: ["Be visible", "Cause annoyance", "Impair operator's ability to control aircraft", "Damage the aircraft"],
+                    answer: "Impair operator's ability to control aircraft",
+                    explanation: "Sec. 42.14(a)(2) requires the light have 'an intensity sufficient to impair the operator's ability to control the aircraft'."
+                },
+                // ... existing questions 139-140 ...
+                {
+                    question: "What is the penalty under 42.14 if a person intentionally directs a laser pointer at a plane, but the light intensity is NOT sufficient to impair the operator?",
+                    options: ["Class C Misdemeanor", "Class A Misdemeanor", "No Offense", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 42.14(c) sets the penalty as Class C, *unless* the intensity impairs the operator, in which case it becomes Class A. If impairment isn't proven, it remains Class C."
+                },
+                // 42.15 UAV over Facility
+                {
+                    question: "Operation of Unmanned Aircraft (42.15) prohibits flying over an airport, military installation, or...",
+                    options: ["School", "Hospital", "Spaceport", "Power plant"],
+                    answer: "Spaceport",
+                    explanation: "Sec. 42.15(b)(1) lists 'an airport, military installation, or spaceport'."
+                },
+                // ... existing questions 143-145 ...
+                {
+                    question: "Is it a defense to 42.15 (UAV over Military Installation) that the operator was under contract with the federal government?",
+                    options: ["Yes", "No", "Only if DOD contract", "Only if during daylight"],
+                    answer: "Yes",
+                    explanation: "Sec. 42.15(c)(2) provides a defense for 'a person under contract with or otherwise acting under the direction or on behalf of the federal government...'"
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Update quiz description with the current number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                 if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                 }
+
+                // Shuffle the quiz data array randomly
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear existing questions
+                
+                // Create HTML for each question
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Keep track of the original index before shuffling to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Build options HTML, ensuring values are properly escaped
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                         optionsHtml += `<label class="block"><input type="radio" name="q${index}" value="${escapedOptionValue}" data-original-index="${originalIndex}" class="mr-2">${escapedOptionText}</label>`;
+                    });
+                    
+                    // Escape question text
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Load the quiz initially
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered'); // Reset feedback classes
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex; // Get original index
+                        const q = quizData[originalIndex]; // Get the correct question data
+                        
+                        // Escape answer and explanation for safe HTML insertion
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = `<strong>Correct!</strong> ${escapedExplanation}`;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = `<strong>Incorrect.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find original question index even if unanswered to show correct answer
+                         const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         if (firstRadio) {
+                             const originalIndex = firstRadio.dataset.originalIndex;
+                             const q = quizData[originalIndex];
+                             const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             feedback.innerHTML = `<strong>Unanswered.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                         } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.'; // Fallback
+                         }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden'); // Show feedback
+                    
+                    // Disable radio buttons after checking
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Display final score and percentage
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden'); // Show results div
+                checkAnswersBtn.classList.add('hidden'); // Hide submit button
+                retakeQuizBtn.classList.remove('hidden'); // Show retake button
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden'); // Hide results
+                retakeQuizBtn.classList.add('hidden'); // Hide retake button
+                checkAnswersBtn.classList.remove('hidden'); // Show submit button
+                loadQuiz(); // Reload the quiz (questions will be reshuffled)
+            });
+
+            // --- RESOURCES LIST ---
+            // ... existing resources code ...
+        });
+    </script>
+</body>
+</html>
+

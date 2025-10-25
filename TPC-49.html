@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 49 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-wine-glass-alt mr-2"></i>Ch. 49: Intoxication & Alcoholic Beverage Offenses
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (49.01)
+                </button>
+                <button data-tab="public-intox" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-street-view mr-2"></i> Public Intox & Open Container (49.02-031)
+                </button>
+                <button data-tab="operation-intox" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-car-side mr-2"></i> Operation While Intoxicated (49.04-065)
+                </button>
+                <button data-tab="assault-manslaughter" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-injured mr-2"></i> Intox. Assault & Manslaughter (49.07-08)
+                </button>
+                <button data-tab="enhancements" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-arrow-up mr-2"></i> Enhancements (49.09)
+                </button>
+                <button data-tab="other-provisions" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Other Provisions (49.10-12)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 49.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Alcohol concentration</span>
+                            <p class="definition-desc">Grams of alcohol per: (A) 210L of breath; (B) 100mL of blood; or (C) 67mL of urine.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Intoxicated</span>
+                            <p class="definition-desc">(A) Not having normal use of mental/physical faculties due to alcohol, drugs, etc.; OR (B) Having an alcohol concentration of 0.08 or more.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Motor vehicle</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 32.34(a) (device for transport).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Watercraft</span>
+                            <p class="definition-desc">Vessel, water skis, aquaplane, or other device for transport on water (except if propelled *only* by water current).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Amusement ride</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 2151.002, Occupations Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Mobile amusement ride</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 2151.002, Occupations Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Public Intox & Open Container Tab -->
+            <div id="public-intox" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.02" target="_blank" class="text-red-600 hover:underline">Sec. 49.02. Public Intoxication</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they appear in a *public place* while *intoxicated* to the degree that the person may *endanger* the person or another.</li>
+                        <li><strong class="font-semibold">Public Place (a-1):</strong> A premises licensed/permitted under the Alcoholic Beverage Code *is* a public place.</li>
+                        <li><strong class="font-semibold">Defense (b):</strong> Substance was administered for *therapeutic purposes* as part of *professional medical treatment* by a licensed physician.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Penalty - Minor (e):</strong> If offender is < 21 yoa, punishable under Sec. 106.071, Alcoholic Beverage Code.</li>
+                        <li><strong class="font-semibold">Note (d):</strong> This offense is *not* a lesser included offense of DWI (49.04).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.031" target="_blank" class="text-red-600 hover:underline">Sec. 49.031. Possession of Alcoholic Beverage in Motor Vehicle</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Key Definitions (a):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong>Open Container:</strong> Bottle, can, etc. that contains *any amount* of alcoholic beverage and is open, has a broken seal, or has contents partially removed.</li>
+                                <li><strong>Passenger Area:</strong> Area for seating of operator and passengers. *Does NOT* include: (A) a locked glove box, (B) the trunk, or (C) area behind last upright seat (if no trunk).</li>
+                                <li><strong>Public Highway:</strong> Entire width between boundary lines of a public road, street, highway, etc. (includes the right-of-way).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they *knowingly possess* an *open container* in a *passenger area* of a motor vehicle that is on a *public highway* (regardless of whether vehicle is moving, stopped, or parked).</li>
+                        <li><strong class="font-semibold">Single Offense (b):</strong> Possession of one or more open containers in a single episode is a single offense.</li>
+                        <li><strong class="font-semibold">Exceptions (c):</strong> Does *not* apply to a passenger in:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>A vehicle used for compensation (bus, taxicab, limousine); or</li>
+                                <li>The living quarters of a motorized house coach (RV, motor home, self-contained camper).</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Citation (e):</strong> Officer *shall* issue a written citation and notice to appear (cite & release) instead of taking the person before a magistrate.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Operation While Intoxicated Tab -->
+            <div id="operation-intox" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.04" target="_blank" class="text-red-600 hover:underline">Sec. 49.04. Driving While Intoxicated (DWI)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person is *intoxicated* while *operating a motor vehicle* in a *public place*.</li>
+                        <li><strong class="font-semibold">Base Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, with *minimum 72 hours* confinement. (Subject to 49.09 enhancements).</li>
+                        <li><strong class="font-semibold">Enhancement (c):</strong> If person had *open container* in immediate possession: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, with *minimum 6 days* confinement.</li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> If analysis showed alcohol concentration of *0.15 or more*: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (e):</strong> If operating in a *school crossing zone* (during reduced speed limit times): <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.045" target="_blank" class="text-red-600 hover:underline">Sec. 49.045. Driving While Intoxicated with Child Passenger</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Commits DWI (49.04) AND the vehicle is occupied by a passenger *younger than 15 years of age*.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Other "Operation While Intoxicated" Offenses</h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.05" target="_blank" class="text-red-600 hover:underline">Sec. 49.05. Flying While Intoxicated (FWI)</a></strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong>Offense (a):</strong> Person is *intoxicated* while *operating an aircraft*.</li>
+                                <li><strong>Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, w/ *min 72 hours* confinement. (Subject to 49.09).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.06" target="_blank" class="text-red-600 hover:underline">Sec. 49.06. Boating While Intoxicated (BWI)</a></strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li><strong>Offense (a):</strong> Person is *intoxicated* while *operating a watercraft*.</li>
+                                <li><strong>Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, w/ *min 72 hours* confinement. (Subject to 49.09).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.061" target="_blank" class="text-red-600 hover:underline">Sec. 49.061. Boating While Intoxicated with Child Passenger</a></strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li><strong>Offense (a):</strong> Commits BWI (49.06) AND watercraft is occupied by passenger *younger than 15 years of age*.</li>
+                                <li><strong>Penalty (b):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.065" target="_blank" class="text-red-600 hover:underline">Sec. 49.065. Assembling or Operating an Amusement Ride While Intoxicated</a></strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li><strong>Offense (a):</strong> Person is *intoxicated* while *operating* an amusement ride OR *assembling* a mobile amusement ride.</li>
+                                <li><strong>Base Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, w/ *min 72 hours* confinement. (Subject to 49.09).</li>
+                                <li><strong>Enhancement (c):</strong> If person had *open container* in immediate possession: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>, w/ *min 6 days* confinement.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Intox. Assault & Manslaughter Tab -->
+            <div id="assault-manslaughter" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.07" target="_blank" class="text-red-600 hover:underline">Sec. 49.07. Intoxication Assault</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person, by accident or mistake, *by reason of that intoxication* causes *serious bodily injury* to another while:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Operating an aircraft, watercraft, amusement ride, or motor vehicle (in public place) while intoxicated; OR</li>
+                                <li>Assembling a mobile amusement ride while intoxicated.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Definition (b):</strong> "Serious Bodily Injury" means injury that creates a substantial risk of death or causes serious permanent disfigurement or protracted loss or impairment of any bodily member or organ.</li>
+                        <li><strong class="font-semibold">Base Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>. (Subject to 49.09 enhancements).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.08" target="_blank" class="text-red-600 hover:underline">Sec. 49.08. Intoxication Manslaughter</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person operates a motor vehicle (in public), aircraft, watercraft, or amusement ride, OR assembles a mobile amusement ride; AND is *intoxicated* and *by reason of that intoxication* causes the *death* of another by accident or mistake.</li>
+                        <li><strong class="font-semibold">Base Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>. (Subject to 49.09 enhancements).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Enhancements Tab -->
+            <div id="enhancements" class="tab-content">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.09" target="_blank" class="text-red-600 hover:underline">Sec. 49.09. Enhanced Offenses and Penalties</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-3">
+                        <li><strong class="font-semibold">General Enhancements (a), (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>DWI, FWI, BWI, or Ride (49.04-065) + <strong class="font-semibold">1 prior conviction</strong> (of any in that list) = <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (w/ 30-day min confinement).</li>
+                                <li>DWI, FWI, BWI, Ride, or w/ Child (49.04-065) + <strong class="font-semibold">2 prior convictions</strong> (of any in that list) = <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>DWI, FWI, BWI, Ride, or w/ Child (49.04-065) + <strong class="font-semibold">1 prior conviction</strong> for Intox. Manslaughter (49.08) = <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Intoxication Assault (49.07) Enhancements (b-1), (b-4):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Penalty: F3</li>
+                                <li>SBI to *Firefighter* or *EMS* (on duty) = <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                                <li>SBI to *Peace Officer* or *Judge* (on duty) = <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                                <li>SBI is a *Traumatic Brain Injury* (TBI) resulting in a *persistent vegetative state* = <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Intoxication Manslaughter (49.08) Enhancements (b-2):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Penalty: F2</li>
+                                <li>Death of *Peace Officer, Judge, Firefighter, or EMS* (on duty) = <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                                <li>Death of *more than one person* = <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                                <li>(Note: A separate amendment also makes it F1 if actor had a prior intox offense AND was in violation of Ch. 51 at time of offense).</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Definitions for Enhancement (c):</strong> This section (49.09(c)) provides comprehensive lists of what qualifies as a prior "Offense relating to..." DWI, FWI, BWI, or Ride, including old statute numbers.</li>
+                         <li><strong class="font-semibold">"Final Conviction" (d):</strong> A conviction is *final* even if the sentence was *probated* (suspended).</li>
+                         <li><strong class="font-semibold">Deferred Adjudication (g):</strong> For enhancement, *deferred adjudication* for 49.04 (DWI) or 49.06 (BWI) *counts as a prior conviction*.</li>
+                         <li><strong class="font-semibold">Ignition Interlock (h):</strong> For a 2nd+ DWI offense *within 5 years* of the prior offense, the court *shall* order an ignition interlock device installed on all vehicles owned/operated by the defendant for 1 year.</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Other Provisions Tab -->
+            <div id="other-provisions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Other Key Provisions (Sec. 49.10-49.12)</h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-3">
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.10" target="_blank" class="text-red-600 hover:underline">Sec. 49.10. No Defense</a></strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>In a prosecution for any offense *except* Open Container (49.031), the fact that the defendant is or has been *entitled to use* the substance (e.g., prescription medication) is *NOT* a defense.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.11" target="_blank" class="text-red-600 hover:underline">Sec. 49.11. Proof of Mental State Unnecessary</a></strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Proof of a *culpable mental state* (intentional, knowing, reckless, negligent) is *NOT required* for conviction of any offense in Ch. 49.</li>
+                                <li><strong>Exception (b):</strong> This does *NOT* apply to Sec. 49.031 (Open Container), which *does* require a "knowing" mental state.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm#49.12" target="_blank" class="text-red-600 hover:underline">Sec. 49.12. Applicability to Certain Conduct</a></strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Intoxication Assault (49.07) and Intoxication Manslaughter (49.08) do *NOT* apply to injury or death of an *unborn child* if the conduct was committed *by the mother* of the unborn child.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 49)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (65 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 49) ---
+            const quizData = [
+                {
+                    question: "Under 49.01, what is the 'Alcohol concentration' level for blood?",
+                    options: ["0.08 grams per 100mL", "The number of grams of alcohol per 100 milliliters of blood", "0.15 grams per 100mL", "The number of grams of alcohol per 67 milliliters of blood"],
+                    answer: "The number of grams of alcohol per 100 milliliters of blood",
+                    explanation: "Sec. 49.01(1)(B) defines it as 'the number of grams of alcohol per... 100 milliliters of blood.' 0.08 is the *legal limit* but not the *definition* of concentration itself."
+                },
+                {
+                    question: "What is the 'Alcohol concentration' level for breath?",
+                    options: ["0.08 grams per 210L", "Grams of alcohol per 100L of breath", "Grams of alcohol per 210 liters of breath", "Grams of alcohol per 67L of breath"],
+                    answer: "Grams of alcohol per 210 liters of breath",
+                    explanation: "Sec. 49.01(1)(A) defines it as 'the number of grams of alcohol per... 210 liters of breath.'"
+                },
+                {
+                    question: "What are the two ways a person can be 'Intoxicated' under 49.01(2)?",
+                    options: ["Having an alcohol concentration of 0.08+ OR failing a field sobriety test", "Not having normal use of mental/physical faculties (due to substance) OR having an alcohol concentration of 0.08+", "Having an alcohol concentration of 0.15+ OR not having normal use of faculties", "Admitting to drinking OR having an alcohol concentration of 0.08+"],
+                    answer: "Not having normal use of mental/physical faculties (due to substance) OR having an alcohol concentration of 0.08+",
+                    explanation: "Sec. 49.01(2) provides two definitions: (A) the 'impairment' definition, and (B) the 'per se' definition (0.08+)."
+                },
+                {
+                    question: "What does the definition of 'Watercraft' (49.01) *not* include?",
+                    options: ["A vessel", "One or more water skis", "A device propelled only by the current of water", "An aquaplane"],
+                    answer: "A device propelled only by the current of water",
+                    explanation: "Sec. 49.01(4) explicitly excludes 'a device propelled only by the current of water' (like an inner tube)."
+                },
+                {
+                    question: "What are the elements of Public Intoxication (49.02)?",
+                    options: ["Appears in a public place while intoxicated", "Is intoxicated in public to the degree the person may endanger the person or another", "Causes a disturbance in a public place while intoxicated", "Is intoxicated in a private residence and is a danger"],
+                    answer: "Is intoxicated in public to the degree the person may endanger the person or another",
+                    explanation: "Sec. 49.02(a) requires three elements: (1) public place, (2) intoxicated, and (3) 'to the degree that the person may endanger the person or another.'"
+                },
+                {
+                    question: "Under 49.02(a-1), is a bar licensed by the TABC considered a 'public place'?",
+                    options: ["Yes, it is explicitly defined as a public place for this section.", "No, it is private property.", "Only if the person is a non-paying customer.", "Only if the person is outside on the sidewalk."],
+                    answer: "Yes, it is explicitly defined as a public place for this section.",
+                    explanation: "Sec. 49.02(a-1) states, 'For the purposes of this section, a premises licensed or permitted under the Alcoholic Beverage Code is a public place.'"
+                },
+                {
+                    question: "What is the base penalty for Public Intoxication (49.02) for an adult?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "A fine not to exceed $200", "No charge if they call a ride"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 49.02(c) states the offense is a Class C misdemeanor."
+                },
+                {
+                    question: "What is the defense to prosecution for Public Intoxication (49.02)?",
+                    options: ["The person was celebrating a holiday.", "The substance was administered for therapeutic purposes by a licensed physician.", "The person was on their own property.", "The person was not a danger to others, only to themselves."],
+                    answer: "The substance was administered for therapeutic purposes by a licensed physician.",
+                    explanation: "Sec. 49.02(b) provides a defense if the substance was 'administered for therapeutic purposes... by a licensed physician.'"
+                },
+                {
+                    question: "How is Public Intoxication (49.02) punished if the offender is 20 years old?",
+                    options: ["As a Class C Misdemeanor.", "As a Class B Misdemeanor.", "In the same manner as an offense under Sec. 106.071, Alcoholic Beverage Code.", "The charge is dismissed."],
+                    answer: "In the same manner as an offense under Sec. 106.071, Alcoholic Beverage Code.",
+                    explanation: "Sec. 49.02(e) specifies that for a person younger than 21, it's punished like an ABC offense (e.g., Minor in Consumption)."
+                },
+                {
+                    question: "What is the definition of 'Open Container' under 49.031?",
+                    options: ["A bottle, can, or receptacle that is open, has a broken seal, or has contents partially removed.", "Any container of alcohol, open or not.", "An open container with more than 1 oz of alcohol.", "A cup or flask, but not a bottle."],
+                    answer: "A bottle, can, or receptacle that is open, has a broken seal, or has contents partially removed.",
+                    explanation: "Sec. 49.031(a)(1) provides this definition, emphasizing it just needs to be unsealed."
+                },
+                {
+                    question: "Which of these is considered part of the 'Passenger Area' of a motor vehicle under 49.031?",
+                    options: ["The trunk", "A locked glove compartment", "The front driver's seat", "The area behind the last upright seat in an SUV (no trunk)"],
+                    answer: "The front driver's seat",
+                    explanation: "Sec. 49.031(a)(2) defines 'passenger area' as the area for seating. It *excludes* the trunk, locked glove boxes, and the area behind the last seat."
+                },
+                {
+                    question: "A person has an open can of beer in a locked glove compartment. Is this an offense under 49.031?",
+                    options: ["Yes, it is in the passenger area.", "No, a locked glove compartment is *not* part of the passenger area.", "Yes, because it is an open container.", "No, because the car is not moving."],
+                    answer: "No, a locked glove compartment is *not* part of the passenger area.",
+                    explanation: "Sec. 49.031(a)(2)(A) explicitly excludes 'a glove compartment or similar storage container that is locked' from the passenger area."
+                },
+                {
+                    question: "A person has an open bottle of wine in the trunk of their car, which is on a public highway. Is this an offense under 49.031?",
+                    options: ["Yes, the vehicle is on a public highway.", "No, the trunk is *not* part of the passenger area.", "Yes, it is an open container.", "No, because the person is not drinking it."],
+                    answer: "No, the trunk is *not* part of the passenger area.",
+                    explanation: "Sec. 49.031(a)(2)(B) explicitly excludes 'the trunk of a vehicle' from the passenger area. The offense requires the open container to be in the passenger area."
+                },
+                {
+                    question: "What is the offense under Sec. 49.031 (Open Container)?",
+                    options: ["Knowingly possessing an open container in a passenger area of a motor vehicle on a public highway.", "Transporting any sealed alcohol in a passenger area.", "Drinking an alcoholic beverage while driving.", "Having an open container anywhere in the vehicle."],
+                    answer: "Knowingly possessing an open container in a passenger area of a motor vehicle on a public highway.",
+                    explanation: "Sec. 49.031(b) lists all these elements: 'knowingly possess', 'open container', 'passenger area', 'motor vehicle', 'public highway'."
+                },
+                {
+                    question: "Does the vehicle have to be moving for an offense under 49.031 (Open Container) to occur?",
+                    options: ["Yes, the person must be operating the vehicle.", "No, the law applies 'regardless of whether the vehicle is being operated or is stopped or parked.'", "Only if the keys are in the ignition.", "Yes, otherwise it is not on a public highway."],
+                    answer: "No, the law applies 'regardless of whether the vehicle is being operated or is stopped or parked.'",
+                    explanation: "Sec. 49.031(b) makes it clear the vehicle's operational status does not matter, only its location."
+                },
+                {
+                    question: "A person has 3 open beer cans in their passenger seat. How many offenses under 49.031 have they committed?",
+                    options: ["Three, one for each can.", "One.", "None, unless they are intoxicated.", "One for each *type* of alcohol."],
+                    answer: "One.",
+                    explanation: "Sec. 49.031(b) states, 'Possession by a person of one or more open containers in a single criminal episode is a single offense.'"
+                },
+                {
+                    question: "Which of these is an *exception* to the Open Container law (49.031)?",
+                    options: ["The person is a passenger in a limousine.", "The person is a passenger in a friend's car.", "The person is the driver, but the container is in the back seat.", "The person is 21 or older."],
+                    answer: "The person is a passenger in a limousine.",
+                    explanation: "Sec. 49.031(c)(1) provides an exception for a passenger in a 'motor vehicle designed, maintained, or used primarily for the transportation of persons for compensation, including a... limousine'."
+                },
+                {
+                    question: "A person is a passenger in an RV and has an open container in the living quarters. Is this an offense under 49.031?",
+                    options: ["Yes, it is a motor vehicle.", "No, this is an exception under 49.031(c)(2).", "Only if the RV is moving.", "Only if the person is also intoxicated."],
+                    answer: "No, this is an exception under 49.031(c)(2).",
+                    explanation: "Sec. 49.031(c)(2) provides an exception for a passenger in 'the living quarters of a motorized house coach or motorized house trailer'."
+                },
+                {
+                    question: "What is the penalty for Sec. 49.031 (Open Container)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "A warning only", "Driver's license suspension"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 49.031(d) states the offense is a Class C misdemeanor."
+                },
+                {
+                    question: "What action *shall* a peace officer take when charging a person with 49.031 (Open Container)?",
+                    options: ["Arrest the person and take them to jail.", "Issue a written citation and notice to appear (cite & release).", "Impound the vehicle.", "Pour out the alcoholic beverage."],
+                    answer: "Issue a written citation and notice to appear (cite & release).",
+                    explanation: "Sec. 49.031(e) mandates that the officer 'shall issue... a written citation and notice to appear' instead of arresting, provided the person signs the promise to appear."
+                },
+                {
+                    question: "What are the elements of Driving While Intoxicated (DWI) under 49.04?",
+                    options: ["Intoxicated while operating a motor vehicle in a public place.", "Speeding while intoxicated.", "Having an open container while driving.", "Intoxicated while operating a motor vehicle anywhere."],
+                    answer: "Intoxicated while operating a motor vehicle in a public place.",
+                    explanation: "Sec. 49.04(a) lists these three elements."
+                },
+                {
+                    question: "What is the base penalty for a first-offense DWI (49.04)?",
+                    options: ["Class B Misdemeanor, min 72 hours confinement", "Class B Misdemeanor, no minimum time", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor, min 72 hours confinement",
+                    explanation: "Sec. 49.04(b) sets the base penalty as a Class B Misdemeanor with a minimum term of confinement of 72 hours."
+                },
+                {
+                    question: "What is the penalty for a first-offense DWI (49.04) if the person has an open container in their immediate possession?",
+                    options: ["Class B Misdemeanor, min 6 days confinement", "Class B Misdemeanor, min 72 hours confinement", "Class A Misdemeanor", "No change from a base DWI"],
+                    answer: "Class B Misdemeanor, min 6 days confinement",
+                    explanation: "Sec. 49.04(c) enhances the minimum confinement to six days if an open container is present."
+                },
+                {
+                    question: "What is the penalty for DWI (49.04) if the person's alcohol concentration is 0.15 or more?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor, min 6 days confinement", "State Jail Felony", "Class B Misdemeanor, min 72 hours confinement"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 49.04(d) enhances the offense to a Class A Misdemeanor if the alcohol concentration is 0.15 or more."
+                },
+                {
+                    question: "What is the penalty for DWI (49.04) if the offense occurs in a school crossing zone?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Class B Misdemeanor", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 49.04(e) enhances the offense to a State Jail Felony if committed in a school crossing zone during the reduced speed limit times."
+                },
+                {
+                    question: "What is the offense under 49.045 (DWI w/ Child Passenger)?",
+                    options: ["DWI while a passenger younger than 15 is in the vehicle", "DWI while a child of any age is in the vehicle", "DWI within 1000 feet of a school", "DWI with an open container and a child"],
+                    answer: "DWI while a passenger younger than 15 is in the vehicle",
+                    explanation: "Sec. 49.045(a)(2) specifies the passenger must be 'younger than 15 years of age.'"
+                },
+                {
+                    question: "What is the penalty for 49.045 (DWI w/ Child Passenger)?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 49.045(b) states the offense is a state jail felony."
+                },
+                {
+                    question: "What is the base penalty for 49.05 (Flying While Intoxicated)?",
+                    options: ["Class B Misdemeanor, min 72 hours confinement", "Class A Misdemeanor", "State Jail Felony", "Class B Misdemeanor, no minimum time"],
+                    answer: "Class B Misdemeanor, min 72 hours confinement",
+                    explanation: "Sec. 49.05(b) sets the penalty as a Class B Misdemeanor with a minimum 72 hours confinement."
+                },
+                {
+                    question: "What is the base penalty for 49.06 (Boating While Intoxicated)?",
+                    options: ["Class B Misdemeanor, min 72 hours confinement", "Class A Misdemeanor", "State Jail Felony", "Class C Misdemeanor"],
+                    answer: "Class B Misdemeanor, min 72 hours confinement",
+                    explanation: "Sec. 49.06(b) sets the penalty as a Class B Misdemeanor with a minimum 72 hours confinement."
+                },
+                {
+                    question: "What is the penalty for 49.061 (BWI w/ Child Passenger)?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 49.061(b) states the offense is a state jail felony."
+                },
+                {
+                    question: "A person is intoxicated while *assembling* a mobile amusement ride. What offense?",
+                    options: ["Sec. 49.065 (Assembling or Operating...)", "Sec. 49.02 (Public Intoxication)", "No offense, assembly is not operating.", "Sec. 49.07 (Intoxication Assault)"],
+                    answer: "Sec. 49.065 (Assembling or Operating...)",
+                    explanation: "Sec. 49.065(a) explicitly includes 'while assembling a mobile amusement ride' in the offense."
+                },
+                {
+                    question: "What is the penalty for 49.065 (Amusement Ride) if the operator has an open container?",
+                    options: ["Class B Misdemeanor, min 6 days confinement", "Class B Misdemeanor, min 72 hours confinement", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor, min 6 days confinement",
+                    explanation: "Sec. 49.065(c) enhances the minimum confinement to six days if an open container is present."
+                },
+                {
+                    question: "What is the offense of Intoxication Assault (49.07)?",
+                    options: ["By reason of intoxication, causing serious bodily injury to another while operating a vehicle/ride/etc.", "Intentionally assaulting someone while intoxicated.", "Operating a vehicle while intoxicated and getting in any accident.", "Recklessly causing serious bodily injury while intoxicated."],
+                    answer: "By reason of intoxication, causing serious bodily injury to another while operating a vehicle/ride/etc.",
+                    explanation: "Sec. 49.07(a)(1) requires the SBI be 'by reason of that intoxication' during the operation of a vehicle, etc."
+                },
+                {
+                    question: "What is the definition of 'Serious Bodily Injury' under 49.07(b)?",
+                    options: ["Injury creating a substantial risk of death or causing serious permanent disfigurement or protracted loss/impairment of a bodily function.", "Any injury that requires stitches or a cast.", "Any injury that causes pain.", "Bodily injury as defined in Chapter 1."],
+                    answer: "Injury creating a substantial risk of death or causing serious permanent disfigurement or protracted loss/impairment of a bodily function.",
+                    explanation: "Sec. 49.07(b) provides this specific definition for 'serious bodily injury'."
+                },
+                {
+                    question: "What is the base penalty for Intoxication Assault (49.07)?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "State Jail Felony", "Class A Misdemeanor"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 49.07(c) states the base offense is a felony of the third degree."
+                },
+                {
+                    question: "What is the offense of Intoxication Manslaughter (49.08)?",
+                    options: ["By reason of intoxication, causing the death of another by accident or mistake while operating a vehicle/ride/etc.", "Intentionally killing someone while intoxicated.", "Any fatal accident involving an intoxicated driver.", "Recklessly causing death while intoxicated."],
+                    answer: "By reason of intoxication, causing the death of another by accident or mistake while operating a vehicle/ride/etc.",
+                    explanation: "Sec. 49.08(a)(2) requires that the person 'is intoxicated and by reason of that intoxication causes the death of another'."
+                },
+                {
+                    question: "What is the base penalty for Intoxication Manslaughter (49.08)?",
+                    options: ["Felony of the Second Degree", "Felony of the First Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 49.08(b) states the base offense is a felony of the second degree."
+                },
+                {
+                    question: "Under 49.09(a), a DWI (49.04) with *one* prior DWI conviction becomes what?",
+                    options: ["Class A Misdemeanor, min 30 days confinement", "Felony of the Third Degree", "Class A Misdemeanor, no minimum", "Class B Misdemeanor, min 6 days confinement"],
+                    answer: "Class A Misdemeanor, min 30 days confinement",
+                    explanation: "Sec. 49.09(a) enhances a DWI (or FWI, BWI, Ride) to a Class A with a 30-day minimum if there is one prior conviction from that list."
+                },
+                {
+                    question: "Under 49.09(b), a DWI (49.04) with *two* prior DWI convictions becomes what?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor, min 30 days confinement", "State Jail Felony"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 49.09(b)(2) enhances the offense to a felony of the third degree if the person has 'previously been convicted... two times' of an intoxication-related operation offense."
+                },
+                {
+                    question: "Under 49.09(b), a DWI (49.04) with *one* prior Intoxication Manslaughter (49.08) conviction becomes what?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 49.09(b)(1) enhances the offense to a felony of the third degree if the person has one prior conviction under 49.08."
+                },
+                {
+                    question: "A person commits Intoxication Assault (49.07) causing SBI to an on-duty Peace Officer. What is the penalty?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "Capital Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 49.09(b-1)(2) enhances the offense to an F1 if the victim is a peace officer or judge on duty."
+                },
+                {
+                    question: "A person commits Intoxication Assault (49.07) causing SBI to an on-duty Firefighter. What is the penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the First Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 49.09(b-1)(1) enhances the offense to an F2 if the victim is a firefighter or EMS personnel on duty."
+                },
+                {
+                    question: "A person commits Intoxication Manslaughter (49.08) causing the death of an on-duty EMS personnel. What is the penalty?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Capital Felony", "Felony of the Third Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 49.09(b-2)(1) enhances the offense to an F1 if the person killed is one described in (b-1) (which includes EMS)."
+                },
+                {
+                    question: "A person commits Intoxication Manslaughter (49.08) and causes the death of two people in the same criminal transaction. What is the penalty?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Two counts of F2, served concurrently", "Capital Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 49.09(b-2)(2) (as amended by S.B. 745) enhances the offense to an F1 if 'more than one person' was killed."
+                },
+                {
+                    question: "A person commits Intoxication Assault (49.07) and causes a TBI that results in a persistent vegetative state. What is the penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the First Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 49.09(b-4) enhances the F3 offense to an F2 in this specific circumstance."
+                },
+                {
+                    question: "Under 49.09(d), is a conviction where the person received probation considered a 'final conviction' for enhancement?",
+                    options: ["Yes, whether the sentence is imposed or probated.", "No, only if the probation was revoked.", "No, a probated sentence is not a final conviction.", "Only for felony offenses."],
+                    answer: "Yes, whether the sentence is imposed or probated.",
+                    explanation: "Sec. 49.09(d) explicitly states a conviction is final 'whether the sentence for the conviction is imposed or probated.'"
+                },
+                {
+                    question: "Under 49.09(g), does a *deferred adjudication* for DWI (49.04) count as a prior conviction for enhancement?",
+                    options: ["Yes", "No, deferred adjudication is not a conviction.", "Only if the person violated the deferred adjudication.", "Only for felony enhancements"],
+                    answer: "Yes",
+                    explanation: "Sec. 49.09(g) states, 'For purposes of this section, a person is considered to have been convicted of an offense under Section 49.04... if the person was placed on deferred adjudication...'"
+                },
+                {
+                    question: "When *must* a court order an ignition interlock device under 49.09(h)?",
+                    options: ["For a 2nd+ DWI offense committed within 5 years of the prior offense.", "For all DWI convictions.", "For any felony DWI.", "Only if the person's alcohol concentration was 0.15+."],
+                    answer: "For a 2nd+ DWI offense committed within 5 years of the prior offense.",
+                    explanation: "Sec. 49.09(h) applies 'only to a person convicted of a second or subsequent offense... committed within five years of the date on which the most recent preceding offense was committed.'"
+                },
+                {
+                    question: "A person is on trial for DWI (49.04). They argue they can't be guilty because they have a valid prescription for the drug that intoxicated them. Is this a valid defense?",
+                    options: ["No, Sec. 49.10 states being 'entitled to use' the substance is not a defense.", "Yes, if they have a valid prescription, it is a defense.", "Only if the doctor did not warn them about driving.", "Yes, this is a defense under 49.02(b)."],
+                    answer: "No, Sec. 49.10 states being 'entitled to use' the substance is not a defense.",
+                    explanation: "Sec. 49.10 provides that being 'entitled to use' the substance (e.g., prescription) is not a defense to a DWI prosecution. The defense in 49.02(b) applies *only* to Public Intoxication."
+                },
+                {
+                    question: "For which offense in Chapter 49 *is* proof of a culpable mental state required?",
+                    options: ["Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)", "Sec. 49.04 (DWI)", "Sec. 49.07 (Intoxication Assault)", "Sec. 49.08 (Intoxication Manslaughter)"],
+                    answer: "Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)",
+                    explanation: "Sec. 49.11(a) states no mental state is required for Ch. 49, but (b) makes an exception for 49.031. The offense for 49.031(b) requires a person to 'knowingly possess' an open container."
+                },
+                {
+                    question: "Does Sec. 49.08 (Intoxication Manslaughter) apply if the conduct was committed by the mother of an unborn child, and the death was to that unborn child?",
+                    options: ["No, Sec. 49.12 provides an exception.", "Yes, it applies to all persons.", "Only if the mother was also a danger to others.", "Only if the mother's alcohol concentration was 0.15+."],
+                    answer: "No, Sec. 49.12 provides an exception.",
+                    explanation: "Sec. 49.12 states that 49.07 and 49.08 'do not apply to injury to or the death of an unborn child if the conduct charged is conduct committed by the mother of the unborn child.'"
+                },
+                {
+                    question: "What is the 'per se' definition of 'Intoxicated'?",
+                    options: ["Having an alcohol concentration of 0.08 or more.", "Not having the normal use of mental or physical faculties.", "Failing a horizontal gaze nystagmus test.", "Smelling of alcohol and having slurred speech."],
+                    answer: "Having an alcohol concentration of 0.08 or more.",
+                    explanation: "Sec. 49.01(2)(B) is the 'per se' (in itself) definition, which relies only on the alcohol concentration number."
+                },
+                {
+                    question: "What is the 'impairment' definition of 'Intoxicated'?",
+                    options: ["Not having the normal use of mental or physical faculties by reason of... a substance.", "Having an alcohol concentration of 0.08 or more.", "Failing any part of a field sobriety test.", "Having an open container in the vehicle."],
+                    answer: "Not having the normal use of mental or physical faculties by reason of... a substance.",
+                    explanation: "Sec. 49.01(2)(A) is the 'impairment' definition, which relies on the loss of normal faculties."
+                },
+                {
+                    question: "What is the 'Alcohol concentration' level for urine?",
+                    options: ["Grams of alcohol per 67 milliliters of urine", "Grams of alcohol per 100 milliliters of urine", "Grams of alcohol per 210 milliliters of urine", "0.08 grams per 67 milliliters of urine"],
+                    answer: "Grams of alcohol per 67 milliliters of urine",
+                    explanation: "Sec. 49.01(1)(C) defines it as 'the number of grams of alcohol per... 67 milliliters of urine.'"
+                },
+                {
+                    question: "Is 'Public Intoxication' (49.02) a lesser included offense of 'DWI' (49.04)?",
+                    options: ["No, Sec. 49.02(d) states it is not.", "Yes, it is always a lesser included offense.", "Only if the person was not in a vehicle.", "Only if the person was a danger to themselves."],
+                    answer: "No, Sec. 49.02(d) states it is not.",
+                    explanation: "Sec. 49.02(d) explicitly says, 'An offense under this section is not a lesser included offense under Section 49.04.'"
+                },
+                {
+                    question: "A person is on a public highway in their parked car. They have an open beer in the center console. What is the most likely offense?",
+                    options: ["Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)", "Sec. 49.02 (Public Intoxication)", "Sec. 49.04 (DWI)", "No offense, the car is parked."],
+                    answer: "Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)",
+                    explanation: "Sec. 49.031(b) applies 'regardless of whether the vehicle is... stopped or parked.' The center console is in the 'passenger area.' This is the most direct offense."
+                },
+                {
+                    question: "A person is driving with a 14-year-old passenger while intoxicated. What is the offense?",
+                    options: ["Sec. 49.045 (DWI w/ Child Passenger)", "Sec. 49.04 (DWI)", "Sec. 49.07 (Intoxication Assault)", "No offense, the child is over 12."],
+                    answer: "Sec. 49.045 (DWI w/ Child Passenger)",
+                    explanation: "Sec. 49.045(a)(2) applies to passengers 'younger than 15 years of age.' A 14-year-old meets this requirement."
+                },
+                {
+                    question: "A person is operating a ski boat while intoxicated, with their 14-year-old child on board. What is the offense?",
+                    options: ["Sec. 49.061 (BWI w/ Child Passenger)", "Sec. 49.06 (BWI)", "Sec. 49.045 (DWI w/ Child Passenger)", "Sec. 49.07 (Intoxication Assault)"],
+                    answer: "Sec. 49.061 (BWI w/ Child Passenger)",
+                    explanation: "Sec. 49.061 applies to operating a watercraft while intoxicated with a passenger younger than 15."
+                },
+                {
+                    question: "A person commits Intoxication Assault (49.07), and the victim's injury is a broken arm. The base penalty is F3. What is the penalty if the victim is a *judge* on her way to court?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 49.09(b-1)(2) enhances the F3 to an F1 if the victim is a judge 'in the actual discharge of an official duty'."
+                },
+                {
+                    question: "A person is convicted of DWI (49.04). They have no prior convictions, but they received *deferred adjudication* for a DWI 3 years ago. What is the penalty?",
+                    options: ["Class A Misdemeanor, min 30 days confinement", "Class B Misdemeanor, min 72 hours confinement", "Felony of the Third Degree", "Class B Misdemeanor, min 6 days confinement"],
+                    answer: "Class A Misdemeanor, min 30 days confinement",
+                    explanation: "Sec. 49.09(g) states that for enhancement, a deferred adjudication for 49.04 counts as a prior conviction. Therefore, this is treated as a 2nd offense, which under 49.09(a) is a Class A with a 30-day minimum."
+                },
+                {
+                    question: "Can a person be prosecuted for Intoxication Assault (49.07) for causing SBI to their own unborn child while driving intoxicated?",
+                    options: ["No, Sec. 49.12 provides an exception for the mother.", "Yes, an unborn child is 'another'.", "Only if the mother is over 21.", "Only if the mother's alcohol concentration was 0.15+."],
+                    answer: "No, Sec. 49.12 provides an exception for the mother.",
+                    explanation: "Sec. 49.12 explicitly states that 49.07 and 49.08 do not apply to injury/death of an unborn child caused by the child's mother."
+                },
+                {
+                    question: "What is the *only* offense in Chapter 49 that Sec. 49.10 ('No Defense' for prescription use) does *NOT* apply to?",
+                    options: ["Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)", "Sec. 49.02 (Public Intoxication)", "Sec. 49.04 (DWI)", "Sec. 49.08 (Intoxication Manslaughter)"],
+                    answer: "Sec. 49.031 (Possession of Alcoholic Beverage in Motor Vehicle)",
+                    explanation: "Sec. 49.10 lists all the intoxication offenses but specifically omits 49.031 (Open Container), as 'entitlement to use' is not relevant to that offense."
+                },
+                {
+                    question: "A person is convicted of DWI (49.04). Their prior conviction was 3 years ago. What is the *mandatory* court order regarding their vehicle(s) under 49.09(h)?",
+                    options: ["Install an ignition interlock device for 1 year.", "Sell all vehicles.", "Forfeit the vehicle used in the offense.", "Not drive for 5 years."],
+                    answer: "Install an ignition interlock device for 1 year.",
+                    explanation: "Sec. 49.09(h) applies to a 2nd offense within 5 years and mandates the court 'shall enter an order that requires the defendant to have a device installed' for one year."
+                },
+                {
+                    question: "For the purposes of 49.09(g), can a conviction be used for enhancement under *both* Ch. 49 and Ch. 12 (Habitual Offender)?",
+                    options: ["No, it can be used for one or the other, but not both.", "Yes, it can be used for both.", "Only if it is a felony conviction.", "Only if it is a 3rd offense or more."],
+                    answer: "No, it can be used for one or the other, but not both.",
+                    explanation: "Sec. 49.09(g) states, 'A conviction may be used for purposes of enhancement under this section or... Chapter 12, but not under both...'"
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 49 - Intoxication & Alcoholic Beverage Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.49.htm" },
+                 { name: "Penal Code Sec. 32.34(a) (Motor Vehicle Def)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.32.htm#32.34" },
+                 { name: "Alcoholic Beverage Code Sec. 106.071 (Minor Penalty)", url: "https://statutes.capitol.texas.gov/Docs/AL/htm/AL.106.htm#106.071" },
+                 { name: "Occupations Code Sec. 2151.002 (Amusement Ride Def)", url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.2151.htm#2151.002" },
+                 { name: "Transportation Code Sec. 541.302 (School Crossing Zone Def)", url: "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.541.htm#541.302" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>

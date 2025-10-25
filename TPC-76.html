@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 76 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-bomb mr-2"></i>Ch. 76: Terroristic Offenses
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (76.01)
+                </button>
+                <button data-tab="terrorism" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Terrorism (76.02)
+                </button>
+                <button data-tab="related-offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-users-slash mr-2"></i> Related Offenses (76.03-046)
+                </button>
+                <button data-tab="other-sections" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-balance-scale mr-2"></i> Other Sections (76.05)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 76.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Material support or resources</span>
+                            <p class="definition-desc">Includes currency, financial services, lodging, training, safehouses, false ID, communications equipment, computers, software, facilities, deadly weapons, lethal substances, explosives, personnel, and transportation.
+                            <br><strong class="text-sm text-red-700">Exceptions:</strong> Medical care by a licensed provider or religious materials.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Training</span>
+                            <p class="definition-desc">Teaching or demonstrating (in person, writing, or computer) the use, application, or making of:
+                            <br>(A) A weapon prohibited by 46.05
+                            <br>(B) A deadly weapon
+                            <br>(C) A component of an explosive weapon
+                            <br>(D) An incendiary device capable of causing injury or death.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terrorism Tab -->
+            <div id="terrorism" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.02" target="_blank" class="text-red-600 hover:underline">Sec. 76.02. Terrorism</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-3">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they:
+                            <ol class="list-decimal list-inside ml-4 mt-1">
+                                <li>Commit or conspire to commit a predicate offense (e.g., Chapter 19, Sec. 20.02, 20.03, 20A.02, 22.02, 22.021, felony 22.05, felony 22.07, 22.09, 28.02, felony 28.07, 29.03, felony 38.152, or 46.08); AND</li>
+                                <li>Commits or conspires with the <strong>intent to</strong>:
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>(A) Intimidate or coerce the public; or</li>
+                                        <li>(B) Influence the policy or conduct of the state or US by intimidation or coercion.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>One category higher</strong> than the most serious predicate offense.
+                            <ul class="list-disc list-inside ml-4 mt-1 text-red-700">
+                                <li><strong>Exception (b)(1):</strong> If predicate is Class A Misdemeanor, it remains a Class A Misdemeanor but with a <strong>minimum 180 days</strong> confinement.</li>
+                                <li><strong>Exception (b)(2):</strong> If predicate is Felony of the First Degree, it remains an F1 but with a <strong>minimum 15 years</strong> confinement.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Related Offenses Tab -->
+            <div id="related-offenses" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.03" target="_blank" class="text-red-600 hover:underline">Sec. 76.03. Aiding in Commission of Terrorism</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person intentionally raises, solicits, collects, or provides <strong>material support or resources</strong> with <strong>intent or knowledge</strong> that they will be used (wholly or partly) to aid in committing a 76.02 (Terrorism) offense.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>Same degree as the offense under 76.02</strong> that the person aided.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.04" target="_blank" class="text-red-600 hover:underline">Sec. 76.04. Hindering Prosecution of Terrorism</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With <strong>intent to hinder</strong> the arrest, prosecution, conviction, or punishment of another for a 76.02 or 76.03 offense, the person:
+                            <ol class="list-decimal list-inside ml-4 mt-1">
+                                <li>Harbors or conceals the other;</li>
+                                <li>Provides or aids in providing means of avoiding arrest or effecting escape;</li>
+                                <li>Warns the other of impending discovery or apprehension; OR</li>
+                                <li>Tampers with any physical evidence.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong>Same degree as the offense under 76.02 or 76.03</strong> for which the person hindered.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.045" target="_blank" class="text-red-600 hover:underline">Sec. 76.045. Transnational Repression</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Key Definitions (a):</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1">
+                                <li><strong>Agent of a foreign government...:</strong> A person acting on behalf of or employed/controlled by a foreign government or foreign terrorist organization.</li>
+                                <li><strong>Protected conduct:</strong> Speech or expressive conduct protected by the US or Texas Constitution.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they:
+                            <ol class="list-decimal list-inside ml-4 mt-1">
+                                <li>Commit or conspire to commit a predicate offense (e.g., 20A.02, 22.01, 22.02, 42.07, 42.072, or 43.05); AND</li>
+                                <li>Does so with <strong>intent to</strong>:
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>(A) Cause another to act for a foreign government;</li>
+                                        <li>(B) Cause another to leave/be confined in the US;</li>
+                                        <li>(C) Discourage another from protected conduct; OR</li>
+                                        <li>(D) Retaliate against another for protected conduct; AND</li>
+                                    </ul>
+                                </li>
+                                <li>Commits or conspires to commit the offense <strong>as an agent</strong> of a foreign government or foreign terrorist organization.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong>One category higher</strong> than the most serious predicate offense.
+                            <ul class="list-disc list-inside ml-4 mt-1 text-red-700">
+                                <li><strong>Exception:</strong> If predicate is F1, it remains an F1 but with a <strong>minimum 15 years</strong> confinement.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.046" target="_blank" class="text-red-600 hover:underline">Sec. 76.046. Unauthorized Enforcement of Foreign Law</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person, <strong>as an agent</strong> of a foreign government or foreign terrorist organization, <strong>without approval</strong> of this state or the US:
+                            <ol class="list-decimal list-inside ml-4 mt-1">
+                                <li><strong>Prevents</strong> another person from violating the laws of a foreign government; OR</li>
+                                <li><strong>Detects, investigates, monitors, or surveilles</strong> another person to prevent them from violating the laws of a foreign government.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong>Felony of the Second Degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other Sections Tab -->
+            <div id="other-sections" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm#76.05" target="_blank" class="text-red-600 hover:underline">Sec. 76.05. Assistance by Attorney General</a></h2>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>The <strong>Attorney General</strong>, if requested by the attorney representing the state, may assist in the investigation or prosecution of an offense under this chapter.</li>
+                        <li>The AG must designate one individual in their office to coordinate responses to these requests.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 76)</h2>
+                    <p id="quiz-message" class="mb-6 text-gray-600">Test your understanding of the material. (33 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div id="quiz-buttons" class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 76) ---
+            const quizData = [
+                {
+                    question: "Which of the following is NOT considered 'Material support or resources' under 76.01?",
+                    options: ["Lodging", "Training", "Religious materials", "Transportation"],
+                    answer: "Religious materials",
+                    explanation: "Sec. 76.01(1)(Q) explicitly excludes 'medical care provided by a licensed health care provider or religious materials'."
+                },
+                {
+                    question: "Which of the following IS an exception to the definition of 'Material support or resources'?",
+                    options: ["Food and water", "Medical care by a licensed health care provider", "Clothing", "Legal services"],
+                    answer: "Medical care by a licensed health care provider",
+                    explanation: "Sec. 76.01(1)(Q) explicitly excludes 'medical care provided by a licensed health care provider or religious materials'."
+                },
+                {
+                    question: "Under 76.01, 'Training' means teaching or demonstrating the use, application, or making of all the following EXCEPT:",
+                    options: ["A deadly weapon", "A component of an explosive weapon", "A motor vehicle for escape", "An incendiary device capable of causing injury"],
+                    answer: "A motor vehicle for escape",
+                    explanation: "Sec. 76.01(2) lists prohibited weapons (46.05), deadly weapons, explosive components, and incendiary devices. It does not list motor vehicles."
+                },
+                {
+                    question: "What are the two main components of the offense of 'Terrorism' under 76.02?",
+                    options: ["Committing any felony + causing fear", "Committing a listed predicate offense + having intent to intimidate/coerce", "Threatening violence + belonging to an organization", "Providing material support + hindering prosecution"],
+                    answer: "Committing a listed predicate offense + having intent to intimidate/coerce",
+                    explanation: "Sec. 76.02(a) requires committing/conspiring to commit a listed offense (1) AND doing so with the intent to (2) intimidate/coerce the public or influence government."
+                },
+                {
+                    question: "Which of the following is a listed predicate offense for 76.02 Terrorism?",
+                    options: ["Arson (28.02)", "Theft (31.03)", "Evading Arrest (38.04)", "Perjury (37.02)"],
+                    answer: "Arson (28.02)",
+                    explanation: "Sec. 76.02(a)(1)(J) lists Section 28.02 (Arson) as a predicate offense."
+                },
+                {
+                    question: "Which of the following is NOT a listed predicate offense for 76.02 Terrorism?",
+                    options: ["Murder (Ch. 19)", "Aggravated Robbery (29.03)", "Aggravated Assault (22.02)", "Burglary (30.02)"],
+                    answer: "Burglary (30.02)",
+                    explanation: "Burglary (30.02) is not on the list of predicate offenses in Sec. 76.02(a)(1)."
+                },
+                {
+                    question: "What is the general penalty enhancement for an offense under 76.02 Terrorism?",
+                    options: ["It is automatically a Felony of the First Degree.", "It is one category higher than the most serious predicate offense.", "It is a State Jail Felony.", "The penalty is doubled."],
+                    answer: "It is one category higher than the most serious predicate offense.",
+                    explanation: "Sec. 76.02(b) states the offense is 'one category higher than the most serious offense listed in Subsection (a)'."
+                },
+                {
+                    question: "What is the specific penalty under 76.02 if the most serious predicate offense is a Class A Misdemeanor?",
+                    options: ["A State Jail Felony", "A Class A Misdemeanor with a minimum term of 180 days", "A Felony of the Third Degree", "A Class A Misdemeanor with a $4,000 fine"],
+                    answer: "A Class A Misdemeanor with a minimum term of 180 days",
+                    explanation: "Sec. 76.02(b)(1) provides this exception."
+                },
+                {
+                    question: "What is the specific penalty under 76.02 if the most serious predicate offense is a Felony of the First Degree?",
+                    options: ["Life without parole", "A capital felony", "A Felony of the First Degree with a minimum term of 15 years", "A Felony of the First Degree with a minimum term of 25 years"],
+                    answer: "A Felony of the First Degree with a minimum term of 15 years",
+                    explanation: "Sec. 76.02(b)(2) provides this exception."
+                },
+                {
+                    question: "A person commits 76.03 Aiding in Commission of Terrorism if they provide material support with what mental state?",
+                    options: ["Recklessly", "Negligently", "With intent or knowledge that it will be used to aid terrorism", "Only if they are a member of the organization"],
+                    answer: "With intent or knowledge that it will be used to aid terrorism",
+                    explanation: "Sec. 76.03(a) requires the person to act 'with intent or knowledge that the material support or resources will be used...'"
+                },
+                {
+                    question: "What is the penalty for 76.03 Aiding in Commission of Terrorism?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Same degree as the offense under 76.02 that the person aided", "One category lower than the offense aided"],
+                    answer: "Same degree as the offense under 76.02 that the person aided",
+                    explanation: "Sec. 76.03(b) states the offense is 'of the same degree as the offense under Section 76.02 that the person aided'."
+                },
+                {
+                    question: "A person commits 76.04 Hindering Prosecution of Terrorism if, with intent to hinder, they perform which act?",
+                    options: ["Warn the other of impending discovery", "Refuse to answer police questions", "Donate to the person's legal defense fund", "All of the above"],
+                    answer: "Warn the other of impending discovery",
+                    explanation: "Sec. 76.04(a)(3) lists 'warns the other of impending discovery or apprehension' as an act of hindering. The other options are not listed."
+                },
+                {
+                    question: "Which of these is an act of hindering prosecution under 76.04?",
+                    options: ["Harbors or conceals the other", "Provides or aids in providing means of escape", "Tampers with physical evidence", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 76.04(a) lists all three: (1) harbors or conceals, (2) provides means of avoiding arrest or effecting escape, and (4) tampers with physical evidence."
+                },
+                {
+                    question: "What is the penalty for 76.04 Hindering Prosecution of Terrorism?",
+                    options: ["Felony of the Third Degree", "One category lower than the offense hindered", "Same degree as the offense (76.02 or 76.03) that was hindered", "A State Jail Felony"],
+                    answer: "Same degree as the offense (76.02 or 76.03) that was hindered",
+                    explanation: "Sec. 76.04(b) states the penalty is 'of the same degree as the offense under Section 76.02 or 76.03 for which the person committed the act'."
+                },
+                {
+                    question: "Under 76.045, what is 'Protected conduct'?",
+                    options: ["Any act not prohibited by law", "Speech or expressive conduct protected by the US or Texas Constitution", "Only conduct related to religious practice", "Only conduct approved by the government"],
+                    answer: "Speech or expressive conduct protected by the US or Texas Constitution",
+                    explanation: "Sec. 76.045(a)(3) defines it as 'any speech or expressive conduct protected by the First Amendment... or by Section 8, Article I, Texas Constitution'."
+                },
+                {
+                    question: "What are the three components of the offense of 76.045 Transnational Repression?",
+                    options: ["Predicate offense + specific intent (e.g., retaliate) + acting as an agent", "Terrorism + acting as an agent + crossing state lines", "Hacking a computer + for a foreign government + causing > $1000 loss", "Threatening a public official + to change a law + as an agent"],
+                    answer: "Predicate offense + specific intent (e.g., retaliate) + acting as an agent",
+                    explanation: "Sec. 76.045(b) requires (1) a predicate offense (like 22.01, 42.07), (2) a specific intent (like retaliating for protected conduct), AND (3) acting as an agent."
+                },
+                {
+                    question: "Which of the following is a predicate offense for 76.045 Transnational Repression?",
+                    options: ["Theft (31.03)", "Harassment (42.07)", "Arson (28.02)", "Murder (Ch. 19)"],
+                    answer: "Harassment (42.07)",
+                    explanation: "Sec. 76.045(b)(1)(D) lists Section 42.07 (Harassment) as a predicate offense. Murder and Arson are predicates for 76.02, not 76.045."
+                },
+                {
+                    question: "What is a required *intent* for 76.045 Transnational Repression?",
+                    options: ["To intimidate or coerce the public", "To influence US policy", "To retaliate against another person for engaging in protected conduct", "To gain a financial advantage"],
+                    answer: "To retaliate against another person for engaging in protected conduct",
+                    explanation: "Sec. 76.045(b)(2)(D) lists this intent. The other intents (intimidate public, influence policy) are for 76.02 Terrorism."
+                },
+                {
+                    question: "What is the penalty for 76.045 Transnational Repression?",
+                    options: ["Felony of the Second Degree", "One category higher than the predicate offense", "Same degree as the predicate offense", "Felony of the First Degree"],
+                    answer: "One category higher than the predicate offense",
+                    explanation: "Sec. 76.045(c) states the offense is 'one category higher than the most serious offense listed in Subsection (b)(1)'."
+                },
+                {
+                    question: "What is the penalty for 76.045 Transnational Repression if the predicate offense is a Felony of the First Degree?",
+                    options: ["A capital felony", "Felony of the First Degree with a minimum 15 years", "Felony of the First Degree with a minimum 25 years", "Life without parole"],
+                    answer: "Felony of the First Degree with a minimum 15 years",
+                    explanation: "Sec. 76.045(c) provides this exception, identical to the one in 76.02."
+                },
+                {
+                    question: "A person commits 76.046 Unauthorized Enforcement of Foreign Law if, as an agent and without approval, they...",
+                    options: ["Provide material support to a foreign government", "Advise someone on foreign law", "Surveille another person to prevent them from violating foreign law", "Commit any offense at the direction of a foreign agent"],
+                    answer: "Surveille another person to prevent them from violating foreign law",
+                    explanation: "Sec. 76.046(b)(2) lists 'detects, investigates, monitors, or surveilles another person... for the purpose of preventing the other person from violating the laws of a foreign government'."
+                },
+                {
+                    question: "What is the penalty for 76.046 Unauthorized Enforcement of Foreign Law?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 76.046(c) states 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "Who may assist a state's attorney in the prosecution of a Chapter 76 offense, if requested?",
+                    options: ["The Governor", "The Attorney General", "The Department of Public Safety", "The FBI"],
+                    answer: "The Attorney General",
+                    explanation: "Sec. 76.05(a) states 'The attorney general... may assist the attorney representing the state in the investigation or prosecution...'"
+                },
+                {
+                    question: "Sec. 76.02 Terrorism requires the person to commit *or* ________ to commit the predicate offense.",
+                    options: ["attempt", "conspire", "solicit", "aid"],
+                    answer: "conspire",
+                    explanation: "Sec. 76.02(a)(1) states 'commits or conspires to commit an offense...'"
+                },
+                {
+                    question: "Sec. 76.045 Transnational Repression requires the person to commit *or* ________ to commit the predicate offense.",
+                    options: ["attempt", "conspire", "solicit", "aid"],
+                    answer: "conspire",
+                    explanation: "Sec. 76.045(b)(1) states 'commits or conspires to commit an offense...'"
+                },
+                {
+                    question: "Which of these is NOT an act of 76.04 Hindering Prosecution of Terrorism?",
+                    options: ["Harbors or conceals the other", "Tampers with physical evidence", "Provides a false alibi to police", "Warns the other of impending discovery"],
+                    answer: "Provides a false alibi to police",
+                    explanation: "Providing a false alibi is not one of the four specific acts listed in Sec. 76.04(a). The listed acts are harboring, aiding escape, warning, and tampering."
+                },
+                {
+                    question: "The definition of 'Training' in 76.01 can apply to demonstrations done via a computer or computer network.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 76.01(2) states 'either in person or through a writing or by use of a computer or computer network'."
+                },
+                {
+                    question: "What is the definition of 'Agent of a foreign government or foreign terrorist organization'?",
+                    options: ["A person who is a citizen of a foreign nation", "A person who has traveled to a foreign nation", "A person acting on behalf of or otherwise employed or controlled by one", "A person who provides material support to one"],
+                    answer: "A person acting on behalf of or otherwise employed or controlled by one",
+                    explanation: "Sec. 76.045(a)(1) defines it as 'a person acting on behalf of or otherwise employed or controlled by a foreign government or foreign terrorist organization'."
+                },
+                {
+                    question: "Which offense requires the actor to be an 'agent of a foreign government or foreign terrorist organization'?",
+                    options: ["76.02 Terrorism", "76.03 Aiding Terrorism", "76.04 Hindering Terrorism", "76.045 Transnational Repression"],
+                    answer: "76.045 Transnational Repression",
+                    explanation: "Sec. 76.045(b)(3) requires that the person 'commits or conspires to commit that offense as an agent...'"
+                },
+                {
+                    question: "Which of these predicate offenses for 76.02 Terrorism must be a felony?",
+                    options: ["Section 22.05 (Deadly Conduct)", "Section 22.07 (Terroristic Threat)", "Section 28.07 (Interference with Computer)", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 76.02(a)(1) specifies '(G) Section 22.05, if punishable as a felony', '(H) Section 22.07, if punishable as a felony', and '(K) Section 28.07, if punishable as a felony'."
+                },
+                {
+                    question: "The definition of 'Foreign terrorist organization' for this chapter is found in which section?",
+                    options: ["Sec. 76.01", "Sec. 71.01", "Sec. 46.01", "U.S. Code"],
+                    answer: "Sec. 71.01",
+                    explanation: "Sec. 76.045(a)(2) states 'Foreign terrorist organization has the meaning assigned by Section 71.01.'"
+                },
+                {
+                    question: "An offense under 76.046 (Unauthorized Enforcement of Foreign Law) is what level of offense?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 76.046(c) states 'An offense under this section is a felony of the second degree.'"
+                },
+                {
+                    question: "What is a required *intent* for 76.045 Transnational Repression?",
+                    options: ["To discourage another person from engaging in protected conduct", "To influence the policy of this state by intimidation", "To intimidate or coerce the public", "To hinder the arrest of another"],
+                    answer: "To discourage another person from engaging in protected conduct",
+                    explanation: "Sec. 76.045(b)(2)(C) lists this as a required intent. The other options are intents for 76.02 or 76.04."
+                }
+            ];
+
+
+            // --- Quiz Elements ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+            const quizButtons = document.getElementById('quiz-buttons');
+            const quizMessage = document.getElementById('quiz-message');
+
+            function loadQuiz() {
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                if (quizData.length === 0) {
+                    quizMessage.textContent = 'There are no questions available for this chapter as it does not contain any substantive sections.';
+                    quizButtons.classList.add('hidden'); // Hide submit/retake buttons
+                    return;
+                }
+                
+                quizMessage.textContent = 'Test your understanding of the material. (' + quizData.length + ' Questions)';
+                quizButtons.classList.remove('hidden');
+
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                if (totalQuestions === 0) return; // Don't do anything if no questions
+                
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 76 - Terroristic Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.76.htm" },
+                 { name: "Penal Code Ch. 71 - Organized Crime", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm" },
+                 { name: "Penal Code Ch. 19 - Criminal Homicide", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.19.htm" },
+                 { name: "Penal Code Ch. 22 - Assaultive Offenses", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.22.htm" },
+                 { name: "Penal Code Ch. 28 - Arson, Criminal Mischief...", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.28.htm" },
+                 { name: "Penal Code Ch. 46 - Weapons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

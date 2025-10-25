@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 71 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-users mr-2"></i>Ch. 71: Organized Crime
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (71.01)
+                </button>
+                <button data-tab="engaging-crime" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-cogs mr-2"></i> Engaging in Org. Crime (71.02)
+                </button>
+                <button data-tab="directing-coercing" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-bullhorn mr-2"></i> Coercing & Directing (71.022-023)
+                </button>
+                <button data-tab="other-offenses-zones" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-map-marked-alt mr-2"></i> Other Offenses & Zones
+                </button>
+                <button data-tab="defenses-rules" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shield-alt mr-2"></i> Defenses & Rules (71.03-05)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 71.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Combination</span>
+                            <p class="definition-desc"><strong>3 or more persons</strong> who collaborate in carrying on criminal activities. Participants may not know each other, membership may change, and may have arm's-length relationships (e.g., wholesaler-retailer).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Conspires to commit</span>
+                            <p class="definition-desc">A person agrees with 1 or more persons to engage in the offense, AND that person and 1 or more of them perform an <strong>overt act</strong>. Agreement can be <strong>inferred from acts</strong>.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Profits</span>
+                            <p class="definition-desc">Property constituting or derived from any proceeds obtained, directly or indirectly, from an offense listed in Sec. 71.02.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Criminal street gang</span>
+                            <p class="definition-desc"><strong>3 or more persons</strong> having a common identifying <strong>sign or symbol</strong> OR an <strong>identifiable leadership</strong> who <strong>continuously or regularly</strong> associate in committing criminal activities.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Foreign terrorist organization</span>
+                            <p class="definition-desc"><strong>3 or more persons</strong> operating at least <strong>partially outside the U.S.</strong> who engage in criminal activity and threaten state security. Includes (but not limited to) a <strong>drug cartel</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engaging in Org. Crime Tab -->
+            <div id="engaging-crime" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.02" target="_blank" class="text-red-600 hover:underline">Sec. 71.02. Engaging in Organized Criminal Activity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, with the <strong>intent to establish, maintain, or participate in</strong>:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(1) a <strong>combination</strong>; OR</li>
+                                <li>(2) in the <strong>profits</strong> of a combination; OR</li>
+                                <li>(3) as a member of a <strong>criminal street gang</strong>; OR</li>
+                                <li>(4) as a member of a <strong>foreign terrorist organization</strong>...</li>
+                            </ul>
+                            ...the person <strong>commits or conspires to commit</strong> one or more of the offenses listed in (a)(1) through (a)(23/24).
+                        </li>
+                        <li><strong class="font-semibold">Listed Offenses:</strong> Includes a long list of offenses, such as Murder, Arson, Agg. Robbery, Burglary, Theft, Drug Offenses, Trafficking, etc. (Note: The text contains two slightly different versions of this list from different legislative acts).</li>
+                        
+                        <li><strong class="font-semibold">Base Penalty (b):</strong> Offense is <strong>one category higher</strong> than the most serious underlying offense committed.
+                            <ul class="list-disc list-inside ml-4">
+                                <li>If underlying offense is a <strong>Class A Misdemeanor</strong>, the 71.02 offense is a <strong>State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong class="font-semibold">Special Penalties (b)(1-3):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong>(b)(1) Life Without Parole:</strong> If underlying offense is <strong>Aggravated Sexual Assault</strong> AND victim is <6, OR <14 + strangulation (22.021(a)(2)(A)), OR <17 + SBI.</li>
+                                <li><strong>(b)(2) Life or 30-99 yrs:</strong> If underlying offense is <strong>Continuous Trafficking of Persons</strong> (20.06(g)).</li>
+                                <li><strong>(b)(3) Life or 15-99 yrs:</strong> If underlying offense is any other <strong>F1</strong> (not in 1 or 2).</li>
+                            </ul>
+                        </li>
+
+                        <li><strong class="font-semibold">Conspiracy Penalty (c):</strong> A conspiracy to commit 71.02 is punished the <strong>same as the 71.02 offense</strong> (i.e., it is not one category lower).</li>
+
+                        <li><strong class="font-semibold">Renunciation at Punishment (d):</strong> Defendant can raise issue at punishment. If they prove (by preponderance) they <strong>voluntarily withdrew</strong> AND made <strong>substantial effort to prevent</strong> the offense, the offense is the <strong>same category as the underlying offense</strong> (the +1 enhancement is removed).</li>
+                        
+                        <li><strong class="font-semibold">Deadly Weapon Enhancement (e):</strong> If a deadly weapon was used/exhibited, the offense is <strong>one *additional* category higher</strong> than the penalty under (b) (for F2 or lower). This can make a total of a +2 enhancement.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Directing/Coercing Tab -->
+            <div id="directing-coercing" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.022" target="_blank" class="text-red-600 hover:underline">Sec. 71.022. Coercing, Inducing, or Soliciting Membership...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly causes, enables, encourages, recruits, or solicits another to join a CSG or FTO which requires committing a <strong>Class A Misdemeanor or Felony</strong> as a condition of membership.</li>
+                        <li><strong class="font-semibold">Offense (a-1):</strong> With intent to coerce/solicit a <strong>child (<17)</strong> to actively participate, the person:
+                             <ul class="list-disc list-inside ml-4">
+                                <li>(1) <strong>Threatens imminent bodily injury</strong> to the child or their family; OR</li>
+                                <li>(2) <strong>Causes bodily injury</strong> to the child or their family.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b, c):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li><strong>Felony of the Third Degree</strong> (Base offense).</li>
+                                <li><strong>Felony of the Second Degree</strong> (If a second or subsequent offense).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.023" target="_blank" class="text-red-600 hover:underline">Sec. 71.023. Directing Activities of Criminal Street Gangs...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person, as part of the <strong>identifiable leadership</strong> of a CSG or FTO, knowingly <strong>finances, directs, or supervises</strong> the commission of (or conspiracy to commit) one or more specific serious offenses (e.g., 3g offenses (42A.054(a)), felonies with a DW, high-level drug felonies).</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li><strong>Felony of the First Degree</strong>, with a minimum sentence of <strong>25 years</strong> (punishable for life or 25-99 years).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other Offenses & Zones Tab -->
+            <div id="other-offenses-zones" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.021" target="_blank" class="text-red-600 hover:underline">Sec. 71.021. Violation of Court Order...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly violates a temporary or permanent order issued under <strong>Sec. 125.065(a) or (b), Civil Practice and Remedies Code</strong> (enjoining organized criminal activity).</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong>Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.028" target="_blank" class="text-red-600 hover:underline">Sec. 71.028. Gang-Free Zones</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Applies to (b):</strong> 71.02 offenses based on <strong>(a)(1)</strong> (e.g., murder, agg assault), <strong>(a)(4)</strong> (firearms), or <strong>(a)(7)</strong> (child offenses). Does *not* apply to burglary, theft, BMV, or UUMV.</li>
+                        <li><strong class="font-semibold">Enhancement (c):</strong> Punishment is <strong>increased to the next highest category</strong>.</li>
+                        <li><strong class="font-semibold">Locations (1,000 ft):</strong> School, Institution of higher education, Youth center, Playground, General residential operation.</li>
+                        <li><strong class="font-semibold">Locations (300 ft):</strong> Shopping mall, Movie theater, Public swimming pool, Video arcade facility.</li>
+                        <li><strong class="font-semibold">Location (On):</strong> A school bus.</li>
+                        <li><strong class="font-semibold">Exception (d):</strong> No enhancement if the offense is already an <strong>F1</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.029" target="_blank" class="text-red-600 hover:underline">Sec. 71.029. Maps as Evidence</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Admissibility (a):</strong> A map showing gang-free zones is admissible and is prima facie evidence if the city/county <strong>adopts a resolution or ordinance</strong> approving the map.</li>
+                        <li><strong class="font-semibold">Filing (c):</strong> Map must be filed with the <strong>county clerk</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Defenses & Rules Tab -->
+            <div id="defenses-rules" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.03" target="_blank" class="text-red-600 hover:underline">Sec. 71.03. Defenses Excluded</a></h2>
+                    <p class="text-sm text-gray-700 mb-2">It is <strong>NO DEFENSE</strong> to prosecution under Sec. 71.02 that:</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-2">
+                        <li>One or more members are <strong>not criminally responsible</strong> for the object offense;</li>
+                        <li>One or more members have been <strong>acquitted</strong>, have not been prosecuted or convicted, or are immune;</li>
+                        <li>A person has been <strong>charged with, acquitted, or convicted of</strong> any of the underlying offenses; OR</li>
+                        <li>The <strong>number or identity of persons changed</strong> (as long as 2 or more remain).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.04" target="_blank" class="text-red-600 hover:underline">Sec. 71.04. Testimonial Immunity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Required Testimony (a):</strong> A party to an offense under this chapter <strong>may be required to furnish evidence or testify</strong> about the offense.</li>
+                        <li><strong class="font-semibold">Immunity (b):</strong> The testimony (or info derived from it) <strong>may not be used against the witness</strong> in any criminal case (except for aggravated perjury or contempt).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm#71.05" target="_blank" class="text-red-600 hover:underline">Sec. 71.05. Renunciation Defense</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Affirmative Defense (a):</strong> It is an affirmative defense (to 71.02) that the actor <strong>voluntarily and completely renounced</strong>, <strong>withdrew</strong> from the combination *before* the offense, AND took affirmative action that <strong>PREVENTED the commission</strong> of the offense.</li>
+                        <li><strong class="font-semibold">Not Voluntary (b):</strong> Renunciation is *not* voluntary if motivated by increased risk of detection or a decision to postpone the crime.</li>
+                        <li><strong class="font-semibold">Mitigation (c) / (71.02(d)):</strong> If the actor withdrew and made <strong>substantial effort to prevent</strong> (but failed), it is *not* an affirmative defense, but can be used at punishment to <strong>remove the +1 category enhancement</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 71)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (55 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 71) ---
+            const quizData = [
+                {
+                    question: "Under 71.01, what is the minimum number of persons required to form a 'Combination'?",
+                    options: ["2 or more", "3 or more", "5 or more", "10 or more"],
+                    answer: "3 or more",
+                    explanation: "Sec. 71.01(a) defines 'Combination' as 'three or more persons who collaborate...'"
+                },
+                {
+                    question: "Under 71.01, what is the minimum number of persons required for a 'Criminal street gang'?",
+                    options: ["2 or more", "3 or more", "5 or more", "It is not specified."],
+                    answer: "3 or more",
+                    explanation: "Sec. 71.01(d) defines 'Criminal street gang' as 'three or more persons...'"
+                },
+                {
+                    question: "Which of the following is true about a 'Combination' under 71.01(a)?",
+                    options: ["All participants must know each other's identity.", "Membership in the combination must never change.", "Participants may stand in a wholesaler-retailer relationship.", "It requires a single, identifiable leader."],
+                    answer: "Participants may stand in a wholesaler-retailer relationship.",
+                    explanation: "Sec. 71.01(a)(3) explicitly includes this, while (1) and (2) state participants *don't* need to know each other and membership *can* change."
+                },
+                {
+                    question: "What two elements are required for a person to 'Conspire to commit' under 71.01(b)?",
+                    options: ["An agreement and a resulting profit.", "An agreement and an overt act.", "An overt act and a resulting felony.", "An agreement and a written plan."],
+                    answer: "An agreement and an overt act.",
+                    explanation: "Sec. 71.01(b) requires an agreement and that 'one or more of them perform an overt act in pursuance of the agreement'."
+                },
+                {
+                    question: "Under 71.01(d), a 'Criminal street gang' requires 3+ persons with an identifiable leadership OR...?",
+                    options: ["A political objective.", "A common identifying sign or symbol.", "A name registered with the state.", "A history of violence."],
+                    answer: "A common identifying sign or symbol.",
+                    explanation: "Sec. 71.01(d) lists 'a common identifying sign or symbol or an identifiable leadership'."
+                },
+                {
+                    question: "What example of a 'Foreign terrorist organization' is given in 71.01(e)?",
+                    options: ["A local militia.", "A political action committee.", "A drug cartel.", "A motorcycle club."],
+                    answer: "A drug cartel.",
+                    explanation: "Sec. 71.01(e) states '...including but not limited to a drug cartel.'"
+                },
+                {
+                    question: "Which of these is NOT one of the 4 intents/groups listed for an offense under 71.02(a)?",
+                    options: ["Intent to participate in a combination.", "Intent to participate in the profits of a combination.", "As a member of a criminal street gang.", "As a person with a prior felony conviction."],
+                    answer: "As a person with a prior felony conviction.",
+                    explanation: "Sec. 71.02(a) lists combination, profits of a combination, criminal street gang, or foreign terrorist organization."
+                },
+                {
+                    question: "What is the base penalty enhancement for Engaging in Organized Criminal Activity (71.02)?",
+                    options: ["It is a State Jail Felony.", "It is a Felony of the First Degree.", "It is one category higher than the most serious offense committed.", "It adds 10 years to the underlying sentence."],
+                    answer: "It is one category higher than the most serious offense committed.",
+                    explanation: "Sec. 71.02(b) states the offense 'is one category higher than the most serious offense listed...'"
+                },
+                {
+                    question: "If the most serious underlying offense in a 71.02 case is a Class A Misdemeanor, the 71.02 offense is a...?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "It is not an offense."],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 71.02(b) specifies that 'if the most serious offense is a Class A misdemeanor, the offense is a state jail felony'."
+                },
+                {
+                    question: "Under 71.02(b)(1), the offense is punishable by Life Without Parole if the underlying offense is Aggravated Sexual Assault and the victim is...?",
+                    options: ["Younger than 18 years of age.", "Younger than 6 years of age.", "Any age, if a deadly weapon was used.", "An elderly individual."],
+                    answer: "Younger than 6 years of age.",
+                    explanation: "Sec. 71.02(b)(1)(A) lists 'victim... is younger than six years of age'. (B) and (C) list other specific circumstances for victims <14 and <17."
+                },
+                {
+                    question: "If the underlying offense for 71.02 is a Felony of the First Degree (not Agg Sex Assault or Cont. Trafficking), what is the minimum sentence?",
+                    options: ["5 years", "10 years", "15 years", "25 years"],
+                    answer: "15 years",
+                    explanation: "Sec. 71.02(b)(3) sets the punishment at 'life or for any term of not more than 99 years or less than 15 years'."
+                },
+                {
+                    question: "How is a *conspiracy* to commit 71.02 punished?",
+                    options: ["One category lower than the 71.02 offense.", "In the same manner as the 71.02 offense.", "As a State Jail Felony.", "As a Class A Misdemeanor."],
+                    answer: "In the same manner as the 71.02 offense.",
+                    explanation: "Sec. 71.02(c) states a conspiracy 'is punishable in the same manner as an offense under this section,' overriding the normal 15.02(d) reduction."
+                },
+                {
+                    question: "What is the penalty enhancement under 71.02(e) for using a deadly weapon?",
+                    options: ["It is an automatic F1.", "It adds 5 years to the sentence.", "It is one *additional* category higher than the penalty from 71.02(b).", "It has no effect."],
+                    answer: "It is one *additional* category higher than the penalty from 71.02(b).",
+                    explanation: "Sec. 71.02(e) adds *another* category increase (a total +2 from the underlying) if a deadly weapon is used."
+                },
+                {
+                    question: "What is the penalty for 71.021, Violation of Court Order Enjoining Organized Criminal Activity?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 71.021(c) states the offense is a Class A misdemeanor."
+                },
+                {
+                    question: "Under 71.022(a-1), it is an offense to coerce a *child* into a gang by threatening imminent bodily injury to the child OR...?",
+                    options: ["A member of the child's family.", "A law enforcement officer.", "The child's property.", "A school official."],
+                    answer: "A member of the child's family.",
+                    explanation: "Sec. 71.022(a-1)(1) includes threatening 'the child or a member of the child's family'."
+                },
+                {
+                    question: "What is the base penalty for 71.022 (Coercing/Soliciting Membership)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 71.022(b) sets the base penalty as an F3."
+                },
+                {
+                    question: "A second or subsequent offense under 71.022 (Coercing/Soliciting Membership) is enhanced to what?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 71.022(c) enhances a subsequent offense to an F2."
+                },
+                {
+                    question: "Who is the specific actor that commits 71.023 (Directing Activities)?",
+                    options: ["Any member of a CSG.", "A person as part of the identifiable leadership of a CSG/FTO.", "A person who conspires with a CSG.", "Any person who commits a felony."],
+                    answer: "A person as part of the identifiable leadership of a CSG/FTO.",
+                    explanation: "Sec. 71.023(a) specifies 'as part of the identifiable leadership...'"
+                },
+                {
+                    question: "What is the penalty for 71.023 (Directing Activities)?",
+                    options: ["F1, with a 15-year minimum.", "F1, with a 25-year minimum.", "F2, with a 15-year minimum.", "F3, with a 10-year minimum."],
+                    answer: "F1, with a 25-year minimum.",
+                    explanation: "Sec. 71.023(b) states it is an F1 'punishable... for life or for any term of not more than 99 years or less than 25 years'."
+                },
+                {
+                    question: "Which of these offenses is NOT excluded from the 71.028 (Gang-Free Zone) enhancement?",
+                    options: ["Burglary", "Theft", "Aggravated Robbery", "Burglary of a Motor Vehicle"],
+                    answer: "Aggravated Robbery",
+                    explanation: "Sec. 71.028(b) applies to offenses under (a)(1) (like Agg. Robbery) but *excludes* burglary, theft, BMV, and UUMV."
+                },
+                {
+                    question: "What is the distance for a 'Gang-Free Zone' around a school or institution of higher education?",
+                    options: ["100 feet", "300 feet", "1,000 feet", "3,000 feet"],
+                    answer: "1,000 feet",
+                    explanation: "Sec. 71.028(c)(1) specifies 1,000 feet for these locations."
+                },
+                {
+                    question: "What is the distance for a 'Gang-Free Zone' around a shopping mall or movie theater?",
+                    options: ["100 feet", "300 feet", "1,000 feet", "3,000 feet"],
+                    answer: "300 feet",
+                    explanation: "Sec. 71.028(c)(2) specifies 300 feet for these locations."
+                },
+                {
+                    question: "The 71.028 (Gang-Free Zone) enhancement does NOT apply if the 71.02 offense is already punishable as a...?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 71.028(d) states 'punishment... may not be increased under this section if the offense is punishable... as a felony of the first degree.'"
+                },
+                {
+                    question: "Under 71.029, when is a map of a gang-free zone admissible as prima facie evidence?",
+                    options: ["When it is signed by a police chief.", "When the governing body (city/county) adopts a resolution approving it.", "When it is certified by a notary.", "Maps are never admissible as prima facie evidence."],
+                    answer: "When the governing body (city/county) adopts a resolution approving it.",
+                    explanation: "Sec. 71.029(a) requires the 'governing body... adopts a resolution or ordinance approving the map'."
+                },
+                {
+                    question: "Under 71.03, which of the following is an excluded defense (i.e., NOT a valid defense)?",
+                    options: ["The defendant was not a member of the combination.", "One or more members of the combination have been acquitted.", "The defendant renounced the offense and prevented it.", "The defendant did not receive any profits."],
+                    answer: "One or more members of the combination have been acquitted.",
+                    explanation: "Sec. 71.03(2) explicitly states this is *not* a defense."
+                },
+                {
+                    question: "True or False: Under 71.03, it is a valid defense that you were already convicted of the underlying assault you committed for the gang.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 71.03(3) states it is *no defense* that a person has been charged with, acquitted, or convicted of the underlying offense."
+                },
+                {
+                    question: "Under 71.03(4), a combination continues to exist as long as how many members remain?",
+                    options: ["The original 3 members.", "5 or more members.", "2 or more members.", "1 or more members."],
+                    answer: "2 or more members.",
+                    explanation: "'as long as two or more persons remain in the combination...'"
+                },
+                {
+                    question: "Under 71.04, can a party to an organized crime offense be required to testify against others in the combination?",
+                    options: ["Yes, and their testimony can be used against them.", "Yes, but they are given use immunity (except for perjury).", "No, they can always plead the 5th.", "No, it is prohibited as hearsay."],
+                    answer: "Yes, but they are given use immunity (except for perjury).",
+                    explanation: "Sec. 71.04(a) allows them to be required to testify, and (b) provides immunity (except for perjury or contempt)."
+                },
+                {
+                    question: "What is the *affirmative defense* of renunciation under 71.05(a)?",
+                    options: ["The actor withdrew and made a substantial effort to prevent the offense.", "The actor withdrew and prevented the commission of the offense.", "The actor withdrew and reported the offense after it happened.", "The actor was only motivated by a fear of getting caught."],
+                    answer: "The actor withdrew and prevented the commission of the offense.",
+                    explanation: "Sec. 71.05(a) requires both withdrawal *before* the offense AND affirmative action that *prevented* it."
+                },
+                {
+                    question: "Renunciation is *not* voluntary under 71.05(b) if it is motivated by...?",
+                    options: ["A change of heart.", "A decision to postpone the criminal conduct.", "A religious conversion.", "A desire to protect family."],
+                    answer: "A decision to postpone the criminal conduct.",
+                    explanation: "Sec. 71.05(b)(2) states this is not voluntary renunciation."
+                },
+                {
+                    question: "What is the 'Profit' definition in 71.01(c)?",
+                    options: ["Any money obtained from a 71.02 offense.", "Any property over $2,500.", "Property constituting or derived from any proceeds... from an offense listed in 71.02.", "Property used to commit an offense in 71.02."],
+                    answer: "Property constituting or derived from any proceeds... from an offense listed in 71.02.",
+                    explanation: "Sec. 71.01(c) defines 'Profits' broadly as 'property constituting or derived from any proceeds' of a 71.02 offense."
+                },
+                {
+                    question: "True or False: An agreement to 'conspire' under 71.01(b) can be inferred from the acts of the parties.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 71.01(b) explicitly states, 'An agreement constituting conspiring to commit may be inferred from the acts of the parties.'"
+                },
+                {
+                    question: "What is the *mitigation* of punishment for renunciation under 71.02(d)?",
+                    options: ["The offense is reduced to a Class A Misdemeanor.", "The offense is the same category as the most serious underlying offense.", "The offense is dropped entirely.", "The sentence is cut in half."],
+                    answer: "The offense is the same category as the most serious underlying offense.",
+                    explanation: "Sec.71.02(d) states this mitigation removes the '+1 category' enhancement."
+                },
+                {
+                    question: "To get the 71.05(a) *affirmative defense* of renunciation, the actor must withdraw AND...?",
+                    options: ["Make a substantial effort to prevent the offense.", "Prevent the commission of the offense.", "Report the offense to the police.", "Testify against the other members."],
+                    answer: "Prevent the commission of the offense.",
+                    explanation: "Sec. 71.05(a) (affirmative defense) requires *prevention*. Sec. 71.02(d) (mitigation) only requires *substantial effort*."
+                },
+                {
+                    question: "The 71.02(b)(2) punishment of Life or 30-99 years applies to which underlying offense?",
+                    options: ["Murder", "Aggravated Sexual Assault", "An offense under Sec. 20.06 (Continuous Trafficking of Persons)", "Directing Activities of a CSG"],
+                    answer: "An offense under Sec. 20.06 (Continuous Trafficking of Persons)",
+                    explanation: "Sec. 71.02(b)(2) specifically lists 'an offense under Section 20.06 that is punishable under Subsection (g) of that section'."
+                },
+                {
+                    question: "A 'Foreign terrorist organization' must operate at least partially...",
+                    options: ["Inside Texas.", "Inside the United States.", "Outside the United States.", "On the internet."],
+                    answer: "Outside the United States.",
+                    explanation: "Sec. 71.01(e) specifies 'operating as an organization at least partially outside the United States...'"
+                },
+                {
+                    question: "Which of these is a listed 'Gang-Free Zone' under 71.028?",
+                    options: ["A convenience store.", "A public park.", "A movie theater.", "A private residence."],
+                    answer: "A movie theater.",
+                    explanation: "Sec. 71.028(c)(2)(B) lists 'movie theater' (within 300 ft)."
+                },
+                {
+                    question: "The 71.028 (Gang-Free Zone) enhancement applies to an actor of what age?",
+                    options: ["Any age.", "18 years of age or older.", "17 years of age or older.", "16 years of age or older."],
+                    answer: "17 years of age or older.",
+                    explanation: "Sec. 71.028(c) states 'if the actor is 17 years of age or older...'"
+                },
+                {
+                    question: "A map of gang-free zones must be filed with whom?",
+                    options: ["The Secretary of State.", "The County Clerk.", "The District Attorney.", "The local Police Department."],
+                    answer: "The County Clerk.",
+                    explanation: "Sec. 71.029(c) requires the map to be filed 'with the county clerk of each county in which the zone is located.'"
+                },
+                {
+                    question: "True or False: An offense under 71.02(b) is a State Jail Felony, and a DW is used under (e). The final offense is a Felony of the Third Degree.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 71.02(e) states 'if an offense is punishable as a Class A misdemeanor under Subsection (b), the offense is a state jail felony.' It does *not* enhance an SJF to an F3. It enhances a Class A (which came from 71.02b) to an SJF."
+                },
+                {
+                    question: "According to 71.01(a), which is true about a 'Combination'?",
+                    options: ["All members must know each other.", "Membership must remain constant.", "Membership may change from time to time.", "It must have an identifiable leader."],
+                    answer: "Membership may change from time to time.",
+                    explanation: "Sec. 71.01(a)(2) states that 'membership in the combination may change from time to time'."
+                },
+                {
+                    question: "A 'Criminal street gang' (71.01(d)) requires 3+ persons who...",
+                    options: ["Occasionally meet for criminal acts.", "Continuously or regularly associate in the commission of criminal activities.", "Have all been convicted of a prior felony.", "Operate outside the United States."],
+                    answer: "Continuously or regularly associate in the commission of criminal activities.",
+                    explanation: "Sec. 71.01(d) requires that the persons 'continuously or regularly associate in the commission of criminal activities'."
+                },
+                {
+                    question: "A 'Foreign terrorist organization' (71.01(e)) must engage in criminal activity AND...",
+                    options: ["Be listed on a federal watch list.", "Threaten the security of this state or its residents.", "Only operate outside the United States.", "Be composed of 10 or more members."],
+                    answer: "Threaten the security of this state or its residents.",
+                    explanation: "Sec. 71.01(e) requires that the organization 'threaten the security of this state or its residents'."
+                },
+                {
+                    question: "Which of the following is listed as an underlying offense for 71.02 (Engaging in Organized Crime)?",
+                    options: ["Speeding.", "Public Intoxication.", "Deadly Conduct.", "Criminal Trespass."],
+                    answer: "Deadly Conduct.",
+                    explanation: "Sec. 71.02(a)(1) lists 'deadly conduct' as one of the many underlying offenses."
+                },
+                {
+                    question: "Which of these Class A Misdemeanors is specifically listed as an underlying offense in 71.02(a)(1)?",
+                    options: ["Assault punishable as a Class A misdemeanor.", "Perjury.", "DWI - 2nd Offense.", "All Class A Misdemeanors."],
+                    answer: "Assault punishable as a Class A misdemeanor.",
+                    explanation: "Sec. 71.02(a)(1) specifically lists 'assault punishable as a Class A misdemeanor'. Not all Class A's are included."
+                },
+                {
+                    question: "For a gambling offense to be an underlying offense for 71.02, it must be punishable as a...?",
+                    options: ["State Jail Felony.", "Class A Misdemeanor.", "Class B Misdemeanor.", "Any gambling offense."],
+                    answer: "Class A Misdemeanor.",
+                    explanation: "Sec. 71.02(a)(2) specifies 'any gambling offense punishable as a Class A misdemeanor'."
+                },
+                {
+                    question: "71.02 (Engaging in Org. Crime) becomes punishable by LWOP if the underlying offense is Aggravated Sexual Assault on a victim <14 AND the actor...",
+                    options: ["Used a deadly weapon.", "Commits the offense in a manner described by 22.021(a)(2)(A) (strangulation).", "Has a prior felony conviction.", "Caused any bodily injury."],
+                    answer: "Commits the offense in a manner described by 22.021(a)(2)(A) (strangulation).",
+                    explanation: "Sec. 71.02(b)(1)(B) specifies this enhancement for victims <14 if the manner is 22.021(a)(2)(A)."
+                },
+                {
+                    question: "71.02 (Engaging in Org. Crime) becomes punishable by LWOP if the underlying offense is Aggravated Sexual Assault on a victim <17 AND the victim...",
+                    options: ["Was threatened.", "Was moved from one location to another.", "Suffered serious bodily injury.", "Was related to the actor."],
+                    answer: "Suffered serious bodily injury.",
+                    explanation: "Sec. 71.02(b)(1)(C) specifies this enhancement for victims <17 who suffer 'serious bodily injury'."
+                },
+                {
+                    question: "If a person violates 71.021 (Violation of Court Order) and the conduct is *also* an offense under 71.02, how may they be prosecuted?",
+                    options: ["Only under 71.021.", "Only under 71.02.", "Under either section or under both sections.", "The prosecutor must choose only one."],
+                    answer: "Under either section or under both sections.",
+                    explanation: "Sec. 71.021(b) explicitly states 'the actor may be prosecuted under either section or under both sections.'"
+                },
+                {
+                    question: "For the purposes of 71.022 (Coercing... Membership), what is the definition of 'Child'?",
+                    options: ["An individual younger than 18 years of age.", "An individual younger than 17 years of age.", "An individual younger than 16 years of age.", "An individual younger than 14 years of age."],
+                    answer: "An individual younger than 17 years of age.",
+                    explanation: "Sec. 71.022(d)(1) defines 'Child' as 'an individual younger than 17 years of age.'"
+                },
+                {
+                    question: "What are the specific actions of leadership listed in 71.023 (Directing Activities)?",
+                    options: ["Commits, conspires, or solicits.", "Finances, directs, or supervises.", "Recruits, encourages, or enables.", "Aids, abets, or assists."],
+                    answer: "Finances, directs, or supervises.",
+                    explanation: "Sec. 71.023(a) states 'knowingly finances, directs, or supervises the commission of...'"
+                },
+                {
+                    question: "71.023 (Directing Activities) applies when leadership directs members to commit certain offenses, such as...",
+                    options: ["Any Class A Misdemeanor.", "Any felony offense.", "A felony offense for which a deadly weapon was used or exhibited.", "Any offense in Chapter 71."],
+                    answer: "A felony offense for which a deadly weapon was used or exhibited.",
+                    explanation: "Sec. 71.023(a)(2) lists 'a felony offense for which it is shown that a deadly weapon... was used or exhibited'."
+                },
+                {
+                    question: "Where do the definitions for 'playground', 'school', and 'youth center' (used in 71.028 Gang-Free Zones) come from?",
+                    options: ["Chapter 1 of the Penal Code.", "Section 481.134, Health and Safety Code.", "Chapter 42 of the Human Resources Code.", "Black's Law Dictionary."],
+                    answer: "Section 481.134, Health and Safety Code.",
+                    explanation: "Sec. 71.028(a)(2) states these terms 'have the meanings assigned by Section 481.134, Health and Safety Code.'"
+                },
+                {
+                    question: "What are the two exceptions to the testimonial immunity granted under 71.04?",
+                    options: ["Murder and Capital Murder.", "Aggravated perjury or contempt.", "Treason or sedition.", "Any offense against a child."],
+                    answer: "Aggravated perjury or contempt.",
+                    explanation: "Sec. 71.04(b) states the immunity applies 'except a prosecution for aggravated perjury or contempt.'"
+                },
+                {
+                    question: "If a defendant proves mitigation of renunciation (withdrew + substantial effort) at the punishment stage of a 71.02 trial, what is the result?",
+                    options: ["The charge is dismissed.", "The offense is the same category as the most serious underlying offense.", "The offense is reduced to a Class A Misdemeanor.", "The sentence is automatically probated."],
+                    answer: "The offense is the same category as the most serious underlying offense.",
+                    explanation: "Sec. 71.02(d) states 'the offense is the same category of offense as the most serious offense listed in Subsection (a) that is committed.'"
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 71 - Organized Crime", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.71.htm" },
+                 { name: "CPRC Sec. 125.065 - Order (Enjoining Org. Crime)", url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.125.htm#125.065" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
