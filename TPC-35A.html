@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 35A Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-notes-medical mr-2"></i>Ch. 35A: Health Care Fraud
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (35A.01)
+                </button>
+                <button data-tab="fraud-offense" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Fraud Offenses (35A.02(a))
+                </button>
+                <button data-tab="penalties-provisions" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Penalties & Provisions (35A.02(b-f))
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 35A.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">(1) Claim</span>
+                            <p class="definition-desc">A written or electronically submitted request for reimbursement for a service/product under a health care program.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(2) Fiscal Agent</span>
+                            <p class="definition-desc">A person (or their agent) who contracts with the state/fed to receive, process, and pay claims under a health care program.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(3) Health Care Practitioner</span>
+                            <p class="definition-desc">A licensed provider such as a dentist, podiatrist, psychologist, physical therapist, chiropractor, or registered nurse.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(4) Health Care Program</span>
+                            <p class="definition-desc">A state or federally funded program (or both) to provide health care services, including those with a managed care model.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(5) Health Care Recipient</span>
+                            <p class="definition-desc">An individual to whom a service/product is provided (or purported to be) and for whom a claim is made.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(6) Managed Care Organization (MCO)</span>
+                            <p class="definition-desc">A person authorized by law to arrange for or provide a managed care plan.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(7) Physician</span>
+                            <p class="definition-desc">A physician licensed to practice medicine in this state.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(8) Provider</span>
+                            <p class="definition-desc">A person who participates in a health care program. Includes: management companies, employees, MCOs, and manufacturers/distributors of products.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(9) Service</span>
+                            <p class="definition-desc">Includes care or treatment of a health care recipient.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(10) High Managerial Agent</span>
+                            <p class="definition-desc">A director, officer, or employee whose conduct may be assumed to represent the policy or intent of the provider.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fraud Offense Tab -->
+            <div id="fraud-offense" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35A.htm#35A.02" target="_blank" class="text-red-600 hover:underline">Sec. 35A.02(a). Health Care Fraud Offenses</a></h2>
+                    <p class="mb-4">A person commits an offense if the person...</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-3">
+                        <li>(1) Knowingly makes a <strong class="font-semibold">false statement</strong> of material fact for an <strong class="font-semibold">unauthorized benefit</strong>.</li>
+                        <li>(2) Knowingly <strong class="font-semibold">conceals or fails to disclose</strong> information for an <strong class="font-semibold">unauthorized benefit</strong>.</li>
+                        <li>(3) Knowingly receives a benefit for another and <strong class="font-semibold">converts</strong> it to their own use.</li>
+                        <li>(4) Knowingly makes a <strong class="font-semibold">false statement</strong> about <strong class="font-semibold">facility conditions</strong> for certification.</li>
+                        <li>(5) Knowingly pays, solicits, or receives a <strong class="font-semibold">kickback</strong> in addition to the authorized payment.</li>
+                        <li>(6) Knowingly presents a claim for services rendered by an <strong class="font-semibold">unlicensed person</strong>.</li>
+                        <li>(7) Knowingly makes a claim for a service that was <strong class="font-semibold">not approved</strong> by a doc, is <strong class="font-semibold">substantially inadequate</strong>, or for a product that is <strong class="font-semibold">adulterated/mislabeled</strong>.</li>
+                        <li>(8) Knowingly makes a claim but <strong class="font-semibold">fails to indicate the license/ID number</strong> of the practitioner who provided the service.</li>
+                        <li>(9) Knowingly enters a <strong class="font-semibold">conspiracy</strong> to defraud the government.</li>
+                        <li>(10) Is an <strong class="font-semibold">MCO</strong> that knowingly <strong class="font-semibold">fails to provide</strong> a required service, <strong class="font-semibold">falsifies info</strong>, or engages in <strong class="font-semibold">fraudulent enrollment/marketing</strong>.</li>
+                        <li>(11) Knowingly <strong class="font-semibold">obstructs an investigation by the attorney general</strong>.</li>
+                        <li>(12) Knowingly makes/uses a <strong class="font-semibold">false record</strong> to <strong class="font-semibold">conceal, avoid, or decrease an obligation</strong> to pay money to the govt (a "reverse false claim").</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Penalties & Provisions Tab -->
+            <div id="penalties-provisions" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35A.htm#35A.02" target="_blank" class="text-red-600 hover:underline">Sec. 35A.02(b). Penalties</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Standard Penalties (by Value):</h3>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>< $100: <strong class="font-semibold">Class C Misdemeanor</strong></li>
+                        <li>$100 &lt; $750: <strong class="font-semibold">Class B Misdemeanor</strong></li>
+                        <li>$750 &lt; $2,500: <strong class="font-semibold">Class A Misdemeanor</strong></li>
+                        <li>$2,500 &lt; $30,000: <strong class="font-semibold">State Jail Felony</strong></li>
+                        <li>$30,000 &lt; $150,000: <strong class="font-semibold">Felony of the Third Degree</strong></li>
+                        <li>$150,000 &lt; $300,000: <strong class="font-semibold">Felony of the Second Degree</strong></li>
+                        <li>$300,000 or more: <strong class="font-semibold">Felony of the First Degree</strong></li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Special Penalties (Not Based on Value):</h3>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong>State Jail Felony:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>(b)(4)(B): Offense is <strong class="text-red-700">(a)(11) Obstructing an AG Investigation</strong>.</li>
+                                <li>(b)(4)(C): The value <strong class="text-red-700">cannot be reasonably ascertained</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Felony of the Third Degree:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>(b)(5)(B): Actor submitted <strong class="text-red-700">more than 25 but fewer than 50</strong> fraudulent claims.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Felony of the Second Degree:</strong>
+                            <ul class="list-disc list-inside ml-6">
+                                <li>(b)(6)(B): Actor submitted <strong class="text-red-700">50 or more</strong> fraudulent claims.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Other Provisions (Sec. 35A.02(c) - (f))</h2>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Prosecution (c):</strong> Actor may be prosecuted under this section, another law, or <strong class="font-semibold">both</strong>.</li>
+                        <li><strong class="font-semibold">Aggregation (d):</strong> If part of <strong class="text-red-700">one scheme or continuing course of conduct</strong>, amounts can be aggregated into one offense.</li>
+                        <li><strong class="font-semibold">Enhancement (e):</strong> If the actor is a <strong class="text-red-700">High Managerial Agent</strong>, the punishment is <strong class="font-semibold">increased to the next highest category</strong> (unless already an F1).</li>
+                        <li><strong class="font-semibold">Jurisdiction (f):</strong> The <strong class="font-semibold">Attorney General</strong> has concurrent jurisdiction to prosecute with the <strong class="text-red-700">consent</strong> of the local prosecutor.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 35A)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (75 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 35A) ---
+            const quizData = [
+                {
+                    question: "Under 35A.01, a 'Claim' is defined as a written or ___ submitted request for payment.",
+                    options: ["Electronically", "Orally", "Verbally", "Implicitly"],
+                    answer: "Electronically",
+                    explanation: "Sec. 35A.01(1) defines 'Claim' as 'a written or electronically submitted request or demand'."
+                },
+                {
+                    question: "A person who contracts with the state to process and pay claims is known as a (35A.01):",
+                    options: ["Fiscal agent", "Provider", "High managerial agent", "Health care practitioner"],
+                    answer: "Fiscal agent",
+                    explanation: "Sec. 35A.01(2) defines 'Fiscal agent' as a person with a contractual relationship to... pay a claim."
+                },
+                {
+                    question: "Which of the following is listed as a 'Health care practitioner' under 35A.01(3)?",
+                    options: ["Dentist", "Podiatrist", "Chiropractor", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 35A.01(3) lists 'dentist, podiatrist, psychologist, physical therapist, chiropractor, registered nurse' as examples."
+                },
+                {
+                    question: "A 'Health care program' (35A.01) is funded by:",
+                    options: ["This state", "The federal government", "This state, the federal government, or both", "A private insurance company"],
+                    answer: "This state, the federal government, or both",
+                    explanation: "Sec. 35A.01(4) defines it as 'a program funded by this state, the federal government, or both'."
+                },
+                {
+                    question: "The definition of 'Provider' (35A.01) is broad and includes:",
+                    options: ["A management company", "An employee of the provider", "A managed care organization", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 35A.01(8) includes management companies, employees, MCOs, and manufacturers."
+                },
+                {
+                    question: "A 'High managerial agent' (35A.01) is a director, officer, or employee whose conduct may be assumed to represent the ___ of the provider.",
+                    options: ["Policy or intent", "Lowest standards", "Personal opinion", "Official certification"],
+                    answer: "Policy or intent",
+                    explanation: "Sec. 35A.01(10) defines them as having 'duties of such responsibility that the conduct... reasonably may be assumed to represent the policy or intent of the provider.'"
+                },
+                {
+                    question: "A person commits an offense under 35A.02(a)(1) if they knowingly make a ___ of material fact for an unauthorized benefit.",
+                    options: ["False statement or misrepresentation", "True statement", "Partial payment", "Conspiracy"],
+                    answer: "False statement or misrepresentation",
+                    explanation: "Sec. 35A.02(a)(1) prohibits a 'false statement or misrepresentation of a material fact'."
+                },
+                {
+                    question: "What offense is committed if a person knowingly *conceals* information to get an unauthorized benefit?",
+                    options: ["35A.02(a)(2)", "35A.02(a)(1)", "35A.02(a)(4)", "No offense, only false statements are illegal"],
+                    answer: "35A.02(a)(2)",
+                    explanation: "Sec. 35A.02(a)(2) covers 'knowingly conceals or fails to disclose information'."
+                },
+                {
+                    question: "A provider receives a $1,000 payment for 'Patient A' but uses it for personal expenses. What offense?",
+                    options: ["35A.02(a)(3) (Converts benefit)", "Theft", "35A.02(a)(1) (False statement)", "No offense if Patient A got the service"],
+                    answer: "35A.02(a)(3) (Converts benefit)",
+                    explanation: "Sec. 35A.02(a)(3) makes it an offense to 'knowingly... converts any part of the benefit or payment to a use other than for the benefit of the person'."
+                },
+                {
+                    question: "A provider lies about the 'conditions or operation' of their clinic to get certified. What offense?",
+                    options: ["35A.02(a)(4)", "35A.02(a)(1)", "Perjury", "This is not a crime under 35A"],
+                    answer: "35A.02(a)(4)",
+                    explanation: "Sec. 35A.02(a)(4) specifically addresses 'false statement or misrepresentation... concerning the conditions or operation of a facility'."
+                },
+                {
+                    question: "A pharmacy 'knowingly... accepts' a $50 gift as a condition to providing a service paid for by a health care program. What offense?",
+                    options: ["35A.02(a)(5) (Kickback)", "Bribery", "Theft", "Commercial Bribery"],
+                    answer: "35A.02(a)(5) (Kickback)",
+                    explanation: "Sec. 35A.02(a)(5) prohibits knowingly paying, charging, soliciting, accepting, or receiving... consideration as a condition to the provision of a service."
+                },
+                {
+                    question: "A clinic submits a claim for services rendered by a person who is 'not licensed'. What offense?",
+                    options: ["35A.02(a)(6)", "35A.02(a)(7)", "35A.02(a)(8)", "This is a licensing board issue, not a crime"],
+                    answer: "35A.02(a)(6)",
+                    explanation: "Sec. 35A.02(a)(6) prohibits 'knowingly presents... a claim... for a service rendered by a person who is not licensed'."
+                },
+                {
+                    question: "Which offense section covers billing for a service that is 'substantially inadequate' or 'not approved' by a treating physician?",
+                    options: ["35A.02(a)(7)", "35A.02(a)(6)", "35A.02(a)(1)", "35A.02(a)(10)"],
+                    answer: "35A.02(a)(7)",
+                    explanation: "Sec. 35A.02(a)(7) covers services not approved by a doc, substantially inadequate services, or adulterated products."
+                },
+                {
+                    question: "A claim is submitted that knowingly 'fails to indicate the type of license and identification number' of the practitioner. This violates:",
+                    options: ["35A.02(a)(8)", "35A.02(a)(6)", "Record-keeping rules, but is not a crime", "35A.02(a)(1)"],
+                    answer: "35A.02(a)(8)",
+                    explanation: "Sec. 35A.02(a)(8) specifically makes this an offense."
+                },
+                {
+                    question: "What offense covers 'knowingly enters into an agreement, combination, or conspiracy to defraud' a health care program?",
+                    options: ["35A.02(a)(9)", "Chapter 15 (Organized Crime)", "Chapter 71 (RICO)", "35A.02(a)(1)"],
+                    answer: "35A.02(a)(9)",
+                    explanation: "Sec. 35A.02(a)(9) is the specific conspiracy offense within this chapter."
+                },
+                {
+                    question: "Which offense section applies specifically to a Managed Care Organization (MCO) that fails to provide a required service?",
+                    options: ["35A.02(a)(10)", "35A.02(a)(2)", "35A.02(a)(7)", "This is a civil matter, not a crime"],
+                    answer: "35A.02(a)(10)",
+                    explanation: "Sec. 35A.02(a)(10)(A) makes it an offense for an MCO to 'fails to provide... a health care benefit or service that the organization is required to provide'."
+                },
+                {
+                    question: "An MCO 'engages in a fraudulent activity in connection with the enrollment' of an individual. This violates:",
+                    options: ["35A.02(a)(10)(C)", "35A.02(a)(1)", "35A.02(a)(9)", "35A.02(a)(2)"],
+                    answer: "35A.02(a)(10)(C)",
+                    explanation: "Sec. 35A.02(a)(10)(C) specifically addresses fraudulent activity in connection with enrollment or marketing."
+                },
+                {
+                    question: "A person 'knowingly obstructs an investigation by the attorney general' under this chapter. This violates:",
+                    options: ["35A.02(a)(11)", "Tampering with Witness", "Tampering with Evidence", "This is not an offense under 35A"],
+                    answer: "35A.02(a)(11)",
+                    explanation: "Sec. 35A.02(a)(11) is the specific offense for obstructing an AG investigation."
+                },
+                {
+                    question: "A provider 'knowingly... uses... a false record' to *avoid* paying money *to* the state. This 'reverse false claim' violates:",
+                    options: ["35A.02(a)(12)", "35A.02(a)(1)", "Theft", "Money Laundering"],
+                    answer: "35A.02(a)(12)",
+                    explanation: "Sec. 35A.02(a)(12) addresses using a false record to 'conceal, avoid, or decrease an obligation to pay or transmit money'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $50?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "No offense", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 35A.02(b)(1) states the offense is a Class C misdemeanor if the value is less than $100."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $500?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "Class C Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 35A.02(b)(2) covers values of $100 or more but less than $750."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $1,000?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 35A.02(b)(3) covers values of $750 or more but less than $2,500."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $10,000?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35A.02(b)(4)(A) covers values of $2,500 or more but less than $30,000."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $50,000?",
+                    options: ["Felony of the Third Degree", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35A.02(b)(5)(A) covers values of $30,000 or more but less than $150,000."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $200,000?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35A.02(b)(6)(A) covers values of $150,000 or more but less than $300,000."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is $350,000?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35A.02(b)(7) covers values of $300,000 or more."
+                },
+                {
+                    question: "What is the *automatic* penalty for the offense of 'Obstructing an AG Investigation' (35A.02(a)(11))?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Felony of the Third Degree", "It depends on the value of the underlying fraud"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35A.02(b)(4)(B) makes an offense under (a)(11) an automatic State Jail Felony."
+                },
+                {
+                    question: "If the value of the benefit 'cannot be reasonably ascertained', what is the penalty?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Class C Misdemeanor", "No prosecution is possible"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35A.02(b)(4)(C) makes an offense where the value cannot be ascertained an automatic State Jail Felony."
+                },
+                {
+                    question: "A provider submits 30 fraudulent claims. This is an automatic:",
+                    options: ["Felony of the Third Degree", "State Jail Felony", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35A.02(b)(5)(B) makes 'more than 25 but fewer than 50' claims an automatic F3."
+                },
+                {
+                    question: "A provider submits 60 fraudulent claims. This is an automatic:",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35A.02(b)(6)(B) makes '50 or more' fraudulent claims an automatic F2."
+                },
+                {
+                    question: "If conduct is an offense under 35A.02 and also under Theft (Ch. 31), how may the actor be prosecuted?",
+                    options: ["Under 35A, Chapter 31, or both", "Only under 35A", "Only under Chapter 31", "Whichever has the higher penalty"],
+                    answer: "Under 35A, Chapter 31, or both",
+                    explanation: "Sec. 35A.02(c) states the actor may be prosecuted 'under either... or both'."
+                },
+                {
+                    question: "When can multiple payments be aggregated into one offense?",
+                    options: ["When they are part of one scheme or continuing course of conduct", "Only if they are against the same provider", "Only if they occur in the same fiscal year", "They can never be aggregated"],
+                    answer: "When they are part of one scheme or continuing course of conduct",
+                    explanation: "Sec. 35A.02(d) allows aggregation for 'one scheme or continuing course of conduct'."
+                },
+                {
+                    question: "A 'High Managerial Agent' commits an F3 offense ($50,000 fraud). What is the enhanced penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35A.02(e) increases the punishment to the 'next highest category', so F3 becomes F2."
+                },
+                {
+                    question: "A 'High Managerial Agent' commits an F1 offense ($400,000 fraud). What is the enhanced penalty?",
+                    options: ["Felony of the First Degree", "A higher F1 (e.g., 25-life)", "The enhancement does not apply", "Life imprisonment"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35A.02(e) explicitly states the enhancement applies to offenses 'other than the punishment prescribed by Subsection (b)(7)' (the F1)."
+                },
+                {
+                    question: "The Attorney General has concurrent jurisdiction to prosecute with the ___ of the local prosecutor.",
+                    options: ["Consent", "Request", "Knowledge", "Refusal"],
+                    answer: "Consent",
+                    explanation: "Sec. 35A.02(f) requires the 'consent of the appropriate local county or district attorney'."
+                },
+                {
+                    question: "Which of the following is NOT listed as a 'Health care practitioner' under 35A.01(3)?",
+                    options: ["A Physician", "A Registered Nurse", "A Podiatrist", "A Physical Therapist"],
+                    answer: "A Physician",
+                    explanation: "Sec. 35A.01(3) lists many practitioners, but 'Physician' is defined separately in 35A.01(7)."
+                },
+                {
+                    question: "A person licensed to practice medicine in this state is defined as a (35A.01):",
+                    options: ["Physician", "Health care practitioner", "Provider", "Fiscal Agent"],
+                    answer: "Physician",
+                    explanation: "Sec. 35A.01(7) gives a separate, specific definition for 'Physician'."
+                },
+                {
+                    question: "The definition of 'Provider' (35A.01) also includes 'a manufacturer or ___ of a product' reimbursed by a program.",
+                    options: ["Distributor", "Recipient", "Marketer", "Advertiser"],
+                    answer: "Distributor",
+                    explanation: "Sec. 35A.01(8)(E) includes 'a manufacturer or distributor of a product'."
+                },
+                {
+                    question: "Care or treatment of a health care recipient is the definition of (35A.01):",
+                    options: ["Service", "Claim", "Benefit", "Program"],
+                    answer: "Service",
+                    explanation: "Sec. 35A.01(9) defines 'Service' as 'care or treatment'."
+                },
+                {
+                    question: "A claim for a product that is 'adulterated, debased, mislabeled, or otherwise inappropriate' violates:",
+                    options: ["35A.02(a)(7)(C)", "35A.02(a)(1)", "35A.02(a)(6)", "35A.02(a)(12)"],
+                    answer: "35A.02(a)(7)(C)",
+                    explanation: "Sec. 35A.02(a)(7)(C) specifically addresses claims for such products."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $100?",
+                    options: ["Class B Misdemeanor", "Class C Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 35A.02(b)(2) covers '$100 or more but less than $750'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $750?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 35A.02(b)(3) covers '$750 or more but less than $2,500'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $2,500?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35A.02(b)(4)(A) covers '$2,500 or more but less than $30,000'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $30,000?",
+                    options: ["Felony of the Third Degree", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35A.02(b)(5)(A) covers '$30,000 or more but less than $150,000'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $150,000?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35A.02(b)(6)(A) covers '$150,000 or more but less than $300,000'."
+                },
+                {
+                    question: "What is the penalty for Health Care Fraud if the value is exactly $300,000?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "Enhanced Felony", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35A.02(b)(7) covers '$300,000 or more'."
+                },
+                {
+                    question: "A person submits 25 fraudulent claims. What is the penalty based on (b)(5)(B)?",
+                    options: ["The penalty from (b)(5)(B) is not met.", "Felony of the Third Degree", "State Jail Felony", "Felony of the Second Degree"],
+                    answer: "The penalty from (b)(5)(B) is not met.",
+                    explanation: "Sec. 35A.02(b)(5)(B) requires 'more than 25' claims. 25 is not enough. The penalty would be based on aggregated value."
+                },
+                {
+                    question: "A person submits 49 fraudulent claims. What is the automatic penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "State Jail Felony", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35A.02(b)(5)(B) covers 'more than 25 but fewer than 50' claims. 49 falls in this range."
+                },
+                {
+                    question: "A person submits 50 fraudulent claims. What is the automatic penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "State Jail Felony", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35A.02(b)(6)(B) covers '50 or more' fraudulent claims."
+                },
+                {
+                    question: "A 'High Managerial Agent' enhancement (35A.02(e)) raises the punishment category. This is shown:",
+                    options: ["Beyond a reasonable doubt", "By preponderance of the evidence", "By clear and convincing evidence", "At the judge's discretion"],
+                    answer: "Beyond a reasonable doubt",
+                    explanation: "Sec. 35A.02(e) states 'if it is shown beyond a reasonable doubt on the trial of the offense'."
+                }
+                // --- ADDED QUESTIONS START HERE ---
+                ,
+                {
+                    question: "Under 35A.01(1), a 'Claim' is a request for reimbursement, *without regard* to whether...",
+                    options: ["The money that is requested... is paid", "The service was actually provided", "The provider is licensed", "The recipient was eligible"],
+                    answer: "The money that is requested... is paid",
+                    explanation: "Sec. 35A.01(1)(A) clarifies a 'Claim' exists 'without regard to whether the money that is requested or demanded is paid'."
+                },
+                {
+                    question: "A 'Claim' (35A.01) can also be a statement of income/expense used to determine a...",
+                    options: ["Rate of payment", "Provider's tax liability", "Facility's certification", "Recipient's eligibility"],
+                    answer: "Rate of payment",
+                    explanation: "Sec. 35A.01(1)(B) includes statements 'used to determine a rate of payment under a health care program.'"
+                },
+                {
+                    question: "The definition of 'Fiscal agent' (35A.01) includes the agent's...",
+                    options: ["Designated agent", "Employee", "Manager", "IT department"],
+                    answer: "Designated agent",
+                    explanation: "Sec. 35A.01(2)(B) explicitly includes 'the designated agent of a person described by Paragraph (A).'"
+                },
+                {
+                    question: "Is a 'psychologist' considered a 'Health care practitioner' under 35A.01(3)?",
+                    options: ["Yes, it is explicitly listed", "No, only medical doctors", "No, 'physician' is defined separately", "Only if they can prescribe medicine"],
+                    answer: "Yes, it is explicitly listed",
+                    explanation: "Sec. 35A.01(3) lists 'dentist, podiatrist, psychologist, physical therapist...' as examples."
+                },
+                {
+                    question: "Is a 'registered nurse' considered a 'Health care practitioner' under 35A.01(3)?",
+                    options: ["Yes, it is explicitly listed", "No, only doctors or therapists", "No, they are considered 'employees'", "Only if they are an advanced practice nurse"],
+                    answer: "Yes, it is explicitly listed",
+                    explanation: "Sec. 35A.01(3) includes 'registered nurse' in its list of examples."
+                },
+                {
+                    question: "A health care program (35A.01) includes programs administered through a...",
+                    options: ["Managed care delivery model", "Private insurance model", "Charity model", "Fee-for-service model only"],
+                    answer: "Managed care delivery model",
+                    explanation: "Sec. 35A.01(4) specifies 'including a program that is administered... through a managed care delivery model.'"
+                },
+                {
+                    question: "Under 35A.01(5), a 'Health care recipient' is the individual for whom a claim is made, *without regard* to whether the individual was...",
+                    options: ["Eligible for benefits", "Alive at the time", "A resident of Texas", "Aware of the claim"],
+                    answer: "Eligible for benefits",
+                    explanation: "Sec. 35A.01(5) states 'without regard to whether the individual was eligible for benefits under the health care program.'"
+                },
+                {
+                    question: "An 'employee' of a participating person is included in the definition of (35A.01):",
+                    options: ["Provider", "Fiscal agent", "High managerial agent", "Health care practitioner"],
+                    answer: "Provider",
+                    explanation: "Sec. 35A.01(8)(C) includes 'an employee of the person who participates' in the definition of 'Provider'."
+                },
+                {
+                    question: "A 'management company' that 'manages, operates, or controls another provider' is also defined as a (35A.01):",
+                    options: ["Provider", "Fiscal agent", "Managed care organization", "High managerial agent"],
+                    answer: "Provider",
+                    explanation: "Sec. 35A.01(8)(A) includes such management companies in the definition of 'Provider'."
+                },
+                {
+                    question: "A person 'causes to be made' a false statement for an unauthorized benefit. Is this an offense?",
+                    options: ["Yes, under 35A.02(a)(1)", "No, they must make it themselves", "Only if they also present it", "Only if they are a high managerial agent"],
+                    answer: "Yes, under 35A.02(a)(1)",
+                    explanation: "Sec. 35A.02(a)(1) states 'knowingly makes or causes to be made a false statement'."
+                },
+                {
+                    question: "A person 'knowingly... induces... the making of a false statement' about facility conditions. This violates:",
+                    options: ["35A.02(a)(4)", "35A.02(a)(1)", "No offense, 'inducing' is not listed", "35A.02(a)(9) (Conspiracy)"],
+                    answer: "35A.02(a)(4)",
+                    explanation: "Sec. 35A.02(a)(4) explicitly includes 'induces, or seeks to induce the making of a false statement'."
+                },
+                {
+                    question: "A provider 'knowingly... solicits' a kickback in addition to an authorized payment. This violates:",
+                    options: ["35A.02(a)(5)", "Commercial Bribery", "Theft", "This is not an offense for soliciting"],
+                    answer: "35A.02(a)(5)",
+                    explanation: "Sec. 35A.02(a)(5) makes it an offense to 'knowingly pays, charges, solicits, accepts, or receives' a kickback."
+                },
+                {
+                    question: "A provider submits a claim for a service rendered by a person who 'is not licensed *in the manner claimed*'. This violates:",
+                    options: ["35A.02(a)(6)(B)", "35A.02(a)(6)(A)", "35A.02(a)(8)", "This is not an offense"],
+                    answer: "35A.02(a)(6)(B)",
+                    explanation: "Sec. 35A.02(a)(6)(B) addresses being licensed, but not in the manner claimed (e.g., billing for a doctor when it was a nurse)."
+                },
+                {
+                    question: "Billing for a service that has *not* been 'approved or acquiesced in' by a treating physician violates:",
+                    options: ["35A.02(a)(7)(A)", "35A.02(a)(1)", "35A.02(a)(10)", "This is not an offense"],
+                    answer: "35A.02(a)(7)(A)",
+                    explanation: "Sec. 35A.02(a)(7)(A) specifically prohibits billing for a service not approved by a treating physician or practitioner."
+                },
+                {
+                    question: "An MCO 'falsifies information required to be provided' by law or contract. This violates:",
+                    options: ["35A.02(a)(10)(B)", "35A.02(a)(1)", "35A.02(a)(4)", "Perjury"],
+                    answer: "35A.02(a)(10)(B)",
+                    explanation: "Sec. 35A.02(a)(10)(B) specifically makes it an offense for an MCO to 'falsifies information required to be provided'."
+                },
+                {
+                    question: "An MCO engages in fraudulent 'marketing' to eligible individuals. This violates:",
+                    options: ["35A.02(a)(10)(C)", "Deceptive Trade Practices", "35A.02(a)(1)", "This is not a crime under 35A"],
+                    answer: "35A.02(a)(10)(C)",
+                    explanation: "Sec. 35A.02(a)(10)(C) specifically covers fraudulent activity in connection with 'marketing the organization's services'."
+                },
+                {
+                    question: "The offense of obstructing an AG investigation (a)(11) applies to investigations under 35A and also...",
+                    options: ["Sec. 32.039 or 36.002, Human Resources Code", "Chapter 31 (Theft)", "Chapter 32 (Fraud)", "Any state investigation"],
+                    answer: "Sec. 32.039 or 36.002, Human Resources Code",
+                    explanation: "Sec. 35A.02(a)(11) explicitly includes 'Section 32.039, 32.0391, or 36.002, Human Resources Code'."
+                },
+                {
+                    question: "A person 'causes the... use of a false record' to avoid paying the government. Is this an offense?",
+                    options: ["Yes, under 35A.02(a)(12)", "No, they must use it themselves", "No, they must make it themselves", "Only if they are an MCO"],
+                    answer: "Yes, under 35A.02(a)(12)",
+                    explanation: "Sec. 35A.02(a)(12) states 'knowingly makes, uses, or causes the making or use of a false record'."
+                },
+                {
+                    question: "The value ladder in 35A.02(b) refers to the amount of payment or value of the benefit provided...",
+                    options: ["Directly or indirectly", "Directly only", "Per claim", "Per recipient"],
+                    answer: "Directly or indirectly",
+                    explanation: "Subsections (b)(1) through (b)(7) all specify 'directly or indirectly, as a result of the conduct'."
+                },
+                {
+                    question: "A person submits 26 fraudulent claims (each $10). What is the *highest* penalty?",
+                    options: ["Felony of the Third Degree", "State Jail Felony (agg. value $260)", "Class B Misdemeanor (agg. value $260)", "26 separate Class C Misdemeanors"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "The aggregated value is only $260 (Class B). However, (b)(5)(B) allows an automatic F3 for 'more than 25' claims. The state can choose the higher penalty."
+                },
+                {
+                    question: "A person submits 50 fraudulent claims (each $10). What is the *highest* penalty?",
+                    options: ["Felony of the Second Degree", "State Jail Felony (agg. value $500)", "Class B Misdemeanor (agg. value $500)", "50 separate Class C Misdemeanors"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "The aggregated value is $500 (Class B). However, (b)(6)(B) allows an automatic F2 for '50 or more' claims. The state can choose the higher penalty."
+                },
+                {
+                    question: "When can amounts from *one or more* health care programs be aggregated?",
+                    options: ["When part of one scheme or continuing course of conduct", "Never", "Only if the programs are all state-funded", "Only if the programs are all federally-funded"],
+                    answer: "When part of one scheme or continuing course of conduct",
+                    explanation: "Sec. 35A.02(d) allows aggregation 'under one or more health care programs' if it's 'one scheme or continuing course of conduct'."
+                },
+                {
+                    question: "A 'High Managerial Agent' commits a State Jail Felony. What is the enhanced penalty under 35A.02(e)?",
+                    options: ["Felony of the Third Degree", "State Jail Felony", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35A.02(e) increases the punishment to the 'next highest category', so SJF becomes F3."
+                },
+                {
+                    question: "A 'High Managerial Agent' commits a Felony of the Second Degree. What is the enhanced penalty under 35A.02(e)?",
+                    options: ["Felony of the First Degree", "Felony of the Second Degree", "A higher F2", "The enhancement does not apply"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35A.02(e) increases the punishment to the 'next highest category', so F2 becomes F1."
+                },
+                {
+                    question: "To prosecute under 35A, the Attorney General must have the consent of the...",
+                    options: ["Appropriate local county or district attorney", "Governor", "HHS-OIG", "Defendant"],
+                    answer: "Appropriate local county or district attorney",
+                    explanation: "Sec. 35A.02(f) requires the 'consent of the appropriate local county or district attorney'."
+                }
+                // --- ADDED QUESTIONS END HERE ---
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 35A - Health Care Fraud", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35A.htm" },
+                 { name: "Human Resources Code Sec. 32.039", url: "https://statutes.capitol.texas.gov/Docs/HR/htm/HR.32.htm#32.039" },
+                 { name: "Human Resources Code Sec. 36.002", url: "https://statutes.capitol.texas.gov/Docs/HR/htm/HR.36.htm#36.002" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

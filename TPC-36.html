@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 36 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-balance-scale mr-2"></i>Ch. 36: Bribery and Corrupt Influence
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (36.01)
+                </button>
+                <button data-tab="bribery" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hand-holding-usd mr-2"></i> Bribery (36.02)
+                </button>
+                <button data-tab="coercion-influence" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-comments mr-2"></i> Coercion / Influence (36.03 & 36.04)
+                </button>
+                <button data-tab="witness-retaliation" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shield-alt mr-2"></i> Witness / Retaliation (36.05 & 36.06)
+                </button>
+                <button data-tab="gifts-honorarium" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gift mr-2"></i> Gifts & Honorarium (36.07 - 36.10)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 36.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">(1) Custody</span>
+                            <p class="definition-desc">(A) Detained or under arrest by a peace officer; or (B) Under restraint by a public servant pursuant to a court order.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(2) Party Official</span>
+                            <p class="definition-desc">A person who holds any position or office in a political party (by election, appointment, or employment).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(3) Benefit</span>
+                            <p class="definition-desc">Anything reasonably regarded as pecuniary gain or pecuniary advantage, including benefit to another person in whose welfare the beneficiary has a direct and substantial interest.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">(4) Vote</span>
+                            <p class="definition-desc">To cast a ballot in an election regulated by law.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bribery Tab -->
+            <div id="bribery" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.02" target="_blank" class="text-red-600 hover:underline">Sec. 36.02. Bribery</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offense</h3>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if he intentionally or knowingly <strong class="font-semibold">offers, confers, or agrees to confer</strong> on another, OR <strong class="font-semibold">solicits, accepts, or agrees to accept</strong> from another:</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-2">
+                        <li>(1) Any benefit as consideration for the recipient's <strong class="font-semibold">decision, opinion, recommendation, vote, or other exercise of discretion</strong> as a public servant, party official, or voter.</li>
+                        <li>(2) Any benefit as consideration for the recipient's decision, vote, recommendation, or other exercise of official discretion in a <strong class="font-semibold">judicial or administrative proceeding</strong>.</li>
+                        <li>(3) Any benefit as consideration for a <strong class="font-semibold">violation of a duty</strong> imposed by law on a public servant or party official.</li>
+                        <li>(4) Any benefit that is a political contribution IF it was pursuant to an <strong class="font-semibold">express agreement</strong> to take/withhold a specific official action. (Requires direct evidence).</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Defenses & Exceptions</h3>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(b) It is <strong class="font-semibold text-red-700">NO DEFENSE</strong> that the person sought to be influenced was <strong class="font-semibold">not qualified</strong> to act (not yet in office, lacked jurisdiction, etc.).</li>
+                        <li>(c) It is <strong class="font-semibold text-red-700">NO DEFENSE</strong> that the benefit was not offered/accepted until <strong class="font-semibold">AFTER</strong> the official act or after the person <strong class="font-semibold">ceased to be a public servant</strong>.</li>
+                        <li>(d) It is an <strong class="font-semibold">EXCEPTION</strong> to (a)(1), (2), and (3) that the benefit was a <strong class="font-semibold">political contribution</strong> (as defined by law). Note: This does not apply to (a)(4) which deals with contributions given under an "express agreement."</li>
+                    </ul>
+                    
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalty</h3>
+                     <p class="text-sm text-gray-700">(e) An offense under this section is a <strong class="font-bold text-red-700">Felony of the Second Degree</strong>.</p>
+                </div>
+            </div>
+            
+            <!-- Coercion / Influence Tab -->
+            <div id="coercion-influence" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.03" target="_blank" class="text-red-600 hover:underline">Sec. 36.03. Coercion of Public Servant or Voter</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offense</h3>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if <strong class="font-semibold">by means of coercion</strong> he:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(1) Influences or attempts to influence a public servant in a specific exercise of official power or duty, or to violate a known legal duty; OR</li>
+                        <li>(2) Influences or attempts to influence a voter not to vote or to vote in a particular manner.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalty</h3>
+                     <p class="text-sm text-gray-700">(b) An offense is a <strong class="font-semibold">Class A Misdemeanor</strong>, UNLESS the coercion is a <strong class="font-semibold text-red-700">threat to commit a felony</strong>, in which event it is a <strong class="font-bold text-red-700">Felony of the Third Degree</strong>.</p>
+                     
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Exception</h3>
+                     <p class="text-sm text-gray-700">(c) It is an exception to (a)(1) if the person is a <strong class="font-semibold">member of the governing body</strong> of a governmental entity and the action is an <strong class="font-semibold">official action</strong> (like deliberations).</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.04" target="_blank" class="text-red-600 hover:underline">Sec. 36.04. Improper Influence</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offense</h3>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if he <strong class="font-semibold">privately addresses</strong> a representation, entreaty, argument, or other communication to any public servant who exercises discretion in an <strong class="font-semibold">adjudicatory proceeding</strong> with intent to influence the outcome on the basis of <strong class="font-semibold">considerations other than those authorized by law</strong>.</p>
+                    
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Definition</h3>
+                    <p class="text-sm text-gray-700">(b) <strong class="font-semibold">"Adjudicatory proceeding"</strong> means any proceeding before a court or agency in which the legal rights, powers, duties, or privileges of specified parties are determined.</p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalty</h3>
+                     <p class="text-sm text-gray-700">(c) An offense under this section is a <strong class="font-bold text-red-700">Class A Misdemeanor</strong>.</p>
+                </div>
+            </div>
+            
+            <!-- Witness / Retaliation Tab -->
+            <div id="witness-retaliation" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.05" target="_blank" class="text-red-600 hover:underline">Sec. 36.05. Tampering With Witness</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offense</h3>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if, <strong class="font-semibold">with intent to influence the witness</strong>, he <strong class="font-semibold">offers/confers a benefit</strong> on OR <strong class="font-semibold">coerces</strong> a witness/prospective witness to:</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-2">
+                        <li>Testify falsely;</li>
+                        <li>Withhold testimony, information, or documents;</li>
+                        <li>Elude legal process;</li>
+                        <li>Absent himself from an official proceeding; or</li>
+                        <li>Abstain from, discontinue, or delay the prosecution of another.</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 mt-4">(b) A <strong class="font-semibold">witness/prospective witness</strong> commits an offense if he <strong class="font-semibold">knowingly solicits, accepts, or agrees to accept</strong> any benefit for doing any of the things in (a).</p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Defense</h3>
+                    <p class="text-sm text-gray-700">(c) It is a defense to (a)(5) (delaying prosecution) that the benefit was <strong class="font-semibold">reasonable restitution</strong> and was negotiated with the <strong class="font-semibold">assistance or acquiescence of an attorney for the state</strong>.</p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalty</h3>
+                     <p class="text-sm text-gray-700 mb-2">(d) An offense is a <strong class="font-semibold">Felony of the Third Degree</strong>, UNLESS the official proceeding is a criminal case, then it is the <strong class="font-semibold text-red-700">same category as the most serious offense charged</strong>.</p>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(e) Notwithstanding (d), if the most serious offense is a <strong class="font-semibold">Capital Felony</strong>, tampering is a <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                        <li>(e-1) If the proceeding involves <strong class="font-semibold">Family Violence</strong>, the offense is the <strong class="font-semibold">greater of F3 or the most serious offense charged</strong>.</li>
+                        <li>(e-2) If it involves <strong class="font-semibold">Family Violence</strong> AND the actor has a <strong class="font-semibold">prior FV conviction</strong>, it is the <strong class="font-semibold">greater of F2 or the most serious offense charged</strong>.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.06" target="_blank" class="text-red-600 hover:underline">Sec. 36.06. Obstruction or Retaliation</a></h2>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offense</h3>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if he intentionally or knowingly <strong class="font-semibold">harms or threatens to harm another by an unlawful act</strong>:</p>
+                    <ul class="list-decimal list-inside text-sm text-gray-700 space-y-2">
+                        <li>(1) <strong class="font-semibold">In retaliation for</strong> or on account of the service/status of another as a public servant, witness, or informant (or person reporting a crime).</li>
+                        <li>(2) <strong class="font-semibold">To prevent or delay</strong> the service of another as a public servant, witness, or informant (or person reporting a crime).</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 mt-4">(a-1) Commits an offense if posts <strong class="font-semibold">residence address/phone number</strong> of a public servant on a public website <strong class="font-semibold">with intent to cause harm or threat of harm</strong> in retaliation.</p>
+                    
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Definitions</h3>
+                    <p class="text-sm text-gray-700">(b) "Public servant" also includes an <strong class="font-semibold">honorably retired peace officer</strong> and a <strong class="font-semibold">person contracting to work in a civil commitment facility</strong>.</p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalty</h3>
+                     <p class="text-sm text-gray-700">(c) An offense is a <strong class="font-bold text-red-700">Felony of the Third Degree</strong>, UNLESS:</p>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(1) The victim was a <strong class="font-semibold">juror</strong>, then it is a <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                        <li>(2) The offense was under (a-1) (posting info) AND <strong class="font-semibold">results in bodily injury</strong>, then it is a <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Gifts / Honorarium Tab -->
+            <div id="gifts-honorarium" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.07" target="_blank" class="text-red-600 hover:underline">Sec. 36.07. Acceptance of Honorarium</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">(a) A public servant commits an offense if he <strong class="font-semibold">solicits, accepts, or agrees to accept an honorarium</strong> in consideration for services that the public servant <strong class="font-semibold">would not have been requested to provide but for the public servant's official position</strong> or duties.</p>
+                    <p class="text-sm text-gray-700 mb-2">(b) <strong class="font-semibold">Does NOT prohibit</strong> accepting <strong class="font-semibold">transportation, lodging, and meals</strong> in connection with a conference or similar event where the services are <strong class="font-semibold">more than merely perfunctory</strong>.</p>
+                    <p class="text-sm text-gray-700 mb-4">(c) Penalty: <strong class="font-bold text-red-700">Class A Misdemeanor</strong>.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.08" target="_blank" class="text-red-600 hover:underline">Sec. 36.08. Gift to Public Servant...</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">A public servant commits an offense if he <strong class="font-semibold">solicits, accepts, or agrees to accept any benefit</strong> from a person the public servant <strong class="font-semibold">knows</strong> is subject to his jurisdiction, regulation, custody, or involved in transactions/litigation/matters before him. This section is broken down by the public servant's specific role:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(a) <strong class="font-semibold">Regulatory/Inspection:</strong> from person subject to regulation/inspection.</li>
+                        <li>(b) <strong class="font-semibold">Custody of Prisoners:</strong> from person in custody.</li>
+                        <li>(c) <strong class="font-semibold">Litigation:</strong> from person whom litigation is pending/contemplated.</li>
+                        <li>(d) <strong class="font-semibold">Contracts/Purchases:</strong> from person interested in a contract/purchase.</li>
+                        <li>(e) <strong class="font-semibold">Judicial/Administrative Authority:</strong> from person interested in a matter before the tribunal.</li>
+                        <li>(f) <strong class="font-semibold">Legislator/Governor/Lt. Governor:</strong> from <strong class="font-semibold">any person</strong>.</li>
+                    </ul>
+                    <p class="text-sm text-gray-700 my-4">(h) Penalty: <strong class="font-bold text-red-700">Class A Misdemeanor</strong>.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.09" target="_blank" class="text-red-600 hover:underline">Sec. 36.09. Offering Gift to Public Servant</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">(a) A person commits an offense if he <strong class="font-semibold">offers, confers, or agrees to confer any benefit</strong> on a public servant that he <strong class="font-semibold">knows</strong> the public servant is <strong class="font-semibold">prohibited by law from accepting</strong>.</p>
+                    <p class="text-sm text-gray-700 mb-4">(b) Penalty: <strong class="font-bold text-red-700">Class A Misdemeanor</strong>.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm#36.10" target="_blank" class="text-red-600 hover:underline">Sec. 36.10. Non-Applicable</a></h2>
+                    <p class="text-sm text-gray-700 mb-4">Sections 36.08 (Gift) and 36.09 (Offering Gift) <strong class="font-semibold">DO NOT APPLY</strong> to:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>(1) A <strong class="font-semibold">lawfully entitled fee</strong> or benefit.</li>
+                        <li>(2) A gift based on <strong class="font-semibold">kinship or a personal/business relationship independent</strong> of official status.</li>
+                        <li>(3) A benefit for a function in honor/appreciation, if <strong class="font-semibold">properly reported</strong>.</li>
+                        <li>(4) A <strong class="font-semibold">political contribution</strong>.</li>
+                        <li>(6) An item with a value of <strong class="font-semibold">less than $50</strong> (excluding cash).</li>
+                        <li>(b) 36.08 (Gift) does not apply to <strong class="font-semibold">food, lodging, transportation, or entertainment accepted as a guest</strong> and properly reported.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 36)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (60 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 36) ---
+            const quizData = [
+                {
+                    question: "Under 36.01, 'Custody' means detained by a peace officer or under restraint by a public servant pursuant to:",
+                    options: ["An order of a court", "A verbal command", "Agency policy", "Any lawful order"],
+                    answer: "An order of a court",
+                    explanation: "Sec. 36.01(1)(B) specifies 'pursuant to an order of a court.'"
+                },
+                {
+                    question: "A person who holds an office in a political party by election, appointment, or employment is a (36.01):",
+                    options: ["Party official", "Public servant", "Voter", "Candidate"],
+                    answer: "Party official",
+                    explanation: "Sec. 36.01(2) defines 'Party official'."
+                },
+                {
+                    question: "Under 36.01, 'Benefit' means anything reasonably regarded as:",
+                    options: ["Pecuniary gain or pecuniary advantage", "Any gift, regardless of value", "A political contribution only", "A campaign promise"],
+                    answer: "Pecuniary gain or pecuniary advantage",
+                    explanation: "Sec. 36.01(3) defines 'Benefit' as 'pecuniary gain or pecuniary advantage'."
+                },
+                {
+                    question: "The definition of 'Benefit' (36.01) includes benefit to another person in whose welfare the beneficiary has a:",
+                    options: ["Direct and substantial interest", "Passing interest", "Financial interest only", "Familial relationship"],
+                    answer: "Direct and substantial interest",
+                    explanation: "Sec. 36.01(3) includes 'benefit to any other person in whose welfare the beneficiary has a direct and substantial interest.'"
+                },
+                {
+                    question: "'To cast a ballot in an election regulated by law' is the definition of (36.01):",
+                    options: ["Vote", "Electioneering", "Benefit", "Discretion"],
+                    answer: "Vote",
+                    explanation: "Sec. 36.01(4) defines 'Vote'."
+                },
+                {
+                    question: "A person 'knowingly... solicits' a benefit for his vote as a public servant. What offense?",
+                    options: ["Bribery (36.02)", "Coercion (36.03)", "Improper Influence (36.04)", "No offense, only offering is a crime"],
+                    answer: "Bribery (36.02)",
+                    explanation: "Sec. 36.02(a) covers 'offers, confers, or agrees to confer' AND 'solicits, accepts, or agrees to accept'."
+                },
+                {
+                    question: "What is the penalty for Bribery (36.02)?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 36.02(e) states an offense under this section is a felony of the second degree."
+                },
+                {
+                    question: "A person offers a councilman a benefit for his vote. The councilman had not yet been sworn into office. Is this a defense?",
+                    options: ["No, it is no defense that the person was not qualified to act.", "Yes, the person was not yet a public servant.", "Yes, the person lacked jurisdiction.", "No, but it reduces the penalty."],
+                    answer: "No, it is no defense that the person was not qualified to act.",
+                    explanation: "Sec. 36.02(b) states it is 'no defense' that the person 'had not yet assumed office'."
+                },
+                {
+                    question: "A lobbyist gives a public servant a $5,000 'thank you' *after* a favorable vote, with no prior agreement. Is this a defense?",
+                    options: ["No, it is no defense that the benefit was conferred *after* the vote.", "Yes, because there was no prior agreement.", "Yes, because the vote already occurred.", "No, but it's a lesser offense."],
+                    answer: "No, it is no defense that the benefit was conferred *after* the vote.",
+                    explanation: "Sec. 36.02(c)(1) states it is 'no defense' that the benefit is not conferred 'until after the decision... has occurred'."
+                },
+                {
+                    question: "A person offers a benefit to a public servant for a violation of his duty. The benefit is a lawful political contribution. Is this an exception?",
+                    options: ["Yes, under 36.02(d)", "No, 36.02(d) only applies to (a)(4)", "No, political contributions can never be bribes", "Yes, if the contribution is reported"],
+                    answer: "Yes, under 36.02(d)",
+                    explanation: "Sec. 36.02(d) makes it an exception to (a)(1), (2), and (3) that the benefit is a political contribution."
+                },
+                {
+                    question: "Bribery (36.02) covers offering a benefit as consideration for a public servant's decision, opinion, recommendation, vote, or...",
+                    options: ["Other exercise of discretion", "Violation of duty", "Time and effort", "Campaign support"],
+                    answer: "Other exercise of discretion",
+                    explanation: "Sec. 36.02(a)(1) lists 'decision, opinion, recommendation, vote, or other exercise of discretion'."
+                },
+                {
+                    question: "Bribery (36.02(a)(4)) regarding a political contribution requires an 'express agreement' and what level of proof?",
+                    options: ["Direct evidence", "Preponderance of the evidence", "Circumstantial evidence", "A signed contract"],
+                    answer: "Direct evidence",
+                    explanation: "Sec. 36.02(a)(4) states 'direct evidence of the express agreement shall be required'."
+                },
+                {
+                    question: "A person 'by means of coercion... attempts to influence a voter... to vote in a particular manner.' What offense?",
+                    options: ["Coercion of Public Servant or Voter (36.03)", "Bribery (36.02)", "Improper Influence (36.04)", "Obstruction (36.06)"],
+                    answer: "Coercion of Public Servant or Voter (36.03)",
+                    explanation: "Sec. 36.03(a)(2) specifically covers influencing a voter by coercion."
+                },
+                {
+                    question: "What is the penalty for Coercion of a Public Servant (36.03) if the coercion is a threat to commit arson (a felony)?",
+                    options: ["Felony of the Third Degree", "Class A Misdemeanor", "Felony of the Second Degree", "Same as the threatened offense"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 36.03(b) states the offense is a Class A misdemeanor 'unless the coercion is a threat to commit a felony, in which event it is a felony of the third degree.'"
+                },
+                {
+                    question: "What is the penalty for Coercion of a Voter (36.03) if the coercion is a threat to punch the voter (Class C assault)?",
+                    options: ["Class A Misdemeanor", "Felony of the Third Degree", "Class C Misdemeanor", "No offense"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.03(b) states the default penalty is a Class A Misdemeanor, as the threat is not a felony."
+                },
+                {
+                    question: "A city council member, during an open meeting, attempts to influence a city employee's official duty. Is this an exception to 36.03?",
+                    options: ["Yes, if it is an 'official action' by a governing body member", "No, this is coercion", "Yes, all public servants are exempt", "No, council members cannot influence employees"],
+                    answer: "Yes, if it is an 'official action' by a governing body member",
+                    explanation: "Sec. 36.03(c) provides an exception for a member of a governing body taking an 'official action'."
+                },
+                {
+                    question: "A person 'privately addresses' a judge with intent to influence a proceeding 'on the basis of considerations other than those authorized by law.' What offense?",
+                    options: ["Improper Influence (36.04)", "Bribery (36.02)", "Coercion (36.03)", "Tampering with Witness (36.05)"],
+                    answer: "Improper Influence (36.04)",
+                    explanation: "Sec. 36.04(a) defines this as Improper Influence."
+                },
+                {
+                    question: "What is the penalty for Improper Influence (36.04)?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.04(c) states the offense is a Class A Misdemeanor."
+                },
+                {
+                    question: "A proceeding before a court or agency where the legal rights of specified parties are determined is an (36.04):",
+                    options: ["Adjudicatory proceeding", "Official proceeding", "Administrative hearing", "Judicial review"],
+                    answer: "Adjudicatory proceeding",
+                    explanation: "Sec. 36.04(b) defines 'Adjudicatory proceeding'."
+                },
+                {
+                    question: "A person 'offers... a benefit' to a witness with intent to influence them to 'withhold... a document.' What offense?",
+                    options: ["Tampering with Witness (36.05)", "Bribery (36.02)", "Obstruction (36.06)", "Improper Influence (36.04)"],
+                    answer: "Tampering with Witness (36.05)",
+                    explanation: "Sec. 36.05(a)(2) makes it an offense to offer a benefit to influence a witness to 'withhold any testimony, information, document, or thing'."
+                },
+                {
+                    question: "A witness 'knowingly solicits' a benefit in exchange for 'testifying falsely.' What offense?",
+                    options: ["Tampering with Witness (36.05)", "Bribery (36.02)", "Perjury (Chapter 37)", "No offense, only the offeror is liable"],
+                    answer: "Tampering with Witness (36.05)",
+                    explanation: "Sec. 36.05(b) makes it an offense for a witness to 'knowingly solicits, accepts, or agrees to accept' a benefit for the acts in (a)."
+                },
+                {
+                    question: "What is the penalty for Tampering with Witness (36.05) if the underlying case is a Class A Misdemeanor?",
+                    options: ["Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree", "Class B Misdemeanor"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.05(d) states the offense is the 'same category of offense as the most serious offense charged'."
+                },
+                {
+                    question: "What is the penalty for Tampering with Witness (36.05) if the underlying case is Aggravated Robbery (an F1)?",
+                    options: ["Felony of the First Degree", "Felony of the Third Degree", "Felony of the Second Degree", "Capital Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 36.05(d) states the offense is the 'same category... as the most serious offense charged'."
+                },
+                {
+                    question: "What is the penalty for Tampering with Witness (36.05) if the underlying case is Capital Murder?",
+                    options: ["Felony of the First Degree", "Capital Felony", "Felony of the Third Degree", "Life Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 36.05(e) states 'if the most serious offense charged is a capital felony, an offense under this section is a felony of the first degree.'"
+                },
+                {
+                    question: "What is the penalty for Tampering with Witness (36.05) if the underlying case is a Class C Misdemeanor?",
+                    options: ["Class C Misdemeanor", "Felony of the Third Degree", "Class A Misdemeanor", "Class B Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 36.05(d) states the offense is the 'same category... as the most serious offense charged'."
+                },
+                {
+                    question: "A person offers a witness money to 'abstain from... prosecution' (36.05(a)(5)). It is a defense if the benefit was reasonable restitution and negotiated with...",
+                    options: ["An attorney for the state", "The defendant's attorney", "A mediator", "The judge"],
+                    answer: "An attorney for the state",
+                    explanation: "Sec. 36.05(c)(2) requires the agreement be 'negotiated with the assistance or acquiescence of an attorney for the state'."
+                },
+                {
+                    question: "If the underlying case for 36.05 involves family violence and is a Class A Misd, what is the penalty for tampering?",
+                    options: ["Felony of the Third Degree", "Class A Misdemeanor", "Felony of the Second Degree", "State Jail Felony"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 36.05(e-1) makes it the 'greater of: (1) a felony of the third degree; or (2) the most serious offense charged'."
+                },
+                {
+                    question: "If the underlying case for 36.05 is an F3 involving family violence, and the actor has a prior FV conviction, what is the penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 36.05(e-2) makes it the 'greater of: (1) a felony of the second degree; or (2) the most serious offense charged' (which is F3)."
+                },
+                {
+                    question: "A person 'threatens to harm' a police officer by an unlawful act 'in retaliation for' a prior arrest. What offense?",
+                    options: ["Obstruction or Retaliation (36.06)", "Coercion (36.03)", "Bribery (36.02)", "Terroristic Threat (Chapter 22)"],
+                    answer: "Obstruction or Retaliation (36.06)",
+                    explanation: "Sec. 36.06(a)(1) covers harming or threatening to harm 'in retaliation for or on account of the service or status of another as a public servant'."
+                },
+                {
+                    question: "A person 'harms' a witness by an unlawful act 'to prevent or delay' their testimony. What offense?",
+                    options: ["Obstruction or Retaliation (36.06)", "Tampering with Witness (36.05)", "Coercion (36.03)", "Assault (Chapter 22)"],
+                    answer: "Obstruction or Retaliation (36.06)",
+                    explanation: "Sec. 36.06(a)(2) covers harm 'to prevent or delay the service of another as a... witness'."
+                },
+                {
+                    question: "What is the standard penalty for Obstruction or Retaliation (36.06)?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 36.06(c) states the default penalty is a felony of the third degree."
+                },
+                {
+                    question: "What is the penalty for Obstruction or Retaliation (36.06) if the victim was threatened because of their status as a *juror*?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 36.06(c)(1) enhances the offense to an F2 if the victim was a juror."
+                },
+                {
+                    question: "An 'informant' (36.06) is a person who has communicated information to the government in connection with:",
+                    options: ["Any governmental function", "A criminal case only", "A felony case only", "A drug case only"],
+                    answer: "Any governmental function",
+                    explanation: "Sec. 36.06(b)(2) defines 'Informant' broadly as 'in connection with any governmental function.'"
+                },
+                {
+                    question: "The definition of 'Public servant' for 36.06 (Obstruction) is expanded to include:",
+                    options: ["An honorably retired peace officer", "A party official", "A candidate for office", "A federal employee"],
+                    answer: "An honorably retired peace officer",
+                    explanation: "Sec. 36.06(b)(3)(A) adds 'an honorably retired peace officer'."
+                },
+                {
+                    question: "A person posts a judge's home address on a website with intent to cause harm in retaliation for a ruling. This violates:",
+                    options: ["36.06(a-1)", "36.06(a)", "Chapter 42 (Disorderly Conduct)", "This is not a crime"],
+                    answer: "36.06(a-1)",
+                    explanation: "Sec. 36.06(a-1) specifically covers posting a public servant's address/phone number on a website with intent to harm."
+                },
+                {
+                    question: "If posting a public servant's info under 36.06(a-1) *results in bodily injury* to the servant, what is the penalty?",
+                    options: ["Felony of the Second Degree", "Felony of the Third Degree", "Felony of the First Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 36.06(c)(2) enhances the F3 to an F2 if the (a-1) conduct results in bodily injury."
+                },
+                {
+                    question: "A public servant 'solicits... an honorarium' for services they would not have been asked to provide but for their official position. What offense?",
+                    options: ["Acceptance of Honorarium (36.07)", "Bribery (36.02)", "Theft by Public Servant", "No offense"],
+                    answer: "Acceptance of Honorarium (36.07)",
+                    explanation: "Sec. 36.07(a) defines this offense."
+                },
+                {
+                    question: "What is the penalty for Acceptance of Honorarium (36.07)?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "Class C Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.07(c) states the offense is a Class A Misdemeanor."
+                },
+                {
+                    question: "Sec. 36.07 (Honorarium) does NOT prohibit accepting transportation, lodging, and meals for a conference if the services are:",
+                    options: ["More than merely perfunctory", "Reported on a form", "Less than $50 in value", "For a charitable cause"],
+                    answer: "More than merely perfunctory",
+                    explanation: "Sec. 36.07(b) allows it 'to the extent that those services are more than merely perfunctory'."
+                },
+                {
+                    question: "A public servant in an agency performing 'regulatory functions... solicits... a benefit' from a person he knows is 'subject to regulation'. What offense?",
+                    options: ["Gift to Public Servant (36.08)", "Bribery (36.02)", "Acceptance of Honorarium (36.07)", "No offense if under $50"],
+                    answer: "Gift to Public Servant (36.08)",
+                    explanation: "Sec. 36.08(a) specifically covers this scenario."
+                },
+                {
+                    question: "A public servant in an agency 'having custody of prisoners... solicits... a benefit' from an inmate. What offense?",
+                    options: ["Gift to Public Servant (36.08)", "Bribery (36.02)", "Coercion (36.03)", "No offense"],
+                    answer: "Gift to Public Servant (36.08)",
+                    explanation: "Sec. 36.08(b) specifically covers this scenario."
+                },
+                {
+                    question: "A public servant who exercises discretion in 'contracts... solicits... a benefit' from a person he knows is 'interested in' a contract. What offense?",
+                    options: ["Gift to Public Servant (36.08)", "Bribery (36.02)", "Theft", "No offense if not an express agreement"],
+                    answer: "Gift to Public Servant (36.08)",
+                    explanation: "Sec. 36.08(d) specifically covers this scenario."
+                },
+                {
+                    question: "A 'member of the legislature... solicits... any benefit from any person.' What offense?",
+                    options: ["Gift to Public Servant (36.08)", "Bribery (36.02)", "No offense, this is allowed", "Acceptance of Honorarium (36.07)"],
+                    answer: "Gift to Public Servant (36.08)",
+                    explanation: "Sec. 36.08(f) provides a broad prohibition for legislators, the governor, and the lieutenant governor."
+                },
+                {
+                    question: "What is the penalty for Gift to Public Servant (36.08)?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "Felony of the Third Degree", "Depends on the value"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.08(h) states the offense is a Class A Misdemeanor."
+                },
+                {
+                    question: "A person 'offers... a benefit' to a public servant that he *knows* the servant is 'prohibited by law from accepting.' What offense?",
+                    options: ["Offering Gift to Public Servant (36.09)", "Bribery (36.02)", "No offense for offering", "Attempted Bribery"],
+                    answer: "Offering Gift to Public Servant (36.09)",
+                    explanation: "Sec. 36.09(a) defines this offense."
+                },
+                {
+                    question: "What is the penalty for Offering Gift to Public Servant (36.09)?",
+                    options: ["Class A Misdemeanor", "Class B Misdemeanor", "Felony of the Third Degree", "Depends on the value"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 36.09(b) states the offense is a Class A Misdemeanor."
+                },
+                {
+                    question: "Sec. 36.08 (Gift) and 36.09 (Offering Gift) do *not* apply to 'a fee prescribed by law' or 'a political contribution.'",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 36.10(a)(1) and (a)(4) list these as non-applicable."
+                },
+                {
+                    question: "Sec. 36.08 (Gift) and 36.09 (Offering Gift) do *not* apply to a gift conferred on account of:",
+                    options: ["Kinship or a personal/professional relationship independent of official status", "A person's birthday", "A national holiday", "A successful contract bid"],
+                    answer: "Kinship or a personal/professional relationship independent of official status",
+                    explanation: "Sec. 36.10(a)(2) provides this exception."
+                },
+                {
+                    question: "Sec. 36.08 (Gift) and 36.09 (Offering Gift) do *not* apply to 'an item with a value of less than $50,' *excluding*...",
+                    options: ["Cash or a negotiable instrument", "Food and beverage", "Tickets to an event", "Alcohol"],
+                    answer: "Cash or a negotiable instrument",
+                    explanation: "Sec. 36.10(a)(6) provides the <$50 exception but excludes 'cash or a negotiable instrument'."
+                },
+                {
+                    question: "Sec. 36.08 (Gift to Public Servant) does *not* apply to 'food, lodging, transportation, or entertainment accepted as a guest' and...",
+                    options: ["Reported by the donee (if required by law)", "Valued at less than $50", "Consumed on the same day", "Paid for by the donee later"],
+                    answer: "Reported by the donee (if required by law)",
+                    explanation: "Sec. 36.10(b) provides this specific exception for 36.08."
+                },
+                {
+                    question: "Sec. 36.09 (Offering Gift) does *not* apply to 'food, lodging, transportation, or entertainment accepted as a guest' and...",
+                    options: ["Reported by the donor (if required by law)", "Valued at less than $50", "Offered to multiple people", "Paid for by the donor's company"],
+                    answer: "Reported by the donor (if required by law)",
+                    explanation: "Sec. 36.10(c) provides this specific exception for 36.09."
+                },
+                {
+                    question: "A public servant who receives an 'unsolicited benefit' prohibited by 36.08 may:",
+                    options: ["Donate it to a governmental entity or recognized charity", "Keep it if it's under $50", "Return it to the sender immediately", "Destroy it"],
+                    answer: "Donate it to a governmental entity or recognized charity",
+                    explanation: "Sec. 36.08(i) allows the servant to donate the benefit to a governmental entity or a tax-exempt charitable organization."
+                },
+                {
+                    question: "Which of these is listed as a 'first responder' for the purposes of the legal advice exception in 36.10?",
+                    options: ["A peace officer", "Fire protection personnel", "An ambulance driver", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 36.10(e) lists all of these as 'first responders'."
+                },
+                {
+                    question: "The legal advice exception in 36.10(a)(9) applies to 'complimentary legal advice' for estate planning, rendered through a program operated by:",
+                    options: ["A local bar association or the State Bar of Texas", "Any licensed attorney", "A non-profit organization", "The Attorney General's office"],
+                    answer: "A local bar association or the State Bar of Texas",
+                    explanation: "Sec. 36.10(a)(9)(B)(i) specifies the program must be 'operated by a local bar association or the State Bar of Texas'."
+                },
+                {
+                    question: "A person offers a judge $10,000 for a specific ruling in a pending case. This is:",
+                    options: ["Bribery (36.02(a)(2))", "Improper Influence (36.04)", "Gift to Public Servant (36.08)", "Coercion (36.03)"],
+                    answer: "Bribery (36.02(a)(2))",
+                    explanation: "This is offering a benefit as consideration for an 'exercise of official discretion in a judicial... proceeding.'"
+                },
+                {
+                    question: "A fire marshal (public servant) 'accepts' a $100 gift card from a club owner he 'knows' is 'subject to regulation' by his agency. Offense?",
+                    options: ["Gift to Public Servant (36.08(a))", "Bribery (36.02)", "No offense, it's under $500", "No offense, 36.10(a)(6) applies"],
+                    answer: "Gift to Public Servant (36.08(a))",
+                    explanation: "This is a violation of 36.08(a). The <$50 exception in 36.10(a)(6) does not apply because a gift card is a 'negotiable instrument' (cash equivalent)."
+                },
+                {
+                    question: "A person offers a police officer a $20 bill (cash) to not write a speeding ticket. This is:",
+                    options: ["Bribery (36.02(a)(3))", "Gift to Public Servant (36.08)", "Offering Gift (36.09)", "No offense, it's less than $50"],
+                    answer: "Bribery (36.02(a)(3))",
+                    explanation: "This is a 'benefit as consideration for a violation of a duty imposed by law'. The <$50 exception in 36.10 does not apply to Bribery (36.02)."
+                },
+                {
+                    question: "A person offers a county commissioner a $40 bottle of wine, knowing the commissioner is prohibited from accepting it. Offense?",
+                    options: ["Offering Gift (36.09)", "Bribery (36.02)", "No offense, it's less than $50", "Improper Influence (36.04)"],
+                    answer: "Offering Gift (36.09)",
+                    explanation: "This is 36.09. The <$50 exception (36.10(a)(6)) *would* apply here, making it 'Non-Applicable' as it's not cash. This is a tricky question."
+                },
+                {
+                    question: "Based on 36.10(a)(6), is it an offense under 36.09 (Offering Gift) to give a public servant a $40 bottle of wine?",
+                    options: ["No, it is not an offense", "Yes, it is a Class A Misdemeanor", "Yes, but only if they accept it", "Only if it's Bribery"],
+                    answer: "No, it is not an offense",
+                    explanation: "Sec. 36.10(a) states 36.09 does not apply to '(6) an item with a value of less than $50, excluding cash'."
+                },
+                {
+                    question: "A public servant accepts a $40 *cash* gift from a person subject to his regulation. Is this an offense?",
+                    options: ["Yes, Gift to Public Servant (36.08)", "No, the <$50 exception applies", "No, it's not Bribery", "Yes, Bribery (36.02)"],
+                    answer: "Yes, Gift to Public Servant (36.08)",
+                    explanation: "It is an offense under 36.08. The <$50 exception (36.10(a)(6)) does NOT apply because it *excludes* cash."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 36 - Bribery and Corrupt Influence", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.36.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Election Code Title 15 - Political Contributions", url: "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.251.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>

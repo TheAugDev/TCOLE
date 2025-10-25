@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 39 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-user-tie mr-2"></i>Ch. 39: Abuse of Office
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (39.01)
+                </button>
+                <button data-tab="abuse-oppression" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Abuse / Oppression (39.02-03)
+                </button>
+                <button data-tab="violations-custody" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-lock mr-2"></i> Violations re Custody (39.04-041)
+                </button>
+                 <button data-tab="misuse-failure" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-info-circle mr-2"></i> Misuse / Failure (39.05-07)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 39.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Law relating to a public servant's office or employment</span>
+                            <p class="definition-desc">A law specifically applying to a public servant that directly/indirectly: (A) imposes a duty; OR (B) governs conduct.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Misuse</span>
+                            <p class="definition-desc">Dealing with property contrary to: (A) an agreement; (B) employment contract/oath; (C) law (including GAA); OR (D) limited purpose for which received.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abuse / Oppression Tab -->
+            <div id="abuse-oppression" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.02" target="_blank" class="text-red-600 hover:underline">Sec. 39.02. Abuse of Official Capacity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Public servant, with <strong>intent to obtain benefit</strong> OR <strong>intent to harm/defraud another</strong>, intentionally or knowingly: (1) <strong>violates a law</strong> relating to office/employment; OR (2) <strong>misuses government property</strong>, services, personnel, etc. in custody/possession by virtue of office.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> Offense under (a)(1) (Violating Law) is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Penalties (c):</strong> Offense under (a)(2) (Misuse) graded by <strong>value of use</strong>:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Less than $100: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong></li>
+                                <li>$100 < $750: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong></li>
+                                <li>$750 < $2,500: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong></li>
+                                <li>$2,500 < $30,000: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                                <li>$30,000 < $150,000: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>$150,000 < $300,000: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                                <li>$300,000 or more: <strong class="font-semibold text-red-700">Felony of the First Degree</strong></li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Exception (d):</strong> Travel perks (frequent flyer miles, hotel discounts, etc.) are NOT things of value belonging to govt due to administrative difficulty.</li>
+                         <li><strong class="font-semibold">Aggregation (e):</strong> Separate transactions under (a)(2) pursuant to one scheme/course of conduct can be aggregated for value.</li>
+                         <li><strong class="font-semibold">Value Limit (f):</strong> Value of use may not exceed fair market value OR replacement cost if FMV unascertainable.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.03" target="_blank" class="text-red-600 hover:underline">Sec. 39.03. Official Oppression</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Public servant acting <strong>under color of office/employment</strong> commits offense if: (1) Intentionally subjects another to <strong>mistreatment or unlawful</strong> arrest, detention, search, seizure, etc.; (2) Intentionally denies/impedes another's right/privilege, <strong>knowing conduct is unlawful</strong>; OR (3) Intentionally subjects another to <strong>sexual harassment</strong>.</li>
+                        <li><strong class="font-semibold">"Under Color Of" (b):</strong> Acts or purports to act in official capacity OR takes advantage of actual/purported capacity.</li>
+                        <li><strong class="font-semibold">"Sexual Harassment" (c):</strong> Unwelcome sexual advances/requests/conduct where submission is made an explicit/implicit term/condition of exercising a right/privilege.</li>
+                         <li><strong class="font-semibold">Penalty (d):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if actor intended to impair accuracy of data reported to TEA through <strong>PEIMS</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Violations re Custody/Supervision Tab -->
+            <div id="violations-custody" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.04" target="_blank" class="text-red-600 hover:underline">Sec. 39.04. Violations of the Civil Rights of Person in Custody; Improper Sexual Activity...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Who Commits (a):</strong> Official/employee/worker/volunteer of correctional/juvenile facility, or peace officer.</li>
+                         <li><strong class="font-semibold">Offense (a):</strong> Intentionally: (1) Denies/impedes person in custody's right/privilege, <strong>knowing conduct is unlawful</strong>; OR (2) Engages in sexual contact/intercourse/deviate SI with individual in custody (or employs/induces sexual conduct if TJJD/juv facility).</li>
+                         <li><strong class="font-semibold">Penalties (b - first version listed, H.B. 3157):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(1) (Civil Rights Violation): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>(a)(2) (Improper Sexual Activity): <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                                <li>(a)(2) Enhancement: Becomes <strong class="font-semibold text-red-700">Felony of the First Degree</strong> if against individual in TJJD custody/juv facility OR juvenile offender in correctional facility.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Penalties (b - second version listed, S.B. 312):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(1) (Civil Rights Violation): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>(a)(2) (Improper Sexual Activity): <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Offense (f):</strong> Employee/worker/volunteer (TDCJ, TJJD, juv facility, prob dept, CSCD) engages in sexual contact/intercourse/deviate SI with individual known to be <strong>under supervision</strong> but <strong>not in custody</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (g):</strong> Offense under (f) is <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                         <li><strong class="font-semibold">Affirmative Defense (h):</strong> Defense to (f) if actor was spouse at time of offense.</li>
+                         <li><strong class="font-semibold">Other Provisions:</strong> Attorney General has concurrent jurisdiction for SBI/death cases (d). Definitions provided for "Custody," "Correctional facility" (includes immigration, secure juv), "Juvenile facility," etc. (e).</li>
+                     </ul>
+                     <p class="mt-4 text-xs text-gray-500 italic">Note: There are two conflicting versions of subsection (b) in the official statute due to legislative amendments, resulting in different penalties for (a)(1). Both are listed above.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.041" target="_blank" class="text-red-600 hover:underline">Sec. 39.041. Improper Sexual Activity With Committed Person</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Who Commits (b):</strong> Officer/employee of TX Civil Commitment Office, contractor/employee for CCO facility, or volunteer at CCO facility.</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Intentionally engages in deviate SI, sexual contact, or sexual intercourse with person committed to a civil commitment facility.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                         <li><strong class="font-semibold">Affirmative Defense (d):</strong> Actor was spouse at time of offense.</li>
+                         <li><strong class="font-semibold">Prosecution Overlap (e):</strong> May be prosecuted under this section and/or other applicable laws.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Misuse / Failure Tab -->
+             <div id="misuse-failure" class="tab-content space-y-6">
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.015" target="_blank" class="text-red-600 hover:underline">Sec. 39.015. Concurrent Jurisdiction</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>With consent of local county/district attorney, the <strong>Attorney General</strong> has concurrent jurisdiction to prosecute offenses under Chapter 39.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.05" target="_blank" class="text-red-600 hover:underline">Sec. 39.05. Failure to Report Death of Prisoner</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Person required by CCP Art. 49.18 (or future 49A.153) fails to investigate death, file report, or include known facts.</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Person required by Govt Code 501.055 fails to: (1) Give notice of inmate death; OR (2) Conduct investigation/file report or include known facts.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.06" target="_blank" class="text-red-600 hover:underline">Sec. 39.06. Misuse of Official Information</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Public servant, relying on non-public info from office: (1) Acquires/aids pecuniary interest; (2) Speculates/aids speculation; OR (3) Coerces another into suppressing/failing to report info to LE.</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Public servant, with intent to benefit or harm/defraud, discloses/uses non-public info from office for nongovernmental purpose.</li>
+                         <li><strong class="font-semibold">Offense (c):</strong> Person, with intent to benefit or harm/defraud, solicits/receives non-public info from public servant.</li>
+                         <li><strong class="font-semibold">"Information not made public" (d):</strong> Info public doesn't generally have access to AND prohibited from disclosure under Ch. 552, Govt Code.</li>
+                         <li><strong class="font-semibold">Penalty (e):</strong> Base offense is <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                          <li><strong class="font-semibold">Penalties Based on Gain (g):</strong> If offense results in net pecuniary gain:
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Gain < $150,000: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>$150,000 <= Gain < $300,000: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                                <li>Gain >= $300,000: <strong class="font-semibold text-red-700">Felony of the First Degree</strong></li>
+                            </ul>
+                         </li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm#39.07" target="_blank" class="text-red-600 hover:underline">Sec. 39.07. Failure to Comply With Immigration Detainer Request</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Who Commits (a):</strong> Sheriff, chief of police, constable, or person with primary authority for administering jail.</li>
+                         <li><strong class="font-semibold">Offense (a):</strong> Has custody of person subject to ICE detainer request AND knowingly fails to comply with request.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Exception (c):</strong> Exception if person subject to detainer provided proof of US citizenship or lawful immigration status (e.g., TX DL).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 39)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (105 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 39) ---
+            const quizData = [
+                {
+                    question: "Under 39.01, 'Law relating to a public servant's office or employment' means a law that specifically applies to a public servant and governs their conduct.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.01(1) defines it as a law specifically applying to a public servant that imposes a duty OR governs conduct."
+                },
+                {
+                    question: "Which is NOT included in the definition of 'Misuse' under 39.01?",
+                    options: ["Dealing with property contrary to an agreement.", "Dealing with property contrary to an oath of office.", "Dealing with property contrary to a limited purpose for which received.", "Dealing with property in a way the public servant personally disagrees with."],
+                    answer: "Dealing with property in a way the public servant personally disagrees with.",
+                    explanation: "Sec. 39.01(2) defines 'Misuse' based on violations of agreements, oaths, laws, or limited purposes, not personal disagreement."
+                },
+                {
+                    question: "Who has concurrent jurisdiction with local prosecutors for Chapter 39 offenses, given appropriate consent?",
+                    options: ["The Governor", "The Attorney General", "The US Attorney", "The Texas Rangers"],
+                    answer: "The Attorney General",
+                    explanation: "Sec. 39.015 explicitly grants the Attorney General concurrent jurisdiction with consent of the local prosecutor."
+                },
+                {
+                    question: "What is the required mental state for Abuse of Official Capacity (39.02)?",
+                    options: ["Recklessly", "Criminal Negligence", "Intentionally or Knowingly", "No mental state required"],
+                    answer: "Intentionally or Knowingly",
+                    explanation: "Sec. 39.02(a) requires the public servant act 'intentionally or knowingly'."
+                },
+                 {
+                    question: "What specific intent is required for Abuse of Official Capacity (39.02)?",
+                    options: ["Intent to cause injury", "Intent to obtain a benefit OR intent to harm or defraud another", "Intent to violate the law", "Intent to misuse property"],
+                    answer: "Intent to obtain a benefit OR intent to harm or defraud another",
+                    explanation: "Sec. 39.02(a) requires the act be done 'with intent to obtain a benefit or with intent to harm or defraud another'."
+                },
+                {
+                    question: "A public servant, with intent to harm, intentionally violates a law relating to their office. What is the offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "This is an offense under Sec. 39.02(a)(1). The penalty under (b) is Class A Misdemeanor."
+                },
+                 {
+                    question: "A public servant, with intent to get a benefit, intentionally misuses government property where the value of use is $50. Offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "This is an offense under Sec. 39.02(a)(2). The penalty under (c)(1) for value less than $100 is Class C Misdemeanor."
+                },
+                {
+                    question: "A public servant misuses government services (value $1,000) with intent to harm another. Offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(3) for value $750 < $2,500 is Class A Misdemeanor."
+                },
+                 {
+                    question: "A public servant misuses government personnel (value $3,000) with intent to obtain a benefit. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(4) for value $2,500 < $30,000 is State Jail Felony."
+                },
+                 {
+                    question: "A public servant misuses government property (value $40,000) with intent to defraud another. Offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(5) for value $30,000 < $150,000 is Felony of the Third Degree."
+                },
+                {
+                    question: "A public servant misuses government property (value $200,000) with intent to obtain a benefit. Offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(6) for value $150,000 < $300,000 is Felony of the Second Degree."
+                },
+                {
+                    question: "A public servant misuses government property (value $350,000) with intent to harm another. Offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(7) for value $300,000 or more is Felony of the First Degree."
+                },
+                {
+                    question: "Are frequent flyer miles earned on official government travel considered a 'thing of value belonging to the government' under 39.02?",
+                    options: ["Yes", "No", "Only if worth over $100", "Only if used for personal travel"],
+                    answer: "No",
+                    explanation: "Sec. 39.02(d) explicitly excludes travel discounts/awards like frequent flyer miles due to administrative difficulty."
+                },
+                 {
+                    question: "Can multiple instances of misusing government property under 39.02(a)(2) be combined into one offense for penalty purposes?",
+                    options: ["No, each instance is separate.", "Yes, if conducted pursuant to one scheme or continuing course of conduct.", "Only if the total value exceeds $30,000.", "Only with permission from the DA."],
+                    answer: "Yes, if conducted pursuant to one scheme or continuing course of conduct.",
+                    explanation: "Sec. 39.02(e) allows aggregation if separate transactions are part of one scheme or continuing course of conduct."
+                },
+                 {
+                    question: "For Abuse of Official Capacity (Misuse - 39.02a2), the value of use may NOT exceed the fair market value OR...",
+                    options: ["The original purchase price.", "The depreciated value.", "The cost of replacing the thing within a reasonable time.", "The value to the public servant."],
+                    answer: "The cost of replacing the thing within a reasonable time.",
+                    explanation: "Sec. 39.02(f) states the value cannot exceed fair market value, or if unascertainable, the replacement cost."
+                },
+                {
+                    question: "Official Oppression (39.03) requires the public servant to be acting...",
+                    options: ["Off duty", "Under color of his office or employment", "With malice", "Under duress"],
+                    answer: "Under color of his office or employment",
+                    explanation: "Sec. 39.03(a) specifies the public servant must be 'acting under color of his office or employment'."
+                },
+                 {
+                    question: "Which act constitutes Official Oppression (39.03) if done intentionally by a public servant under color of office?",
+                    options: ["Subjecting another to mistreatment known to be unlawful.", "Denying a right knowing the conduct is unlawful.", "Subjecting another to sexual harassment.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 39.03(a)(1), (a)(2), and (a)(3) list these prohibited acts."
+                },
+                 {
+                    question: "What is the definition of acting 'under color of office or employment' for 39.03?",
+                    options: ["Wearing a uniform.", "Being on duty.", "Acting or purporting to act in an official capacity, or taking advantage of such capacity.", "Having supervisory authority."],
+                    answer: "Acting or purporting to act in an official capacity, or taking advantage of such capacity.",
+                    explanation: "Sec. 39.03(b) provides this definition."
+                },
+                 {
+                    question: "Under 39.03, 'Sexual Harassment' requires unwelcome sexual conduct where submission is made a term or condition of exercising a right or privilege.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.03(c) defines it as unwelcome conduct where submission is made an explicit or implicit term/condition."
+                },
+                {
+                    question: "What is the base penalty for Official Oppression (39.03)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 39.03(d) sets the base penalty as Class A Misdemeanor."
+                },
+                 {
+                    question: "Official Oppression (39.03) becomes a Felony of the Third Degree if the public servant acted with intent to impair the accuracy of data reported to...",
+                    options: ["The Comptroller", "The Texas Education Agency (TEA) through PEIMS", "The Department of Public Safety", "The Attorney General"],
+                    answer: "The Texas Education Agency (TEA) through PEIMS",
+                    explanation: "Sec. 39.03(d) provides this specific F3 enhancement related to PEIMS data."
+                },
+                {
+                    question: "Which person CANNOT commit an offense under 39.04(a) (Violations of Civil Rights / Improper Sexual Activity)?",
+                    options: ["Correctional facility employee", "Peace officer", "Volunteer at a juvenile facility", "A private citizen visiting an inmate"],
+                    answer: "A private citizen visiting an inmate",
+                    explanation: "Sec. 39.04(a) lists officials, employees, workers for compensation, volunteers of facilities, and peace officers. It does not include ordinary visitors."
+                },
+                 {
+                    question: "What is the required mental state for offenses under 39.04(a)?",
+                    options: ["Recklessly", "Knowingly", "Intentionally", "Criminal Negligence"],
+                    answer: "Intentionally",
+                    explanation: "Sec. 39.04(a) requires the person act 'intentionally'."
+                },
+                 {
+                    question: "Under 39.04(a)(1) (Civil Rights Violation), the actor must know their conduct (denying/impeding rights) is...",
+                    options: ["Unethical", "Unlawful", "Unpopular", "Unwise"],
+                    answer: "Unlawful",
+                    explanation: "Sec. 39.04(a)(1) requires 'knowing his conduct is unlawful'."
+                },
+                 {
+                    question: "According to the H.B. 3157 version of 39.04(b), what is the penalty for intentionally denying rights under (a)(1)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "The version amended by H.B. 3157 makes an offense under (a)(1) an F3."
+                },
+                 {
+                    question: "According to the S.B. 312 version of 39.04(b), what is the penalty for intentionally denying rights under (a)(1)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "The version amended by S.B. 312 makes an offense under (a)(1) a Class A Misdemeanor."
+                },
+                {
+                    question: "What is the base penalty for Improper Sexual Activity under 39.04(a)(2) according to *both* versions of 39.04(b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Both versions of 39.04(b) (as amended by H.B. 3157 and S.B. 312) list the base penalty for (a)(2) as F2."
+                },
+                 {
+                    question: "Under the H.B. 3157 version of 39.04(b), when does Improper Sexual Activity (a)(2) become a Felony of the First Degree?",
+                    options: ["If the victim is under 17.", "If the offense occurs in a state jail.", "If committed against an individual in TJJD custody or a juvenile offender in a correctional facility.", "If the actor has a prior conviction."],
+                    answer: "If committed against an individual in TJJD custody or a juvenile offender in a correctional facility.",
+                    explanation: "The H.B. 3157 version enhances (a)(2) to F1 if committed against individuals in TJJD custody/juvenile facilities or juvenile offenders in correctional facilities."
+                },
+                 {
+                    question: "Who has concurrent jurisdiction to investigate 39.04 violations involving SBI or death?",
+                    options: ["The FBI", "The Attorney General of Texas", "The Texas Rangers", "Internal Affairs"],
+                    answer: "The Attorney General of Texas",
+                    explanation: "Sec. 39.04(d) grants the Attorney General concurrent jurisdiction in cases involving SBI or death."
+                },
+                 {
+                    question: "For 39.04, 'Custody' includes the detention, arrest, or confinement of an adult offender AND...",
+                    options: ["Commitment of a juvenile offender to a facility.", "Detention of a juvenile offender.", "Both A and B.", "Neither A nor B."],
+                    answer: "Both A and B.",
+                    explanation: "Sec. 39.04(e)(2) defines custody to include adult detention/arrest/confinement and juvenile detention or commitment."
+                },
+                {
+                    question: "Does the definition of 'Correctional Facility' in 39.04 include secure juvenile facilities?",
+                    options: ["Yes, under one version of the statute.", "No, only adult facilities.", "Only if operated by TDCJ.", "Only private juvenile facilities."],
+                    answer: "Yes, under one version of the statute.",
+                    explanation: "Sec. 39.04(e)(1) has two versions. The one amended by H.B. 511 explicitly includes 'secure correctional facility' or 'secure detention facility' as defined by Family Code 51.02."
+                },
+                {
+                    question: "A TDCJ employee engages in sexual contact with an offender who is on parole (under supervision, not in custody). What offense?",
+                    options: ["No offense", "Improper Sexual Activity (39.04a2 - F2)", "Offense Under 39.04(f) - SJF", "Official Oppression (39.03 - Class A)"],
+                    answer: "Offense Under 39.04(f) - SJF",
+                    explanation: "Sec. 39.04(f) specifically covers sexual activity with persons under supervision but not in custody. Penalty under (g) is SJF."
+                },
+                {
+                    question: "Is being the spouse of the individual an affirmative defense to prosecution under 39.04(f) (Sex w/ person under supervision)?",
+                    options: ["No", "Yes", "Only if married before supervision began", "Only if no children resulted"],
+                    answer: "Yes",
+                    explanation: "Sec. 39.04(h) provides an affirmative defense if the actor was the spouse at the time of the offense."
+                },
+                {
+                    question: "An officer of the Texas Civil Commitment Office intentionally engages in sexual contact with a committed person. Offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 39.041(b) defines the offense. Penalty under (c) is F3."
+                },
+                {
+                    question: "Is being the spouse an affirmative defense to Improper Sexual Activity With Committed Person (39.041)?",
+                    options: ["No", "Yes", "Only if married for 5+ years", "Only if the committed person consents"],
+                    answer: "Yes",
+                    explanation: "Sec. 39.041(d) provides the spousal affirmative defense."
+                },
+                 {
+                    question: "A person required by CCP Art. 49.18 to investigate a prisoner death fails to file the required report. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 39.05(a) covers failure related to CCP 49.18. Penalty under (c) is Class B."
+                },
+                 {
+                    question: "A person required by Govt Code 501.055 fails to give notice of an inmate's death. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 39.05(b)(1) covers failure related to Govt Code 501.055 notice. Penalty under (c) is Class B."
+                },
+                {
+                    question: "A public servant uses non-public information from their job to help a friend acquire property that may be affected by the info. What offense?",
+                    options: ["Theft", "Bribery", "Misuse of Official Information (39.06a1)", "Abuse of Official Capacity (39.02)"],
+                    answer: "Misuse of Official Information (39.06a1)",
+                    explanation: "Sec. 39.06(a)(1) covers acquiring or aiding another to acquire a pecuniary interest based on non-public info."
+                },
+                 {
+                    question: "A public servant, with intent to get a benefit, discloses non-public information for a non-governmental purpose. What offense?",
+                    options: ["Official Oppression (39.03)", "Misuse of Official Information (39.06b)", "No offense if no harm", "Violation of Civil Rights (39.04)"],
+                    answer: "Misuse of Official Information (39.06b)",
+                    explanation: "Sec. 39.06(b) covers disclosing or using non-public info for non-governmental purpose with intent to benefit or harm/defraud."
+                },
+                 {
+                    question: "A person, intending to harm another, solicits non-public information from a public servant. What offense?",
+                    options: ["No offense, only the servant is liable.", "Misuse of Official Information (39.06c)", "Bribery", "Conspiracy"],
+                    answer: "Misuse of Official Information (39.06c)",
+                    explanation: "Sec. 39.06(c) covers soliciting or receiving non-public info with intent to benefit or harm/defraud."
+                },
+                 {
+                    question: "Under 39.06, 'information that has not been made public' means info the public doesn't generally have access to AND...",
+                    options: ["Is classified", "Is prohibited from disclosure under Govt Code Ch. 552", "Is marked 'Confidential'", "Is related to an ongoing investigation"],
+                    answer: "Is prohibited from disclosure under Govt Code Ch. 552",
+                    explanation: "Sec. 39.06(d) provides this two-part definition, referencing the Public Information Act."
+                },
+                 {
+                    question: "What is the base penalty for Misuse of Official Information (39.06)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 39.06(e) sets the base penalty as F3."
+                },
+                 {
+                    question: "If Misuse of Official Information (39.06) results in a net pecuniary gain of $200,000, what is the offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 39.06(g)(2) enhances the offense to F2 if the gain is $150,000 or more but less than $300,000."
+                },
+                 {
+                    question: "If Misuse of Official Information (39.06) results in a net pecuniary gain of $500,000, what is the offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 39.06(g)(3) enhances the offense to F1 if the gain is $300,000 or more."
+                },
+                 {
+                    question: "A sheriff knowingly fails to comply with an ICE detainer request for a person in custody. What offense?",
+                    options: ["No State offense", "Official Oppression (39.03)", "Failure to Comply w/ Detainer (39.07)", "Abuse of Official Capacity (39.02)"],
+                    answer: "Failure to Comply w/ Detainer (39.07)",
+                    explanation: "Sec. 39.07(a) defines this offense for sheriffs, chiefs, constables, etc."
+                },
+                {
+                    question: "What is the penalty for Failure to Comply With Immigration Detainer Request (39.07)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 39.07(b) sets the penalty as Class A Misdemeanor."
+                },
+                 {
+                    question: "Is it an exception to 39.07 if the person subject to the detainer provides a valid Texas Driver's License?",
+                    options: ["No, only proof of citizenship.", "Yes, this is an exception.", "Only if accompanied by a birth certificate.", "Only if the detainer is invalid."],
+                    answer: "Yes, this is an exception.",
+                    explanation: "Sec. 39.07(c) provides an exception if the person provided proof of citizenship or lawful status, 'such as a Texas driver's license or similar government-issued identification.'"
+                },
+                {
+                    question: "Does the definition of 'Misuse' (39.01) include dealing with property contrary to provisions of the General Appropriations Act?",
+                    options: ["No, only specific property laws.", "Yes, if specifically relating to government property.", "Only if the value exceeds $1,000.", "No, the GAA is budgetary only."],
+                    answer: "Yes, if specifically relating to government property.",
+                    explanation: "Sec. 39.01(2)(C) includes dealing contrary to 'a law, including provisions of the General Appropriations Act specifically relating to government property...'"
+                },
+                {
+                    question: "The intent element for Abuse of Official Capacity (39.02a1 - Violating Law) requires intent to violate the specific law.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 39.02(a) requires 'intent to obtain a benefit or intent to harm/defraud another' PLUS intentionally/knowingly violating the law. It does not require a specific intent *to violate that law* itself."
+                },
+                {
+                    question: "What specific types of unlawful actions are listed under Official Oppression (39.03a1)?",
+                    options: ["Mistreatment", "Arrest, detention, search, seizure", "Dispossession, assessment, lien", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 39.03(a)(1) lists mistreatment, arrest, detention, search, seizure, dispossession, assessment, or lien."
+                },
+                {
+                    question: "The penalty enhancement for Official Oppression (39.03d) applies if the intent was to impair the accuracy of data reported to TEA.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.03(d) enhances the offense to an F3 for intent to impair PEIMS data reported to TEA."
+                },
+                 {
+                    question: "Does 39.04(a) (Violations re Custody) apply to a person who works for compensation at a correctional facility but is not a direct employee?",
+                    options: ["No, only employees.", "Yes.", "Only if they wear a uniform.", "Only if they have direct contact with inmates."],
+                    answer: "Yes.",
+                    explanation: "Sec. 39.04(a) includes 'a person other than an employee who works for compensation at a correctional facility or juvenile facility'."
+                },
+                {
+                    question: "The definition of 'Custody' for 39.04 specifically includes the *commitment* of a juvenile offender to a facility.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.04(e)(2) defines custody to include 'the commitment of a juvenile offender to a correctional facility or juvenile facility'."
+                },
+                 {
+                    question: "Can a person be prosecuted under 39.04 (Violations re Custody) *and* another offense (like Aggravated Sexual Assault) for the same conduct?",
+                    options: ["No, only the more serious offense.", "No, only 39.04.", "Yes.", "Only if injury occurred."],
+                    answer: "Yes.",
+                    explanation: "Sec. 39.04(c) states 'This section shall not preclude prosecution for any other offense set out in this code.'"
+                },
+                 {
+                    question: "A volunteer at a local juvenile probation department has sex with a juvenile under supervision (but not in custody). Is the spousal defense available?",
+                    options: ["Yes, under 39.04(h).", "No, spousal defense never applies.", "Only if the juvenile consents.", "Only if the volunteer is also a minor."],
+                    answer: "Yes, under 39.04(h).",
+                    explanation: "This describes an offense under 39.04(f). Sec. 39.04(h) provides the spousal affirmative defense to prosecution under (f)."
+                },
+                {
+                    question: "The offense under 39.041 (Improper Sexual Activity w/ Committed Person) applies only to state employees.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 39.041(b) applies to officers/employees of CCO, *contractors* and their employees, and *volunteers*."
+                },
+                 {
+                    question: "Can a person be prosecuted under 39.041 (Sex w/ Committed Person) and another law for the same conduct?",
+                    options: ["No, only 39.041.", "Yes.", "Only if SBI occurred.", "Only if it was non-consensual."],
+                    answer: "Yes.",
+                    explanation: "Sec. 39.041(e) allows prosecution under this section, the other law, or both."
+                },
+                 {
+                    question: "A public servant coerces a subordinate into NOT reporting non-public information about potential fraud to a law enforcement agency. What offense?",
+                    options: ["Official Oppression (39.03)", "Abuse of Official Capacity (39.02)", "Misuse of Official Information (39.06a3)", "No offense"],
+                    answer: "Misuse of Official Information (39.06a3)",
+                    explanation: "Sec. 39.06(a)(3) specifically covers coercing another into suppressing or failing to report information to a law enforcement agency."
+                },
+                 {
+                    question: "Does the penalty enhancement based on pecuniary gain in 39.06(g) apply to offenses under 39.06(a)(3) (coercion)?",
+                    options: ["Yes, if the coercion resulted in gain.", "No, the gain enhancement seems tied to acquiring interest or speculation.", "Only if the gain exceeds $300,000.", "The statute is unclear."],
+                    answer: "No, the gain enhancement seems tied to acquiring interest or speculation.",
+                    explanation: "Sec. 39.06(g) enhances 'an offense under this section' if it 'results in a net pecuniary gain'. While (a)(3) is under the section, the gain is typically linked to (a)(1), (a)(2), (b), or (c) where information is used for financial advantage or speculation. Coercion itself doesn't directly generate pecuniary gain in the same way, making the base F3 penalty likely applicable."
+                },
+                {
+                    question: "Failure to Comply With Immigration Detainer (39.07) applies to any peace officer who fails to comply.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 39.07(a) limits the offense to 'A person who is a sheriff, chief of police, or constable or a person who otherwise has primary authority for administering a jail'."
+                }
+                // --- ADDED QUESTIONS (REVIEW 2) ---
+                ,
+                {
+                    question: "Under 39.01, 'Misuse' includes dealing with property contrary to an 'agreement' under which the public servant holds the property.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.01(2)(A) includes dealing contrary to 'an agreement under which the public servant holds the property'."
+                },
+                {
+                    question: "Under 39.01, 'Misuse' includes dealing with property contrary to a 'limited purpose' for which the property was delivered or received.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.01(2)(D) includes dealing contrary to 'a limited purpose for which the property is delivered or received'."
+                },
+                {
+                    question: "Under 39.01, 'Misuse' includes dealing with property contrary to provisions of the General Appropriations Act (GAA) specifically relating to government property.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.01(2)(C) explicitly includes 'provisions of the General Appropriations Act specifically relating to government property'."
+                },
+                {
+                    question: "A public servant misuses government services (value $200) with intent to harm another. Offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "This falls under Sec. 39.02(a)(2). The penalty under (c)(2) for value $100 or more but less than $750 is Class B Misdemeanor."
+                },
+                {
+                    question: "Are hotel discounts or food coupons received during official travel considered 'things of value belonging to the government' under 39.02?",
+                    options: ["Yes", "No", "Only if worth over $50", "Yes, if not reported"],
+                    answer: "No",
+                    explanation: "Sec. 39.02(d) explicitly excludes 'hotel discounts, or food coupons' along with frequent flyer miles."
+                },
+                {
+                    question: "Official Oppression (39.03a1) includes intentionally subjecting another to an unlawful 'dispossession' or 'assessment'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.03(a)(1) lists 'dispossession, assessment, or lien' as prohibited acts."
+                },
+                {
+                    question: "For 39.03, 'under color of office' means a public servant 'takes advantage of' their actual or purported official capacity.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.03(b) includes 'takes advantage of such actual or purported capacity' in its definition."
+                },
+                {
+                    question: "For 39.03 'Sexual Harassment', submission to the conduct must be an 'explicitly or implicitly' made term or condition of exercising a right.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.03(c) includes 'either explicitly or implicitly' in its definition."
+                },
+                {
+                    question: "A TJJD employee intentionally 'employs, authorizes, or induces' an individual in TJJD custody to engage in a sexual performance. What offense?",
+                    options: ["Official Oppression (39.03)", "Violations... (39.04a2)", "Abuse of Official Capacity (39.02)", "No offense"],
+                    answer: "Violations... (39.04a2)",
+                    explanation: "Sec. 39.04(a)(2) includes this specific language for individuals in TJJD custody or juvenile facilities."
+                },
+                {
+                    question: "Per one version of 39.04(e), 'Correctional facility' includes a place for detaining persons suspected of violating the 'Immigration and Nationality Act'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "The version of 39.04(e)(1)(B) added by H.B. 511 (2015) includes 'any place or facility designated for the detention of a person suspected of violating a provision of the Immigration and Nationality Act'."
+                },
+                {
+                    question: "Under 39.04(e), a 'Juvenile facility' includes a facility operated by or under contract with the 'Texas Juvenile Justice Department' OR a 'juvenile board'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.04(e)(2-a) defines 'Juvenile facility' as (A) operated by/under contract with TJJD, or (B) operated by/under contract with a juvenile board or other governmental unit."
+                },
+                {
+                    question: "The definitions for 'sexual contact,' 'sexual intercourse,' and 'deviate sexual intercourse' used in 39.04 are assigned by what PC section?",
+                    options: ["Sec. 1.07", "Sec. 21.01", "Sec. 43.25", "Sec. 22.011"],
+                    answer: "Sec. 21.01",
+                    explanation: "Sec. 39.04(e)(3) explicitly assigns the meanings from Sec. 21.01 (Definitions for Sexual Offenses)."
+                },
+                {
+                    question: "The definitions for 'sexual conduct' and 'performance' used in 39.04 are assigned by what PC section?",
+                    options: ["Sec. 1.07", "Sec. 21.01", "Sec. 43.25", "Sec. 22.011"],
+                    answer: "Sec. 43.25",
+                    explanation: "Sec. 39.04(e)(4) explicitly assigns the meanings from Sec. 43.25 (Definitions for Obscenity)."
+                },
+                {
+                    question: "The offense of improper sexual activity with a person under supervision (39.04f) applies to an employee of a 'local juvenile probation department'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.04(f) explicitly lists employees of 'a local juvenile probation department'."
+                },
+                {
+                    question: "The offense of improper sexual activity with a person under supervision (39.04f) applies to an employee of a 'community supervision and corrections department' (CSCD).",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.04(f) explicitly lists employees of 'a community supervision and corrections department'."
+                },
+                {
+                    question: "Failure to Report Death of Prisoner (39.05a) includes failing to investigate, failing to file, OR failing to include 'material facts known' in the report.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.05(a) includes 'fails to include in a filed report facts known or discovered in the investigation'."
+                },
+                {
+                    question: "Under 39.05(b), a person required by Govt Code 501.055 commits an offense if they fail to include known facts in the investigation report.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.05(b)(2)(B) makes it an offense to 'fails to include in the report facts known to the person or discovered by the person in the investigation'."
+                },
+                {
+                    question: "A public servant, relying on non-public info, 'aids another to speculate' on the basis of that info. What offense?",
+                    options: ["Abuse of Official Capacity (39.02)", "Official Oppression (39.03)", "Misuse of Official Information (39.06a2)", "No offense, only the speculator is liable"],
+                    answer: "Misuse of Official Information (39.06a2)",
+                    explanation: "Sec. 39.06(a)(2) makes it an offense for the public servant to 'speculates or aids another to speculate'."
+                },
+                {
+                    question: "A public servant, with intent to harm, uses non-public info for a 'nongovernmental purpose'. What offense?",
+                    options: ["Misuse of Official Information (39.06b)", "Official Oppression (39.03)", "Abuse of Official Capacity (39.02a1)", "Abuse of Official Capacity (39.02a2)"],
+                    answer: "Misuse of Official Information (39.06b)",
+                    explanation: "Sec. 39.06(b) covers disclosing or 'uses' non-public info for a 'nongovernmental purpose' with intent to benefit or harm/defraud."
+                },
+                {
+                    question: "A person commits an offense under 39.06(c) if, with intent to benefit, they 'solicit' non-public information from a public servant.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.06(c) covers 'solicits or receives' non-public information with the required intent."
+                },
+                {
+                    question: "If Misuse of Official Information (39.06) results in a net pecuniary gain of $100,000, what is the offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 39.06(g)(1) sets the penalty as F3 if the gain is 'less than $150,000'."
+                },
+                {
+                    question: "What is the required mental state for Failure to Comply With Immigration Detainer Request (39.07)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Knowingly",
+                    explanation: "Sec. 39.07(a)(2) requires that the person 'knowingly fails to comply with the detainer request'."
+                },
+                {
+                    question: "The offense of Failure to Comply With Immigration Detainer Request (39.07) applies to which of these officials?",
+                    options: ["Sheriff", "Chief of Police", "Constable", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 39.07(a) explicitly lists 'sheriff, chief of police, or constable' as well as the primary jail administrator."
+                },
+                {
+                    question: "Is it an exception to 39.07 (Failure to Comply w/ Detainer) if the person provides proof of 'U.S. citizenship'?",
+                    options: ["No, only lawful status.", "Yes.", "Only if they have a passport.", "No, the detainer must be complied with regardless."],
+                    answer: "Yes.",
+                    explanation: "Sec. 39.07(c) provides an exception if the person 'had provided proof that the person is a citizen of the United States'."
+                },
+                {
+                    question: "Besides a TX DL, the exception in 39.07(c) also applies if the person provides 'similar government-issued identification' showing lawful status.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 39.07(c) includes 'a Texas driver's license or similar government-issued identification' as proof."
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Adjust paragraph text to reflect the actual number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                }
+
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 39 - Abuse of Office", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.39.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Government Code Ch. 552 - Public Information Act", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.552.htm" },
+                 { name: "Education Code Sec. 48.008 / 48.009 - PEIMS", url: "https://statutes.capitol.texas.gov/Docs/ED/htm/ED.48.htm#48.008" }
+
+
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
+

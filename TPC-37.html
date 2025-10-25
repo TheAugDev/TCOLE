@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 37 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-gavel mr-2"></i>Ch. 37: Perjury & Other Falsification
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (37.01)
+                </button>
+                <button data-tab="perjury" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-balance-scale mr-2"></i> Perjury (37.02-07)
+                </button>
+                <button data-tab="false-reports" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-bullhorn mr-2"></i> False Reports (37.08-082)
+                </button>
+                <button data-tab="tampering" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shredder mr-2"></i> Tampering (37.09-101)
+                </button>
+                <button data-tab="impersonation" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-secret mr-2"></i> Impersonation (37.11-14)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 37.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Court record</span>
+                            <p class="definition-desc">A decree, judgment, order, subpoena, warrant, minutes, or other document issued by a court (of this state, other state, US, recognized foreign country, Indian tribe, etc.).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Governmental record</span>
+                            <p class="definition-desc">Includes: (A) anything belonging to/kept by govt; (B) anything required by law to be kept by others for govt; (C) license, permit, title, etc.; (D) proof of motor vehicle insurance; (E) official ballot; (F) mobile food unit docs; (G) temporary tags.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Statement</span>
+                            <p class="definition-desc">Any representation of fact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Perjury Tab -->
+            <div id="perjury" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.02" target="_blank" class="text-red-600 hover:underline">Sec. 37.02. Perjury</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, with <strong>intent to deceive</strong> and with <strong>knowledge</strong> of the statement's meaning:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>He makes a <strong>false statement under oath</strong> or swears to the truth of a false statement previously made, AND the statement is <strong>required or authorized by law</strong> to be made under oath; OR</li>
+                                <li>He makes a <strong>false unsworn declaration</strong> under Chapter 132, Civil Practice and Remedies Code.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.03" target="_blank" class="text-red-600 hover:underline">Sec. 37.03. Aggravated Perjury</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if he commits Perjury (37.02), AND the false statement:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Is made <strong>during or in connection with an official proceeding</strong>; AND</li>
+                                <li>Is <strong>material</strong>.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.04" target="_blank" class="text-red-600 hover:underline">Sec. 37.04. Materiality</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a):</strong> A statement is <strong>material</strong> if it <strong>could have affected the course or outcome</strong> of the official proceeding (regardless of admissibility).</li>
+                        <li><strong class="font-semibold">(b):</strong> It is <strong>no defense</strong> to Aggravated Perjury that the declarant <strong>mistakenly believed the statement to be immaterial</strong>.</li>
+                        <li><strong class="font-semibold">(c):</strong> Whether a statement is material is a <strong>question of law</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.05" target="_blank" class="text-red-600 hover:underline">Sec. 37.05. Retraction</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Defense to 37.03 (Aggravated Perjury)</strong> that the actor retracted his false statement:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong>Before completion</strong> of the testimony at the official proceeding; AND</li>
+                                <li><strong>Before it became manifest</strong> that the falsity of the statement would be exposed.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.06" target="_blank" class="text-red-600 hover:underline">Sec. 37.06. Inconsistent Statements</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>An indictment for perjury/aggravated perjury alleging <strong>two statements under oath, both of which cannot be true</strong>:
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong>Need not allege which statement is false.</strong></li>
+                                <li>At trial, the prosecution <strong>need not prove which statement is false.</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.07" target="_blank" class="text-red-600 hover:underline">Sec. 37.07. Irregularities No Defense</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a):</strong> It is <strong>no defense</strong> that the oath was administered/taken in an <strong>irregular manner</strong>, or by an <strong>irregularly qualified person</strong>.</li>
+                        <li><strong class="font-semibold">(b):</strong> It is <strong>no defense</strong> that a document was not sworn to IF it contains:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>A recital it was made under oath;</li>
+                                <li>The declarant was aware of the recital when signing; AND</li>
+                                <li>It contains the signed jurat of a public servant.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- False Reports Tab -->
+            <div id="false-reports" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.08" target="_blank" class="text-red-600 hover:underline">Sec. 37.08. False Report to Peace Officer...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, with <strong>intent to deceive</strong>, he <strong>knowingly</strong> makes a <strong>false statement</strong> that is <strong>material</strong> to a <strong>criminal investigation</strong> AND makes it to:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>A <strong>peace officer or federal special investigator</strong> conducting the investigation;</li>
+                                <li>An <strong>employee of a law enforcement agency</strong> (authorized + actor knows is conducting); OR</li>
+                                <li>A <strong>corrections officer or jailer</strong>.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.081" target="_blank" class="text-red-600 hover:underline">Sec. 37.081. False Report Regarding Missing Child or Missing Person</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if, with <strong>intent to deceive</strong>, the person <strong>knowingly</strong>:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li><strong>Files a false report</strong> of a missing child/person with a LE officer/agency; OR</li>
+                                <li><strong>Makes a false statement</strong> to a LE officer/employee relating to a missing child/person.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.082" target="_blank" class="text-red-600 hover:underline">Sec. 37.082. Misrepresenting Child as Family Member at Port of Entry</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if, with <strong>intent to commit an offense under 20A.02 (Trafficking)</strong>, the person <strong>knowingly misrepresents</strong> a child as a family member to a peace officer or federal special investigator <strong>at a port of entry</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tampering Tab -->
+            <div id="tampering" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.09" target="_blank" class="text-red-600 hover:underline">Sec. 37.09. Tampering With or Fabricating Physical Evidence</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowing an investigation/proceeding is <strong>pending or in progress</strong>, he:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li><strong>Alters, destroys, or conceals</strong> any record/thing with <strong>intent to impair</strong> its verity/availability; OR</li>
+                                <li><strong>Makes, presents, or uses</strong> any record/thing with <strong>knowledge of its falsity</strong> and <strong>intent to affect</strong> the course/outcome.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Offense (d):</strong> A person commits an offense if:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Knowing an offense <strong>has been committed</strong>, <strong>alters, destroys, or conceals</strong> any record/thing with <strong>intent to impair</strong> its availability in a <strong>subsequent</strong> investigation; OR</li>
+                                <li><strong>Observes a human corpse</strong> (believing offense committed), knows LE is unaware, and <strong>fails to report</strong> it.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Defense (b):</strong> Does not apply if the item concealed is <strong>privileged or work product</strong>.</li>
+                        <li><strong class="font-semibold">Defense (c-1):</strong> Defense to (a) or (d)(1) if the record was <strong>visual material prohibited under 43.261</strong> (child pornography) and was destroyed as described by that section.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a) or (d)(1): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>(a) or (d)(1) + Human Corpse: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                                <li>(d)(2) (Fail to Report Corpse): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.10" target="_blank" class="text-red-600 hover:underline">Sec. 37.10. Tampering With Governmental Record</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if he: (1) Knowingly makes <strong>false entry/alteration</strong>; (2) Makes/uses item w/ <strong>knowledge of falsity</strong> & <strong>intent to be taken as genuine</strong>; (3) <strong>Intentionally destroys/conceals/removes</strong>; (4) <strong>Possesses/sells</strong> w/ <strong>intent to use unlawfully</strong>; (5) Makes/uses w/ <strong>knowledge of falsity</strong>; OR (6) <strong>Possesses/sells</strong> w/ <strong>knowledge it was obtained unlawfully</strong>.</li>
+                        <li><strong class="font-semibold">Exception (b):</strong> It is an exception to (a)(3) (destruction) if the record is destroyed <strong>pursuant to legal authorization</strong> (e.g., Subtitle C, Title 6, Local Govt Code).</li>
+                        <li><strong class="font-semibold">Penalties (c), (d) (Complex):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>Base + Intent to Defraud/Harm: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                                <li><strong class="font-semibold text-red-700">Felony 3rd Degree:</strong> If record is (A) public school record, license, permit, title; (B) expert lab report for criminal action; (C) instrument cert report; (D) search warrant.</li>
+                                <li><strong class="font-semibold text-red-700">Felony 2nd Degree:</strong> If (A) above + intent to defraud/harm.</li>
+                                <li><strong class="font-semibold text-red-700">Class C Misdemeanor:</strong> If record is for school enrollment residency.</li>
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor:</strong> If record is a temporary tag (c)(6).</li>
+                                <li><strong class="font-semibold">F3/F2 (d):</strong> Specific rules for proof of insurance (37.01(2)(D)). F3 for *making*, F2 if intent to defraud/harm.</li>
+                                <li><strong class="font-semibold text-red-700">Class B (d)(1):</strong> For *presenting/using* false proof of insurance.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Affirmative Defense (e):</strong> For possession under (a)(6), it is an affirmative defense that possession occurred in the <strong>actual discharge of official duties as a public servant</strong>.</li>
+                        <li><strong class="font-semibold">Defense (f):</strong> Defense to (a)(1), (a)(2), (a)(5) if the false entry/info <strong>could have no effect</strong> on the government's purpose.</li>
+                        <li><strong class="font-semibold">Presumption (g):</strong> Intent to defraud/harm is presumed if actor acts w/ <strong>2 or more</strong> of the same type of govt doc (license, title, etc.).</li>
+                        <li><strong class="font-semibold">Prosecution Overlap (h, i):</strong> Actor may be prosecuted under 32.48 or 37.13 for same conduct. AG has concurrent jurisdiction for Medicaid fraud (with local DA consent).</li>
+                        <li><strong class="font-semibold">"NOT A GOVT DOC" (j):</strong> This statement is <strong>NOT a defense</strong> unless it is printed diagonally, clearly, indelibly, on both front/back, in solid red capital letters at least 1/4 inch high.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.101" target="_blank" class="text-red-600 hover:underline">Sec. 37.101. Fraudulent Filing of Financing Statement</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly files (or causes to be filed) a financing statement that the person knows is: (1) <strong>Forged</strong>; (2) Contains <strong>material false statement</strong>; OR (3) Is <strong>groundless</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(1) Forged: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> (F2 if 2+ priors).</li>
+                                <li>(a)(2) False / (a)(3) Groundless: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (SJF if intent to defraud/harm).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Impersonation Tab -->
+            <div id="impersonation" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.11" target="_blank" class="text-red-600 hover:underline">Sec. 37.11. Impersonating Public Servant</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li><strong>Impersonates</strong> a public servant with <strong>intent to induce another to submit</strong> to his pretended official authority or rely on his pretended acts; OR</li>
+                                <li><strong>Knowingly purports to exercise</strong> (without legal authority) any function of a public servant or public office.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.12" target="_blank" class="text-red-600 hover:underline">Sec. 37.12. False Identification as Peace Officer; Misrepresentation of Property</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> (1) <strong>Makes, provides, or possesses</strong> an item (badge, insignia, vehicle) bearing LE insignia identifying person as a peace officer; AND (2) <strong>Knows</strong> the person identified is <strong>not commissioned</strong>.</li>
+                        <li><strong class="font-semibold">Offense (d):</strong> <strong>Intentionally or knowingly misrepresents</strong> an object (e.g., vehicle) as property belonging to a LE agency.</li>
+                        <li><strong class="font-semibold">Defense (b):</strong> (1) Item <strong>clearly identifies</strong> as "honorary," "junior," or "junior posse"; OR (2) Person *was* commissioned when item was made.</li>
+                        <li><strong class="font-semibold">Exception (b-1):</strong> Item used *exclusively* for <strong>decorative, artistic, or dramatic</strong> presentation.</li>
+                        <li><strong class="font-semibold">Definition (c-1):</strong> Item bearing insignia includes items with the word "police," "sheriff," "constable," or "trooper."</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.13" target="_blank" class="text-red-600 hover:underline">Sec. 37.13. Record of a Fraudulent Court</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Makes, presents, or uses any document/record with:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li><strong>Knowledge</strong> that the document is <strong>not a record of a real court</strong> (under state/US law); AND</li>
+                                <li><strong>Intent</strong> that the document be given the <strong>same legal effect</strong> as a real court record.</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> (becomes F3 if 2 or more prior convictions under this section).</li>
+                        <li><strong class="font-semibold">Prosecution Overlap (c):</strong> If conduct also violates 32.48 or 37.10, actor may be prosecuted under any of those sections.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm#37.14" target="_blank" class="text-red-600 hover:underline">Sec. 37.14. False Statement Regarding Child Custody Determination Made in Foreign Country</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A person <strong>knowingly makes</strong> or causes to be made a <strong>false statement</strong> relating to a <strong>child custody determination made in a foreign country</strong> during a hearing (under Ch 152 or Subch I, Ch 153, Family Code).</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 37)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (75 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 37) ---
+            const quizData = [
+                {
+                    question: "Under 37.01, what is a 'Statement'?",
+                    options: ["Any representation of fact.", "A sworn declaration only.", "A document issued by a court.", "Anything kept by the government."],
+                    answer: "Any representation of fact.",
+                    explanation: "Sec. 37.01(3) defines 'Statement' as 'any representation of fact.'"
+                },
+                {
+                    question: "Which of the following is NOT included in the definition of 'Governmental record' (37.01)?",
+                    options: ["A temporary tag.", "A personal diary kept by a government employee.", "A standard proof of motor vehicle liability insurance form.", "An official ballot."],
+                    answer: "A personal diary kept by a government employee.",
+                    explanation: "Sec. 37.01(2)(A) specifies 'anything belonging to, received by, or kept by government *for information*.' A personal diary is not for government information."
+                },
+                {
+                    question: "Which of the following is considered a 'Court record' under 37.01(1)?",
+                    options: ["A subpoena issued by a US court.", "A warrant issued by a court of an Indian tribe recognized by the US.", "A judgment from a foreign country recognized by treaty.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 37.01(1) includes documents from (A) this state, (C) the United States, (D) a recognized foreign country, and (E) a recognized Indian tribe."
+                },
+                {
+                    question: "What is the penalty for Perjury (37.02)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 37.02(b) states the offense is a Class A misdemeanor."
+                },
+                {
+                    question: "What are the two ways to commit Perjury under 37.02(a)?",
+                    options: ["Make a false statement under oath OR make a false unsworn declaration.", "Lie to a peace officer OR lie to a grand jury.", "Alter a government record OR alter physical evidence.", "Make a false statement OR remain silent when required to speak."],
+                    answer: "Make a false statement under oath OR make a false unsworn declaration.",
+                    explanation: "Sec. 37.02(a)(1) covers false statements under oath, and (a)(2) covers false unsworn declarations under CPRC Ch. 132."
+                },
+                {
+                    question: "What two elements elevate Perjury (37.02) to Aggravated Perjury (37.03)?",
+                    options: ["The statement is material AND made with intent to harm.", "The statement is written AND made to a peace officer.", "The statement is made during/in connection with an official proceeding AND is material.", "The statement is made by a public servant AND is about a felony."],
+                    answer: "The statement is made during/in connection with an official proceeding AND is material.",
+                    explanation: "Sec. 37.03(a)(1) requires the statement be made in an 'official proceeding,' and (a)(2) requires it to be 'material.'"
+                },
+                {
+                    question: "What is the penalty for Aggravated Perjury (37.03)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.03(b) states the offense is a felony of the third degree."
+                },
+                {
+                    question: "Under 37.04, when is a statement 'material'?",
+                    options: ["Only if it is admissible under the rules of evidence.", "If it *could have affected* the course or outcome of the official proceeding.", "Only if it *did affect* the outcome of the official proceeding.", "If the judge decides it is important."],
+                    answer: "If it *could have affected* the course or outcome of the official proceeding.",
+                    explanation: "Sec. 37.04(a) defines 'material' based on its potential to affect the proceeding, regardless of admissibility."
+                },
+                {
+                    question: "Is it a defense to Aggravated Perjury if the declarant mistakenly believed their false statement was *not* material?",
+                    options: ["Yes, this negates the 'knowledge' element.", "No, it is no defense.", "Yes, but only if the belief was reasonable.", "No, unless their attorney advised them it was immaterial."],
+                    answer: "No, it is no defense.",
+                    explanation: "Sec. 37.04(b) explicitly states, 'It is no defense... that the declarant mistakenly believed the statement to be immaterial.'"
+                },
+                {
+                    question: "Who decides if a statement is material in a given factual situation?",
+                    options: ["The jury", "The prosecutor", "It is a question of law (for the judge).", "The defense attorney"],
+                    answer: "It is a question of law (for the judge).",
+                    explanation: "Sec. 37.04(c) states, 'Whether a statement is material... is a question of law.'"
+                },
+                {
+                    question: "What are the two conditions for a 'Retraction' (37.05) to be a valid defense to Aggravated Perjury?",
+                    options: ["Before completion of testimony AND before the falsity would be exposed.", "Before the trial begins AND the retraction is in writing.", "Within 24 hours AND the retraction is sworn.", "After testimony but before the verdict AND the actor apologizes."],
+                    answer: "Before completion of testimony AND before the falsity would be exposed.",
+                    explanation: "Sec. 37.05(1) requires retraction 'before completion of the testimony' and (2) 'before it became manifest that the falsity... would be exposed.'"
+                },
+                {
+                    question: "If an indictment alleges a person made two inconsistent statements under oath that cannot both be true, what *must* the prosecution prove at trial?",
+                    options: ["Which of the two statements was false.", "That the person intended to lie on the first statement.", "That both statements cannot be true.", "That the person benefited from the false statement."],
+                    answer: "That both statements cannot be true.",
+                    explanation: "Sec. 37.06 states the indictment 'need not allege which statement is false' and the prosecution 'need not prove which statement is false.'"
+                },
+                {
+                    question: "Is it a defense to Perjury (37.07) that the person who administered the oath was not properly qualified?",
+                    options: ["Yes, an improper oath invalidates the charge.", "No, irregularities in the oath or administrator are no defense.", "Yes, but only if the declarant knew the person was unqualified.", "No, unless the declarant objected at the time."],
+                    answer: "No, irregularities in the oath or administrator are no defense.",
+                    explanation: "Sec. 37.07(a) states it is 'no defense' that 'there was some irregularity in the appointment or qualification of the person who administered the oath.'"
+                },
+                {
+                    question: "What is the penalty for False Report to a Peace Officer (37.08)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.08(c) states the offense is a Class B misdemeanor."
+                },
+                {
+                    question: "A person, with intent to deceive, knowingly makes a false statement material to a criminal investigation to a jailer. What offense?",
+                    options: ["Perjury (37.02)", "Aggravated Perjury (37.03)", "False Report to Peace Officer... (37.08)", "No offense, a jailer is not a peace officer."],
+                    answer: "False Report to Peace Officer... (37.08)",
+                    explanation: "Sec. 37.08(a)(3) explicitly includes 'a corrections officer or jailer' as a person to whom the false report can be made."
+                },
+                {
+                    question: "What is the penalty for False Report Regarding a Missing Child (37.081)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 37.081(b) states the offense is a Class C misdemeanor."
+                },
+                {
+                    question: "What specific intent is required for Misrepresenting a Child as a Family Member at a Port of Entry (37.082)?",
+                    options: ["Intent to deceive", "Intent to harm the child", "Intent to commit an offense under Sec. 20A.02 (Trafficking)", "Intent to enter the US illegally"],
+                    answer: "Intent to commit an offense under Sec. 20A.02 (Trafficking)",
+                    explanation: "Sec. 37.082(b) requires the misrepresentation be made 'with intent to commit an offense under Section 20A.02'."
+                },
+                {
+                    question: "What is the penalty for Misrepresenting a Child as a Family Member at a Port of Entry (37.082)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.082(c) states the offense is a Class B misdemeanor."
+                },
+                {
+                    question: "A person knows an investigation is in progress. They shred documents with intent to impair their availability. What offense?",
+                    options: ["Perjury (37.02)", "Tampering with Governmental Record (37.10)", "Tampering with or Fabricating Physical Evidence (37.09)", "No offense if they are their own documents."],
+                    answer: "Tampering with or Fabricating Physical Evidence (37.09)",
+                    explanation: "Sec. 37.09(a)(1) criminalizes 'alters, destroys, or conceals any record... with intent to impair its... availability' knowing an investigation is in progress."
+                },
+                {
+                    question: "What is the base penalty for Tampering w/ Physical Evidence (37.09a)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.09(c) states an offense under (a) is a felony of the third degree."
+                },
+                {
+                    question: "If the item altered, destroyed, or concealed under 37.09(a) is a human corpse, what is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 37.09(c) states 'unless the thing altered, destroyed, or concealed is a human corpse, in which case the offense is a felony of the second degree.'"
+                },
+                {
+                    question: "A person observes a human corpse, reasonably believes an offense occurred, knows LE is unaware, and fails to report it. What offense?",
+                    options: ["No offense, there is no duty to report.", "Tampering w/ Physical Evidence (37.09d2)", "Aggravated Perjury (37.03)", "Murder"],
+                    answer: "Tampering w/ Physical Evidence (37.09d2)",
+                    explanation: "Sec. 37.09(d)(2) specifically criminalizes this failure to report."
+                },
+                {
+                    question: "What is the penalty for *failing to report a human corpse* under 37.09(d)(2)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 37.09(c) states 'An offense under Subsection (d)(2) is a Class A misdemeanor.'"
+                },
+                {
+                    question: "It is a defense to Tampering w/ Physical Evidence (37.09) if the concealed item is...",
+                    options: ["Valued at less than $100.", "Privileged or is the work product of the parties.", "Owned by the actor.", "A copy, not the original."],
+                    answer: "Privileged or is the work product of the parties.",
+                    explanation: "Sec. 37.09(b) provides this defense."
+                },
+                {
+                    question: "What is the base penalty for Tampering with Governmental Record (37.10)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 37.10(c)(1) states the base offense is a Class A misdemeanor."
+                },
+                {
+                    question: "If a person commits Tampering w/ Governmental Record with intent to defraud or harm another, what is the *base* enhanced penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 37.10(c)(1) enhances the offense to a state jail felony if the actor's intent is to defraud or harm."
+                },
+                {
+                    question: "Tampering w/ Governmental Record is a Class C Misdemeanor if the record is...",
+                    options: ["A temporary tag.", "A search warrant.", "A document used to establish student residency for school enrollment.", "A ballot application."],
+                    answer: "A document used to establish student residency for school enrollment.",
+                    explanation: "Sec. 37.10(c)(3) provides this specific Class C penalty."
+                },
+                {
+                    question: "Tampering w/ Governmental Record is a Felony of the Third Degree if the record is...",
+                    options: ["A search warrant.", "A written report of a ballistic test for a criminal action.", "A public school assessment instrument (like a STAAR test).", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 37.10(c)(2) lists all these as records that elevate the offense to an F3."
+                },
+                {
+                    question: "A person *makes* a false proof of motor vehicle liability insurance form. What is the penalty under 37.10(d)?",
+                    options: ["Class B Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.10(d)(2)(B) makes the offense an F3 if committed under (a)(2) or (a)(5) and the defendant is convicted of *making* the record."
+                },
+                {
+                    question: "A person *presents or uses* a false proof of motor vehicle liability insurance form. What is the penalty under 37.10(d)?",
+                    options: ["Class B Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.10(d)(1) makes the offense a Class B misdemeanor if committed under (a)(2) or (a)(5) and the defendant is convicted of *presenting or using* the record."
+                },
+                {
+                    question: "If a person *makes* a false proof of insurance *with intent to defraud* another, what is the penalty under 37.10(d)?",
+                    options: ["Class B Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 37.10(d)(3) makes the offense an F2, notwithstanding (1) and (2), if the actor's intent was to defraud or harm."
+                },
+                {
+                    question: "It is a defense to 37.10(a)(1) (false entry) if the false entry...",
+                    options: ["Was a joke.", "Was corrected within 24 hours.", "Could have no effect on the government's purpose for the record.", "Was made by a public servant."],
+                    answer: "Could have no effect on the government's purpose for the record.",
+                    explanation: "Sec. 37.10(f) provides this defense."
+                },
+                {
+                    question: "Intent to defraud is presumed under 37.10(g) if the person acts with respect to how many governmental records?",
+                    options: ["One", "Two or more of the same type", "Five or more", "Ten or more"],
+                    answer: "Two or more of the same type",
+                    explanation: "Sec. 37.10(g) establishes this presumption for 'two or more of the same type of governmental records' (like licenses, titles, etc.)."
+                },
+                {
+                    question: "What is the penalty for Fraudulent Filing of a *forged* Financing Statement (37.101)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.101(b) makes an offense under (a)(1) (forged) an F3."
+                },
+                {
+                    question: "What is the penalty for Fraudulent Filing of a *groundless* Financing Statement (37.101)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 37.101(b) makes an offense under (a)(3) (groundless) a Class A misdemeanor."
+                },
+                {
+                    question: "A person files a *groundless* financing statement with *intent to defraud* a creditor. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 37.101(b) enhances the Class A misdemeanor to a state jail felony if committed 'with the intent to defraud or harm another.'"
+                },
+                {
+                    question: "A person pretends to be a building inspector (a public servant) to gain access to a home. What offense?",
+                    options: ["Burglary (30.02)", "Criminal Trespass (30.05)", "Impersonating Public Servant (37.11)", "No offense if they don't steal anything."],
+                    answer: "Impersonating Public Servant (37.11)",
+                    explanation: "Sec. 37.11(a)(1) applies: 'impersonates a public servant with intent to induce another to submit to the person's pretended official authority'."
+                },
+                {
+                    question: "What is the penalty for Impersonating Public Servant (37.11)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.11(b) states the offense is a felony of the third degree."
+                },
+                {
+                    question: "A person possesses a fake police badge that identifies them as a peace officer, and they know they are not a peace officer. What offense?",
+                    options: ["Impersonating Public Servant (37.11)", "False ID as Peace Officer (37.12)", "Tampering w/ Govt Record (37.10)", "No offense, possession is not a crime."],
+                    answer: "False ID as Peace Officer (37.12)",
+                    explanation: "Sec. 37.12(a)(1) criminalizes *possessing* such an item, and (a)(2) requires the actor *knows* the person is not commissioned."
+                },
+                {
+                    question: "What is the penalty for False ID as Peace Officer (37.12)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.12(e) states the offense is a Class B misdemeanor."
+                },
+                {
+                    question: "What is a valid defense to 37.12 (False ID as Peace Officer)?",
+                    options: ["The badge clearly identifies the person as an 'honorary' peace officer.", "The person was a commissioned peace officer when the badge was made.", "The item was used exclusively in an artistic or dramatic presentation.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 37.12(b)(1) provides the 'honorary' defense. (b)(2) provides the 'was commissioned' defense. (b-1) provides the 'artistic/dramatic' exception."
+                },
+                {
+                    question: "A person intentionally paints their car to look exactly like a police car to misrepresent it as LE property. What offense?",
+                    options: ["False ID as Peace Officer (37.12d)", "Impersonating Public Servant (37.11)", "Tampering w/ Govt Record (37.10)", "No offense, this is protected speech."],
+                    answer: "False ID as Peace Officer (37.12d)",
+                    explanation: "Sec. 37.12(d) specifically covers intentionally or knowingly misrepresenting an object, including a vehicle, as property belonging to a LE agency."
+                },
+                {
+                    question: "A person creates a fake court order with intent that it be given the same legal effect as a real one. What offense?",
+                    options: ["Record of a Fraudulent Court (37.13)", "Impersonating Public Servant (37.11)", "Tampering w/ Govt Record (37.10)", "Aggravated Perjury (37.03)"],
+                    answer: "Record of a Fraudulent Court (37.13)",
+                    explanation: "Sec. 37.13(a) applies: using a doc with (1) knowledge it's not a real court record and (2) intent it be given legal effect."
+                },
+                {
+                    question: "What is the base penalty for Record of a Fraudulent Court (37.13)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 37.13(b) states the base offense is a Class A misdemeanor."
+                },
+                {
+                    question: "When does Record of a Fraudulent Court (37.13) become a Felony of the Third Degree?",
+                    options: ["If the intent is to defraud.", "If it involves a child.", "If the defendant has previously been convicted under this section on two or more occasions.", "If it is used in an official proceeding."],
+                    answer: "If the defendant has previously been convicted under this section on two or more occasions.",
+                    explanation: "Sec. 37.13(b) provides this enhancement."
+                },
+                {
+                    question: "A person knowingly makes a false statement about a foreign child custody determination during a Family Code hearing. What offense?",
+                    options: ["Perjury (37.02)", "Aggravated Perjury (37.03)", "False Statement Regarding Child Custody Determination... (37.14)", "Record of a Fraudulent Court (37.13)"],
+                    answer: "False Statement Regarding Child Custody Determination... (37.14)",
+                    explanation: "Sec. 37.14(b) defines this specific offense."
+                },
+                {
+                    question: "What is the penalty for False Statement Regarding Child Custody Determination Made in Foreign Country (37.14)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 37.14(c) states the offense is a felony of the third degree."
+                },
+                {
+                    question: "Which of these is NOT an element of Perjury (37.02)?",
+                    options: ["Intent to deceive", "Knowledge of the statement's meaning", "A false statement", "The statement must be material"],
+                    answer: "The statement must be material",
+                    explanation: "Materiality is an element of *Aggravated* Perjury (37.03), not base Perjury (37.02)."
+                },
+                {
+                    question: "A person signs a document that contains a recital it was made under oath and has a signed jurat. They were aware of the recital but did not actually swear. Is this a defense to Perjury?",
+                    options: ["Yes, no oath was given.", "No, this is no defense.", "Only if the jurat was forged.", "Only if they did not read the document."],
+                    answer: "No, this is no defense.",
+                    explanation: "Sec. 37.07(b) states this is 'no defense' if the declarant was aware of the recital and it contains a signed jurat."
+                },
+                {
+                    question: "A person knowingly files a false report of a missing person, with intent to deceive. What is the penalty?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 37.081(b) sets the penalty as a Class C misdemeanor."
+                },
+                {
+                    question: "What is the key difference between Tampering under 37.09(a) and 37.09(d)(1)?",
+                    options: ["(a) involves a human corpse, (d)(1) does not.", "(a) requires an investigation is *pending/in progress*, (d)(1) requires knowing an offense *has been committed*.", "(a) is an F3, (d)(1) is a Class A.", "(a) requires intent, (d)(1) does not."],
+                    answer: "(a) requires an investigation is *pending/in progress*, (d)(1) requires knowing an offense *has been committed*.",
+                    explanation: "Sec. 37.09(a) is about thwarting a *current* investigation, while (d)(1) is about destroying evidence *after* an offense but before an investigation may have begun."
+                },
+                {
+                    question: "Tampering w/ a Governmental Record (37.10) is a Class A Misdemeanor if the record is...",
+                    options: ["A search warrant.", "A temporary tag.", "A student residency form.", "A proof of insurance form (used by actor)."],
+                    answer: "A temporary tag.",
+                    explanation: "Sec. 37.10(c)(6) explicitly makes tampering with a temporary tag a Class A misdemeanor."
+                },
+                {
+                    question: "A person knowingly purports to exercise the function of a judge without legal authority. What offense?",
+                    options: ["Impersonating Public Servant (37.11)", "Record of a Fraudulent Court (37.13)", "Tampering w/ Govt Record (37.10)", "No offense"],
+                    answer: "Impersonating Public Servant (37.11)",
+                    explanation: "Sec. 37.11(a)(2) criminalizes 'knowingly purports to exercise, without legal authority, any function of a public servant or of a public office, including that of a judge and court.'"
+                },
+                {
+                    question: "Which item is NOT listed in the 37.01 definition of 'Governmental record'?",
+                    options: ["A license issued by another state.", "A temporary tag.", "A public school assessment instrument.", "Documentation for a mobile food unit."],
+                    answer: "A public school assessment instrument.",
+                    explanation: "A public school assessment (c)(2)(A) is listed under the *penalty* section of 37.10, but not in the *definition* of 'governmental record' in 37.01. The other items are explicitly listed in 37.01(2)."
+                },
+                {
+                    question: "A retraction (37.05) is a defense to which offense?",
+                    options: ["Perjury (37.02)", "Aggravated Perjury (37.03)", "False Report (37.08)", "All of the above"],
+                    answer: "Aggravated Perjury (37.03)",
+                    explanation: "Sec. 37.05 explicitly states 'It is a defense to prosecution under Section 37.03 (Aggravated Perjury)...'"
+                },
+                {
+                    question: "For a 'false report' under 37.08, the statement must be...",
+                    options: ["Under oath", "Material to a criminal investigation", "In writing", "About a felony offense"],
+                    answer: "Material to a criminal investigation",
+                    explanation: "Sec. 37.08(a) requires the false statement to be 'material to a criminal investigation'."
+                },
+                {
+                    question: "A person knows an offense *has been committed*. They hide the murder weapon with intent to impair its availability in a *subsequent* investigation. Penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "This is 37.09(d)(1). The penalty under 37.09(c) for (d)(1) is an F3 (it's not a human corpse)."
+                },
+                {
+                    question: "A person possesses a blank temporary tag form with intent that it be used unlawfully. What offense?",
+                    options: ["Tampering w/ Govt Record (37.10a4)", "No offense, it's just a blank form.", "False ID as Peace Officer (37.12)", "Fraudulent Filing (37.101)"],
+                    answer: "Tampering w/ Govt Record (37.10a4)",
+                    explanation: "Sec. 37.10(a)(4) covers 'possesses... a blank governmental record form with intent that it be used unlawfully.' (c)(6) makes it a Class A Misdemeanor."
+                },
+                {
+                    question: "What is the penalty for Tampering w/ Govt Record if it is a ballot application and the actor knowingly provides false info?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.10(c)(5) sets this penalty."
+                },
+                {
+                    question: "A person forges a financing statement and files it. They have *two prior convictions* for the same offense. Penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 37.101(b) makes the base offense an F3, but enhances it to an F2 'if... the person had previously been convicted under this section on two or more occasions'."
+                },
+                {
+                    question: "A fake police badge is used *only* as a prop in a high school play. Is this an offense under 37.12?",
+                    options: ["Yes, possession is an offense.", "No, this is an exception for artistic or dramatic presentation.", "Only if the play is for profit.", "Yes, it is a Class B Misdemeanor."],
+                    answer: "No, this is an exception for artistic or dramatic presentation.",
+                    explanation: "Sec. 37.12(b-1) provides an exception for items 'used or intended for use exclusively for... artistic or dramatic presentation.'"
+                },
+                {
+                    question: "What is the *minimum* penalty for Tampering w/ Governmental Record (37.10)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "The base penalty is Class A, but Sec. 37.10(c)(3) provides a Class C penalty for student residency records."
+                },
+                {
+                    question: "A person makes a false unsworn declaration under Ch. 132 of the Civil Practice and Remedies Code. What offense?",
+                    options: ["No offense", "Perjury (37.02)", "Aggravated Perjury (37.03)", "Tampering w/ Govt Record (37.10)"],
+                    answer: "Perjury (37.02)",
+                    explanation: "Sec. 37.02(a)(2) specifically criminalizes this act."
+                },
+                {
+                    question: "When is a person presumed to intend to defraud or harm under 37.10?",
+                    options: ["When they act with respect to 2 or more of the same type of governmental record (e.g., two titles).", "Any time they make a false entry.", "Only if they gain money.", "If they are a repeat offender."],
+                    answer: "When they act with respect to 2 or more of the same type of governmental record (e.g., two titles).",
+                    explanation: "Sec. 37.10(g) establishes this presumption."
+                },
+                {
+                    question: "If conduct is an offense under 37.10 (Tampering w/ Govt Record) and 37.13 (Fraudulent Court Record), how may the actor be prosecuted?",
+                    options: ["Only under 37.10", "Only under 37.13", "Under any of those sections", "Under neither, the statutes conflict."],
+                    answer: "Under any of those sections",
+                    explanation: "Sec. 37.13(c) states 'the actor may be prosecuted under any of those sections.'"
+                },
+                {
+                    question: "An expert falsifies a toxicology report (a govt record under 37.10c2B) for a criminal case, with intent to harm the defendant. Penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "The record type (c)(2)(B) makes it an F3. The 'intent to defraud or harm' in (c)(2)(A) (which applies to this) enhances it to an F2."
+                },
+                {
+                    question: "What word(s) on an item bearing LE insignia are explicitly mentioned in 37.12(c-1)?",
+                    options: ["'Police', 'Sheriff', 'Constable', or 'Trooper'", "'Detective' or 'Agent'", "'Federal' or 'State'", "'SWAT' or 'Task Force'"],
+                    answer: "'Police', 'Sheriff', 'Constable', or 'Trooper'",
+                    explanation: "Sec. 37.12(c-1) states an item is included if it 'contains the word \"police,\" \"sheriff,\" \"constable,\" or \"trooper.\""
+                },
+                {
+                    question: "A public servant possesses a blank governmental record form with knowledge it was obtained unlawfully. Is this an offense?",
+                    options: ["No, public servants are exempt.", "Yes, unless it is an affirmative defense that possession was in the actual discharge of official duties.", "Yes, it is always a State Jail Felony.", "No, unless they sell it."],
+                    answer: "Yes, unless it is an affirmative defense that possession was in the actual discharge of official duties.",
+                    explanation: "This is an offense under 37.10(a)(6). Sec. 37.10(e) provides an *affirmative defense* if possession occurred in the actual discharge of official duties."
+                },
+                {
+                    question: "Which of these is NOT a 'governmental record' under 37.01(2)?",
+                    options: ["A certificate issued by another state.", "A temporary tag.", "A written report of a ballistic test.", "A standard proof of motor vehicle liability insurance form."],
+                    answer: "A written report of a ballistic test.",
+                    explanation: "A ballistic report is listed as a special category for *penalties* under 37.10(c)(2)(B), but is not part of the *definition* in 37.01(2)."
+                },
+                {
+                    question: "A person makes a false statement to a law enforcement employee (who is not a peace officer) about a missing child. What is the offense?",
+                    options: ["Class C Misdemeanor (37.081)", "Class B Misdemeanor (37.08)", "No offense, must be to a peace officer.", "Perjury (37.02)"],
+                    answer: "Class C Misdemeanor (37.081)",
+                    explanation: "Sec. 37.081(a)(2) covers making a false statement to 'other employee of a law enforcement agency' relating to a missing child."
+                },
+                {
+                    question: "A person makes a false statement to a law enforcement employee (who is not a peace officer) about a *criminal investigation* (not a missing child). What is the offense?",
+                    options: ["Class C Misdemeanor (37.081)", "Class B Misdemeanor (37.08)", "No offense, must be to a peace officer.", "Perjury (37.02)"],
+                    answer: "Class B Misdemeanor (37.08)",
+                    explanation: "Sec. 37.08(a)(2) covers reports to 'any employee of a law enforcement agency that is authorized... to conduct the investigation' (assuming the actor knows they are)."
+                },
+                {
+                    question: "What is the penalty for Tampering w/ Govt Record (37.10) if the record is a written appraisal filed with an appraisal review board by a person with a contingency interest?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 37.10(c)(4) provides this specific Class B penalty."
+                },
+                {
+                    question: "A person creates a fake document and puts 'NOT A GOVERNMENT DOCUMENT' on it. Is this a valid defense to 37.10(a)(2)?",
+                    options: ["Yes, this always negates intent.", "No, unless it is printed diagonally, clearly, indelibly, on both sides, in solid red capital letters at least 1/4 inch high.", "Yes, as long as the words are visible.", "No, this is never a defense."],
+                    answer: "No, unless it is printed diagonally, clearly, indelibly, on both sides, in solid red capital letters at least 1/4 inch high.",
+                    explanation: "Sec. 37.10(j) specifies the *exact* requirements for this statement to serve as a defense."
+                },
+                // --- ADDED QUESTIONS ---
+                {
+                    question: "Under 37.01(2), a 'Governmental record' includes documentation a mobile food unit is required to obtain.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 37.01(2)(F) explicitly includes 'the written documentation a mobile food unit is required to obtain under Section 437.0074, Health and Safety Code'."
+                },
+                {
+                    question: "Under 37.01(2), a 'Governmental record' includes a license or permit issued by a foreign government engaged in a reciprocal treaty with the U.S.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 37.01(2)(C) includes such documents issued 'by government, by another state, by the United States, or by a foreign government engaged in a reciprocal treaty...'"
+                },
+                {
+                    question: "A person makes a false statement under oath. For it to be Perjury under 37.02(a)(1), the statement must be...",
+                    options: ["Material", "Required or authorized by law to be made under oath", "Made in an official proceeding", "Made with intent to harm"],
+                    answer: "Required or authorized by law to be made under oath",
+                    explanation: "Sec. 37.02(a)(1) requires the statement be 'required or authorized by law to be made under oath.' Materiality is an element of Aggravated Perjury."
+                },
+                {
+                    question: "A person swears to the truth of a false statement they *previously made*. Can this be Perjury under 37.02?",
+                    options: ["Yes, this is explicitly included in the offense.", "No, the statement must be made at the time of the oath.", "Only if the previous statement was also under oath.", "Only if it is Aggravated Perjury."],
+                    answer: "Yes, this is explicitly included in the offense.",
+                    explanation: "Sec. 37.02(a)(1) includes when a person 'swears to the truth of a false statement previously made'."
+                },
+                {
+                    question: "A witness retracts their false testimony *after* the opposing attorney shows video proof of the lie. Is this a valid retraction defense under 37.05?",
+                    options: ["Yes, it was retracted before the testimony was complete.", "No, the retraction was not made before it became manifest that the falsity would be exposed.", "Yes, any retraction is a defense.", "No, retraction is never a defense."],
+                    answer: "No, the retraction was not made before it became manifest that the falsity would be exposed.",
+                    explanation: "Sec. 37.05(2) requires the retraction happen *before* the lie is about to be exposed."
+                },
+                {
+                    question: "A witness completes their testimony, leaves the stand, and tries to retract their false statement the next day. Is this a valid retraction defense under 37.05?",
+                    options: ["Yes, as long as it's before the verdict.", "No, the retraction must be made before completion of the testimony.", "Yes, if the judge allows it.", "No, unless the falsity was not yet exposed."],
+                    answer: "No, the retraction must be made before completion of the testimony.",
+                    explanation: "Sec. 37.05(1) requires the retraction be made *before completion* of the testimony at that proceeding."
+                },
+                {
+                    question: "What 3 things are required under 37.07(b) for it to be 'no defense' that a document was not actually sworn to?",
+                    options: ["Recital it was made under oath, declarant's awareness of recital, and signed jurat of a public servant.", "The document was material, made in an official proceeding, and filed with the court.", "The declarant was a public servant, on duty, and intended to file it.", "It was a government record, had a red stamp, and was signed."],
+                    answer: "Recital it was made under oath, declarant's awareness of recital, and signed jurat of a public servant.",
+                    explanation: "Sec. 37.07(b) lists these three specific requirements to overcome the 'it wasn't sworn' defense."
+                },
+                {
+                    question: "What are the culpable mental states (mens rea) required for False Report to a Peace Officer (37.08)?",
+                    options: ["Intentionally or Knowingly", "Recklessly", "With intent to deceive and Knowingly", "Criminal Negligence"],
+                    answer: "With intent to deceive and Knowingly",
+                    explanation: "Sec. 37.08(a) requires the person act 'with intent to deceive' and 'knowingly' make the false statement."
+                },
+                {
+                    question: "A person makes a false statement to a federal special investigator that is material to a criminal investigation. Is this an offense under 37.08?",
+                    options: ["No, it must be a Texas peace officer.", "Yes, 37.08(a)(1) includes federal special investigators.", "No, it must be a jailer or corrections officer.", "Only if the investigator is cross-designated as a peace officer."],
+                    answer: "Yes, 37.08(a)(1) includes federal special investigators.",
+                    explanation: "Sec. 37.08(a)(1) explicitly lists 'a peace officer or federal special investigator conducting the investigation'."
+                },
+                {
+                    question: "For 37.08, 'law enforcement agency' has the meaning assigned by...",
+                    options: ["Texas Constitution", "Code of Criminal Procedure, Art. 59.01", "Government Code, Ch. 411", "Penal Code, Sec. 1.07"],
+                    answer: "Code of Criminal Procedure, Art. 59.01",
+                    explanation: "Sec. 37.08(b) provides this reference."
+                },
+                {
+                    question: "What are the culpable mental states (mens rea) required for False Report Regarding Missing Child (37.081)?",
+                    options: ["Intentionally or Knowingly", "Recklessly", "With intent to deceive and Knowingly", "Criminal Negligence"],
+                    answer: "With intent to deceive and Knowingly",
+                    explanation: "Sec. 37.081(a) requires the person act 'with intent to deceive' and 'knowingly' file the report or make the statement."
+                },
+                {
+                    question: "What is the primary penalty difference between 37.08 (False Report to PO) and 37.081 (False Report Missing Child)?",
+                    options: ["37.08 is an F3 / 37.081 is an SJF", "37.08 is a Class B Misd / 37.081 is a Class C Misd", "37.08 is a Class A Misd / 37.081 is a Class B Misd", "Both are Class A Misdemeanors"],
+                    answer: "37.08 is a Class B Misd / 37.081 is a Class C Misd",
+                    explanation: "Sec. 37.08(c) is a Class B, while Sec. 37.081(b) is a Class C."
+                },
+                {
+                    question: "For Sec. 37.082 (Misrepresenting Child), what is the definition of 'Child'?",
+                    options: ["A person younger than 18", "A person younger than 17", "A person younger than 15", "A person defined by the Family Code"],
+                    answer: "A person younger than 18",
+                    explanation: "Sec. 37.082(a)(1) defines 'Child' as 'a person younger than 18 years of age.'"
+                },
+                {
+                    question: "For Sec. 37.082 (Misrepresenting Child), 'family member' means a person related by consanguinity or affinity.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 37.082(a)(2) provides this definition."
+                },
+                {
+                    question: "A person is prosecuted for 37.082 (Misrepresenting Child). Can they also be prosecuted under 20A.02 (Trafficking) for the same conduct?",
+                    options: ["No, this would be double jeopardy.", "Yes, the statute explicitly allows prosecution under this section, the other law, or both.", "Only if the child is under 14.", "No, they must be prosecuted for the more serious offense (Trafficking)."],
+                    answer: "Yes, the statute explicitly allows prosecution under this section, the other law, or both.",
+                    explanation: "Sec. 37.082(d) states 'the actor may be prosecuted under this section, the other law, or both.'"
+                },
+                {
+                    question: "A person *makes* a fake receipt with knowledge of its falsity and intent to affect the outcome of an ongoing investigation. What offense?",
+                    options: ["Tampering w/ or Fabricating Physical Evidence (37.09a2)", "Tampering w/ Govt Record (37.10a2)", "Perjury (37.02)", "No offense, a receipt is not physical evidence."],
+                    answer: "Tampering w/ or Fabricating Physical Evidence (37.09a2)",
+                    explanation: "Sec. 37.09(a)(2) applies: 'makes... any record, document, or thing with knowledge of its falsity and with intent to affect the course or outcome of the investigation...'"
+                },
+                {
+                    question: "For Sec. 37.09, 'human corpse' has the meaning assigned by...",
+                    options: ["Sec. 42.08, Penal Code", "Sec. 1.07, Penal Code", "Health and Safety Code", "Black's Law Dictionary"],
+                    answer: "Sec. 42.08, Penal Code",
+                    explanation: "Sec. 37.09(e) provides this reference."
+                },
+                {
+                    question: "What is the defense under 37.09(c-1) for Tampering w/ Physical Evidence?",
+                    options: ["The item was work product.", "The item was privileged.", "The item was visual material prohibited under 43.261 (child pornography) and was destroyed.", "The item was returned before trial."],
+                    answer: "The item was visual material prohibited under 43.261 (child pornography) and was destroyed.",
+                    explanation: "Sec. 37.09(c-1) provides a specific defense for the destruction of this type of contraband as described in 43.261(f)(3)."
+                },
+                {
+                    question: "What is the exception to prosecution for 37.10(a)(3) (Destruction of Govt Record)?",
+                    options: ["The actor was a public servant.", "The actor was retrieving their own information.", "The record is destroyed pursuant to legal authorization.", "The record was more than 10 years old."],
+                    answer: "The record is destroyed pursuant to legal authorization.",
+                    explanation: "Sec. 37.10(b) provides this exception, including transfers under 441.204, Govt Code, or compliance with the Local Govt Code."
+                },
+                {
+                    question: "A person possesses a fake driver's license (a govt record) with knowledge it was *obtained unlawfully*. What offense?",
+                    options: ["Tampering w/ Govt Record (37.10a6)", "False ID as Peace Officer (37.12)", "No offense, possession is not a crime.", "Perjury (37.02)"],
+                    answer: "Tampering w/ Govt Record (37.10a6)",
+                    explanation: "Sec. 37.10(a)(6) criminalizes 'possesses... a governmental record... with knowledge that it was obtained unlawfully.'"
+                },
+                {
+                    question: "A public servant possesses a stack of blank, unlawfully obtained temporary tags. What is their defense under 37.10(e)?",
+                    options: ["It is an affirmative defense that possession occurred in the actual discharge of official duties.", "They have absolute immunity.", "It is a defense that they intended to destroy them.", "There is no defense for a public servant."],
+                    answer: "It is an affirmative defense that possession occurred in the actual discharge of official duties.",
+                    explanation: "This is an offense under 37.10(a)(6). Sec. 37.10(e) provides this specific affirmative defense for public servants."
+                },
+                {
+                    question: "Who has concurrent jurisdiction with a local DA to prosecute 37.10 (Tampering w/ Govt Record) offenses involving the state Medicaid program?",
+                    options: ["The US Attorney General", "The Governor", "The Attorney General (of Texas)", "The FBI"],
+                    answer: "The Attorney General (of Texas)",
+                    explanation: "Sec. 37.10(i) grants the attorney general concurrent jurisdiction, with the consent of the local prosecutor."
+                },
+                {
+                    question: "A person *causes to be presented for filing* a groundless financing statement. Is this an offense under 37.101?",
+                    options: ["No, the person must file it themselves.", "Yes, the statute includes 'causes to be presented for filing'.", "Only if it is forged.", "Only if they are a public servant."],
+                    answer: "Yes, the statute includes 'causes to be presented for filing'.",
+                    explanation: "Sec. 37.101(a) begins 'A person commits an offense if the person knowingly presents for filing or causes to be presented for filing...'"
+                },
+                {
+                    question: "A person possesses a fake police badge. The person identified *was* a commissioned officer when the badge was made, but has since retired. Is this a defense under 37.12?",
+                    options: ["No, the person is no longer commissioned.", "Yes, this is a specific defense.", "Only if the badge is marked 'retired'.", "No, possession is a strict liability offense."],
+                    answer: "Yes, this is a specific defense.",
+                    explanation: "Sec. 37.12(b)(2) provides a defense if 'the person identified... was commissioned in that capacity when the item was made.'"
+                },
+                {
+                    question: "An item bearing the word 'Constable' is considered an 'item bearing an insignia of a law enforcement agency' for 37.12.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 37.12(c-1) explicitly includes items containing the word 'police,' 'sheriff,' 'constable,' or 'trooper.'"
+                },
+                {
+                    question: "A person *sells* a fake police badge to a collector, knowing the collector is not a peace officer. Is this an offense under 37.12?",
+                    options: ["No, only possession is an offense.", "Yes, the offense includes 'provides to another person' an item bearing the insignia.", "No, as long as it was a monetary sale.", "Only if the buyer impersonates an officer."],
+                    answer: "Yes, the offense includes 'provides to another person' an item bearing the insignia.",
+                    explanation: "Sec. 37.12(a)(1) states 'makes, provides to another person, or possesses...'"
+                },
+                {
+                    question: "If conduct constitutes an offense under 37.13 (Fraudulent Court Record) AND 37.10 (Tampering w/ Govt Record), how may the actor be prosecuted?",
+                    options: ["Only under 37.10 (the more general offense)", "Only under 37.13 (the more specific offense)", "Under any of those sections", "The actor cannot be prosecuted, the statutes conflict."],
+                    answer: "Under any of those sections",
+                    explanation: "Sec. 37.13(c) explicitly states 'the actor may be prosecuted under any of those sections.'"
+                },
+                {
+                    question: "For 37.14 (False Statement Child Custody), 'child custody determination' has the meaning assigned by...",
+                    options: ["Sec. 152.102, Family Code", "Sec. 1.07, Penal Code", "Ch. 411, Government Code", "Art. 1.01, Code of Criminal Procedure"],
+                    answer: "Sec. 152.102, Family Code",
+                    explanation: "Sec. 37.14(a) provides this reference."
+                },
+                {
+                    question: "The false statement in 37.14 must relate to a child custody determination made in what location?",
+                    options: ["Any Texas court", "Any US court", "A foreign country", "A fraudulent court"],
+                    answer: "A foreign country",
+                    explanation: "Sec. 37.14(b) specifies 'a child custody determination made in a foreign country'."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 37 - Perjury & Other Falsification", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.37.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Penal Code Sec. 20A.02 - Trafficking of Persons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.20A.htm#20A.02" },
+                 { name: "Civil Practice & Remedies Code Ch. 132 - Unsworn Declaration", url: "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.132.htm" },
+                 { name: "Transportation Code Sec. 601.081 - Proof of Insurance", url: "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.601.htm#601.081" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

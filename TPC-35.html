@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 35 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-file-invoice-dollar mr-2"></i>Ch. 35: Insurance Fraud
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (35.01)
+                </button>
+                 <button data-tab="materiality" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-balance-scale mr-2"></i> Materiality (35.015)
+                </button>
+                <button data-tab="fraud-offense" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Fraud Offense (35.02)
+                </button>
+                <button data-tab="value-agg" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-calculator mr-2"></i> Value & Aggregation
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 35.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Insurance policy</span>
+                            <p class="definition-desc">A written instrument providing terms of insurance. Broadly defined to include certificates, binders, contracts, benefit plans, surety bonds, cash bonds, or any other alternative to insurance authorized by law (e.g., Trans. Code 601).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Insurer</span>
+                            <p class="definition-desc">Has the meaning assigned by Article 1.02, Insurance Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Statement</span>
+                            <p class="definition-desc">An <strong class="text-red-700">oral or written</strong> communication or a record/documented representation of fact made to an insurer. Includes <strong class="text-red-700">computer-generated information</strong>.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Value of the claim</span>
+                            <p class="definition-desc">The <strong class="text-red-700">total dollar amount</strong> of a claim for payment, or as applicable, the value determined under Sec. 35.025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materiality Tab -->
+            <div id="materiality" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35.htm#35.015" target="_blank" class="text-red-600 hover:underline">Sec. 35.015. Materiality</a></h2>
+                    <p class="mb-4">A statement is <strong class="font-semibold">material</strong> (regardless of admissibility at trial) if it <strong class="text-red-700">could have affected</strong>:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>The <strong class="font-semibold">eligibility for coverage</strong> or <strong class="font-semibold">amount of payment</strong> on a claim; OR</li>
+                        <li>The decision of an insurer whether to <strong class="font-semibold">issue an insurance policy</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fraud Offense Tab -->
+            <div id="fraud-offense" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35.htm#35.02" target="_blank" class="text-red-600 hover:underline">Sec. 35.02. Insurance Fraud</a></h2>
+                    <p class="mb-4 text-sm"><strong class="font-semibold">Culpable Mental State:</strong> <strong class="text-red-700">Intent to defraud or deceive an insurer.</strong></p>
+                    
+                    <h3 class="text-lg font-semibold mb-2">Offenses:</h3>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-3">
+                        <li><strong class="font-semibold">Offense (a) (Fraudulent Claim):</strong> In support of a <strong class="font-semibold">claim</strong>, a person (1) <strong class="font-semibold">prepares</strong> or (2) <strong class="font-semibold">presents</strong> a statement they know contains <strong class="text-red-700">false or misleading material information</strong>.</li>
+                        
+                        <li><strong class="font-semibold">Offense (a-1) (Fraudulent Application):</strong> In support of an <strong class="font-semibold">application</strong>, a person (1) <strong class="font-semibold">prepares</strong> or (2) <strong class="font-semibold">presents</strong> a statement they know contains <strong class="text-red-700">false or misleading material information</strong>.
+                            <ul class="list-disc list-inside ml-6">
+                                <li><strong>Penalty (d):</strong> This offense is *always* a <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong class="font-semibold">Offense (b) (Kickbacks):</strong> Solicits, offers, pays, or receives a <strong class="font-semibold">benefit</strong> in connection with furnishing goods or services for which a claim is submitted.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Penalties (for Offenses (a) and (b)):</h3>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>< $100: <strong class="font-semibold">Class C Misdemeanor</strong></li>
+                        <li>$100 &lt; $750: <strong class="font-semibold">Class B Misdemeanor</strong></li>
+                        <li>$750 &lt; $2,500: <strong class="font-semibold">Class A Misdemeanor</strong></li>
+                        <li>$2,500 &lt; $30,000: <strong class="font-semibold">State Jail Felony</strong></li>
+                        <li>$30,000 &lt; $150,000: <strong class="font-semibold">Felony of the Third Degree</strong></li>
+                        <li>$150,000 &lt; $300,000: <strong class="font-semibold">Felony of the Second Degree</strong></li>
+                        <li>$300,000 or more: <strong class="font-semibold">Felony of the First Degree</strong></li>
+                        <li><strong>SPECIAL ENHANCEMENT (c)(7)(B):</strong> It is also a <strong class="text-red-700 font-semibold">Felony of the First Degree</strong> if an act committed in connection with the offense <strong class="text-red-700">places a person at risk of death or serious bodily injury</strong>.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Other Provisions:</h3>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Restitution (e):</strong> Court <strong class="text-red-700">shall order</strong> restitution, including <strong class="font-semibold">court costs and attorney's fees</strong>.</li>
+                        <li><strong class="font-semibold">Valid Loss (g):</strong> If actor proves by a <strong class="font-semibold">preponderance of the evidence</strong> that a portion of the claim was valid, the value = (Total Claim) - (Valid Portion).</li>
+                        <li><strong class="font-semibold">Presumption (h):</strong> If actor <strong class="font-semibold">submitted a bill</strong>, a <strong class="text-red-700">rebuttable presumption</strong> exists they caused the claim to be prepared/presented.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Value & Aggregation Tab -->
+            <div id="value-agg" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35.htm#35.025" target="_blank" class="text-red-600 hover:underline">Sec. 35.025. Value of Claim</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">When Not Ascertainable (a):</strong> If value is not clear, it is the <strong class="font-semibold">fair market value</strong> of the goods/services OR the <strong class="font-semibold">cost of replacing</strong> them.</li>
+                        <li><strong class="font-semibold">When Impossible to Ascertain (b):</strong> If value *still* can't be reasonably ascertained, it is considered to be <strong class="text-red-700 font-semibold">$750 or more but less than $2,500</strong> (a Class A Misdemeanor level).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35.htm#35.03" target="_blank" class="text-red-600 hover:underline">Sec. 35.03. Aggregation and Multiple Offenses</a></h2>
+                     <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Aggregation (a):</strong> When separate claims are part of <strong class="font-semibold">one scheme or continuing course of conduct</strong>, the conduct is <strong class="font-semibold">one offense</strong> and the <strong class="text-red-700">values are aggregated</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (b):</strong> When <strong class="text-red-700">three or more</strong> separate claims are part of <strong class="font-semibold">one scheme</strong>, the conduct is <strong class="font-semibold">one offense</strong>, and the classification is <strong class="text-red-700">one category higher</strong> than the most serious single claim. (F1 stays F1).</li>
+                        <li><strong class="font-semibold">Exclusivity:</strong> The state must choose one. You cannot use both (a) and (b) at the same time.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 35)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (61 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 35) ---
+            const quizData = [
+                {
+                    question: "Under 35.01, which of the following is included in the definition of 'Insurance policy'?",
+                    options: ["A surety bond", "A binder of coverage", "A motor club service plan", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 35.01(1) broadly defines 'insurance policy' to include all these and more."
+                },
+                {
+                    question: "Under 35.01, a 'Statement' can be an oral communication, a written one, or...",
+                    options: ["Computer-generated information", "A gesture", "An opinion", "A financial forecast"],
+                    answer: "Computer-generated information",
+                    explanation: "Sec. 35.01(3) explicitly states 'The term includes computer-generated information.'"
+                },
+                {
+                    question: "Under 35.015, a statement is 'material' if it could have affected the eligibility for coverage OR...",
+                    options: ["The insurer's stock price", "The decision of an insurer whether to issue an insurance policy", "The location of the trial", "The actor's criminal history"],
+                    answer: "The decision of an insurer whether to issue an insurance policy",
+                    explanation: "Sec. 35.015(2) defines materiality as also affecting the decision to issue a policy."
+                },
+                {
+                    question: "Under 35.015, a statement's materiality is determined...",
+                    options: ["Only if it is admissible at trial", "Regardless of the admissibility of the statement at trial", "Only if the claim is over $30,000", "Only if the statement was written"],
+                    answer: "Regardless of the admissibility of the statement at trial",
+                    explanation: "Sec. 35.015 states materiality applies 'regardless of the admissibility of the statement at trial'."
+                },
+                {
+                    question: "What is the culpable mental state required for all offenses under Sec. 35.02?",
+                    options: ["Knowingly or Intentionally", "Recklessly", "Criminal Negligence", "Intent to defraud or deceive an insurer"],
+                    answer: "Intent to defraud or deceive an insurer",
+                    explanation: "Sec. 35.02(a), (a-1), and (b) all begin with the requirement of 'intent to defraud or deceive an insurer.'"
+                },
+                {
+                    question: "Sec. 35.02(a) applies to fraudulent statements made in support of...",
+                    options: ["An application for a policy", "A claim for payment", "A lawsuit against the insurer", "A job at an insurance company"],
+                    answer: "A claim for payment",
+                    explanation: "Sec. 35.02(a) specifically covers statements 'in support of a claim for payment'."
+                },
+                {
+                    question: "Sec. 35.02(a-1) applies to fraudulent statements made in support of...",
+                    options: ["An application for an insurance policy", "A claim for payment", "A kickback scheme", "A lawsuit against the insurer"],
+                    answer: "An application for an insurance policy",
+                    explanation: "Sec. 35.02(a-1) specifically covers statements 'in support of an application for an insurance policy.'"
+                },
+                {
+                    question: "What is the penalty for committing Insurance Fraud under Sec. 35.02(a-1) (fraudulent application)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "It follows the value ladder in (c)"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35.02(d) states that an offense under Subsection (a-1) is a state jail felony, regardless of value."
+                },
+                {
+                    question: "A person 'prepares' a statement they know is false, but never gives it to the insurer. Is this an offense under 35.02(a)(1)?",
+                    options: ["Yes, preparing it is enough.", "No, the statement must be 'presented to an insurer'.", "Only if the value was over $30,000.", "Only if they intended to present it."],
+                    answer: "No, the statement must be 'presented to an insurer'.",
+                    explanation: "Sec. 35.02(a)(1)(B) requires that the prepared statement is also 'presented to an insurer'."
+                },
+                {
+                    question: "Sec. 35.02(b) (the 'kickback' provision) makes it an offense to solicit, offer, pay, or receive a...",
+                    options: ["Bribe", "Benefit", "Salary", "Commission"],
+                    answer: "Benefit",
+                    explanation: "Sec. 35.02(b) uses the word 'benefit in connection with the furnishing of goods or services'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $50?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 35.02(c)(1) states the offense is a Class C misdemeanor if the value is less than $100."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $500?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 35.02(c)(2) covers values of $100 or more but less than $750."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $2,000?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 35.02(c)(3) covers values of $750 or more but less than $2,500."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $10,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35.02(c)(4) covers values of $2,500 or more but less than $30,000."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $50,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35.02(c)(5) covers values of $30,000 or more but less than $150,000."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $200,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35.02(c)(6) covers values of $150,000 or more but less than $300,000."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is $350,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35.02(c)(7)(A) covers values of $300,000 or more."
+                },
+                {
+                    question: "A person commits insurance fraud with a claim value of only $1,000 (Class A), but the act places a person at risk of serious bodily injury. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35.02(c)(7)(B) enhances the offense to an F1 if an act in connection with it places anyone at risk of death or SBI, regardless of the claim value."
+                },
+                {
+                    question: "Under 35.02(e), a court *shall* order a defendant convicted of insurance fraud to pay restitution, which includes...",
+                    options: ["Punitive damages", "Court costs and attorney's fees", "Pain and suffering", "Only the value of the claim"],
+                    answer: "Court costs and attorney's fees",
+                    explanation: "Sec. 35.02(e) explicitly states restitution includes 'court costs and attorney's fees, to an affected insurer.'"
+                },
+                {
+                    question: "If an actor's conduct is both Insurance Fraud and Theft, how may they be prosecuted?",
+                    options: ["Only for Insurance Fraud", "Only for Theft", "Under this section, the other law, or both", "Whichever has the lower penalty"],
+                    answer: "Under this section, the other law, or both",
+                    explanation: "Sec. 35.02(f) allows for prosecution under this section, the other law, or both."
+                },
+                {
+                    question: "Under 35.02(g), an actor files a claim for $10,000. They prove (by preponderance) that $4,000 of it was a valid loss. What is the 'value of the claim' for penalty purposes?",
+                    options: ["$10,000", "$6,000", "$4,000", "The value is unascertainable"],
+                    answer: "$6,000",
+                    explanation: "Sec. 35.02(g) (and 35.025(c)) sets the value as the difference between the total claim ($10k) and the valid portion ($4k), which is $6,000 (SJF)."
+                },
+                {
+                    question: "What is the burden of proof for the defendant to establish a 'valid portion' of a claim under 35.02(g)?",
+                    options: ["Beyond a reasonable doubt", "Clear and convincing evidence", "Preponderance of the evidence", "A reasonable suspicion"],
+                    answer: "Preponderance of the evidence",
+                    explanation: "Sec. 35.02(g) states 'if the actor proves by a preponderance of the evidence...'"
+                },
+                {
+                    question: "What is the rebuttable presumption created by Sec. 35.02(h)?",
+                    options: ["A person who submits a bill is presumed to have known it was false.", "A person who submits a bill is presumed to have caused the claim to be prepared or presented.", "A person who submits a bill is presumed to have intent to defraud.", "A person who submits a bill is presumed to be at risk of SBI."],
+                    answer: "A person who submits a bill is presumed to have caused the claim to be prepared or presented.",
+                    explanation: "Sec. 35.02(h) creates a rebuttable presumption that submitting the bill means the actor caused the claim to be prepared or presented."
+                },
+                {
+                    question: "Under 35.025(a), if the value of a claim is *not* readily ascertainable, the value is the fair market value OR...",
+                    options: ["The replacement cost", "The original purchase price", "The insured value", "The value is $0"],
+                    answer: "The replacement cost",
+                    explanation: "Sec. 35.025(a)(2) states the value is 'the cost of replacing the goods or services... within a reasonable time after the claim.'"
+                },
+                {
+                    question: "Under 35.025(b), if the value of a claim *cannot be reasonably ascertained* (using FMV or replacement cost), what is the value?",
+                    options: ["Less than $100 (Class C)", "$100 or more but less than $750 (Class B)", "$750 or more but less than $2,500 (Class A)", "$2,500 or more but less than $30,000 (SJF)"],
+                    answer: "$750 or more but less than $2,500 (Class A)",
+                    explanation: "Sec. 35.025(b) provides this specific value range (Class A Misdemeanor) when value is otherwise impossible to determine."
+                },
+                {
+                    question: "A person files a fraudulent claim for a sentimental item with no market value, and replacement is impossible. What is the penalty level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "This falls under Sec. 35.025(b), where the value is considered to be in the Class A range ($750 < $2,500)."
+                },
+                {
+                    question: "Under 35.03(a) (Aggregation), when can separate claims be combined into one offense?",
+                    options: ["If they are against the same insurer", "If they occur in the same calendar year", "If they are pursuant to one scheme or continuing course of conduct", "If there are three or more claims"],
+                    answer: "If they are pursuant to one scheme or continuing course of conduct",
+                    explanation: "Sec. 35.03(a) allows aggregation for claims made 'pursuant to one scheme or continuing course of conduct.'"
+                },
+                {
+                    question: "A person files two separate fraudulent claims, one for $15,000 (SJF) and one for $20,000 (SJF), as part of one scheme. How is this charged under 35.03(a)?",
+                    options: ["Two separate State Jail Felonies", "One Felony of the Third Degree (value $35,000)", "One Felony of the Second Degree (enhanced)", "One Class A Misdemeanor"],
+                    answer: "One Felony of the Third Degree (value $35,000)",
+                    explanation: "Using 35.03(a), the values are aggregated ($15k + $20k = $35k). A value of $35,000 is a Felony of the Third Degree (35.02(c)(5))."
+                },
+                {
+                    question: "Under 35.03(b) (Enhancement), how many separate claims are required to trigger the enhancement?",
+                    options: ["Two or more", "Three or more", "Five or more", "Ten or more"],
+                    answer: "Three or more",
+                    explanation: "Sec. 35.03(b) specifically requires 'three or more separate claims... pursuant to one scheme'."
+                },
+                {
+                    question: "How does the 35.03(b) enhancement work?",
+                    options: ["The values are aggregated", "The penalty is doubled", "The classification is one category higher than the most serious single offense", "It becomes an automatic F1"],
+                    answer: "The classification is one category higher than the most serious single offense",
+                    explanation: "Sec. 35.03(b) states the classification 'shall be one category higher than the most serious single offense proven'."
+                },
+                {
+                    question: "A person files three separate $1,000 claims (all Class A) as one scheme. How can this be charged under 35.03(b)?",
+                    options: ["Three Class A Misdemeanors", "One State Jail Felony (aggregated value $3,000)", "One State Jail Felony (enhanced one level from Class A)", "One Felony of the Third Degree"],
+                    answer: "One State Jail Felony (enhanced one level from Class A)",
+                    explanation: "Using 35.03(b), the most serious offense is Class A. One category higher is a State Jail Felony."
+                },
+                {
+                    question: "A person files three separate $50,000 claims (all F3) as one scheme. How can this be charged under 35.03(b)?",
+                    options: ["Three F3 Felonies", "One F2 Felony (enhanced one level from F3)", "One F1 Felony (aggregated value $150,000)", "One F3 Felony"],
+                    answer: "One F2 Felony (enhanced one level from F3)",
+                    explanation: "Using 35.03(b), the most serious offense is F3. One category higher is a Felony of the Second Degree."
+                },
+                {
+                    question: "A person files three separate $200,000 claims (all F2) as one scheme. How can this be charged under 35.03(b)?",
+                    options: ["Three F2 Felonies", "One F1 Felony (enhanced one level from F2)", "A special F1 with higher punishment", "This enhancement does not apply"],
+                    answer: "One F1 Felony (enhanced one level from F2)",
+                    explanation: "Using 35.03(b), the most serious offense is F2. One category higher is a Felony of the First Degree."
+                },
+                {
+                    question: "A person files three separate $300,000 claims (all F1) as one scheme. How is this charged under 35.03(b)?",
+                    options: ["Three F1 Felonies", "A special super-felony", "The offense is a Felony of the First Degree", "This section does not apply"],
+                    answer: "The offense is a Felony of the First Degree",
+                    explanation: "Sec. 35.03(b) has an exception: 'except that if the most serious offense is a felony of the first degree, the offense is a felony of the first degree.'"
+                },
+                {
+                    question: "If the state aggregates the values of claims under 35.03(a), can it also use the 35.03(b) enhancement?",
+                    options: ["Yes, both can be used", "No, they are mutually exclusive", "Only if the value exceeds $300,000", "Only if the AG's office is prosecuting"],
+                    answer: "No, they are mutually exclusive",
+                    explanation: "Sec. 35.03(a) and (b) both state that the other subsection shall not apply if it is used."
+                },
+                {
+                    question: "Under 35.04, the Attorney General may offer what to a prosecuting attorney?",
+                    options: ["Investigative, technical, and litigation assistance", "Financial assistance only", "A replacement prosecutor", "A plea bargain recommendation"],
+                    answer: "Investigative, technical, and litigation assistance",
+                    explanation: "Sec. 35.04(a) lists 'investigative, technical, and litigation assistance'."
+                },
+                {
+                    question: "When can the Attorney General *prosecute* an offense under 35.02?",
+                    options: ["In any case", "Only if the value is over $300,000", "On the request of the attorney representing the state", "If the local DA refuses to prosecute"],
+                    answer: "On the request of the attorney representing the state",
+                    explanation: "Sec. 35.04(b) allows the AG to prosecute or assist 'on the request of the attorney representing the state'."
+                },
+                {
+                    question: "The definition of 'Insurance policy' (35.01) includes 'any other alternative to insurance authorized by...' what?",
+                    options: ["The Insurance Code", "Chapter 601, Transportation Code", "The Business & Commerce Code", "The U.S. Constitution"],
+                    answer: "Chapter 601, Transportation Code",
+                    explanation: "Sec. 35.01(1) specifically mentions 'Chapter 601, Transportation Code' (referring to financial responsibility for vehicles)."
+                },
+                {
+                    question: "A person presents a false statement to an insurer to get a policy issued, but no claim is ever filed. What offense?",
+                    options: ["35.02(a) Insurance Fraud (Claim)", "35.02(a-1) Insurance Fraud (Application)", "No offense, no claim was filed", "Attempted Theft"],
+                    answer: "35.02(a-1) Insurance Fraud (Application)",
+                    explanation: "This is a fraudulent application, an offense under 35.02(a-1) and a State Jail Felony under 35.02(d)."
+                },
+                {
+                    question: "An auto body shop pays a tow truck driver a $100 'benefit' for bringing them a car that will be part of an insurance claim. What offense?",
+                    options: ["35.02(b) Insurance Fraud (Benefit)", "Bribery (Chapter 36)", "Theft (Chapter 31)", "No offense, this is a standard business practice"],
+                    answer: "35.02(b) Insurance Fraud (Benefit)",
+                    explanation: "If done with intent to defraud/deceive an insurer, this is a 'benefit in connection with the furnishing of goods or services' under 35.02(b)."
+                },
+                // --- ADDED QUESTIONS START HERE ---
+                {
+                    question: "The definition of 'Insurance policy' (35.01) explicitly includes a 'nonprofit hospital service plan' and what type of bond?",
+                    options: ["A cash bond", "A bail bond", "A corporate bond", "A savings bond"],
+                    answer: "A cash bond",
+                    explanation: "Sec. 35.01(1) lists 'surety bond, cash bond, or any other alternative to insurance'."
+                },
+                {
+                    question: "Under 35.01, a 'Statement' to an insurer can be oral or written, and includes a 'record or documented representation of ___'?",
+                    options: ["Fact", "Opinion", "Belief", "Hearsay"],
+                    answer: "Fact",
+                    explanation: "Sec. 35.01(3) defines it as a 'representation of fact made to an insurer.'"
+                },
+                {
+                    question: "Per 35.01, 'Value of the claim' means the ___ dollar amount of a claim for payment.",
+                    options: ["Total", "Fraudulent", "Partial", "Approved"],
+                    answer: "Total",
+                    explanation: "Sec. 35.01(4) defines it as 'the total dollar amount of a claim...'"
+                },
+                {
+                    question: "A statement is 'material' (35.015) if it could have affected the eligibility for coverage or the ___ on a claim.",
+                    options: ["Amount of the payment", "Date of the payment", "Method of the payment", "Insurer's deductible"],
+                    answer: "Amount of the payment",
+                    explanation: "Sec. 35.015(1) states a statement is material if it 'could have affected... the eligibility for coverage or amount of the payment'."
+                },
+                {
+                    question: "A person, with intent to defraud, *causes to be prepared* a false statement for a claim, which is then presented. Is this an offense?",
+                    options: ["Yes, under 35.02(a)(1)", "No, they must prepare it themselves", "No, 'causing' it is not an offense", "Yes, but only if they also present it"],
+                    answer: "Yes, under 35.02(a)(1)",
+                    explanation: "Sec. 35.02(a)(1) makes it an offense to 'prepares or causes to be prepared' a false statement that is presented."
+                },
+                {
+                    question: "A person, with intent to defraud, *causes to be presented* a false statement for a fraudulent application. What is the penalty?",
+                    options: ["State Jail Felony", "Class A Misdemeanor", "It depends on the value", "No offense, they didn't present it themselves"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35.02(a-1)(2) includes 'causes to be presented'. An offense under (a-1) is a State Jail Felony per 35.02(d)."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $100?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 35.02(c)(2) covers '$100 or more but less than $750'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $750?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 35.02(c)(3) covers '$750 or more but less than $2,500'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $2,500?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 35.02(c)(4) covers '$2,500 or more but less than $30,000'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $30,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 35.02(c)(5) covers '$30,000 or more but less than $150,000'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $150,000?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 35.02(c)(6) covers '$150,000 or more but less than $300,000'."
+                },
+                {
+                    question: "What is the penalty for Insurance Fraud (35.02(a)) if the value of the claim is exactly $300,000?",
+                    options: ["Felony of the Second Degree", "Felony of the First Degree", "Enhanced Felony", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35.02(c)(7)(A) covers '$300,000 or more'."
+                },
+                {
+                    question: "An act of insurance fraud (claim value $50) places a person at risk of *death*. What is the penalty?",
+                    options: ["Class C Misdemeanor", "State Jail Felony", "Felony of the First Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 35.02(c)(7)(B) enhances the offense to an F1 if it 'places a person at risk of death or serious bodily injury'."
+                },
+                {
+                    question: "A doctor, with intent to defraud, *solicits* a patient to receive unnecessary services to be billed to insurance. What offense?",
+                    options: ["35.02(b) Insurance Fraud (Benefit)", "No offense, soliciting is not a crime", "Theft", "Bribery"],
+                    answer: "35.02(b) Insurance Fraud (Benefit)",
+                    explanation: "Sec. 35.02(b) makes it an offense to 'solicit... a benefit in connection with the furnishing of goods or services'."
+                },
+                {
+                    question: "A clinic *pays* a runner for bringing in clients for fraudulent claims. What offense for the clinic?",
+                    options: ["35.02(b) Insurance Fraud (Benefit)", "No offense for paying", "Theft", "Money Laundering"],
+                    answer: "35.02(b) Insurance Fraud (Benefit)",
+                    explanation: "Sec. 35.02(b) makes it an offense to 'pay... a benefit in connection with the furnishing of goods or services'."
+                },
+                {
+                    question: "A person *receives* a $500 kickback for using a specific fraudulent body shop (the total claim is $4,000). What is the penalty for receiving the benefit?",
+                    options: ["State Jail Felony", "Class B Misdemeanor", "Class A Misdemeanor", "Class C Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "An offense under (b) is graded by the 'value of the claim' (35.02(c)). The claim value is $4,000, which is a State Jail Felony ($2,500 < $30,000)."
+                },
+                {
+                    question: "Under 35.02(e), restitution *shall* be ordered to be paid to whom?",
+                    options: ["An affected insurer", "The state's general fund", "The Attorney General's office", "The victim of the SBI"],
+                    answer: "An affected insurer",
+                    explanation: "Sec. 35.02(e) specifies restitution 'to an affected insurer.'"
+                },
+                {
+                    question: "If a claim's value is not clear, 35.025(a) allows using the fair market value at the...",
+                    options: ["Time and place of the offense", "Time of trial", "Time the policy was issued", "Place of trial"],
+                    answer: "Time and place of the offense",
+                    explanation: "Sec. 35.025(a)(1) specifies 'fair market value, at the time and place of the offense'."
+                },
+                {
+                    question: "If using replacement cost under 35.025(a)(2), the cost must be for replacing the goods/services within...",
+                    options: ["A reasonable time after the claim", "30 days", "One year", "The policy period"],
+                    answer: "A reasonable time after the claim",
+                    explanation: "Sec. 35.025(a)(2) states 'within a reasonable time after the claim.'"
+                },
+                {
+                    question: "Under 35.03(a), claims from one scheme can be aggregated, even if they are against...",
+                    options: ["An insurer or group of insurers", "Insurers in different states", "Different individuals", "The government"],
+                    answer: "An insurer or group of insurers",
+                    explanation: "Sec. 35.03(a) and (b) both state 'communicated to an insurer or group of insurers'."
+                },
+                {
+                    question: "Under 35.04, the Attorney General may offer assistance to whom?",
+                    options: ["An attorney representing the state", "Any peace officer", "The insurance company", "The defendant"],
+                    answer: "An attorney representing the state",
+                    explanation: "Sec. 35.04(a) allows the AG to offer assistance 'to an attorney representing the state in the prosecution'."
+                }
+                // --- ADDED QUESTIONS END HERE ---
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 35 - Insurance Fraud", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.35.htm" },
+                 { name: "Insurance Code Art. 1.02 (Insurer Def.)", url: "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1.htm#1.02" },
+                 { name: "Transportation Code Ch. 601 (Fin. Resp.)", url: "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.601.htm" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

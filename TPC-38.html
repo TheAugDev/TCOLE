@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 38 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-ban mr-2"></i>Ch. 38: Obstructing Governmental Operation
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (38.01)
+                </button>
+                <button data-tab="fail-resist-evade" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-id-card mr-2"></i> ID / Resist / Evade (38.02-04)
+                </button>
+                <button data-tab="hinder-escape" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-secret mr-2"></i> Hinder / Escape (38.05-09)
+                </button>
+                 <button data-tab="bail-prohibited" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-gavel mr-2"></i> Bail / Facility Items (38.10-114)
+                </button>
+                 <button data-tab="other-obstruction" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hand-paper mr-2"></i> Other Obstruction (38.115-19)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 38.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Custody</span>
+                            <p class="definition-desc">(A) Under arrest by peace officer or under restraint by public servant via court order; OR (B) Under restraint by agent/employee of US facility confining arrested/charged/convicted persons.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Escape</span>
+                            <p class="definition-desc">Unauthorized departure from custody or failure to return after temporary leave/intermittent sentence. *Excludes* violation of CS/parole conditions (unless it imposes confinement).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Economic benefit</span>
+                            <p class="definition-desc">Anything reasonably regarded as economic gain/advantage (accepting employment/fees, fee contracts, money, etc.).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Finance</span>
+                            <p class="definition-desc">To provide funds or capital or furnish with necessary funds.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Fugitive from justice</span>
+                            <p class="definition-desc">A person for whom a valid arrest warrant has been issued.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Governmental function</span>
+                            <p class="definition-desc">Any activity a public servant is lawfully authorized to undertake for government.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Invest funds</span>
+                            <p class="definition-desc">To commit money to earn a financial return.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Member of the family</span>
+                            <p class="definition-desc">Related within the 3rd degree of consanguinity or affinity (Ch. 573, Govt Code).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Qualified nonprofit organization</span>
+                            <p class="definition-desc">Nonprofit meeting specific conditions (primary purpose not legal services, no financial benefit from legal services, person is client not org, etc.).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Public media</span>
+                            <p class="definition-desc">Telephone/legal directory, newspaper, billboard, radio/TV, recorded message, or written communication not prohibited by 38.12(d).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Solicit employment</span>
+                            <p class="definition-desc">Communicate (in person/phone) with prospective client/family about professional employment arising from occurrence/problem for purpose of providing services, *when not requested*. Excludes family-initiated, prior relationship, qualified nonprofit member education, or public media ads.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Professional</span>
+                            <p class="definition-desc">Attorney, chiropractor, physician, surgeon, private investigator, or other person licensed/certified/registered by state agency regulating a health care profession.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Failure to ID / Resist / Evade Tab -->
+            <div id="fail-resist-evade" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.02" target="_blank" class="text-red-600 hover:underline">Sec. 38.02. Failure to Identify</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Intentionally <strong>refuses</strong> to give name, residence address, or DOB to peace officer who has <strong>lawfully arrested</strong> the person and requested info.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally gives <strong>false/fictitious</strong> name, residence address, or DOB to peace officer who has: (1) <strong>lawfully arrested</strong>; (2) <strong>lawfully detained</strong>; OR (3) requested info from person officer believes is a <strong>witness</strong>.</li>
+                        <li><strong class="font-semibold">Offense (b-1):</strong> Motor vehicle operator lawfully detained: (2) Fails to provide/display DL on request; AND (3) Intentionally refuses to give name, DL#, address, or DOB on request.</li>
+                        <li><strong class="font-semibold">Note (b-2):</strong> Giving actual current address different from DL address is NOT a refusal under (b-1)(3).</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a) Refusal After Arrest OR (b-1) Operator Refusal: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>(b) False Info After Arrest/Detain/Witness: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Enhancements (d):</strong> If actor is <strong>Fugitive From Justice</strong>:
+                             <ul class="list-disc list-inside ml-4">
+                                <li>(a) becomes <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>(b) becomes <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Enhancements (d-1):</strong> Offense under (b-1) Operator Refusal becomes <strong class="font-semibold text-red-700">Class B Misdemeanor</strong> if actor gave false/fictitious name.</li>
+                        <li><strong class="font-semibold">Exception (e):</strong> If conduct also violates ABC 106.07 (Minor ID), prosecute only under 106.07.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.03" target="_blank" class="text-red-600 hover:underline">Sec. 38.03. Resisting Arrest, Search, or Transportation</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Intentionally prevents/obstructs person known to be peace officer (or person acting at direction) from effecting an arrest, search, or transportation of actor/another by <strong>using force against the peace officer or another</strong>.</li>
+                        <li><strong class="font-semibold">No Defense (b):</strong> It is <strong>no defense</strong> that the arrest or search was <strong>unlawful</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if actor uses a <strong>deadly weapon</strong> to resist.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.04" target="_blank" class="text-red-600 hover:underline">Sec. 38.04. Evading Arrest or Detention</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Intentionally <strong>flees</strong> from person known to be peace officer or federal special investigator attempting <strong>lawfully</strong> to arrest or detain.</li>
+                        <li><strong class="font-semibold">Penalties (b - first version listed):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li><strong class="font-semibold text-red-700">State Jail Felony</strong> if: (A) Actor has <strong>prior conviction</strong> under this section; OR (B) Actor uses <strong>vehicle or watercraft</strong> AND no prior conviction.</li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if: (A) Actor uses <strong>vehicle or watercraft</strong> AND has <strong>prior conviction</strong>; OR (B) Another suffers <strong>SBI</strong> as direct result of officer's attempt to apprehend during flight.</li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if: Another suffers <strong>death</strong> as direct result of officer's attempt to apprehend during flight.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Enhancement (b-1):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if committed during Smuggling of Persons (20.05(a)(2)).</li>
+                        <li><strong class="font-semibold">Prosecution Overlap (d):</strong> May be prosecuted under this section and/or other applicable laws.</li>
+                    </ul>
+                     <p class="mt-4 text-xs text-gray-500 italic">Note: There are two conflicting versions of subsection (b) in the official statute due to legislative amendments. The penalties listed above reflect the first version (as amended by Acts 2011, Ch. 839 & Ch. 391).</p>
+                </div>
+            </div>
+
+            <!-- Hinder / Escape Tab -->
+            <div id="hinder-escape" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.05" target="_blank" class="text-red-600 hover:underline">Sec. 38.05. Hindering Apprehension or Prosecution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent to hinder arrest/prosecution/etc. of another for an offense (or child for delinquent conduct, or person under warrant): (1) <strong>harbors or conceals</strong>; (2) <strong>provides means of avoiding arrest/escape</strong>; OR (3) <strong>warns of impending discovery/apprehension</strong>.</li>
+                        <li><strong class="font-semibold">Defense (b):</strong> Defense to (a)(3) (warning) if warning was given in connection with effort to bring another into <strong>compliance with the law</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if person hindered was under arrest for/charged with/convicted of a <strong>felony</strong> (or juv equivalent), AND actor <strong>knew</strong> the person's felony status.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.06" target="_blank" class="text-red-600 hover:underline">Sec. 38.06. Escape</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Escapes from custody when person is: (1) Under arrest/detained/charged/convicted of offense; (2) In custody via court order; (3) Detained in secure juvenile facility; OR (4) In custody of JPO for violating juvenile court order.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (c):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if actor: (1) Is under arrest/charged/convicted of a <strong>felony</strong>; (2) Is confined/detained in <strong>secure correctional or LE facility</strong>; OR (3) Is committed/detained in secure TJJD facility (not halfway house).</li>
+                         <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if actor causes <strong>bodily injury</strong> to effect escape.</li>
+                         <li><strong class="font-semibold">Enhancement (e):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the First Degree</strong> if actor causes <strong>SBI</strong> or uses/threatens <strong>deadly weapon</strong> to effect escape.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.07" target="_blank" class="text-red-600 hover:underline">Sec. 38.07. Permitting or Facilitating Escape</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> <strong>Official or employee</strong> of correctional facility knowingly permits or facilitates escape of person in custody.</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Person knowingly causes or facilitates escape of one in custody pursuant to: (1) Juvenile delinquency; OR (2) Involuntary mental health/chemical dependency commitment.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if person in custody: (1) Was under arrest/charged/convicted of <strong>felony</strong>; OR (2) Was confined (non-secure) after <strong>felony</strong> conviction.</li>
+                         <li><strong class="font-semibold">Enhancement (e):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if: (1) Actor or escapee used/threatened <strong>deadly weapon</strong>; OR (2) Person in custody was confined in <strong>secure</strong> facility after <strong>felony</strong> conviction.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.08" target="_blank" class="text-red-600 hover:underline">Sec. 38.08. Effect of Unlawful Custody</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>It is <strong>no defense</strong> to prosecution under 38.06 (Escape) or 38.07 (Permitting/Facilitating) that the custody was <strong>unlawful</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.09" target="_blank" class="text-red-600 hover:underline">Sec. 38.09. Implements for Escape</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> With <strong>intent to facilitate escape</strong>, introduces into correctional facility, OR provides person in custody/inmate with, a <strong>deadly weapon</strong> or <strong>anything useful for escape</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> Base offense is <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (b):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if actor introduced/provided a <strong>deadly weapon</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bail / Prohibited Items Tab -->
+             <div id="bail-prohibited" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.10" target="_blank" class="text-red-600 hover:underline">Sec. 38.10. Bail Jumping and Failure to Appear</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Person lawfully released from custody (w/ or w/o bail) on condition to subsequently appear commits offense if <strong>intentionally or knowingly fails to appear</strong> per terms of release.</li>
+                         <li><strong class="font-semibold">Defense (b):</strong> Defense if appearance was incident to <strong>CS, parole, or intermittent sentence</strong>.</li>
+                         <li><strong class="font-semibold">Defense (c):</strong> Defense if actor had <strong>reasonable excuse</strong> for failure to appear.</li>
+                         <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong> if underlying offense punishable by <strong>fine only</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (d):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (f):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if underlying offense was a <strong>felony</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.11" target="_blank" class="text-red-600 hover:underline">Sec. 38.11. Prohibited Substances and Items in Correctional or Civil Commitment Facility</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Provides (or possesses w/ intent): (1) Alcohol/CS/Drug (except prescription); (2) Deadly weapon; (3) Cell phone/component; (4) Money (correctional only); (5) Cigarette/Tobacco (correctional only, w/ local jail exceptions).</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Takes Alcohol/CS/Drug *into* facility.</li>
+                         <li><strong class="font-semibold">Offense (c):</strong> Takes CS/Drug *on property* of facility.</li>
+                         <li><strong class="font-semibold">Offense (d):</strong> Possesses: (1) Alcohol/CS/Drug *in* facility or *on property*; OR (2) Deadly weapon *in* facility.</li>
+                          <li><strong class="font-semibold">Offense (j):</strong> Confined person possesses cell phone/component.</li>
+                          <li><strong class="font-semibold">Offense (j-1):</strong> Civil commitment resident possesses unauthorized cell phone/component.</li>
+                          <li><strong class="font-semibold">Offense (k):</strong> With intent to provide cell phone to confined person: (1) Acquires phone; (2) Provides phone to another for delivery; OR (3) Makes payment to carrier/service.</li>
+                         <li><strong class="font-semibold">Affirmative Defenses (e):</strong> (b/c/d1) Possession via prescription or authorized delivery. (d2) Peace officer or authorized employee possessing weapon.</li>
+                         <li><strong class="font-semibold">Affirmative Defense (i):</strong> (b) Authorized clergy taking <= 4oz alcohol for ritual & consuming/removing all.</li>
+                         <li><strong class="font-semibold">Penalty (g):</strong> Base offense is <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (g-1):</strong> If (a)(1), (b), or (c) committed by *employee* w/ respect to correctional facility, it is <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (g-2):</strong> If (a)(1), (b), or (c) committed by *employee*, *causes death* of inmate via CS/drug, it is <strong class="font-semibold text-red-700">Felony of the First Degree (15-99/Life, $250k fine)</strong>.</li>
+                         <li><strong class="font-semibold">Attempt (h):</strong> Criminal attempt of (a), (b), or (c) is <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.111" target="_blank" class="text-red-600 hover:underline">Sec. 38.111. Improper Contact With Victim</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person confined (for 42.072 or Art 62.001(5) offense) contacts victim/family without prior written consent (obtained via facility director).</li>
+                        <li><strong class="font-semibold">Consent Rules (a,b):</strong> Requires specific consent process; confined person cannot give consent for victim contact.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (c):</strong> Indirect contact via attorney solely for representing person in criminal proceeding.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>. Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if actor confined after <strong>felony</strong> conviction (for the underlying offense).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.112" target="_blank" class="text-red-600 hover:underline">Sec. 38.112. Tampering With Electronic Monitoring Device</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Person required to submit to electronic monitoring knowingly removes/disables (or conspires/cooperates to) the tracking device.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> Base offense is <strong class="font-semibold text-red-700">State Jail Felony</strong>. Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if person is in super-intensive supervision program (SISP).</li>
+                         <li><strong class="font-semibold">Exception (c):</strong> Does not apply if removed/disabled by health care provider due to medical necessity.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.113" target="_blank" class="text-red-600 hover:underline">Sec. 38.113. Unauthorized Absence From Community Corrections Facility...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person required to be at CCF/county center fails to report to or leaves facility/center/assignment site as directed, without approval.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.114" target="_blank" class="text-red-600 hover:underline">Sec. 38.114. Contraband in Correctional Facility</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> (1) Provides contraband to inmate; (2) Introduces contraband into facility; OR (3) Possesses contraband while confined.</li>
+                         <li><strong class="font-semibold">"Contraband" (b):</strong> Item not provided/authorized OR authorized item altered. *Excludes* items specifically prohibited under 38.11 (drugs, weapons, phones, etc.).</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>. Becomes <strong class="font-semibold text-red-700">Class B Misdemeanor</strong> if committed by employee or volunteer.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Other Obstruction Tab -->
+             <div id="other-obstruction" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.115" target="_blank" class="text-red-600 hover:underline">Sec. 38.115. Operation of Unmanned Aircraft Over Correctional/Detention Facility</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally/knowingly: (1) Operates drone over facility (<= 400ft AGL); (2) Allows drone to contact facility; OR (3) Allows drone close enough to interfere/disturb.</li>
+                        <li><strong class="font-semibold">Exceptions (c):</strong> Does not apply to govt, contractors, persons w/ consent, LE agencies.</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong> Base is <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>. Becomes <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> if prior conviction. Becomes <strong class="font-semibold text-red-700">State Jail Felony</strong> if used to provide/introduce contraband.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.12" target="_blank" class="text-red-600 hover:underline">Sec. 38.12. Barratry and Solicitation of Professional Employment</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent for economic benefit: (1) Institutes unauthorized suit; (2) Solicits employment; (3) Pays client to obtain employment; (4) Pays person to solicit; (5) Pays family member to solicit; (6) Accepts payment to solicit.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> (1) Finances (a); (2) Invests funds for (a); OR (3) Professional knowingly accepts employment from solicitation violating (a).</li>
+                         <li><strong class="font-semibold">Offense (d):</strong> Licensed professional (atty, Dr, PI, etc.) w/ intent for employment provides communication/solicitation concerning specific prohibited matters (e.g., recent accident, client already represented, involves coercion/fraud, etc.).</li>
+                         <li><strong class="font-semibold">Exception (c):</strong> Conduct authorized by TX Disciplinary Rules or court rule.</li>
+                         <li><strong class="font-semibold">Penalty (f):</strong> Offense under (a) or (b) is <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                         <li><strong class="font-semibold">Penalty (g):</strong> Offense under (d) is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (h):</strong> Offense under (d) becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if prior conviction under (d).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.122" target="_blank" class="text-red-600 hover:underline">Sec. 38.122. Falsely Holding Oneself Out as a Lawyer</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> With intent for economic benefit, holds self out as lawyer, unless currently licensed & in good standing.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.123" target="_blank" class="text-red-600 hover:underline">Sec. 38.123. Unauthorized Practice of Law</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With intent for economic benefit: (1) Contracts to represent re personal injury/property damage; (2) Advises re rights/claims; (3) Advises re settlement; (4) Enters contingent fee contract w/ assignment; (5) Enters contract granting exclusive right to select counsel.</li>
+                         <li><strong class="font-semibold">Exception (b):</strong> Does not apply to person currently licensed & in good standing.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Enhancement (d):</strong> Becomes <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if prior conviction under (a).</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.13" target="_blank" class="text-red-600 hover:underline">Sec. 38.13. Hindering Proceedings by Disorderly Conduct</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Intentionally hinders official proceeding by noise/violent/tumultuous behavior.</li>
+                         <li><strong class="font-semibold">Offense (b):</strong> Recklessly hinders official proceeding by noise/violent/tumultuous behavior AND continues after explicit official request to desist.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.14" target="_blank" class="text-red-600 hover:underline">Sec. 38.14. Taking or Attempting to Take Weapon From Peace Officer...</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Intentionally/knowingly with force takes/attempts to take from PO, Fed Inv, correctional employee, parole/CSCD officer, commissioned security officer their firearm, nightstick, stun gun, or chemical spray.</li>
+                         <li><strong class="font-semibold">Presumption (c):</strong> Actor presumed to know person's status if in uniform/badge or if identified.</li>
+                         <li><strong class="font-semibold">Defense (d):</strong> Defense if officer was using excessive force.</li>
+                         <li><strong class="font-semibold">Penalties (e):</strong> (1) Taking weapon: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>. (2) Attempting to take: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.15" target="_blank" class="text-red-600 hover:underline">Sec. 38.15. Interference With Public Duties</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> With criminal negligence interrupts/disrupts/impedes/interferes with: (1) Peace officer; (2) EMS; (3) Firefighter; (4) LE animal; (5) Emergency CB radio; (6) Animal control officer; (7) Public health/env/safety official; (8) Utility employee/agent.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                         <li><strong class="font-semibold">Defense (c):</strong> Defense to (a)(1) if conduct was intended to warn driver of PO enforcing traffic law.</li>
+                         <li><strong class="font-semibold">Defense (d):</strong> Defense if interference consisted of <strong>speech only</strong>.</li>
+                         <li><strong class="font-semibold">Presumption (d-1):</strong> Rebuttable presumption of interference if actor intentionally disseminates officer's home address/phone/SSN etc. (Exceptions d-2 for media).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.151" target="_blank" class="text-red-600 hover:underline">Sec. 38.151. Interference With Police Service Animals</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Recklessly: (1) Taunts/torments/strikes; (2) Throws object/substance at; (3) Interferes/obstructs animal or handler; (4) Releases animal; (5) Enters area of control; (6) Injures/kills; (7) Engages in conduct likely to injure/kill.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> Ranges from <strong class="font-semibold text-red-700">Class C Misd</strong> (taunting) up to <strong class="font-semibold text-red-700">Felony 2nd Degree</strong> (killing/permanently injuring).</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.152" target="_blank" class="text-red-600 hover:underline">Sec. 38.152. Interference With Radio Frequency Licensed to Government Entity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Without effective consent, intentionally interrupts/disrupts/impedes/jams/interferes with radio freq licensed to govt & used by LE/Fire/EMS.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> Base offense is <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>. Becomes <strong class="font-semibold text-red-700">State Jail Felony</strong> if intent to facilitate another offense OR interfere with emergency response.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.16" target="_blank" class="text-red-600 hover:underline">Sec. 38.16. Preventing Execution of Civil Process</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Intentionally/knowingly by words or physical action prevents execution of process in a civil cause.</li>
+                         <li><strong class="font-semibold">Exception (b):</strong> Exception if actor evaded service by avoiding detection.</li>
+                         <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.17" target="_blank" class="text-red-600 hover:underline">Sec. 38.17. Failure to Stop or Report Sexual or Assaultive Offense Against Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Observes commission/attempt of sex/assault offense against child (reasonable belief), fails to assist child OR immediately report to LE, AND could do so without danger of SBI/death.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.171" target="_blank" class="text-red-600 hover:underline">Sec. 38.171. Failure to Report Felony</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Observes felony where reasonable person believes SBI/death may have resulted, AND fails to immediately report to LE when reasonable person believes not reported AND could report without danger of SBI/death.</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.172" target="_blank" class="text-red-600 hover:underline">Sec. 38.172. Failure to Report Assault, Neglect, or Omission of Care in Certain Group Homes</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (b):</strong> Has actual knowledge resident of group home suffered BI due to assault/neglect/omission, AND fails to report to LE or DFPS.</li>
+                         <li><strong class="font-semibold">Exceptions (c):</strong> Applies to specific licensed persons/facilities.</li>
+                         <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.18" target="_blank" class="text-red-600 hover:underline">Sec. 38.18. Use of Collision Report Information... for Pecuniary Gain</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (b):</strong> Obtains collision/EMS/911 info from govt entity AND subsequently uses it for direct solicitation of business for pecuniary gain.</li>
+                         <li><strong class="font-semibold">Offense (c):</strong> Employs another to obtain info AND subsequently uses it for direct solicitation for pecuniary gain.</li>
+                         <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm#38.19" target="_blank" class="text-red-600 hover:underline">Sec. 38.19. Failure to Provide Notice and Report of Death of Resident of Institution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Superintendent/manager of institution fails to provide notice, submit report, or include material facts in report regarding death of resident as required by CCP Art. 49.24/49.25 (or future 49A.151/152).</li>
+                         <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 38)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (160 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 38) ---
+            const quizData = [
+                {
+                    question: "Under 38.01, 'Custody' means under arrest by a peace officer OR under restraint by a public servant pursuant to a court order.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.01(1)(A) provides this definition."
+                },
+                {
+                    question: "Does 'Custody' (38.01) include being under restraint by an agent of a facility operated *under contract* with the United States for confining offenders?",
+                    options: ["Yes", "No, only facilities directly operated by the US.", "Only if it's a state facility.", "Only if the person is convicted."],
+                    answer: "Yes",
+                    explanation: "Sec. 38.01(1)(B) includes facilities 'operated by *or under contract with* the United States'."
+                },
+                {
+                    question: "Under 38.01, does 'Escape' include violating conditions of parole that do NOT impose confinement in a secure facility?",
+                    options: ["Yes, any violation is escape.", "No, it explicitly excludes violations other than conditions imposing confinement.", "Only if the parolee leaves the state.", "Only if the violation is a new felony."],
+                    answer: "No, it explicitly excludes violations other than conditions imposing confinement.",
+                    explanation: "Sec. 38.01(2) states escape 'does not include a violation of conditions of community supervision or parole *other than* conditions that impose a period of confinement...'"
+                },
+                {
+                    question: "What is the definition of 'Fugitive from justice' in 38.01?",
+                    options: ["Anyone who has committed a crime.", "A person for whom a valid arrest warrant has been issued.", "A person who has fled across state lines.", "A person who failed to appear for court."],
+                    answer: "A person for whom a valid arrest warrant has been issued.",
+                    explanation: "Sec. 38.01(5) provides this definition."
+                },
+                {
+                    question: "Under 38.01, 'Member of the family' includes anyone related within what degree of consanguinity or affinity?",
+                    options: ["First degree", "Second degree", "Third degree", "Fourth degree"],
+                    answer: "Third degree",
+                    explanation: "Sec. 38.01(8) defines it as 'anyone related within the third degree...'"
+                },
+                {
+                    question: "'Solicit employment' (38.01) includes communication by a professional who has a prior existing relationship with the client.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 38.01(11) explicitly *excludes* 'a communication by a professional who has a prior or existing professional-client relationship'."
+                },
+                {
+                    question: "Which of these is NOT considered a 'Professional' under 38.01?",
+                    options: ["Attorney", "Physician", "Paralegal", "Private Investigator"],
+                    answer: "Paralegal",
+                    explanation: "Sec. 38.01(12) lists attorney, chiropractor, physician, surgeon, private investigator, or other licensed/certified health care professional. Paralegals are not listed."
+                },
+                {
+                    question: "A person is lawfully arrested and intentionally refuses to give their name to the officer. What offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 38.02(a) is the offense, and (c)(1) makes it a Class C."
+                },
+                {
+                    question: "A person is lawfully *detained* (not arrested) and intentionally gives a fictitious DOB. What offense level?",
+                    options: ["No offense, must be arrested.", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.02(b)(2) covers giving false info during detention, and (c)(2) makes it a Class B."
+                },
+                 {
+                    question: "A peace officer asks for ID from someone they believe witnessed a crime. The person intentionally gives a false address. Offense level?",
+                    options: ["No offense, must be arrested or detained.", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.02(b)(3) covers giving false info when questioned as a witness, and (c)(2) makes it a Class B."
+                },
+                 {
+                    question: "An operator of a motor vehicle is lawfully detained, fails to display their DL, and refuses to give their name. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 38.02(b-1) describes the offense, and (c)(1) makes it a Class C."
+                },
+                 {
+                    question: "If the operator in the previous question (38.02(b-1)) gives a *false* name instead of refusing, what is the offense level?",
+                    options: ["Still Class C", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.02(d-1) enhances the (b-1) offense to a Class B if the actor gave a false or fictitious name."
+                },
+                {
+                    question: "A person is lawfully arrested, refuses to give their name, and it's shown they were a fugitive from justice. Offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "This is refusal under (a). Sec. 38.02(d)(1) enhances it to a Class B if the defendant was a fugitive."
+                },
+                {
+                    question: "A person is lawfully detained, gives a false name, and it's shown they were a fugitive from justice. Offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "This is giving false info under (b). Sec. 38.02(d)(2) enhances it to a Class A if the defendant was a fugitive."
+                },
+                {
+                    question: "What is the key element required for Resisting Arrest/Search/Transportation (38.03)?",
+                    options: ["Fleeing from the officer.", "Using force against the peace officer or another.", "Refusing to identify oneself.", "Having a deadly weapon."],
+                    answer: "Using force against the peace officer or another.",
+                    explanation: "Sec. 38.03(a) requires preventing the arrest/search/transport 'by using force against the peace officer or another.'"
+                },
+                {
+                    question: "Is it a defense to Resisting Arrest (38.03) that the initial arrest was unlawful?",
+                    options: ["Yes, if the arrest was unlawful, force is justified.", "No, it is no defense.", "Only if the actor used non-deadly force.", "Only if the officer was outside jurisdiction."],
+                    answer: "No, it is no defense.",
+                    explanation: "Sec. 38.03(b) explicitly states 'It is no defense... that the arrest or search was unlawful.'"
+                },
+                {
+                    question: "What is the base penalty for Resisting Arrest (38.03)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.03(c) makes the base offense a Class A Misdemeanor."
+                },
+                {
+                    question: "When does Resisting Arrest (38.03) become a Felony of the Third Degree?",
+                    options: ["If the actor causes injury.", "If the actor has a prior conviction.", "If the actor uses a deadly weapon.", "If the underlying offense was a felony."],
+                    answer: "If the actor uses a deadly weapon.",
+                    explanation: "Sec. 38.03(d) enhances the offense to an F3 if the actor 'uses a deadly weapon to resist'."
+                },
+                 {
+                    question: "What is the required mental state for Evading Arrest or Detention (38.04)?",
+                    options: ["Recklessly", "Knowingly", "Intentionally", "Criminal Negligence"],
+                    answer: "Intentionally",
+                    explanation: "Sec. 38.04(a) requires the person 'intentionally flees'."
+                },
+                {
+                    question: "Does Evading Arrest (38.04) apply if the officer is attempting to *detain* but not arrest?",
+                    options: ["No, only applies to arrest.", "Yes, it applies to fleeing from lawful arrest or detention.", "Only if the detention is for a felony.", "Only if the person is armed."],
+                    answer: "Yes, it applies to fleeing from lawful arrest or detention.",
+                    explanation: "Sec. 38.04(a) states 'attempting lawfully to arrest or detain him'."
+                },
+                {
+                    question: "What is the base penalty for Evading Arrest or Detention (38.04)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.04(b) (both versions) lists the base offense as a Class A Misdemeanor."
+                },
+                {
+                    question: "A person evades detention on foot and has one prior conviction for Evading Arrest. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.04(b)(1)(A) (first version) makes it an SJF if the actor has a prior conviction."
+                },
+                 {
+                    question: "A person evades arrest using a vehicle for the first time (no priors). Offense level (under first version of 38.04b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.04(b)(1)(B) (first version) makes it an SJF if the actor uses a vehicle and has no prior conviction."
+                },
+                 {
+                    question: "A person evades arrest using a vehicle and *has* a prior conviction for Evading. Offense level (under first version of 38.04b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.04(b)(2)(A) (first version) makes it an F3 if the actor uses a vehicle and has a prior conviction."
+                },
+                 {
+                    question: "During an evading attempt (by vehicle or foot), another person suffers SBI as a direct result of the *officer's attempt* to apprehend. Offense level (under first version of 38.04b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.04(b)(2)(B) (first version) makes it an F3 if another suffers SBI as a result of the officer's attempt to apprehend."
+                },
+                 {
+                    question: "During an evading attempt (by vehicle or foot), another person suffers death as a direct result of the *officer's attempt* to apprehend. Offense level (under first version of 38.04b)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.04(b)(3) (first version) makes it an F2 if another suffers death as a result of the officer's attempt to apprehend."
+                },
+                {
+                    question: "What is the penalty for Evading Arrest if committed during Smuggling of Persons (20.05a2)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.04(b-1) provides this specific F3 enhancement."
+                },
+                {
+                    question: "A person warns a friend that police are coming to execute an arrest warrant. What offense?",
+                    options: ["No offense, free speech.", "Hindering Apprehension (38.05)", "Evading Arrest (38.04)", "Resisting Arrest (38.03)"],
+                    answer: "Hindering Apprehension (38.05)",
+                    explanation: "Sec. 38.05(a)(3) covers warning another of impending apprehension with intent to hinder arrest."
+                },
+                 {
+                    question: "What is the base penalty for Hindering Apprehension (38.05)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.05(c) sets the base penalty as Class A."
+                },
+                 {
+                    question: "When does Hindering Apprehension (38.05) become a Felony of the Third Degree?",
+                    options: ["If the actor uses force.", "If the person hindered was charged with/convicted of a felony, and the actor knew it.", "If the actor has a prior conviction.", "If a weapon was involved."],
+                    answer: "If the person hindered was charged with/convicted of a felony, and the actor knew it.",
+                    explanation: "Sec. 38.05(d) provides this F3 enhancement based on the felony status of the person being hidden/warned, and the actor's knowledge of that status."
+                },
+                {
+                    question: "Is it a defense to Hindering Apprehension (38.05a3 - warning) if the warning was given to help the person comply with the law?",
+                    options: ["No, warning is never allowed.", "Yes, this is a specific defense.", "Only if the person actually complies.", "Only if the warning is given by an attorney."],
+                    answer: "Yes, this is a specific defense.",
+                    explanation: "Sec. 38.05(b) states 'It is a defense... that the warning was given in connection with an effort to bring another into compliance with the law.'"
+                },
+                {
+                    question: "What is the base penalty for Escape (38.06)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.06(b) sets the base penalty as Class A."
+                },
+                {
+                    question: "Escape (38.06) becomes a Felony of the Third Degree if the actor...",
+                    options: ["Is under arrest for a felony.", "Is confined in a secure correctional facility.", "Is detained in a secure TJJD facility.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.06(c) lists all these conditions as triggers for the F3 enhancement."
+                },
+                {
+                    question: "If an actor causes Bodily Injury while escaping, what is the offense level?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Aggravated Assault"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.06(d) enhances Escape to an F2 if the actor causes BI."
+                },
+                {
+                    question: "If an actor causes Serious Bodily Injury or uses/threatens a Deadly Weapon while escaping, what is the offense level?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Aggravated Assault or Attempted Murder"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 38.06(e) enhances Escape to an F1 under these circumstances."
+                },
+                {
+                    question: "An official of a correctional facility knowingly permits an inmate to escape. What offense?",
+                    options: ["Escape (38.06)", "Permitting or Facilitating Escape (38.07a)", "Hindering Apprehension (38.05)", "Official Oppression"],
+                    answer: "Permitting or Facilitating Escape (38.07a)",
+                    explanation: "Sec. 38.07(a) specifically covers officials or employees permitting or facilitating escape."
+                },
+                {
+                    question: "A person facilitates the escape of someone involuntarily committed for mental illness. What is the base offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.07(b)(2) covers this scenario, and (c) sets the base penalty as Class A."
+                },
+                {
+                    question: "When does Permitting or Facilitating Escape (38.07) become a Felony of the Third Degree?",
+                    options: ["If the escapee was charged with/convicted of a felony.", "If the escapee was confined (non-secure) after a felony conviction.", "Both A and B.", "Only if a weapon was used."],
+                    answer: "Both A and B.",
+                    explanation: "Sec. 38.07(d) enhances to F3 if the escapee was a felon ((d)(1)) OR confined post-felony conviction ((d)(2))."
+                },
+                 {
+                    question: "When does Permitting or Facilitating Escape (38.07) become a Felony of the Second Degree?",
+                    options: ["If a deadly weapon was used/threatened.", "If the escapee was confined in a *secure* facility after a felony conviction.", "Both A and B.", "Only if someone was injured."],
+                    answer: "Both A and B.",
+                    explanation: "Sec. 38.07(e) enhances to F2 if a deadly weapon was used/threatened ((e)(1)) OR the escapee was in a secure facility post-felony conviction ((e)(2))."
+                },
+                {
+                    question: "Is it a defense to Escape (38.06) or Permitting Escape (38.07) that the custody was unlawful?",
+                    options: ["Yes, unlawful custody justifies escape.", "No, it is no defense.", "Only if the actor believed custody was unlawful.", "Only if a court later rules custody was unlawful."],
+                    answer: "No, it is no defense.",
+                    explanation: "Sec. 38.08 explicitly states 'It is no defense... that the custody was unlawful.'"
+                },
+                {
+                    question: "A person provides an inmate with a rope ladder intended to facilitate escape. What offense?",
+                    options: ["Escape (38.06)", "Permitting Escape (38.07)", "Implements for Escape (38.09)", "Contraband (38.114)"],
+                    answer: "Implements for Escape (38.09)",
+                    explanation: "Sec. 38.09(a) covers providing an inmate with 'anything that may be useful for escape' with intent to facilitate."
+                },
+                {
+                    question: "What is the base penalty for Implements for Escape (38.09)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.09(b) sets the base penalty as F3."
+                },
+                {
+                    question: "If the item provided under Implements for Escape (38.09) is a deadly weapon, what is the penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Aggravated Assault"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.09(b) enhances the offense to F2 if a deadly weapon was introduced or provided."
+                },
+                {
+                    question: "A person is released on bail for a Class B Misdemeanor and intentionally fails to appear for court. What offense?",
+                    options: ["Contempt of Court", "Bail Jumping / Failure to Appear (38.10)", "No offense", "Class B Misdemeanor"],
+                    answer: "Bail Jumping / Failure to Appear (38.10)",
+                    explanation: "Sec. 38.10(a) covers intentionally or knowingly failing to appear per terms of release."
+                },
+                 {
+                    question: "What is the penalty for Bail Jumping / FTA (38.10) if the underlying offense was a Class B Misdemeanor?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.10(d) sets the penalty as Class A, unless the underlying offense was fine-only (Class C) or a felony (F3)."
+                },
+                 {
+                    question: "What is the penalty for Bail Jumping / FTA (38.10) if the underlying offense was punishable by fine only?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 38.10(e) sets the penalty as Class C if the underlying offense was punishable by fine only."
+                },
+                 {
+                    question: "What is the penalty for Bail Jumping / FTA (38.10) if the underlying offense was a felony?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.10(f) enhances the offense to F3 if the underlying offense was a felony."
+                },
+                {
+                    question: "Is it a defense to Bail Jumping / FTA (38.10) that the required appearance was for a parole hearing?",
+                    options: ["No, failure to appear is absolute.", "Yes, this is a specific defense.", "Only if the actor had a reasonable excuse.", "Only if it was a misdemeanor parole."],
+                    answer: "Yes, this is a specific defense.",
+                    explanation: "Sec. 38.10(b) provides a defense if the appearance was incident to community supervision, parole, or intermittent sentence."
+                },
+                 {
+                    question: "Is having a 'reasonable excuse' a defense to Bail Jumping / FTA (38.10)?",
+                    options: ["No", "Yes", "Only for misdemeanors", "Only for felonies"],
+                    answer: "Yes",
+                    explanation: "Sec. 38.10(c) provides a defense if 'the actor had a reasonable excuse for his failure to appear'."
+                },
+                {
+                    question: "A person provides a cell phone to an inmate in a correctional facility. What offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.11(a)(3) prohibits providing a cell phone, and (g) makes the base offense an F3."
+                },
+                {
+                    question: "A person possesses a controlled substance *on the parking lot* (property owned) of a correctional facility. Offense level?",
+                    options: ["No offense", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.11(d)(1) prohibits possessing CS on property owned by the facility, and (g) makes it an F3."
+                },
+                {
+                    question: "An *employee* of a correctional facility provides alcohol to an inmate. Offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Providing alcohol is covered by 38.11(a)(1). Because the actor is an employee, Sec. 38.11(g-1) enhances the F3 to an F2."
+                },
+                 {
+                    question: "An *employee* provides a controlled substance, and an inmate dies from ingesting it. Offense level?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree (15-99/Life)", "Murder"],
+                    answer: "Felony of the First Degree (15-99/Life)",
+                    explanation: "Sec. 38.11(g-2) provides this specific F1 enhancement (punishable by 15-99/Life and $250k fine) for employees causing death via CS/drug."
+                },
+                {
+                    question: "Attempting to take drugs into a correctional facility (38.11b) is what offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.11(h) states that criminal attempt (15.01) of offenses under (a), (b), or (c) is an F3."
+                },
+                {
+                    question: "Is it an affirmative defense under 38.11 for an authorized hospital employee to possess drugs while delivering them to the facility pharmacy?",
+                    options: ["No", "Yes", "Only if pre-approved by warden", "Only for non-controlled substances"],
+                    answer: "Yes",
+                    explanation: "Sec. 38.11(e) provides an affirmative defense for possessing pursuant to prescription or while delivering to warehouse, pharmacy, or practitioner on facility property."
+                },
+                 {
+                    question: "Is it an affirmative defense under 38.11 for a peace officer to possess their duty weapon while inside a correctional facility?",
+                    options: ["No, weapons are always prohibited.", "Yes", "Only if escorting a prisoner.", "Only if unloaded."],
+                    answer: "Yes",
+                    explanation: "Sec. 38.11(e) provides an affirmative defense for peace officers or authorized employees possessing a deadly weapon while on duty or traveling to/from assignment."
+                },
+                {
+                    question: "An inmate possesses a cell phone SIM card inside a correctional facility. What offense?",
+                    options: ["No offense, must be a full phone.", "Contraband (38.114 Class C)", "Prohibited Item (38.11j F3)", "Tampering (37.10)"],
+                    answer: "Prohibited Item (38.11j F3)",
+                    explanation: "Sec. 38.11(j) prohibits possession of a cell phone OR a *component*. A SIM card is a component (38.11(f)(5)). The penalty is F3 per (g)."
+                },
+                {
+                    question: "A person pays another inmate's phone bill with intent to make the phone available for use by the inmate. Offense level?",
+                    options: ["No offense", "Class A Misdemeanor", "Felony of the Third Degree", "State Jail Felony"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.11(k)(3) prohibits making payment to a carrier with intent to provide phone to inmate. Penalty is F3 per (g)."
+                },
+                {
+                    question: "A person confined for Stalking (42.072) calls the victim without prior written consent. Offense level?",
+                    options: ["No offense", "Class A Misdemeanor", "Felony of the Third Degree", "Depends if victim answers"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.111(a) prohibits contact. Since Stalking can be a misdemeanor, the base penalty under (d) is Class A."
+                },
+                {
+                    question: "If the person in the previous question was confined after a *felony* Stalking conviction, what is the offense level for the improper contact?",
+                    options: ["Still Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.111(d) enhances the offense to F3 if the actor is confined after being convicted of a felony described by Subsection (a)."
+                },
+                {
+                    question: "Is contact made via the inmate's attorney for representation purposes a defense to Improper Contact With Victim (38.111)?",
+                    options: ["No", "Yes, it is an affirmative defense.", "Only if the victim agrees.", "Only if court-appointed attorney."],
+                    answer: "Yes, it is an affirmative defense.",
+                    explanation: "Sec. 38.111(c) provides this affirmative defense."
+                },
+                 {
+                    question: "A person on parole (required electronic monitoring) knowingly removes their ankle monitor. Offense level?",
+                    options: ["Parole Violation only", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.112(a) is the offense. The base penalty under (b) is SJF."
+                },
+                {
+                    question: "If the person in the previous question was in the Super-Intensive Supervision Program (SISP), what is the offense level?",
+                    options: ["Still State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.112(b) enhances the offense to F3 if the person is in SISP."
+                },
+                {
+                    question: "Is removal of an electronic monitor by a doctor due to medical necessity an offense under 38.112?",
+                    options: ["Yes", "No, this is an exception.", "Only if the doctor notifies parole.", "Only in emergencies."],
+                    answer: "No, this is an exception.",
+                    explanation: "Sec. 38.112(c) states the section does not apply to removal by a health care provider due to medical necessity."
+                },
+                {
+                    question: "A person required to be at a Community Corrections Facility (CCF) leaves without permission. Offense level?",
+                    options: ["Escape (Class A)", "Escape (F3)", "Unauthorized Absence (SJF)", "No offense"],
+                    answer: "Unauthorized Absence (SJF)",
+                    explanation: "Sec. 38.113(a) defines the offense, and (b) makes it an SJF."
+                },
+                 {
+                    question: "An inmate possesses a sharpened toothbrush (altered item) in a correctional facility. What offense?",
+                    options: ["Prohibited Item (38.11 - F3)", "Contraband (38.114 - Class C)", "Implements for Escape (38.09 - F3)", "No offense"],
+                    answer: "Contraband (38.114 - Class C)",
+                    explanation: "A sharpened toothbrush is an altered authorized item, fitting the definition of 'contraband' in 38.114(b)(1)(B). It is not specifically listed in 38.11. The penalty is Class C per 38.114(c)."
+                },
+                {
+                    question: "If a volunteer at the jail provides the sharpened toothbrush to the inmate, what is the offense level?",
+                    options: ["Still Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.114(c) enhances the offense to Class B if committed by an employee or volunteer."
+                },
+                {
+                    question: "A person operates a drone 300 feet over a county jail. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.115(b)(1) prohibits operating <= 400 ft over facility. Base penalty under (d) is Class B."
+                },
+                {
+                    question: "If the person in the previous question uses the drone to drop contraband into the jail yard, what is the offense level?",
+                    options: ["Still Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.115(d)(2) enhances the offense to SJF if used to provide/introduce contraband."
+                },
+                {
+                    question: "Is operating a drone over a jail an offense if done by a law enforcement agency?",
+                    options: ["Yes", "No, this is an exception.", "Only with warden's permission.", "Only if below 100 feet."],
+                    answer: "No, this is an exception.",
+                    explanation: "Sec. 38.115(c)(4) exempts law enforcement agencies."
+                },
+                {
+                    question: "A person pays a prospective client $100 to hire them as their attorney after an accident. What offense?",
+                    options: ["Theft", "Bribery", "Barratry (38.12a3)", "No offense"],
+                    answer: "Barratry (38.12a3)",
+                    explanation: "Sec. 38.12(a)(3) prohibits paying a prospective client to obtain employment."
+                },
+                {
+                    question: "What is the penalty for Barratry under 38.12(a) or (b)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.12(f) makes offenses under (a) or (b) an F3."
+                },
+                 {
+                    question: "An attorney sends a solicitation letter to an accident victim 10 days after the accident. What offense?",
+                    options: ["No offense", "Barratry (38.12d - Class A)", "Barratry (38.12a - F3)", "Tampering (37.10)"],
+                    answer: "Barratry (38.12d - Class A)",
+                    explanation: "Sec. 38.12(d)(2)(A) prohibits communication concerning personal injury before the 31st day. Penalty under (g) is Class A."
+                },
+                {
+                    question: "If the attorney in the previous question has a prior conviction under 38.12(d), what is the penalty?",
+                    options: ["Still Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.12(h) enhances the offense to F3 if the defendant has a prior conviction under (d)."
+                },
+                {
+                    question: "A person, not licensed as a lawyer, holds themselves out as one to get paid for legal advice. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Theft by Deception"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.122(a) defines the offense (with intent for economic benefit), and (b) makes it an F3."
+                },
+                {
+                    question: "A person, not licensed, advises someone on whether to accept a settlement offer for a personal injury claim, intending to get paid. Offense level?",
+                    options: ["No offense", "Unauthorized Practice of Law (38.123 - Class A)", "Falsely Holding Out as Lawyer (38.122 - F3)", "Barratry (38.12 - F3)"],
+                    answer: "Unauthorized Practice of Law (38.123 - Class A)",
+                    explanation: "Sec. 38.123(a)(3) prohibits advising on settlements. Base penalty under (c) is Class A."
+                },
+                 {
+                    question: "If the person in the previous question has a prior conviction under 38.123(a), what is the penalty?",
+                    options: ["Still Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.123(d) enhances the offense to F3 if the defendant has a prior conviction under (a)."
+                },
+                {
+                    question: "A person intentionally disrupts a court proceeding by shouting. What offense?",
+                    options: ["Disorderly Conduct", "Hindering Proceedings by Disorderly Conduct (38.13a)", "Contempt of Court", "No offense, free speech."],
+                    answer: "Hindering Proceedings by Disorderly Conduct (38.13a)",
+                    explanation: "Sec. 38.13(a) covers intentionally hindering by noise or disturbance."
+                },
+                 {
+                    question: "A person *recklessly* makes noise during court, is told to stop by the bailiff, but continues. What offense?",
+                    options: ["No offense", "Hindering Proceedings by Disorderly Conduct (38.13b)", "Contempt of Court only", "Class C Disorderly Conduct"],
+                    answer: "Hindering Proceedings by Disorderly Conduct (38.13b)",
+                    explanation: "Sec. 38.13(b) covers recklessly hindering and continuing after official request to desist."
+                },
+                 {
+                    question: "What is the penalty for Hindering Proceedings by Disorderly Conduct (38.13)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.13(c) makes it a Class A."
+                },
+                {
+                    question: "A person intentionally and forcefully *tries* to take a peace officer's firearm. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.14(b) covers attempting to take. Penalty under (e)(2) for *attempting* is SJF."
+                },
+                {
+                    question: "A person intentionally and forcefully *succeeds* in taking a peace officer's firearm. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.14(b) covers taking. Penalty under (e)(1) for *taking* is F3."
+                },
+                {
+                    question: "Which weapon is NOT listed in Sec. 38.14 (Taking Weapon)?",
+                    options: ["Firearm", "Nightstick", "Taser (conducted energy device)", "Stun gun"],
+                    answer: "Taser (conducted energy device)",
+                    explanation: "Sec. 38.14(b) lists firearm, nightstick, stun gun, or personal protection chemical dispensing device. A Taser may fall under firearm or stun gun depending on definition, but is not explicitly listed by that name."
+                },
+                {
+                    question: "Is it a defense to 38.14 (Taking Weapon) that the officer was using excessive force?",
+                    options: ["No", "Yes", "Only if deadly force was used", "Only if the actor was injured"],
+                    answer: "Yes",
+                    explanation: "Sec. 38.14(d) provides a defense if the officer 'was using force... in excess of the amount permitted by law.'"
+                },
+                {
+                    question: "A person, with criminal negligence, interferes with an EMS provider performing their duty. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.15(a)(2) covers interference with EMS. Penalty under (b) is Class B."
+                },
+                 {
+                    question: "Is it a defense to Interference with Public Duties (38.15a1) that the person was only warning drivers about a speed trap?",
+                    options: ["No", "Yes", "Only if done silently", "Only if the officer agrees"],
+                    answer: "Yes",
+                    explanation: "Sec. 38.15(c) provides a defense if the conduct 'was intended to warn a person operating a motor vehicle of the presence of a peace officer who was enforcing Subtitle C, Title 7, Transportation Code.'"
+                },
+                {
+                    question: "Is it a defense to Interference with Public Duties (38.15) that the interference consisted of speech only?",
+                    options: ["No", "Yes", "Only if the speech was polite", "Only if the speech was not threatening"],
+                    answer: "Yes",
+                    explanation: "Sec. 38.15(d) states 'It is a defense... that the interruption, disruption, impediment, or interference alleged consisted of speech only.'"
+                },
+                 {
+                    question: "Recklessly striking a police service animal is what offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 38.151(b)(1) covers striking. Penalty under (c)(1) is Class C."
+                },
+                 {
+                    question: "Recklessly releasing a police service animal from its kennel is what offense level?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.151(b)(4) covers releasing. Penalty under (c)(3) is Class A."
+                },
+                {
+                    question: "Recklessly injuring a police service animal (not permanently) is what offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.151(b)(6) covers injuring. Penalty under (c)(4) for injuring (non-permanently) is SJF."
+                },
+                {
+                    question: "Recklessly killing a police service animal is what offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.151(b)(6) covers killing. Penalty under (c)(5)(A) for killing is F2."
+                },
+                {
+                    question: "Intentionally jamming a police radio frequency is what base offense level?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.152(a) defines the offense. Base penalty under (b) is Class A."
+                },
+                {
+                    question: "If the radio jamming in the previous question was done to interfere with EMS response to an emergency, what is the offense level?",
+                    options: ["Still Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 38.152(b)(2) enhances the offense to SJF if done with intent to interfere with emergency response."
+                },
+                {
+                    question: "A person physically blocks a constable from serving civil process papers. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 38.16(a) covers preventing execution by words or physical action. Penalty under (c) is Class C."
+                },
+                 {
+                    question: "Is hiding inside one's house to avoid being served civil process an offense under 38.16?",
+                    options: ["Yes", "No, this is an exception.", "Only if warned not to", "Only if process is for a felony"],
+                    answer: "No, this is an exception.",
+                    explanation: "Sec. 38.16(b) provides an exception if 'the actor evaded service of process by avoiding detection.'"
+                },
+                {
+                    question: "A person sees someone sexually assaulting a child, believes it's happening, could safely call 911, but does nothing. Offense level?",
+                    options: ["No offense", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 38.17(a) defines the offense. Penalty under (b) is F3."
+                },
+                {
+                    question: "A person sees a fistfight (felony aggravated assault causing SBI), believes SBI occurred, could safely call 911, knows it hasn't been reported, but doesn't call. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.171(a) defines the offense (observe felony, reasonable belief SBI/death may result, fail to report when reasonable belief not reported, could report safely). Penalty under (b) is Class A."
+                },
+                {
+                    question: "A manager of a defined 'group home' knows a resident suffered BI from neglect but fails to report it to LE or DFPS. Offense level?",
+                    options: ["No offense", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.172(b) defines the offense. Penalty under (d) is Class A."
+                },
+                {
+                    question: "A chiropractor obtains an accident report and uses the information to call the victim and solicit business. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.18(b) covers obtaining info and using it for direct solicitation. Penalty under (d) is Class B."
+                },
+                 {
+                    question: "A superintendent of a jail fails to submit a required report on the death of an inmate (CCP 49.25). Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.19(a)(2) defines the offense. Penalty under (b) is Class B."
+                }
+                // --- ADDED QUESTIONS (REVIEW 2) ---
+                ,
+                {
+                    question: "Under 38.01, 'Economic benefit' includes...",
+                    options: ["Accepting a fee", "Entering into a fee contract", "Accepting money or anything of value", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 38.01(3) provides a broad definition of 'Economic benefit', including all listed options."
+                },
+                {
+                    question: "Advertising in a newspaper or on a billboard is included in the definition of 'Solicit employment' (38.01).",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 38.01(11) explicitly states 'The term does not include an advertisement by a professional through public media.' Sec. 38.01(10) defines public media as including newspapers and billboards."
+                },
+                {
+                    question: "Under 38.01, 'Solicit employment' (38.01) is limited to communication in person or by telephone.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.01(11) defines 'Solicit employment' as communicating 'in person or by telephone' (Note: 38.12(a)(2) broadens this for the offense of Barratry, but the 38.01 definition is specific)."
+                },
+                {
+                    question: "Which is NOT a condition for a 'Qualified nonprofit organization' under 38.01?",
+                    options: ["Primary purpose does not include legal services.", "The organization does not derive a financial benefit from legal services.", "The organization is recognized as the client, not the person.", "The rendition of legal services is incidental to primary purposes."],
+                    answer: "The organization is recognized as the client, not the person.",
+                    explanation: "Sec. 38.01(9)(D) requires the opposite: 'the person for whom the legal services are rendered, and not the organization, is recognized as the client'."
+                },
+                {
+                    question: "Which of these is NOT listed as 'Public media' under 38.01?",
+                    options: ["Newspaper", "Radio broadcast", "A direct, in-person communication", "A telephone directory"],
+                    answer: "A direct, in-person communication",
+                    explanation: "Sec. 38.01(10) defines 'Public media' as directories, periodicals, signs, broadcasts, etc. In-person contact is the definition of solicitation, *not* public media."
+                },
+                {
+                    question: "If a minor's conduct constitutes an offense under 38.02 (Failure to ID) and ABC 106.07 (Minor ID), the actor may be prosecuted...",
+                    options: ["Only under 38.02", "Only under ABC 106.07", "Under both sections", "Under the section with the higher penalty"],
+                    answer: "Only under ABC 106.07",
+                    explanation: "Sec. 38.02(e) states 'the actor may be prosecuted only under Section 106.07.'"
+                },
+                {
+                    question: "A motor vehicle operator (38.02(b-1)) gives an officer their *actual* residence address, which is different from their DL address. Have they committed a refusal?",
+                    options: ["Yes, it must match the DL.", "No, this is not a refusal.", "Only if they don't provide the DL address as well.", "Yes, this is considered 'false information'."],
+                    answer: "No, this is not a refusal.",
+                    explanation: "Sec. 38.02(b-2) explicitly states giving an actual address different from the DL 'does not constitute a refusal'."
+                },
+                {
+                    question: "If conduct violates 38.02(b-1) (Operator Refusal) and another law (e.g., traffic violation), how may the actor be prosecuted?",
+                    options: ["Only under 38.02(b-1)", "Only under the other law", "Under 38.02(b-1), the other law, or both", "Only under the traffic law"],
+                    answer: "Under 38.02(b-1), the other law, or both",
+                    explanation: "Sec. 38.02(f) states 'the actor may be prosecuted under that subsection, the other law, or both' (subject to the exception in (e))."
+                },
+                {
+                    question: "Resisting Arrest (38.03) applies if the actor uses force against...",
+                    options: ["The peace officer only", "The peace officer or another", "The actor's self only", "A police service animal only"],
+                    answer: "The peace officer or another",
+                    explanation: "Sec. 38.03(a) states 'by using force against the peace officer or another.'"
+                },
+                {
+                    question: "Evading Arrest or Detention (38.04) applies to fleeing from a peace officer OR a...",
+                    options: ["Public servant", "Federal special investigator", "Corrections officer", "District attorney"],
+                    answer: "Federal special investigator",
+                    explanation: "Sec. 38.04(a) explicitly includes 'a person he knows is a peace officer or federal special investigator'."
+                },
+                {
+                    question: "The second listed version of 38.04(b) (S.B. 1416) enhances Evading to an F3 if the actor uses what item against the officer?",
+                    options: ["A firearm", "A vehicle", "A tire deflation device", "A chemical dispensing device"],
+                    answer: "A tire deflation device",
+                    explanation: "The version of 38.04(b) amended by Acts 2011, Ch. 920 (S.B. 1416) adds (b)(2)(C) 'the actor uses a tire deflation device against the officer'."
+                },
+                {
+                    question: "For Sec. 38.04, 'Vehicle' has the meaning assigned by...",
+                    options: ["Sec. 1.07, Penal Code", "Sec. 541.201, Transportation Code", "Sec. 49.01, Penal Code", "Black's Law Dictionary"],
+                    answer: "Sec. 541.201, Transportation Code",
+                    explanation: "Sec. 38.04(c)(1) provides this reference."
+                },
+                {
+                    question: "Hindering Apprehension (38.05) applies to hindering the arrest/prosecution of another for an offense OR...",
+                    options: ["Hindering the adjudication of a child for delinquent conduct.", "Hindering a civil proceeding.", "Hindering a parole hearing.", "All of the above."],
+                    answer: "Hindering the adjudication of a child for delinquent conduct.",
+                    explanation: "Sec. 38.05(a) includes 'with intent to hinder the arrest, detention, adjudication, or disposition of a child for engaging in delinquent conduct'."
+                },
+                {
+                    question: "Hindering Apprehension (38.05) applies if the actor, with intent, hinders the arrest of another under authority of...",
+                    options: ["A suspicion", "A warrant or capias", "A 911 call", "A private citizen's arrest"],
+                    answer: "A warrant or capias",
+                    explanation: "Sec. 38.05(a) was amended to include 'with intent to hinder the arrest of another under the authority of a warrant or capias'."
+                },
+                {
+                    question: "A person escapes from custody after being placed under restraint by a public servant pursuant to a lawful court order. Is this an offense under 38.06?",
+                    options: ["No, must be arrested for an offense.", "Yes, this is 'Escape' under 38.06(a)(2).", "Only if the order was for a felony.", "Only if they use force."],
+                    answer: "Yes, this is 'Escape' under 38.06(a)(2).",
+                    explanation: "Sec. 38.06(a)(2) makes it an offense to escape when 'in custody pursuant to a lawful order of a court.'"
+                },
+                {
+                    question: "A juvenile escapes from the custody of a juvenile probation officer after being detained for violating a JPO order. Is this an offense under 38.06?",
+                    options: ["No, this is a juvenile matter only.", "Yes, this is 'Escape' under 38.06(a)(4).", "Only if the juvenile is 17 or older.", "Only if the juvenile is a felon."],
+                    answer: "Yes, this is 'Escape' under 38.06(a)(4).",
+                    explanation: "Sec. 38.06(a)(4) specifically includes escaping 'in the custody of a juvenile probation officer for violating an order imposed by the juvenile court'."
+                },
+                {
+                    question: "The definition of 'correctional facility' for 38.07 (Permitting Escape) and 38.09 (Implements) includes a 'secure detention facility' as defined by Sec. 51.02, Family Code.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.07(f)(2) and 38.09(c)(2) both include this reference."
+                },
+                {
+                    question: "A person provides a file (a tool 'useful for escape') to an inmate. Is this a different offense level than providing a deadly weapon?",
+                    options: ["No, both are F2.", "Yes, the file is an F3 and the weapon is an F2.", "No, both are F3.", "Yes, the file is an F2 and the weapon is an F3."],
+                    answer: "Yes, the file is an F3 and the weapon is an F2.",
+                    explanation: "Under 38.09(b), 'anything... useful for escape' (like a file) is an F3. It is enhanced to an F2 only if the actor 'introduced or provided a deadly weapon'."
+                },
+                {
+                    question: "Bail Jumping / FTA (38.10) applies only to persons released on bail.",
+                    options: ["True", "False"],
+                    answer: "False",
+                    explanation: "Sec. 38.10(a) states 'A person lawfully released from custody, *with or without bail*...'"
+                },
+                {
+                    question: "Is it an affirmative defense to 38.11(b) (Taking alcohol into facility) that an authorized member of the clergy took 4oz or less for a religious ritual?",
+                    options: ["No, there is no clergy exception.", "Yes, if they consume it all or depart with any unconsumed portion.", "Only if it is wine.", "Only if the warden gives pre-approval."],
+                    answer: "Yes, if they consume it all or depart with any unconsumed portion.",
+                    explanation: "Sec. 38.11(i) provides this specific affirmative defense for clergy."
+                },
+                {
+                    question: "A person residing in a civil commitment facility possesses an *unauthorized* cell phone. What offense?",
+                    options: ["No offense, only applies to correctional facilities.", "Prohibited Item (38.11j-1)", "Contraband (38.114)", "Tampering (38.112)"],
+                    answer: "Prohibited Item (38.11j-1)",
+                    explanation: "Sec. 38.11(j-1) specifically covers this scenario. The penalty would be F3 per (g)."
+                },
+                {
+                    question: "A person provides cigarettes to an inmate in a *local jail*. Is this an offense under 38.11(a)(5)?",
+                    options: ["Yes, always.", "No, tobacco is only prohibited in prisons.", "Only if providing it violates a rule adopted by the sheriff/jail administrator.", "Only if the inmate is a minor."],
+                    answer: "Only if providing it violates a rule adopted by the sheriff/jail administrator.",
+                    explanation: "Sec. 38.11(a)(5) provides an exception for local jails, stating it's an offense *only if* it violates a specific local rule."
+                },
+                {
+                    question: "For 38.11, a cell phone 'component' includes a battery or SIM card.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.11(f)(5) defines 'component' to include 'a subscriber identity module card... a battery or battery charger...'"
+                },
+                {
+                    question: "Can the person confined for an offense under 38.111 (Improper Contact) provide the written consent for the contact?",
+                    options: ["Yes", "No", "Only if the victim is an adult", "Only if the victim is a family member"],
+                    answer: "No",
+                    explanation: "Sec. 38.111(b) explicitly states 'The person confined... may not give the written consent'."
+                },
+                {
+                    question: "For 38.111 (Improper Contact), if the victim was 16 at the time of the offense, who can give consent for contact?",
+                    options: ["A parent or legal guardian.", "The victim, if they are 17 or older *at the time of consent*.", "A family member 17 or older.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.111(a)(1)(B) allows consent from a parent/guardian, the victim (if now 17+), or a family member (17+)."
+                },
+                {
+                    question: "A person on electronic monitoring conspires with another to remove the device. Is this an offense under 38.112?",
+                    options: ["No, only the person who removes it is liable.", "Yes, 'conspires or cooperates with another' is included.", "Only if they pay the other person.", "Only if the device is successfully removed."],
+                    answer: "Yes, 'conspires or cooperates with another' is included.",
+                    explanation: "Sec. 38.112(a) includes 'causes or conspires or cooperates with another person to remove or disable'."
+                },
+                {
+                    question: "Sec. 38.115 (Drones) applies to correctional facilities operated by TDCJ, county jails, and...",
+                    options: ["Federal Bureau of Prisons facilities.", "ICE detention facilities.", "Secure TJJD facilities.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.115(a)(2) and (a)(3) include all these types of facilities."
+                },
+                {
+                    question: "For 38.115 (Drones), 'contraband' means any item not provided or authorized by the facility operator.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.115(a)(1) provides this definition, which is simpler than the one in 38.114."
+                },
+                {
+                    question: "Is it an exception to prosecution for Barratry (38.12a/b) that the conduct is authorized by the Texas Disciplinary Rules of Professional Conduct?",
+                    options: ["No, rules do not override statute.", "Yes, this is a specific exception.", "Only if the conduct is non-profit.", "Only if the client is not harmed."],
+                    answer: "Yes, this is a specific exception.",
+                    explanation: "Sec. 38.12(c) provides this exception."
+                },
+                {
+                    question: "Barratry under 38.12(a)(2) includes soliciting employment through...",
+                    options: ["In person or by telephone.", "Through a direct message on a social media platform.", "By another electronic communication.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.12(a)(2) was updated to include all these modern communication methods."
+                },
+                {
+                    question: "A professional sending a solicitation (38.12d) that involves coercion, duress, fraud, or undue influence is what offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No offense, this is a civil matter."],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 38.12(d)(2)(E) prohibits this. The base penalty under (g) is Class A."
+                },
+                {
+                    question: "Under 38.12(d), a professional may not send a communication if they know the person has indicated a desire not to be contacted. This desire is presumed if...",
+                    options: ["The person hangs up the phone.", "It is noted on an accident report.", "The person is on a 'do not call' list.", "The person is a minor."],
+                    answer: "It is noted on an accident report.",
+                    explanation: "Sec. 38.12(e) creates this presumption if 'an accident report reflects that such an indication has been made'."
+                },
+                {
+                    question: "Final conviction of felony barratry (38.12) is considered a 'serious crime' for State Bar Rules.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.12(i) explicitly states this."
+                },
+                {
+                    question: "Final conviction of Falsely Holding Oneself Out as a Lawyer (38.122) is considered a 'serious crime' for State Bar Rules.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.122(c) explicitly states this."
+                },
+                {
+                    question: "Taking or Attempting to Take a Weapon (38.14) applies to which of the following?",
+                    options: ["Peace Officer", "Correctional Facility Employee", "Community Supervision Officer", "Commissioned Security Officer", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 38.14(b) lists all these individuals (and others)."
+                },
+                {
+                    question: "Under 38.14 (Taking Weapon), the actor is presumed to know the person's status if the person...",
+                    options: ["Was wearing a distinctive uniform or badge.", "Identified himself as an officer/employee.", "Both A and B.", "Neither A nor B."],
+                    answer: "Both A and B.",
+                    explanation: "Sec. 38.14(c)(1) and (c)(2) provide these two presumptions."
+                },
+                {
+                    question: "A person, with criminal negligence, interferes with a K9 officer's animal, knowing the animal is being used for LE purposes. Offense level?",
+                    options: ["No offense", "Interference w/ Police Service Animal (38.151)", "Interference w/ Public Duties (38.15a4 - Class B)", "Resisting Arrest (38.03)"],
+                    answer: "Interference w/ Public Duties (38.15a4 - Class B)",
+                    explanation: "Sec. 38.15(a)(4) covers interfering with an animal *under supervision* of an officer, if the person knows it's being used for LE. Penalty is Class B."
+                },
+                {
+                    question: "A person, with criminal negligence, interferes with a utility employee performing their duty. Offense level?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 38.15(a)(8) covers interference with a utility employee/agent. Penalty under (b) is Class B."
+                },
+                {
+                    question: "Under 38.15, there is a rebuttable presumption of interference with a peace officer if the actor intentionally disseminates the officer's...",
+                    options: ["Home address", "Social security number", "Emergency contact information", "All of the above"],
+                    answer: "All of the above",
+                    explanation: "Sec. 38.15(d-1) creates this presumption for disseminating information 'specifically described by Section 552.117(a), Government Code,' which includes this info."
+                },
+                {
+                    question: "For 38.15, 'Emergency' means a condition of imminent danger of SBI or imminent danger of property damage/destruction.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.15(e)(1) provides this definition."
+                },
+                {
+                    question: "A person recklessly sets a poison trap, engaging in conduct *likely* to kill a police service animal. Offense level?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.151(b)(7) covers engaging in conduct *likely* to kill. Penalty under (c)(5)(A) is F2."
+                },
+                {
+                    question: "Recklessly injuring a police K9 (38.151) so that it *materially and permanently* loses its ability to perform is what offense level?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 38.151(c)(5)(B) enhances the penalty to F2 if the injury 'materially and permanently affects the ability of the animal to perform'."
+                },
+                {
+                    question: "For 38.151, 'Area of control' includes a police vehicle, trailer, kennel, or pen.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 38.151(a)(1) provides this definition."
+                },
+                {
+                    question: "If conduct violates 38.152 (Radio Interference) and another law, how may the actor be prosecuted?",
+                    options: ["Only under 38.152", "Only under the other law", "Under either section or both sections", "Only under the more serious offense"],
+                    answer: "Under either section or both sections",
+                    explanation: "Sec. 38.152(d) explicitly allows prosecution under either or both sections."
+                },
+                {
+                    question: "If conduct violates 38.17 (Failure to Report v Child) and another law, how may the actor be prosecuted?",
+                    options: ["Only under 38.17", "Only under the other law", "Under this section, the other law, or both", "Only under the more serious offense"],
+                    answer: "Under this section, the other law, or both",
+                    explanation: "Sec. 38.17(c) explicitly allows prosecution under this section, the other law, or both."
+                },
+                {
+                    question: "What is the definition of a 'group home' for Sec. 38.172?",
+                    options: ["Any place housing 3 or more unrelated residents.", "A licensed assisted living facility.", "An establishment lodging 3+ unrelated residents providing community meals, transport, laundry, etc., but not personal care services.", "A fraternity or sorority house."],
+                    answer: "An establishment lodging 3+ unrelated residents providing community meals, transport, laundry, etc., but not personal care services.",
+                    explanation: "Sec. 38.172(a) provides this specific definition."
+                },
+                {
+                    question: "Which of these is an *exception* to 38.172 (Failure to Report Group Home)?",
+                    options: ["The injury occurs in a hotel.", "The injury occurs in a fraternity house.", "The actor is licensed under Health & Safety Code Ch. 242 (Convalescent Homes).", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.172(c) lists exceptions for specific licensed persons (c)(1) and specific types of facilities (c)(2), including hotels and fraternities."
+                },
+                {
+                    question: "Sec. 38.18 (Use of Collision Info) applies to information from Sec. 550.065, Transportation Code, AND...",
+                    options: ["Non-confidential EMS (Ch. 772) info.", "Dispatch logs.", "9-1-1 service provider records.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 38.18(a) lists all these as applicable information."
+                },
+                {
+                    question: "What is the mental state for Interference with Public Duties (38.15)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Criminal Negligence",
+                    explanation: "Sec. 38.15(a) begins 'A person commits an offense if the person with *criminal negligence* interrupts, disrupts, impedes...'"
+                },
+                {
+                    question: "What is the mental state for Interference with Police Service Animals (38.151)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Recklessly",
+                    explanation: "Sec. 38.151(b) begins 'A person commits an offense if the person *recklessly*...'"
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Adjust paragraph text to reflect the actual number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                }
+
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 38 - Obstructing Governmental Operation", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.38.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" },
+                 { name: "Government Code Ch. 573 - Degrees of Relationship", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.573.htm" },
+                 { name: "Code of Criminal Procedure Art. 59.01 - Forfeiture Definitions", url: "https://statutes.capitol.texas.gov/Docs/CR/htm/CR.59.htm#59.01" }
+
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

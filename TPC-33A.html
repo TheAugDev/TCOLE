@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 33A Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-phone mr-2"></i>Ch. 33A: Telecommunications Crimes
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (33A.01)
+                </button>
+                <button data-tab="service-crimes" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-wifi mr-2"></i> Service Crimes (33A.02, 33A.04)
+                </button>
+                <button data-tab="device-crimes" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-microchip mr-2"></i> Device Crimes (33A.03, 33A.05)
+                </button>
+                <button data-tab="caller-id" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-id-badge mr-2"></i> False Caller ID (33A.051)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 33A.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Counterfeit telecommunications access device</span>
+                            <p class="definition-desc">An access device that is false, fraudulent, not issued to a legitimate account, or otherwise unlawful.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Counterfeit telecommunications device</span>
+                            <p class="definition-desc">A device (e.g., clone telephone, tumbler microchip) altered to get service without consent of the provider.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Deliver</span>
+                            <p class="definition-desc">To sell, give, loan, or otherwise transfer a device or materials to another person (actually or constructively).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Publish</span>
+                            <p class="definition-desc">To communicate or make information available (orally, writing, telecommunications) including on a computer bulletin board.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Telecommunications</span>
+                            <p class="definition-desc">The transmission of data, images, signals, sounds, etc., over a communications system by any method.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Telecommunications access device</span>
+                            <p class="definition-desc">An instrument, card, code, account number, PIN, serial number, etc., that can facilitate the use of a telecommunications service.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Telecommunications device</span>
+                            <p class="definition-desc">Any instrument that facilitates telecommunications, including a computer, telephone, pager, radio, or modem.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Telecommunications service</span>
+                            <p class="definition-desc">The provision or generation of telecommunications through the use of a device or access device.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Value of the telecommunications service...</span>
+                            <p class="definition-desc">Includes: (A) lawful charge avoided; (B) money/property lost or stolen; and (C) expenditure by victim to verify service integrity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Crimes Tab -->
+            <div id="service-crimes" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.02" target="_blank" class="text-red-600 hover:underline">Sec. 33A.02. Unauthorized Use of Telecommunications Service</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they are an <strong class="font-semibold">officer, shareholder, partner, employee, agent, or independent contractor</strong> of a telecommunications service provider AND they <strong class="font-semibold">knowingly</strong> and <strong class="font-semibold">without authority</strong> use or divert telecommunications service for their <strong class="font-semibold">own benefit or to the benefit of another</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong> (Based on value of service used/diverted)
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Less than $500: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>$500 &lt; $1,500: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.
+                                    <ul><li>(Or &lt; $500 + 1 prior conviction under this chapter).</li></ul>
+                                </li>
+                                <li>$1,500 &lt; $20,000: <strong class="font-semibold text-red-700">State Jail Felony</strong>.
+                                    <ul><li>(Or &lt; $1,500 + 2 or more prior convictions under this chapter).</li></ul>
+                                </li>
+                                <li>$20,000 &lt; $100,000: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>$100,000 &lt; $200,000: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                                <li>$200,000 or more: <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Aggregation (c):</strong> If part of <strong class="font-semibold">one scheme or continuing course of conduct</strong>, values may be aggregated to determine the grade of offense.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.04" target="_blank" class="text-red-600 hover:underline">Sec. 33A.04. Theft of Telecommunications Service</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they <strong class="font-semibold">knowingly obtain or attempt to obtain</strong> telecommunications service to <strong class="font-semibold">avoid or cause another to avoid a lawful charge</strong> by using:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>A <strong class="font-semibold">telecommunications access device</strong> without authority/consent; OR</li>
+                                <li>A <strong class="font-semibold">counterfeit telecommunications access device</strong>; OR</li>
+                                <li>A <strong class="font-semibold">telecommunications device or counterfeit telecommunications device</strong>; OR</li>
+                                <li>A <strong class="font-semibold">fraudulent or deceptive scheme</strong>, pretense, method, or conspiracy.</li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">Penalties (b):</strong> (Based on value of service obtained/attempted)
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Less than $500: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong>.</li>
+                                <li>$500 &lt; $1,500: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.
+                                    <ul><li>(Or &lt; $500 + 1 prior conviction under this chapter).</li></ul>
+                                </li>
+                                <li>$1,500 &lt; $20,000: <strong class="font-semibold text-red-700">State Jail Felony</strong>.
+                                    <ul><li>(Or &lt; $1,500 + 2 or more prior convictions under this chapter).</li></ul>
+                                </li>
+                                <li>$20,000 &lt; $100,000: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>$100,000 &lt; $200,000: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li>
+                                <li>$200,000 or more: <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Aggregation (c):</strong> If part of <strong class="font-semibold">one scheme or continuing course of conduct</strong>, values may be aggregated to determine the grade of offense.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Device Crimes Tab -->
+            <div id="device-crimes" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.03" target="_blank" class="text-red-600 hover:underline">Sec. 33A.03. Manufacture, Possession, or Delivery of Unlawful Telecommunications Device</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they manufacture, possess, deliver, offer to deliver, or advertise:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>A <strong class="font-semibold">counterfeit telecommunications device</strong>; OR</li>
+                                <li>A telecommunications device that is <strong class="font-semibold">intended to be used to</strong>:
+                                    <ul class="list-disc list-inside ml-4">
+                                        <li>Commit an offense under <strong class="font-semibold">33A.04 (Theft of Service)</strong>; OR</li>
+                                        <li><strong class="font-semibold">Conceal the existence or place of origin</strong> or destination of a service.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">Offense (b):</strong> A person commits an offense if they deliver, offer to deliver, or advertise <strong class="font-semibold">plans, instructions, or materials</strong> for manufacture of a device in (a).</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                        <li><strong class="font-semibold">Defense (d):</strong> It is a defense if the person was an <strong class="font-semibold">officer, agent, or employee of a provider</strong> engaging in conduct for a <strong class="font-semibold">law enforcement investigation</strong>.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.05" target="_blank" class="text-red-600 hover:underline">Sec. 33A.05. Publication of Telecommunications Access Device</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they with <strong class="font-semibold">criminal negligence</strong> <strong class="font-semibold">publish</strong> a telecommunications access device or counterfeit telecommunications access device that is <strong class="font-semibold">designed to be used to commit an offense under 33A.04 (Theft of Service)</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li><strong class="font-semibold text-red-700">Class A Misdemeanor:</strong> Base offense.</li>
+                                <li><strong class="font-semibold text-red-700">Felony of the Third Degree:</strong> If the person has been <strong class="font-semibold">previously convicted of an offense under this chapter</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- False Caller ID Tab -->
+            <div id="caller-id" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.051" target="_blank" class="text-red-600 hover:underline">Sec. 33A.051. False Caller Identification Information Display</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if they, with <strong class="font-semibold">intent to defraud or cause harm</strong>, make a call or engage in conduct that results in the display on another's device of data that <strong class="font-semibold">misrepresents the actor's identity or telephone number</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                        <li><strong class="font-semibold">No Enhancement (c):</strong> A conviction under this section <strong class="font-semibold">may not be used for enhancement purposes</strong> under any other section of this chapter.</li>
+                        <li><strong class="font-semibold">Defenses (d):</strong> It is a defense if the actor:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>Blocked caller ID information;</li>
+                                <li>Was a <strong class="font-semibold">peace officer or federal law enforcement officer</strong> lawfully discharging duty;</li>
+                                <li>Was an agent of a <strong class="font-semibold">federal intelligence or security agency</strong> lawfully discharging duty;</li>
+                                <li>Was an officer, agent, or employee of a <strong class="font-semibold">telecommunications service provider</strong> acting in their official capacity; OR</li>
+                                <li>Was a <strong class="font-semibold">licensed private investigator</strong> lawfully conducting an investigation.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm#33A.06" target="_blank" class="text-red-600 hover:underline">Sec. 33A.06. Assistance by Attorney General</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li>The <strong class="font-semibold">Attorney General</strong>, if requested by a <strong class="font-semibold">prosecuting attorney</strong>, may assist in the investigation or prosecution of an offense under this chapter.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 33A)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (62 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 33A) ---
+            const quizData = [
+                {
+                    question: "Under 33A.01, a 'clone telephone' is an example of what?",
+                    options: ["Counterfeit telecommunications access device", "Counterfeit telecommunications device", "Telecommunications service", "Tumbler telephone"],
+                    answer: "Counterfeit telecommunications device",
+                    explanation: "Sec. 33A.01(2) defines 'Counterfeit telecommunications device' and includes 'a clone telephone...'"
+                },
+                {
+                    question: "Which of the following is included in the definition of 'Telecommunications access device' (33A.01)?",
+                    options: ["A modem", "A radio", "A personal identification number (PIN)", "A computer bulletin board"],
+                    answer: "A personal identification number (PIN)",
+                    explanation: "Sec. 33A.01(6) lists 'personal identification number' as an example of an access device."
+                },
+                {
+                    question: "Which of the following is included in the definition of 'Telecommunications device' (33A.01)?",
+                    options: ["A modem", "An account number", "A PIN", "A counterfeit number"],
+                    answer: "A modem",
+                    explanation: "Sec. 33A.01(7) lists 'modem' as an example of a device."
+                },
+                {
+                    question: "The definition of 'Publish' (33A.01) specifically includes communicating information on a:",
+                    options: ["Radio broadcast", "Television advertisement", "Computer bulletin board or similar system", "Public speech"],
+                    answer: "Computer bulletin board or similar system",
+                    explanation: "Sec. 33A.01(4) '...includes communicating information on a computer bulletin board or similar system.'"
+                },
+                {
+                    question: "'Deliver' (33A.01) means to sell, give, loan, or otherwise transfer. This can be:",
+                    options: ["Actually or constructively", "Only by physical hand-to-hand exchange", "Only through a valid sale", "Only if money is exchanged"],
+                    answer: "Actually or constructively",
+                    explanation: "Sec. 33A.01(3) defines 'Deliver' as 'to actually or constructively sell, give, loan...'"
+                },
+                {
+                    question: "The 'Value of the telecommunications service obtained' (33A.01) includes the lawful charge avoided AND:",
+                    options: ["Only the money lost by the provider", "Only the cost to verify the system", "Expenditure by a victim to verify the service was not damaged/disrupted", "The actor's profit from the theft"],
+                    answer: "Expenditure by a victim to verify the service was not damaged/disrupted",
+                    explanation: "Sec. 33A.01(9)(C) includes 'an expenditure incurred by a victim to verify...'"
+                },
+                {
+                    question: "Who is the specific type of person that can commit 'Unauthorized Use of Telecommunications Service' (33A.02)?",
+                    options: ["Any person who uses a phone", "An officer, employee, agent, etc., of a telecommunications service provider", "A person with a prior theft conviction", "A person who publishes an access code"],
+                    answer: "An officer, employee, agent, etc., of a telecommunications service provider",
+                    explanation: "Sec. 33A.02(a) limits the offense to a person who is 'an officer, shareholder, partner, employee, agent, or independent contractor' of a provider."
+                },
+                {
+                    question: "What is the offense under 33A.02(a)?",
+                    options: ["Knowingly using or diverting service for one's own or another's benefit without authority", "Knowingly obtaining service to avoid a lawful charge", "Manufacturing a clone telephone", "Publishing a PIN with criminal negligence"],
+                    answer: "Knowingly using or diverting service for one's own or another's benefit without authority",
+                    explanation: "Sec. 33A.02(a) defines the offense as knowingly and without authority using or diverting service for the person's own benefit or the benefit of another."
+                },
+                {
+                    question: "What is the penalty for 33A.02 (Unauthorized Use) if the value is $1,000?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 33A.02(b)(2)(A) covers values of $500 or more but less than $1,500."
+                },
+                {
+                    question: "What is the penalty for 33A.02 (Unauthorized Use) if the value is $400, but the defendant has one prior conviction under Chapter 33A?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 33A.02(b)(2)(B) enhances a value of less than $500 to a Class A Misdemeanor if the defendant has been previously convicted."
+                },
+                {
+                    question: "What is the penalty for 33A.02 (Unauthorized Use) if the value is $1,000, but the defendant has two prior convictions under Chapter 33A?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 33A.02(b)(3)(B) enhances a value of less than $1,500 to a State Jail Felony if the defendant has two or more prior convictions."
+                },
+                {
+                    question: "What is the penalty for 33A.02 (Unauthorized Use) if the value is $30,000?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 33A.02(b)(4) covers values of $20,000 or more but less than $100,000."
+                },
+                {
+                    question: "What is the penalty for 33A.02 (Unauthorized Use) if the value is $250,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 33A.02(b)(6) covers values of $200,000 or more."
+                },
+                {
+                    question: "When can values be aggregated under 33A.02 or 33A.04?",
+                    options: ["Never, each incident is separate.", "Only if they occur on the same day.", "If they are part of one scheme or continuing course of conduct.", "Only if the victim is the same person."],
+                    answer: "If they are part of one scheme or continuing course of conduct.",
+                    explanation: "Sec. 33A.02(c) and 33A.04(c) both allow aggregation for 'one scheme or continuing course of conduct'."
+                },
+                {
+                    question: "What is the penalty for 'Manufacture, Possession, or Delivery of Unlawful Telecommunications Device' (33A.03)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 33A.03(c) states 'An offense under this section is a felony of the third degree.'"
+                },
+                {
+                    question: "A person possesses a device intended to be used to conceal the origin of a phone call. What offense?",
+                    options: ["33A.02 (Unauthorized Use)", "33A.03 (Manufacture, Possession...)", "33A.04 (Theft of Service)", "33A.05 (Publication)"],
+                    answer: "33A.03 (Manufacture, Possession...)",
+                    explanation: "Sec. 33A.03(a)(2)(B) makes it an offense to possess a device intended to 'conceal the existence or place of origin or destination' of a service."
+                },
+                {
+                    question: "Is it an offense to advertise instructions for making a clone telephone?",
+                    options: ["No, only advertising the device itself is an offense.", "No, only possessing the instructions is an offense.", "Yes, this is an offense under 33A.03(b).", "Yes, but only if the person is a provider employee."],
+                    answer: "Yes, this is an offense under 33A.03(b).",
+                    explanation: "Sec. 33A.03(b) makes it an offense to 'advertises plans, instructions, or materials' for a counterfeit device."
+                },
+                {
+                    question: "What is the defense to prosecution under 33A.03 (Manufacture, Possession...)?",
+                    options: ["The device was for personal use.", "The person was an officer or agent of a provider, gathering information for a law enforcement investigation.", "The person did not make a profit.", "The person was a licensed private investigator."],
+                    answer: "The person was an officer or agent of a provider, gathering information for a law enforcement investigation.",
+                    explanation: "Sec. 33A.03(d) provides this specific defense."
+                },
+                {
+                    question: "What is the core conduct prohibited by 33A.04 (Theft of Telecommunications Service)?",
+                    options: ["Knowingly obtaining service to avoid a lawful charge.", "Knowingly publishing a PIN.", "Being an employee who diverts service.", "Manufacturing a counterfeit device."],
+                    answer: "Knowingly obtaining service to avoid a lawful charge.",
+                    explanation: "Sec. 33A.04(a) '...knowingly obtains or attempts to obtain telecommunications service to avoid or cause another person to avoid a lawful charge...'"
+                },
+                {
+                    question: "A person uses their friend's PIN with the friend's permission to make a call, but the friend did not have authority from the *provider* to share it. What offense?",
+                    options: ["33A.04 (Theft of Service)", "33A.02 (Unauthorized Use)", "33A.05 (Publication)", "No offense, they had the friend's consent."],
+                    answer: "33A.04 (Theft of Service)",
+                    explanation: "Sec. 33A.04(a)(1) prohibits using an access device 'without the authority or consent of the subscriber or lawful holder'."
+                },
+                {
+                    question: "Which of these is a method for committing Theft of Telecommunications Service (33A.04)?",
+                    options: ["Using a counterfeit telecommunications access device.", "Using a fraudulent or deceptive scheme.", "Using an unauthorized telecommunications access device.", "All of the above."],
+                    answer: "All of the above.",
+                    explanation: "Sec. 33A.04(a) lists all these methods in subsections (1), (2), and (4)."
+                },
+                {
+                    question: "The value ladder for 33A.04 (Theft of Service) is:",
+                    options: ["Different from 33A.02 (Unauthorized Use)", "Identical to 33A.02 (Unauthorized Use)", "Starts at Class A Misdemeanor", "Ends at Felony of the Third Degree"],
+                    answer: "Identical to 33A.02 (Unauthorized Use)",
+                    explanation: "The value thresholds and penalties in 33A.04(b) are exactly the same as in 33A.02(b)."
+                },
+                {
+                    question: "What is the penalty for 33A.04 (Theft of Service) if the value is $1,600?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 33A.04(b)(3)(A) covers values of $1,500 or more but less than $20,000."
+                },
+                {
+                    question: "What is the penalty for 33A.04 (Theft of Service) if the value is $150,000?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 33A.04(b)(5) covers values of $100,000 or more but less than $200,000."
+                },
+                {
+                    question: "What is the culpable mental state for 'Publication of Telecommunications Access Device' (33A.05)?",
+                    options: ["Intentionally", "Knowingly", "Recklessly", "Criminal Negligence"],
+                    answer: "Criminal Negligence",
+                    explanation: "Sec. 33A.05(a) begins 'A person commits an offense if the person with criminal negligence...'"
+                },
+                {
+                    question: "What is the base penalty for 'Publication of Telecommunications Access Device' (33A.05)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 33A.05(b) states '...an offense under this section is a Class A misdemeanor.'"
+                },
+                {
+                    question: "When is 33A.05 (Publication) enhanced to a Felony of the Third Degree?",
+                    options: ["If the value exceeds $1,500", "If the actor is a provider employee", "If the person has been previously convicted of an offense under this chapter", "If the actor is a juvenile"],
+                    answer: "If the person has been previously convicted of an offense under this chapter",
+                    explanation: "Sec. 33A.05(b) '...An offense under this section is a felony of the third degree if the person has been previously convicted of an offense under this chapter.'"
+                },
+                {
+                    question: "What is the required intent for 'False Caller Identification Information Display' (33A.051)?",
+                    options: ["Criminal Negligence", "Recklessness", "Knowingly or Intentionally", "Intent to defraud or cause harm"],
+                    answer: "Intent to defraud or cause harm",
+                    explanation: "Sec. 33A.051(a) requires the act be done 'with the intent to defraud or cause harm'."
+                },
+                {
+                    question: "What is the penalty for 'False Caller Identification Information Display' (33A.051)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 33A.051(b) states 'An offense under this section is a Class A misdemeanor.'"
+                },
+                {
+                    question: "A person is convicted of 33A.051 (False Caller ID). They are later charged with 33A.04 (Theft of Service) with a value of $400. Can the 33A.051 conviction be used to enhance the 33A.04 charge?",
+                    options: ["Yes, it enhances to a Class A Misdemeanor.", "Yes, it enhances to a State Jail Felony.", "No, a conviction under 33A.051 may not be used for enhancement under this chapter.", "Only if the offenses were part of the same scheme."],
+                    answer: "No, a conviction under 33A.051 may not be used for enhancement under this chapter.",
+                    explanation: "Sec. 33A.051(c) explicitly forbids using a 33A.051 conviction for enhancement purposes under this chapter."
+                },
+                {
+                    question: "Which of the following is NOT a defense to prosecution under 33A.051 (False Caller ID)?",
+                    options: ["The actor was a licensed private investigator.", "The actor was a peace officer discharging an official duty.", "The actor was blocking their caller ID information.", "The actor was a telemarketer making unsolicited calls."],
+                    answer: "The actor was a telemarketer making unsolicited calls.",
+                    explanation: "Sec. 33A.051(d) lists defenses for blocking, peace officers, and PIs, but not for telemarketers."
+                },
+                {
+                    question: "An employee of a telecommunications provider who is configuring a service as requested by a customer displays false caller ID. Is this a defense?",
+                    options: ["No, all employees are liable.", "Yes, this is a defense under 33A.051(d)(4).", "Only if the customer was law enforcement.", "Only if the employee was supervised."],
+                    answer: "Yes, this is a defense under 33A.051(d)(4).",
+                    explanation: "Sec. 33A.051(d)(4)(B) provides a defense for a provider's agent 'providing or configuring a service or service feature as requested by a customer'."
+                },
+                {
+                    question: "Under 33A.06, who may assist a prosecuting attorney in an investigation under this chapter?",
+                    options: ["The Attorney General", "The Governor", "The Texas Rangers", "A federal law enforcement officer"],
+                    answer: "The Attorney General",
+                    explanation: "Sec. 33A.06 states 'The attorney general... may assist the prosecuting attorney...'"
+                },
+                {
+                    question: "When can the Attorney General assist in a prosecution under 33A.06?",
+                    options: ["At any time they choose.", "Only if a felony is alleged.", "If requested to do so by a prosecuting attorney.", "Only if the value exceeds $100,000."],
+                    answer: "If requested to do so by a prosecuting attorney.",
+                    explanation: "Sec. 33A.06 specifies 'if requested to do so by a prosecuting attorney...'"
+                },
+                {
+                    question: "A person possesses a 'tumbler microchip.' What offense is this under?",
+                    options: ["33A.03 (Manufacture, Possession...)", "33A.05 (Publication)", "33A.051 (False Caller ID)", "This is not a defined offense"],
+                    answer: "33A.03 (Manufacture, Possession...)",
+                    explanation: "A 'tumbler microchip' is defined as a 'counterfeit telecommunications device' (33A.01(2)), and possession of such a device is an offense under 33A.03(a)(1)."
+                },
+                {
+                    question: "A person publishes a list of stolen PINs on a website, acting with criminal negligence. The PINs are designed to be used for 33A.04. What is the offense?",
+                    options: ["33A.03 (Manufacture, Possession...)", "33A.04 (Theft of Service)", "33A.05 (Publication of Telecommunications Access Device)", "33A.051 (False Caller ID)"],
+                    answer: "33A.05 (Publication of Telecommunications Access Device)",
+                    explanation: "Sec. 33A.05(a) covers criminally negligent publication of an access device (like a PIN) designed to commit 33A.04."
+                },
+                {
+                    question: "A person is convicted of 33A.05 (Publication). What is the highest penalty this offense can be?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 33A.05(b) makes the base offense a Class A Misdemeanor, but enhances it to an F3 if the person has a prior conviction under this chapter."
+                },
+                {
+                    question: "A person commits 33A.04 (Theft of Service) with a value of $400. They have two prior convictions for 33A.04. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Class B Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 33A.04(b)(3)(B) enhances a value of less than $1,500 to a State Jail Felony if the defendant has two or more prior convictions."
+                },
+                {
+                    question: "Which of these two offenses share an identical penalty ladder based on value?",
+                    options: ["33A.02 (Unauthorized Use) and 33A.03 (Manufacture)", "33A.04 (Theft of Service) and 33A.05 (Publication)", "33A.02 (Unauthorized Use) and 33A.04 (Theft of Service)", "33A.03 (Manufacture) and 33A.051 (False Caller ID)"],
+                    answer: "33A.02 (Unauthorized Use) and 33A.04 (Theft of Service)",
+                    explanation: "Sec. 33A.02(b) and 33A.04(b) list the exact same value thresholds and penalty levels."
+                },
+                {
+                    question: "A person uses a 'fraudulent or deceptive scheme' to obtain $10,000 in telecommunications service. What is the offense and penalty?",
+                    options: ["33A.04 (Theft of Service) / State Jail Felony", "33A.04 (Theft of Service) / Felony of the Third Degree", "33A.02 (Unauthorized Use) / State Jail Felony", "33A.02 (Unauthorized Use) / Felony of the Third Degree"],
+                    answer: "33A.04 (Theft of Service) / State Jail Felony",
+                    explanation: "Using a 'fraudulent or deceptive scheme' is an element of 33A.04(a)(4). A value of $10,000 falls into the State Jail Felony category ($1,500 < $20,000) under 33A.04(b)(3)(A)."
+                },
+                // --- ADDED QUESTIONS START HERE ---
+                {
+                    question: "What is the definition of 'Telecommunications' in 33A.01?",
+                    options: ["Only the act of making a phone call.", "The origination, emission, transmission, or reception of data, images, signals, sounds, or other intelligence... by any method.", "The business of providing telephone service.", "Any communication over the internet."],
+                    answer: "The origination, emission, transmission, or reception of data, images, signals, sounds, or other intelligence... by any method.",
+                    explanation: "Sec. 33A.01(5) provides this broad definition, covering all forms of data transmission."
+                },
+                {
+                    question: "Besides a computer or modem, which of the following is also a 'Telecommunications device' under 33A.01(7)?",
+                    options: ["An account number", "A pager", "A PIN", "A counterfeit number"],
+                    answer: "A pager",
+                    explanation: "Sec. 33A.01(7) lists 'a computer, computer chip or circuit, telephone, pager, personal communications device, transponder, receiver, radio, modem...'"
+                },
+                {
+                    question: "What is a 'Telecommunications service' under 33A.01(8)?",
+                    options: ["The physical telephone itself.", "The provision, facilitation, or generation of telecommunications through the use of a device or access device.", "A computer bulletin board.", "A fraudulent scheme to get free phone calls."],
+                    answer: "The provision, facilitation, or generation of telecommunications through the use of a device or access device.",
+                    explanation: "Sec. 33A.01(8) defines the 'service' as the provision or generation of telecommunications."
+                },
+                {
+                    question: "The 'Value of the telecommunications service obtained' (33A.01) includes which of the following?",
+                    options: ["A lawful charge for service avoided or attempted to be avoided.", "Only the physical property stolen.", "Only the victim's verification costs.", "The actor's intended, but unrealized, profit."],
+                    answer: "A lawful charge for service avoided or attempted to be avoided.",
+                    explanation: "Sec. 33A.01(9)(A) explicitly includes the value of the lawful charge that was avoided."
+                },
+                {
+                    question: "The 'Value of the telecommunications service obtained' (33A.01) also includes...",
+                    options: ["Money, property, or telecommunications service lost, stolen, or rendered unrecoverable.", "The cost of the police investigation.", "The emotional distress of the victim.", "Only the lawful charge avoided."],
+                    answer: "Money, property, or telecommunications service lost, stolen, or rendered unrecoverable.",
+                    explanation: "Sec. 33A.01(9)(B) includes money or property lost as a result of the offense."
+                },
+                {
+                    question: "What is the base penalty for 33A.02 (Unauthorized Use) if the value is less than $500?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 33A.02(b)(1) sets the base penalty as a Class B Misdemeanor."
+                },
+                {
+                    question: "An employee of a provider diverts $5,000 in service for their personal use. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "This is 33A.02 (Unauthorized Use). A value of $5,000 falls in the $1,500 < $20,000 range, which is a State Jail Felony per 33A.02(b)(3)(A)."
+                },
+                {
+                    question: "An employee of a provider diverts $120,000 in service. What is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "This is 33A.02 (Unauthorized Use). A value of $120,000 falls in the $100,000 < $200,000 range, which is a Felony of the Second Degree per 33A.02(b)(5)."
+                },
+                {
+                    question: "A person manufactures a device that is *intended* to be used to commit 33A.04 (Theft of Service). What offense?",
+                    options: ["33A.03 (Manufacture, Possession...)", "33A.04 (Theft of Service)", "33A.05 (Publication)", "No offense until it is used"],
+                    answer: "33A.03 (Manufacture, Possession...)",
+                    explanation: "Sec. 33A.03(a)(2)(A) makes it an offense to manufacture, possess, etc., a device *intended* to be used to commit theft of service."
+                },
+                {
+                    question: "A person gives a subscriber $20 to use their telecommunications access device, which is an agreement that allows another to use the device. What offense?",
+                    options: ["33A.04 (Theft of Service)", "33A.02 (Unauthorized Use)", "Bribery", "No offense, it was an exchange of value"],
+                    answer: "33A.04 (Theft of Service)",
+                    explanation: "Sec. 33A.04(a)(1) explicitly prohibits using an access device 'pursuant to an agreement for an exchange of value with the subscriber... to allow another person to use the device'."
+                },
+                {
+                    question: "A person knowingly uses a 'counterfeit telecommunications access device' to avoid a lawful charge. What offense?",
+                    options: ["33A.03 (Manufacture...)", "33A.04 (Theft of Service)", "33A.05 (Publication)", "33A.051 (False Caller ID)"],
+                    answer: "33A.04 (Theft of Service)",
+                    explanation: "Sec. 33A.04(a)(2) makes it an offense to use a counterfeit telecommunications access device to avoid a charge."
+                },
+                {
+                    question: "A person uses a 'counterfeit telecommunications device' (like a clone phone) to avoid a lawful charge. What offense?",
+                    options: ["33A.03 (Manufacture...)", "33A.04 (Theft of Service)", "33A.05 (Publication)", "33A.051 (False Caller ID)"],
+                    answer: "33A.04 (Theft of Service)",
+                    explanation: "Sec. 33A.04(a)(3) makes it an offense to use a counterfeit telecommunications device to avoid a charge."
+                },
+                {
+                    question: "What is the base penalty for 33A.04 (Theft of Service) if the value is $300?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 33A.04(b)(1) sets the base penalty for a value less than $500 as a Class B Misdemeanor."
+                },
+                {
+                    question: "A person steals $800 in telecommunications service. What is the penalty?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "A value of $800 falls in the $500 < $1,500 range, which is a Class A Misdemeanor per 33A.04(b)(2)(A)."
+                },
+                {
+                    question: "A person steals $300 in service and has one prior conviction under Ch. 33A. What is the penalty?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 33A.04(b)(2)(B) enhances a value of less than $500 to a Class A Misdemeanor with one prior conviction under this chapter."
+                },
+                {
+                    question: "A person steals $50,000 in telecommunications service. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "A value of $50,000 falls in the $20,000 < $100,000 range, which is a Felony of the Third Degree per 33A.04(b)(4)."
+                },
+                {
+                    question: "A person steals $210,000 in telecommunications service. What is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "A value of $210,000 is $200,000 or more, which is a Felony of the First Degree per 33A.04(b)(6)."
+                },
+                {
+                    question: "A person steals $50 in service every day for 30 days as part of one scheme. How is the value calculated for 33A.04?",
+                    options: ["The values are aggregated to $1,500.", "Each $50 act is a separate Class B Misdemeanor.", "Only the first $50 act is charged.", "The values cannot be aggregated."],
+                    answer: "The values are aggregated to $1,500.",
+                    explanation: "Sec. 33A.04(c) allows values to be aggregated if the conduct is 'pursuant to one scheme or continuing course of conduct.' The total value is $50 * 30 = $1,500 (SJF)."
+                },
+                {
+                    question: "Which of the following is a defense to 33A.051 (False Caller ID)?",
+                    options: ["The actor was an agent of a federal intelligence or security agency on duty.", "The actor intended to play a harmless prank.", "The actor was a telemarketer.", "The actor did not make a profit from the call."],
+                    answer: "The actor was an agent of a federal intelligence or security agency on duty.",
+                    explanation: "Sec. 33A.051(d)(3) provides a defense for 'an officer, agent, or employee of a federal intelligence or security agency' lawfully discharging an official duty."
+                },
+                {
+                    question: "A provider's employee acts as an intermediary for a VOIP transmission which results in a false ID being displayed. Is this a defense?",
+                    options: ["No, all employees are liable.", "Yes, this is a defense under 33A.051(d)(4)(A).", "Only if the employee was a manager.", "No, unless the employee was law enforcement."],
+                    answer: "Yes, this is a defense under 33A.051(d)(4)(A).",
+                    explanation: "Sec. 33A.051(d)(4)(A) provides a defense for a provider's agent 'acting in the provider's capacity as an intermediary for the transmission...'"
+                },
+                {
+                    question: "The definition of 'telecommunications service provider' for 33A.051 includes a provider as defined by what code?",
+                    options: ["Section 51.002, Utilities Code", "Section 1.07, Penal Code", "Section 1702, Occupations Code", "Section 47, U.S. Code"],
+                    answer: "Section 51.002, Utilities Code",
+                    explanation: "Sec. 33A.051(e)(1) defines the term by referencing 'Section 51.002, Utilities Code'."
+                },
+                {
+                    question: "A 'telecommunications access device' (33A.01) is an instrument that can acquire, intercept, provide, receive, use, or otherwise...",
+                    options: ["...facilitate the use of a telecommunications service.", "...be sold for a profit.", "...conceal the origin of a call.", "...store data."],
+                    answer: "...facilitate the use of a telecommunications service.",
+                    explanation: "Sec. 33A.01(6) defines the device by its function: '...can acquire, intercept, provide, receive, use, or otherwise facilitate the use of... telecommunications service.'"
+                }
+                // --- ADDED QUESTIONS END HERE ---
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 33A - Telecommunications Crimes", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.33A.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
