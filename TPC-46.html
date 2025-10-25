@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 46 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+        .repealed-item { text-decoration: line-through; color: #9ca3af; } /* Style for repealed items */
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-crosshairs mr-2"></i>Ch. 46: Weapons
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+             <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (46.01)
+                </button>
+                 <button data-tab="ucw" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-ban mr-2"></i> Unlawful Carrying (46.02)
+                </button>
+                 <button data-tab="places" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-map-marked-alt mr-2"></i> Places Prohibited (46.03)
+                </button>
+                <button data-tab="upf" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-lock mr-2"></i> Unlawful Possession (46.04+)
+                </button>
+                <button data-tab="prohib-transfer" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> Prohib Wpns/Transfer (46.05+)
+                </button>
+                <button data-tab="other-offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-asterisk mr-2"></i> Other Offenses
+                </button>
+                 <button data-tab="school-zones" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-school mr-2"></i> School Zones (46.11+)
+                </button>
+                <button data-tab="exemptions" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-shield-alt mr-2"></i> Exemptions (46.15)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions Tab -->
+            <div id="definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 46.01)</h2>
+                     <p class="text-xs text-gray-500 mb-4">Note: Some terms (Illegal Knife, Knuckles, Short-Barrel Firearm, Switchblade Knife) have been repealed from this section over time.</p>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Club</span>
+                            <p class="definition-desc">Instrument specially designed, made, or adapted for inflicting SBI/death by striking. Includes blackjack, nightstick, mace, tomahawk.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Explosive Weapon</span>
+                            <p class="definition-desc">Explosive/incendiary bomb, grenade, rocket, mine designed for SBI/death/property damage OR undue public alarm/terror; includes delivery devices.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Firearm</span>
+                            <p class="definition-desc">Device designed/made/adapted to expel projectile via explosion/burning, or readily convertible. Excludes pre-1899 antique/curio or replica not using rim/center fire ammo.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Handgun</span>
+                            <p class="definition-desc">A firearm designed, made, or adapted to be fired with one hand.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Location-Restricted Knife</span>
+                            <p class="definition-desc">A knife with a blade over 5.5 inches.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Knife</span>
+                            <p class="definition-desc">Bladed hand instrument capable of inflicting SBI or death by cutting or stabbing.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Machine Gun</span>
+                            <p class="definition-desc">Firearm capable of shooting >2 shots automatically by single trigger function without manual reloading.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Armor-Piercing Ammunition</span>
+                            <p class="definition-desc">Handgun ammo designed primarily to penetrate metal/body armor, used principally in pistols/revolvers.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Hoax Bomb</span>
+                            <p class="definition-desc">Device that reasonably appears to be explosive/incendiary OR causes alarm/reaction by public safety officials.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Chemical Dispensing Device</span>
+                            <p class="definition-desc">Device (other than small commercial personal protection one) designed/made/adapted to dispense substance causing adverse psychological/physiological effect.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Racetrack</span>
+                            <p class="definition-desc">Meaning per Occupations Code 2021.003(41).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Zip Gun</span>
+                            <p class="definition-desc">Device not originally a firearm, adapted to expel projectile via explosion/burning substance through a barrel.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Tire Deflation Device</span>
+                            <p class="definition-desc">Device (caltrop, spike strip) that impedes/stops vehicle by puncturing tires. Excludes certain one-way traffic control devices with clearly visible warning signs.</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">Volunteer Emergency Services Personnel</span>
+                            <p class="definition-desc">Includes volunteer firefighter, EMS volunteer, etc., providing services during emergencies. Excludes LEOs performing LE duties.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Improvised Explosive Device (IED)</span>
+                            <p class="definition-desc">Completed, operational bomb designed for SBI/death/property damage, fabricated in improvised manner w/ nonmilitary components. Excludes legally purchasable unassembled components & exploding target kits.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">First Responder</span>
+                            <p class="definition-desc">Public safety employee (fire, EMS) whose duties include rapidly responding to emergencies. Excludes volunteers & LEOs performing LE duties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unlawful Carrying (UCW) Tab -->
+            <div id="ucw" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.02" target="_blank" class="text-red-600 hover:underline">Sec. 46.02. Unlawful Carrying Weapons</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> I/K/R carries handgun AND is < 21 OR convicted of Assault-BI (22.01a1), Terroristic Threat (22.07), Deadly Conduct (22.05), or Disorderly Conduct-Firearm/Display (42.01a7/8) in past 5 yrs; AND is NOT on own premises/control OR inside/en route to own vehicle/watercraft.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (b): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-1):</strong> I/K/R carries handgun in own/controlled vehicle/watercraft AND (1) handgun is in plain view (unless person is 21+ OR LTC holder *and* handgun is carried in a holster); OR (2) person is engaged in criminal activity (> Class C traffic/boating) OR prohibited by law from possessing firearm.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (b): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a-4):</strong> I/K/R carries location-restricted knife (blade > 5.5") AND is < 18; AND is NOT on own premises/control, inside/en route to own vehicle/watercraft, OR under direct supervision of parent/guardian.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (d): <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-5):</strong> Carries a handgun and intentionally displays it in plain view of another person in a public place.
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Exception: Handgun was partially/wholly visible but was carried in a holster.</li>
+                                <li>Penalty (b): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-6):</strong> Carries a handgun while the person is intoxicated; AND is NOT on own property/property under control OR private property w/ owner's consent OR inside/en route to own/controlled vehicle/watercraft OR vehicle/watercraft w/ owner/operator consent.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (b): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-7):</strong> I/K/R carries handgun AND at time of offense, was prohibited from possessing firearm under 46.04(a) [Felon], (b) [FV Misd], or (c) [Protective Order]; AND is NOT on own premises/control OR inside/en route to own vehicle/watercraft.
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Penalty (e)(1): <strong class="font-semibold text-red-700">Felony of the Second Degree (min 5 yrs confinement)</strong> if prohibited under 46.04(a).</li>
+                                <li>Penalty (e)(2): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> if prohibited under 46.04(b) or (c).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Definitions:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>"Premises" (a-2): Includes real property and a recreational vehicle used as living quarters (temp or perm).</li>
+                                <li>"Watercraft" (a-3): Any boat, motorboat, vessel, PWC (other than seaplane) used for transport on water.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Note (a-8):</strong> Conduct under (a-7) can be prosecuted under (a-7) AND/OR other provisions of law.</li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Places Prohibited Tab -->
+            <div id="places" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.03" target="_blank" class="text-red-600 hover:underline">Sec. 46.03. Places Weapons Prohibited</a></h2>
+                     <p class="text-sm text-gray-600 mb-2">Applies to: Firearm, Location-Restricted Knife, Club, or Prohibited Weapon (46.05a)</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> I/K/R possesses or goes with listed weapon on/in:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>School/Postsecondary Institution premises/grounds/vehicle. Exceptions: written authorization; LTC holder concealed on postsecondary premises (unless 30.06/campus rules apply).</li>
+                                <li>Polling place premises (election day / early voting).</li>
+                                <li>Government court/offices premises (unless authorized).</li>
+                                <li>Racetrack premises.</li>
+                                <li>Secured area of an airport ("Secured area" definition in (c)(5)).</li>
+                                <li>Within 1,000 ft of TDCJ execution premises on execution day (if notice given). Exceptions: vehicle on road, residence/employment (i).</li>
+                                <li>Premises of business deriving 51%+ income from alcohol for on-premises consumption (TABC 51% sign). Exception: LTC holder if no effective 30.06/30.07 (p).</li>
+                                <li>Premises of high school/collegiate/pro sporting or interscholastic event (unless participant using weapon in event). Exception: LTC holder at collegiate event if no effective 30.06/30.07 (q).</li>
+                                <li>Correctional facility premises.</li>
+                                <li>Civil commitment facility premises.</li>
+                                <li>Hospital/Nursing facility premises (unless written admin authorization). Exception: LTC holder if no effective 30.06/30.07 (p).</li>
+                                <li>Mental hospital premises (unless written admin authorization).</li>
+                                <li>Amusement park ("Amusement park" definition in (c)(1)). Exception: LTC holder if no effective 30.06/30.07 (p).</li>
+                                <li>Room(s) where open meeting of governmental entity is held (if notice under Ch 551 Gov Code given).</li>
+                            </ol>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-2):</strong> LTC holder carries partially/wholly visible handgun (holstered or not) and I/K displays it in plain view on premises or public/private drive/street/walk/parking area of an institution of higher education.
+                             <ul class="list-disc list-inside ml-4"><li>Penalty (g-2): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a-3):</strong> LTC holder carries handgun (concealed or not) on campus of private/independent higher ed institution that prohibits carry (per 411.2031e Gov Code) and gives effective 30.06 notice.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (g-2): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (a-4):</strong> LTC holder intentionally carries concealed handgun in prohibited portion of public higher ed campus (per 411.2031d-1 Gov Code) where effective 30.06 notice is given.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (g-2): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Base Penalty (g):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> (unless otherwise specified).</li>
+                        <li><strong class="font-semibold">Penalty (g-1):</strong> If weapon is location-restricted knife: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>, *unless* on school premises (a)(1), then it's <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (g-2):</strong> Offenses under (a)(8) [Sporting Event], (a)(10) [Civil Commit], (a)(11) [Hospital/Nursing], (a)(13) [Amusement Park], (a-2) [Display @ Higher Ed], (a-3) [Carry @ Prohibiting Private Higher Ed], (a-4) [Concealed @ Prohibited Higher Ed Zone] are <strong class="font-semibold text-red-700">Class A Misdemeanors</strong>.</li>
+                         <li><strong class="font-semibold">Defenses:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(b) Official duties defense for armed forces/guards/officer of court (for a1-a4).</li>
+                                <li>(d) Official duties/travel defense for armed forces/guards/security officers in airport secured area (a5).</li>
+                                <li>(e) Checked firearm as baggage or federal/airport authorization in airport secured area (a5).</li>
+                                <li>(e-1) Defense for LTC holder at airport checkpoint who exits immediately after notification (a5). No arrest unless opportunity to exit given (e-2).</li>
+                                <li>(h) Official duties/travel defense for security officer at racetrack (a4).</li>
+                                <li>(m) Defense if actor received personal notice to leave and promptly departed (does not apply if sign under (o) was posted or actor already knew).</li>
+                             </ul>
+                        </li>
+                        <li><strong class="font-semibold">"Premises" (c)(4):</strong> Building/portion; excludes driveways, streets, sidewalks, parking areas.</li>
+                         <li><strong class="font-semibold">Notice Sign (o):</strong> Specifies requirements for sign giving notice under 46.03 (language, English/Spanish, 1" letters, conspicuous).</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Unlawful Possession (UPF) Tab -->
+            <div id="upf" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.04" target="_blank" class="text-red-600 hover:underline">Sec. 46.04. Unlawful Possession of Firearm</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a) - Felon:</strong> Person convicted of felony possesses firearm: (1) After conviction & before 5th anniversary of release from confinement OR supervision (whichever later); OR (2) After that 5-year period, at any location *other than the premises at which the person lives*.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (e): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a-1) - Gang Member:</strong> Member of criminal street gang (Ch 71 PC) I/K/R carries handgun in motor vehicle or watercraft.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (e): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (b) - FV Misdemeanor:</strong> Person convicted of Assault (Class A) involving family/household member possesses firearm before 5th anniversary of release from confinement OR supervision (whichever later).
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (e): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (c) - Protective Order:</strong> Person subject to qualifying protective order (Family Code, CCP) possesses firearm after receiving notice of order & before order expires. (Excludes non-LEO gov employees on duty).
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (e): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">"Felony" Definition (f/g):</strong> Broadly includes TX felonies, offenses with same elements, or offenses punishable by 1+ year in penitentiary, UNLESS at time of possession, the offense is not designated a felony in TX AND does not contain all elements of a TX felony.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.041" target="_blank" class="text-red-600 hover:underline">Sec. 46.041. Unlawful Possession of Metal or Body Armor by Felon</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Metal or Body Armor" (a):</strong> Body covering manifestly designed, made, or adapted to protect against gunfire.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person convicted of felony possesses metal or body armor after the conviction.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                 </div>
+            </div>
+            
+             <!-- Prohibited Weapons / Unlawful Transfer Tab -->
+            <div id="prohib-transfer" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.05" target="_blank" class="text-red-600 hover:underline">Sec. 46.05. Prohibited Weapons</a></h2>
+                     <p class="text-sm text-gray-600 mb-2">Note: Short-barrel firearms (repealed effective 9/1/2025), firearm silencers, switchblades, and knuckles are no longer listed as prohibited weapons under this specific statute.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> I/K possesses, manufactures, transports, repairs, or sells:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Explosive weapon OR Machine gun (UNLESS registered in NFA record / not subject to registration / curio or relic).</li>
+                                <li>Armor-piercing ammunition.</li>
+                                <li>Chemical dispensing device.</li>
+                                <li>Zip gun.</li>
+                                <li>Tire deflation device.</li>
+                                <li>Improvised explosive device (IED).</li>
+                             </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (e):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(a)(5) Tire Deflation Device: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                                <li>All others listed in (a): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                             </ul>
+                        </li>
+                        <li><strong class="font-semibold">Defenses:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(b) Defense: Incidental to official duty by armed forces/Nat Guard, gov LE agency, or correctional facility.</li>
+                                <li>(d) Affirmative Defense: Incidental to dealing w/ tire deflation device as antique/curio; OR making armor-piercing ammo / tire deflation device available solely to orgs listed in (b).</li>
+                                <li>(f) Defense: Possession of chemical dispensing device by security officer w/ TCOLE or PSB-approved training.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.06" target="_blank" class="text-red-600 hover:underline">Sec. 46.06. Unlawful Transfer of Certain Weapons</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offenses (a):</strong> Person commits offense if they:
+                            <ol class="list-decimal list-inside ml-4 space-y-1">
+                                <li>Sell/rent/lease/loan/give handgun knowing recipient intends unlawful use/act.</li>
+                                <li>I/K sell/rent/lease/give/offer firearm, club, or location-restricted knife to child < 18.</li>
+                                <li>I/K/R sell firearm or ammo to intoxicated person ("Intoxicated" def in (b)(1)).</li>
+                                <li>Knowingly sell firearm or ammo to felon before 5th anniversary of release (from confinement or supervision, whichever later).</li>
+                                <li>Sell/rent/lease/loan/give handgun knowing recipient is subject to active protective order ("Active PO" def in (b)(2), excludes temp orders before hearing).</li>
+                                <li>Knowingly purchase/rent/lease/receive as loan/gift handgun while subject to active protective order.</li>
+                                <li>While prohibited from possessing firearm (state/fed law), knowingly make material false statement on required form submitted to licensed firearms dealer.</li>
+                             </ol>
+                        </li>
+                        <li><strong class="font-semibold">Penalties (d):</strong>
+                             <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                                <li>(a)(2) Transfer to Minor: <strong class="font-semibold text-red-700">State Jail Felony</strong> IF weapon is a handgun. (Otherwise MA)</li>
+                                <li>(a)(7) False Statement on Form: <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">Affirmative Defense (c):</strong> For (a)(2 - transfer to minor), parent/legal custodian gave written permission (sale) or effective consent (other transfer).</li>
+                    </ul>
+                 </div>
+                  <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.07" target="_blank" class="text-red-600 hover:underline">Sec. 46.07. Interstate Purchase</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                        <li>Texas residents may purchase firearms, ammo, reloading components, or accessories in another state if not otherwise precluded by law (conforms to federal law).</li>
+                    </ul>
+                 </div>
+            </div>
+            
+            <!-- Other Offenses Tab -->
+            <div id="other-offenses" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.08" target="_blank" class="text-red-600 hover:underline">Sec. 46.08. Hoax Bombs</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly manufactures, sells, purchases, transports, or possesses a hoax bomb with intent to: (1) Make another believe it's an explosive/incendiary device; OR (2) Cause alarm or reaction by public safety/emergency agency official.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.09" target="_blank" class="text-red-600 hover:underline">Sec. 46.09. Components of Explosives</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowingly possesses components of an explosive weapon with the intent to combine the components into an explosive weapon for use in a criminal endeavor.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.10" target="_blank" class="text-red-600 hover:underline">Sec. 46.10. Deadly Weapon in Penal Institution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> While confined in a penal institution, intentionally, knowingly, or recklessly: (1) Carries on or about his person a deadly weapon; OR (2) Possesses or conceals a deadly weapon in the penal institution.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (b):</strong> At the time of the offense, the actor was engaged in conduct authorized by an employee of the penal institution.</li>
+                        <li><strong class="font-semibold">Prosecution Note (c):</strong> Can be prosecuted under this section AND/OR another section in Ch 46.</li>
+                        <li><strong class="font-semibold">Penalty (d):</strong> <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.13" target="_blank" class="text-red-600 hover:underline">Sec. 46.13. Making a Firearm Accessible to a Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Definitions (a):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>"Child": Person younger than 17 years of age.</li>
+                                <li>"Readily dischargeable firearm": Firearm loaded with ammunition (round in chamber not required).</li>
+                                <li>"Secure": To take steps a reasonable person would take to prevent access by child (e.g., locked container, trigger lock).</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (b):</strong> A child (< 17) gains access to a readily dischargeable firearm AND the person, with criminal negligence: (1) Failed to secure the firearm; OR (2) Left the firearm in a place to which the person knew or should have known the child would gain access.</li>
+                        <li><strong class="font-semibold">Penalties (d, e):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong> IF the child discharges the firearm and causes death or serious bodily injury to himself or another person.</li>
+                            </ul>
+                         </li>
+                         <li><strong class="font-semibold">Affirmative Defense (c):</strong> Child's access was: (1) Supervised by person >18 for hunting, sporting, other lawful purpose; (2) Lawful defense by child of people/property; (3) Gained by entering property illegally; OR (4) Occurred during actor's agricultural enterprise.</li>
+                         <li><strong class="font-semibold">Arrest Delay (f):</strong> Peace officer may not arrest actor before 7th day after offense if actor is family member AND child caused own death/SBI.</li>
+                         <li><strong class="font-semibold">Dealer Sign Requirement (g):</strong> Firearms dealers must post conspicuous warning sign about unlawful storage where children can access (specific wording provided).</li>
+                    </ul>
+                 </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.14" target="_blank" class="text-red-600 hover:underline">Sec. 46.14. Firearm Smuggling</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Offense (a):</strong> Person knowingly engages in the business of transporting or transferring a firearm that the person knows was acquired illegally (state or federal law). "Engages in business" means conduct on >1 occasion OR for profit/remuneration.</li>
+                         <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li>
+                                <li>Enhanced Offense: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> IF committed with respect to 3 or more firearms in a single criminal episode.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Exception (c):</strong> Does not apply to peace officer engaged in actual discharge of official duty.</li>
+                        <li><strong class="font-semibold">Prosecution Note (d):</strong> Can be prosecuted under this section AND/OR other applicable laws.</li>
+                    </ul>
+                 </div>
+            </div>
+
+             <!-- School Zones / Maps Tab -->
+             <div id="school-zones" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.11" target="_blank" class="text-red-600 hover:underline">Sec. 46.11. Penalty if Offense Committed Within Weapon-Free School Zone</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                         <li><strong class="font-semibold">Enhancement (a):</strong> Punishment for an offense under Ch. 46 is increased to the punishment prescribed for the next highest category of offense IF it's shown actor committed the offense in a place the actor *knew* was: (1) Within 300 feet of the premises of a school; OR (2) On premises where an official school function OR a UIL sanctioned/sponsored event is taking place.</li>
+                         <li><strong class="font-semibold">Exception (b):</strong> This enhancement does *not* apply to an offense under Sec. 46.03(a)(1) (Possession *on* school premises - which is already an F3).</li>
+                         <li><strong class="font-semibold">Definitions (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>"Premises": Meaning per HSC 481.134.</li>
+                                <li>"School": Private or public elementary or secondary school.</li>
+                            </ul>
+                         </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.12" target="_blank" class="text-red-600 hover:underline">Sec. 46.12. Maps as Evidence of Location or Area</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a)</strong> In prosecution enhanced under 46.11, a map produced by municipal/county engineer showing weapon-free zone boundaries is admissible & prima facie evidence of boundaries IF governing body adopted resolution/ordinance approving map.</li>
+                         <li><strong class="font-semibold">(b)</strong> Engineer may revise map on request.</li>
+                         <li><strong class="font-semibold">(c)</strong> Approved/revised maps must be filed with county clerk(s).</li>
+                         <li><strong class="font-semibold">(d)</strong> Prosecution not prevented from using other evidence/testimony or other admissible maps/diagrams.</li>
+                    </ul>
+                </div>
+             </div>
+
+             <!-- Exemptions Tab -->
+             <div id="exemptions" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm#46.15" target="_blank" class="text-red-600 hover:underline">Sec. 46.15. Nonapplicability</a></h2>
+                    <p class="text-xs text-gray-500 mb-2">Note: This section lists numerous exemptions. Key examples highlighted below. Check statute for full list and details.</p>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a) Sections 46.02 (UCW) & 46.03 (Places Prohibited) do NOT apply to:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Peace officers / Special investigators (carrying weapon in state, regardless of on/off duty).</li>
+                                <li>Parole officers (on duty & compliant w/ TDCJ policy).</li>
+                                <li>CSCD officers (on duty & authorized by 76.0051 Gov Code).</li>
+                                <li>Active/Retired Judicial officers (defined in 411.201 Gov Code) w/ LTC.</li>
+                                <li>Honorably retired LEOs (fed definition 18 USC 926C, w/ proficiency cert & agency ID).</li>
+                                <li>Certain prosecutors w/ LTC (AG, US Atty, DA, CA, Muni Atty).</li>
+                                <li>Certain assistant prosecutors w/ LTC.</li>
+                                <li>Designated bailiffs w/ LTC escorting judicial officer.</li>
+                                <li>Juvenile probation officers authorized by 142.006 HRC.</li>
+                                <li>Volunteer emergency services personnel w/ LTC while providing services.</li>
+                                <li>Certain retired judges/justices w/ LTC.</li>
+                                <li>District/County Clerks w/ LTC.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">(b) Sections 46.02 (UCW), 46.03(a)(14) (Gov Meeting), & 46.04(a-1) (Gang Member UCW) do NOT apply to:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Members of armed forces/state military/penal guards on duty.</li>
+                                <li>Persons traveling.</li>
+                                <li>Persons engaged in lawful hunting, fishing, other sporting activity (on premises or en route between premises & residence/vehicle/watercraft, if weapon type commonly used).</li>
+                                <li>Commissioned security officers (on duty or traveling to/from assignment, wearing uniform, weapon in plain view).</li>
+                                <li>Personal Protection Officers (PPOs) (on duty or traveling; either uniform w/ weapon visible OR non-uniform w/ weapon concealed).</li>
+                                <li>Person carrying LTC and handgun (either concealed OR in a holster).</li>
+                                <li>Alcohol permit/license holder/employee supervising premises.</li>
+                                <li>LE students in class activity (on immediate premises or en route between premises/residence, carrying weapon unloaded).</li>
+                            </ul>
+                        </li>
+                         <li><strong class="font-semibold">(d) 46.02 does not apply to:</strong> Public security officers employed by Adjutant General (Sec 437.053 Gov Code) on duty or traveling.</li>
+                         <li><strong class="font-semibold">(e) 46.02(a-4) (Minor w/ Loc-Restr Knife) does not apply to:</strong> Individual carrying knife in historical demonstration or significant ceremony.</li>
+                         <li><strong class="font-semibold">(f) 46.03(a)(6) (Execution Site) does not apply to:</strong> Armed forces/military/penal employee on official duty.</li>
+                         <li><strong class="font-semibold">(g)/(h) 46.03 (Club prohibition) does not apply to:</strong> Certified Animal Control Officers / Registered Code Enforcement Officers carrying animal bite deterrent instrument on duty/traveling.</li>
+                         <li><strong class="font-semibold">(j) 46.02 & parts of 46.03 do not apply to:</strong> Individual carrying handgun in historical reenactment per TABC rules.</li>
+                         <li><strong class="font-semibold">(k) 46.02 does not apply to:</strong> Person carrying handgun while evacuating/reentering disaster area (w/in 168 hrs of declaration, unless extended), if not prohibited from possessing.</li>
+                         <li><strong class="font-semibold">(l) 46.02 & parts of 46.03 do not apply to:</strong> Person carrying handgun on premises of emergency shelter during disaster, IF authorized by owner/operator, complies w/ rules, AND not prohibited from possessing.</li>
+                          <li><strong class="font-semibold">(m) Defense to 46.03:</strong> Actor promptly departed after receiving personal notice that carry was prohibited (does not apply if sign posted or actor knew).</li>
+                          <li><strong class="font-semibold">(p) LTC Holders & Notice:</strong> 46.03(a)(7)[51%], (a)(11)[Hosp/Nursing], (a)(13)[Amuse Park] do *not* apply if LTC holder was not given effective 30.06/30.07/411.204 notice.</li>
+                          <li><strong class="font-semibold">(q) LTC Holders & Notice:</strong> 46.03(a)(8)[Collegiate Sport] does *not* apply if LTC holder was not given effective 30.06/30.07 notice.</li>
+                          <li><strong class="font-semibold">(r)/(s) First Responders / Tactical Medical Professionals:</strong> 46.02 & 46.03 do not apply if carrying handgun (concealed/holstered), certified, on duty, and employed/supervised by entity under Ch 179 LGC (for first responders).</li>
+                    </ul>
+                 </div>
+             </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 46)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (180 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 46) ---
+            const quizData = [
+                // 46.01 Definitions
+                {
+                    question: "Under 46.01, which is listed as an example of a 'Club'?",
+                    options: ["Baseball bat", "Tire iron", "Blackjack", "Hammer"],
+                    answer: "Blackjack",
+                    explanation: "Sec. 46.01(1) defines Club and lists examples including (A) blackjack, (B) nightstick, (C) mace, (D) tomahawk."
+                },
+                {
+                    question: "An 'Explosive Weapon' (46.01) includes a bomb, grenade, rocket, or mine designed for SBI/death/damage OR for causing undue public alarm/terror by its...",
+                    options: ["Size", "Appearance", "Loud report", "Chemical properties"],
+                    answer: "Loud report",
+                    explanation: "Sec. 46.01(2) includes 'or for the principal purpose of causing such a loud report as to cause undue public alarm or terror'."
+                },
+                {
+                    question: "Which of these is explicitly EXCLUDED from the definition of 'Firearm' in 46.01?",
+                    options: ["A device readily convertible to expel a projectile", "A replica of an antique firearm manufactured before 1899 that does not use rim fire or center fire ammo", "A handgun", "A rifle"],
+                    answer: "A replica of an antique firearm manufactured before 1899 that does not use rim fire or center fire ammo",
+                    explanation: "Sec. 46.01(3)(B) excludes these specific replicas."
+                },
+                {
+                    question: "A 'Handgun' (46.01) is specifically defined as a firearm designed, made, or adapted to be fired with...",
+                    options: ["Two hands", "One hand", "From the shoulder", "Using automatic fire"],
+                    answer: "One hand",
+                    explanation: "Sec. 46.01(5) provides this definition."
+                },
+                {
+                    question: "What is the minimum blade length for a knife to be classified as a 'Location-Restricted Knife' under 46.01?",
+                    options: ["Over 3 inches", "Over 4 inches", "Over 5.5 inches", "Over 6 inches"],
+                    answer: "Over 5.5 inches",
+                    explanation: "Sec. 46.01(6) defines it as 'a knife with a blade over five and one-half inches'."
+                },
+                {
+                    question: "A 'Knife' (46.01) must be capable of inflicting SBI or death by...",
+                    options: ["Striking or throwing", "Cutting or stabbing", "Bludgeoning or striking", "Piercing or slashing"],
+                    answer: "Cutting or stabbing",
+                    explanation: "Sec. 46.01(7) specifies 'by cutting or stabbing a person with the instrument'."
+                },
+                {
+                    question: "A 'Machine Gun' (46.01) is capable of shooting how many shots automatically by a single trigger function?",
+                    options: ["One or more", "Exactly two", "More than two", "Five or more"],
+                    answer: "More than two",
+                    explanation: "Sec. 46.01(9) defines it as capable of shooting 'more than two shots automatically...'"
+                },
+                 {
+                    question: "Which type of ammunition is specifically defined under 46.01 as 'Armor-piercing ammunition'?",
+                    options: ["Rifle ammunition", "Shotgun ammunition", "Handgun ammunition", "All types of ammunition"],
+                    answer: "Handgun ammunition",
+                    explanation: "Sec. 46.01(12) specifies 'handgun ammunition' designed primarily for penetrating metal/body armor."
+                },
+                {
+                    question: "A 'Hoax Bomb' (46.01) reasonably appears to be an explosive/incendiary device OR by its design causes...",
+                    options: ["Property damage", "Serious bodily injury", "Alarm or reaction by public safety officials", "Political disruption"],
+                    answer: "Alarm or reaction by public safety officials",
+                    explanation: "Sec. 46.01(13)(B) includes causing 'alarm or reaction of any type by an official of a public safety agency or a volunteer agency organized to deal with emergencies'."
+                },
+                {
+                    question: "Which device is EXCLUDED from the definition of 'Chemical Dispensing Device' in 46.01?",
+                    options: ["Large tear gas canister", "Device adapted to spray acid", "Small chemical dispenser sold commercially for personal protection", "Device designed to disperse nerve gas"],
+                    answer: "Small chemical dispenser sold commercially for personal protection",
+                    explanation: "Sec. 46.01(14) explicitly excludes 'a small chemical dispenser sold commercially for personal protection'."
+                },
+                {
+                    question: "A 'Zip Gun' (46.01) is distinguished by the fact that it...",
+                    options: ["Was not originally a firearm", "Uses rimfire ammunition", "Has a short barrel", "Is fully automatic"],
+                    answer: "Was not originally a firearm",
+                    explanation: "Sec. 46.01(16) defines it as 'a device or combination of devices that was not originally a firearm and is adapted to expel a projectile...'"
+                },
+                {
+                    question: "A 'Tire Deflation Device' (46.01) includes a caltrop or a...",
+                    options: ["Roadblock", "Spike strip", "Speed bump", "Guard rail"],
+                    answer: "Spike strip",
+                    explanation: "Sec. 46.01(17) lists 'a caltrop or spike strip' as examples."
+                },
+                 {
+                    question: "Is a traffic control device designed to puncture tires when driven over in a specific direction, with a clearly visible warning sign nearby, considered a prohibited 'tire deflation device' under 46.01?",
+                    options: ["Yes", "No", "Only if used by police", "Only if it causes damage"],
+                    answer: "No",
+                    explanation: "Sec. 46.01(17) explicitly excludes such traffic control devices if they meet the criteria in (A) and (B)."
+                },
+                {
+                    question: "An 'Improvised Explosive Device' (IED) under 46.01 specifically excludes legally purchased unassembled components and...",
+                    options: ["Military-grade explosives", "Exploding targets used for firearms practice sold in kit form", "Fireworks", "Chemical bombs"],
+                    answer: "Exploding targets used for firearms practice sold in kit form",
+                    explanation: "Sec. 46.01(19)(B) excludes 'an exploding target that is used for firearms practice, sold in kit form, and contains the components of a binary explosive'."
+                },
+                {
+                    question: "Under 46.01, are peace officers performing law enforcement duties included in the definition of 'First Responder'?",
+                    options: ["Yes", "No", "Only if they are also certified EMTs", "Only during SWAT operations"],
+                    answer: "No",
+                    explanation: "Sec. 46.01(20)(C) explicitly excludes 'a peace officer or reserve law enforcement officer... who is performing law enforcement duties'."
+                },
+                 {
+                    question: "Does the definition of 'Volunteer Emergency Services Personnel' in 46.01 include peace officers performing law enforcement duties?",
+                    options: ["Yes", "No", "Only if the officer is volunteering off-duty", "Only reserve officers"],
+                    answer: "No",
+                    explanation: "Sec. 46.01(18) states 'The term does not include a peace officer or reserve law enforcement officer... who is performing law enforcement duties'."
+                },
+
+                // 46.02 Unlawful Carrying
+                {
+                    question: "A 20-year-old legally possesses a handgun. They carry it concealed on their person while walking down a public street. Offense under 46.02?",
+                    options: ["Yes, 46.02(a)", "No, not an offense", "Yes, 46.02(a-5)", "Yes, 46.02(a-1)"],
+                    answer: "Yes, 46.02(a)",
+                    explanation: "Sec. 46.02(a) makes it an offense for a person < 21 to carry a handgun unless on own premises or in/en route to own vehicle/watercraft."
+                },
+                {
+                    question: "A 22-year-old was convicted of Terroristic Threat (22.07) 3 years ago. They carry a handgun concealed on their person while walking down a public street. Offense under 46.02?",
+                    options: ["Yes, 46.02(a)", "No, not an offense", "Yes, 46.02(a-7)", "Yes, 46.04(a)"],
+                    answer: "Yes, 46.02(a)",
+                    explanation: "Sec. 46.02(a) prohibits carrying if convicted of listed offenses (including 22.07) within the preceding 5 years, unless on own premises/vehicle."
+                },
+                 {
+                    question: "A 25-year-old is carrying a handgun openly in a holster in their own car. Is this an offense under 46.02(a-1)?",
+                    options: ["Yes, handgun in plain view", "No, exception applies", "Yes, engaged in criminal activity", "Yes, prohibited person"],
+                    answer: "No, exception applies",
+                    explanation: "Sec. 46.02(a-1)(1) prohibits plain view carry in a vehicle UNLESS the person is 21+ OR LTC holder AND the handgun is in a holster. Both conditions (21+ and holster) are met."
+                },
+                {
+                    question: "A 20-year-old is carrying a handgun openly in a holster in their own car. Is this an offense under 46.02(a-1)?",
+                    options: ["Yes, handgun in plain view", "No, exception applies", "Only if intoxicated", "Only if previously convicted"],
+                    answer: "Yes, handgun in plain view",
+                    explanation: "Sec. 46.02(a-1)(1) prohibits plain view carry in a vehicle unless the person is 21+ or LTC holder AND holstered. The person is under 21, so the exception does not apply."
+                },
+                 {
+                    question: "A person carries a handgun in plain view (not holstered) in their car while committing Theft (Class B Misdemeanor). Offense under 46.02(a-1)?",
+                    options: ["Yes, under (a-1)(1) plain view", "Yes, under (a-1)(2)(A) criminal activity", "No, Class B is not high enough", "No, theft is not relevant"],
+                    answer: "Yes, under (a-1)(2)(A) criminal activity",
+                    explanation: "Sec. 46.02(a-1)(2)(A) prohibits carrying in a vehicle while engaged in criminal activity, other than Class C traffic/boating violations. Class B Theft qualifies."
+                },
+                {
+                    question: "A 17-year-old carries a knife with a 6-inch blade while walking home from school. Is this an offense under 46.02(a-4)?",
+                    options: ["Yes", "No, under 18 exception", "No, blade not long enough", "No, traveling exception"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.02(a-4) prohibits a person < 18 from carrying a location-restricted knife (blade > 5.5 inches) unless on own premises, in own vehicle, or supervised. None of the exceptions apply."
+                },
+                 {
+                    question: "What is the penalty for a 17-year-old carrying a location-restricted knife off their premises without supervision (46.02a-4)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 46.02(d) specifies the penalty for (a-4) is Class C Misdemeanor."
+                },
+                {
+                    question: "A person carries a handgun concealed under their shirt. They intentionally lift their shirt to display it to intimidate someone in public. Offense under 46.02(a-5)?",
+                    options: ["Yes", "No, it was concealed initially", "No, holster exception applies", "No, intimidation is not display"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.02(a-5) prohibits intentionally displaying a handgun in plain view in public. Lifting the shirt constitutes intentional display. The holster exception does not apply if it's intentionally displayed outside the holster."
+                },
+                 {
+                    question: "A person carrying a handgun legally in a holster has their shirt ride up accidentally, partially exposing the holstered handgun in public. Offense under 46.02(a-5)?",
+                    options: ["Yes, plain view", "No, exception applies", "Yes,reckless display", "Only if loaded"],
+                    answer: "No, exception applies",
+                    explanation: "Sec. 46.02(a-5) has an exception: 'handgun was partially or wholly visible but was carried in a holster'. Also, the display must be intentional."
+                },
+                {
+                    question: "A person carries a handgun while intoxicated on the public sidewalk outside their house. Offense under 46.02(a-6)?",
+                    options: ["Yes", "No, near own property", "No, intoxication not proven", "Only if handgun displayed"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.02(a-6) prohibits carrying while intoxicated unless ON own property/control (or property w/ consent) or IN/en route to vehicle (w/ consent). Public sidewalk is not covered by exceptions."
+                },
+                 {
+                    question: "A person subject to a Protective Order (prohibited under 46.04c) carries a handgun inside their own home. Offense under 46.02(a-7)?",
+                    options: ["Yes, F3", "No, own premises exception applies", "Yes, MA", "No, handgun not displayed"],
+                    answer: "No, own premises exception applies",
+                    explanation: "Sec. 46.02(a-7) requires the carrying to be NOT on own premises/control OR inside/en route to own vehicle. Carrying inside own home falls under the exception, although 46.04(c) Possession may still apply."
+                },
+                 {
+                    question: "A felon (within 5 years of release) carries a handgun in their car. What is the most serious offense committed under 46.02?",
+                    options: ["46.02(a-1) - MA", "46.02(a-7) - F2 (min 5 yrs)", "46.02(a-7) - F3", "No offense under 46.02"],
+                    answer: "46.02(a-7) - F2 (min 5 yrs)",
+                    explanation: "Sec. 46.02(a-7) prohibits carrying by a person prohibited under 46.04(a) (felon) unless on premises/en route. (a-1)(2)(B) also applies (prohibited person in vehicle), but (a-7) carries the higher penalty. The penalty under 46.02(e)(1) for violating (a-7) when prohibited under 46.04(a) is F2 w/ min 5 yrs."
+                },
+                {
+                    question: "What is the penalty for a person subject to a Protective Order carrying a handgun off-premises (46.02a-7)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.02(e)(2) sets the penalty for violating (a-7) when prohibited under 46.04(c) (Protective Order) as F3."
+                },
+                {
+                    question: "Does 'Premises' under 46.02 include a recreational vehicle (RV) being used as temporary living quarters?",
+                    options: ["Yes", "No", "Only if parked", "Only if owned by the person"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.02(a-2) explicitly includes an RV being used as living quarters (temporary or permanent) in the definition of 'premises'."
+                },
+                 {
+                    question: "What is the general penalty for Unlawful Carrying Weapons under 46.02 (absent specific enhancements/exceptions)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.02(b) states the default penalty is Class A Misdemeanor, except as provided by (d) [knife MC] or (e) [prohibited person F3/F2]."
+                },
+
+                // 46.03 Places Prohibited
+                {
+                    question: "Possessing a firearm on the premises of which location is generally a Felony of the Third Degree under 46.03?",
+                    options: ["Amusement park", "Hospital", "Polling place", "High school sporting event"],
+                    answer: "Polling place",
+                    explanation: "Sec. 46.03(g) sets the base penalty as F3. Subsections (g-1) and (g-2) list exceptions. Polling places (a)(2) fall under the base F3 penalty."
+                },
+                {
+                    question: "Possessing a firearm on the premises of which location is generally a Class A Misdemeanor under 46.03?",
+                    options: ["School", "Polling place", "Airport secured area", "Amusement park"],
+                    answer: "Amusement park",
+                    explanation: "Sec. 46.03(g-2) lists offenses under (a)(13) [Amusement park] as Class A Misdemeanors."
+                },
+                {
+                    question: "Carrying a location-restricted knife (blade > 5.5 inches) onto high school premises is what level offense under 46.03?",
+                    options: ["Class C Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.03(g-1) states that if the weapon is a location-restricted knife, the offense is MC, *except* that the offense is F3 if committed under (a)(1) [School premises]."
+                },
+                {
+                    question: "Is carrying a concealed handgun with an LTC generally prohibited on the grounds (outside the building) of a public university under 46.03(a)(1)?",
+                    options: ["Yes", "No, LTC exception applies", "Only if displayed", "Only if under 21"],
+                    answer: "No, LTC exception applies",
+                    explanation: "Sec. 46.03(a)(1)(B) provides an exception for LTC holders carrying concealed on the premises/grounds/vehicle of a postsecondary institution (unless specific rules/signs prohibit it)."
+                },
+                {
+                    question: "A person carries a firearm into the secured area of an airport. Which is a valid defense under 46.03?",
+                    options: ["They forgot it was in their bag", "They checked the firearm as baggage before entering", "They have an LTC", "They were only passing through"],
+                    answer: "They checked the firearm as baggage before entering",
+                    explanation: "Sec. 46.03(e)(1) provides a defense if the actor 'checked all firearms as baggage... before entering a secured area'."
+                },
+                {
+                    question: "An LTC holder is at an airport screening checkpoint and is notified they possess their handgun. What must they do to potentially use the defense under 46.03(e-1)?",
+                    options: ["Surrender the handgun", "Show their LTC", "Exit the screening checkpoint immediately", "Secure the handgun in their vehicle"],
+                    answer: "Exit the screening checkpoint immediately",
+                    explanation: "Sec. 46.03(e-1)(2) requires the actor to exit 'immediately upon completion of the required screening processes and notification'."
+                },
+                 {
+                    question: "Carrying a firearm within 1,000 feet of a TDCJ execution site on execution day is an offense under 46.03 only if...",
+                    options: ["The firearm is loaded", "The person has prior convictions", "The person received notice that carry was prohibited", "The person is carrying concealed"],
+                    answer: "The person received notice that carry was prohibited",
+                    explanation: "Sec. 46.03(a)(6) requires that the person 'received notice' that going within 1,000 feet with the weapon was prohibited."
+                },
+                 {
+                    question: "Which weapon type is subject to prohibition under 46.03 (Places Weapons Prohibited)?",
+                    options: ["Switchblade knife", "Club", "Short-barrel firearm", "Knuckles"],
+                    answer: "Club",
+                    explanation: "Sec. 46.03(a) lists firearm, location-restricted knife, club, or prohibited weapon (46.05a). Switchblades, SBFs, and knuckles are not currently listed in 46.03 or 46.05a."
+                },
+                {
+                    question: "A person possesses a location-restricted knife at a racetrack. What level offense is this under 46.03?",
+                    options: ["Class C Misdemeanor", "Class A Misdemeanor", "Felony of the Third Degree", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 46.03(g-1) states that if the weapon is a location-restricted knife, the offense is MC, unless on school premises."
+                },
+                {
+                    question: "Does the definition of 'Premises' for 46.03 include parking lots or sidewalks?",
+                    options: ["Yes", "No", "Only if posted", "Only for schools"],
+                    answer: "No",
+                    explanation: "Sec. 46.03(c)(4) defines 'Premises' as a building or portion, explicitly stating 'The term does not include any public or private driveway, street, sidewalk or walkway, parking lot, parking garage, or other parking area'."
+                },
+                 {
+                    question: "An LTC holder carries a concealed handgun into a hospital that has posted a valid 30.06 sign. Offense under 46.03?",
+                    options: ["Yes, 46.03(a)(11)", "No, LTC holder exception applies", "Yes, Trespass by License Holder (30.06)", "No, hospitals cannot prohibit LTC"],
+                    answer: "Yes, Trespass by License Holder (30.06)",
+                    explanation: "While 46.03(a)(11) generally prohibits firearms in hospitals, 46.15(p) exempts LTC holders *if they were not given effective notice*. Since a valid 30.06 sign constitutes effective notice, the violation falls under PC 30.06, not 46.03."
+                },
+                 {
+                    question: "An LTC holder carries a concealed handgun into a bar posted with the TABC 51% sign. Offense under 46.03?",
+                    options: ["Yes, 46.03(a)(7)", "No, LTC holder exception applies", "Yes, Trespass by License Holder (30.06)", "No, 51% sign is not effective notice"],
+                    answer: "Yes, 46.03(a)(7)",
+                    explanation: "Sec. 46.03(a)(7) prohibits firearms on the premises of a 51% establishment. Unlike hospitals or amusement parks under 46.15(p), there is NO exception under 46.15 for LTC holders carrying in 51% establishments, even without 30.06/30.07 notice. The 51% sign itself provides the notice for this specific location."
+                },
+                {
+                    question: "A person carries a firearm into a government courtroom. Is this generally prohibited under 46.03?",
+                    options: ["Yes", "No", "Only if court is in session", "Only if judge prohibits it"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.03(a)(3) prohibits weapons 'on the premises of any government court or offices utilized by the court, unless pursuant to written regulations or written authorization'."
+                },
+                {
+                    question: "A person is asked to leave a prohibited location (e.g., hospital) because they are carrying a firearm, and they promptly depart. Is this a defense under 46.03?",
+                    options: ["Yes, under 46.03(m)", "No, departure is irrelevant", "Only if they have an LTC", "Only if the notice was verbal"],
+                    answer: "Yes, under 46.03(m)",
+                    explanation: "Sec. 46.03(m) provides a defense if the actor received personal notice and 'promptly departed'."
+                },
+                {
+                    question: "Does the 'prompt departure' defense under 46.03(m) apply if a proper 46.03(o) sign was posted at the entrance?",
+                    options: ["Yes", "No", "Only if the actor didn't see the sign", "Only if the actor has an LTC"],
+                    answer: "No",
+                    explanation: "Sec. 46.03(n)(1) states the defense does not apply if a sign described by Subsection (o) was posted prominently."
+                },
+
+                // 46.04 Unlawful Possession
+                {
+                    question: "A person was convicted of felony burglary 6 years ago and released from parole 5 years and 1 day ago. Can they possess a firearm inside their home under 46.04?",
+                    options: ["Yes", "No, still within 5 years of release", "No, lifetime ban", "Only if registered"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.04(a)(1) prohibits possession before the 5th anniversary of release from confinement OR supervision, whichever is later. After 5 years, (a)(2) allows possession *only* at the premises where the person lives."
+                },
+                {
+                    question: "Same person as above (felony > 5 yrs ago). Can they possess a firearm in their car under 46.04?",
+                    options: ["Yes", "No", "Only if unloaded", "Only if they have an LTC"],
+                    answer: "No",
+                    explanation: "Sec. 46.04(a)(2) prohibits possession after the 5-year period 'at any location other than the premises at which the person lives'. A car is not their premises."
+                },
+                {
+                    question: "A person was convicted of Assault causing Bodily Injury (Class A Misd) against their spouse 3 years ago and completed probation 2 years ago. Can they possess a firearm under 46.04?",
+                    options: ["Yes", "No", "Only at home", "Only long guns"],
+                    answer: "No",
+                    explanation: "Sec. 46.04(b) prohibits possession before the 5th anniversary of release from confinement OR supervision (whichever is later) following conviction for Assault FV (Class A)."
+                },
+                {
+                    question: "A person is subject to a final Protective Order under the Family Code. They receive notice of the order. Can they possess a firearm under 46.04?",
+                    options: ["Yes", "No", "Only hunting rifles", "Only if stored securely"],
+                    answer: "No",
+                    explanation: "Sec. 46.04(c) prohibits possession after receiving notice and before expiration of the order."
+                },
+                {
+                    question: "What is the penalty for Unlawful Possession of Firearm by Felon (46.04a)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.04(e) states an offense under (a) is F3."
+                },
+                {
+                    question: "What is the penalty for Unlawful Possession of Firearm due to a Protective Order (46.04c)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.04(e) states an offense under (c) is Class A Misdemeanor."
+                },
+                 {
+                    question: "A member of a criminal street gang carries a handgun in their car. What offense is committed under 46.04?",
+                    options: ["No offense", "Class A Misdemeanor (46.04a-1)", "Felony of the Third Degree (46.04a)", "State Jail Felony"],
+                    answer: "Class A Misdemeanor (46.04a-1)",
+                    explanation: "Sec. 46.04(a-1) specifically makes it a Class A Misdemeanor for a gang member to carry a handgun in a vehicle/watercraft."
+                },
+
+                // 46.041 Body Armor
+                {
+                    question: "A person convicted of felony robbery possesses body armor. Offense?",
+                    options: ["Yes, Unlawful Possession of Body Armor (46.041)", "No, only applies to violent felonies", "No, body armor is legal", "Only if worn during another crime"],
+                    answer: "Yes, Unlawful Possession of Body Armor (46.041)",
+                    explanation: "Sec. 46.041(b) prohibits possession of metal or body armor by anyone convicted of *any* felony."
+                },
+                {
+                    question: "What is the penalty for Unlawful Possession of Body Armor by Felon (46.041)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.041(c) sets the penalty as F3."
+                },
+
+                // 46.05 Prohibited Weapons
+                {
+                    question: "Possessing which of these is generally a Felony of the Third Degree under 46.05?",
+                    options: ["Tire deflation device", "Zip gun", "Switchblade knife", "Knuckles"],
+                    answer: "Zip gun",
+                    explanation: "Sec. 46.05(a)(4) lists zip guns. Sec 46.05(e) makes this an F3. Tire deflation devices are SJF. Switchblades and knuckles are no longer listed."
+                },
+                {
+                    question: "Possessing an unregistered machine gun is an offense under 46.05 unless it is classified as a...",
+                    options: ["Hunting rifle", "Curio or relic", "Antique firearm", "Sporting weapon"],
+                    answer: "Curio or relic",
+                    explanation: "Sec. 46.05(a)(1) provides exceptions if registered in NFRTR, not subject to registration, or classified as a curio or relic."
+                },
+                {
+                    question: "What is the penalty for possessing a tire deflation device under 46.05?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 46.05(e) specifies an offense under (a)(5) [Tire deflation device] is a State Jail Felony."
+                },
+                {
+                    question: "Is it a defense to prosecution under 46.05 (Prohibited Weapons) that the actor's conduct was incidental to official duty by a governmental law enforcement agency?",
+                    options: ["Yes", "No", "Only for machine guns", "Only for chemical devices"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.05(b) provides this defense for armed forces, LE agencies, and correctional facilities."
+                },
+                {
+                    question: "Which is an *affirmative* defense to prosecution under 46.05?",
+                    options: ["Possession for self-defense", "Incidental dealing with armor-piercing ammo solely to make it available to law enforcement", "Weapon was unloaded", "Weapon was kept in a locked container"],
+                    answer: "Incidental dealing with armor-piercing ammo solely to make it available to law enforcement",
+                    explanation: "Sec. 46.05(d)(2) lists this as an affirmative defense."
+                },
+                {
+                    question: "A security officer possesses a chemical dispensing device. Under what condition is this a defense under 46.05(f)?",
+                    options: ["If the device is small", "If the officer has received TCOLE or PSB-approved training", "If the officer is on duty", "If the officer has supervisor approval"],
+                    answer: "If the officer has received TCOLE or PSB-approved training",
+                    explanation: "Sec. 46.05(f) provides this defense if the security officer has received training from a program provided by TCOLE or approved by the Private Security Board."
+                },
+                 {
+                    question: "Which item is listed as a prohibited weapon under 46.05(a)?",
+                    options: ["Short-barrel firearm", "Firearm silencer", "Improvised explosive device (IED)", "Switchblade knife"],
+                    answer: "Improvised explosive device (IED)",
+                    explanation: "Sec. 46.05(a)(6) includes IEDs. Short-barrel firearms (repealed 2025), silencers (repealed 2021), and switchblades (repealed 2013/2017) are no longer listed."
+                },
+
+                // 46.06 Unlawful Transfer
+                {
+                    question: "A person sells a handgun to someone they know intends to use it in a robbery. Offense?",
+                    options: ["Yes, 46.06(a)(1)", "No, buyer's intent isn't seller's fault", "Yes, only if robbery occurs", "No, sale was legal"],
+                    answer: "Yes, 46.06(a)(1)",
+                    explanation: "Sec. 46.06(a)(1) prohibits selling/loaning/giving a handgun knowing the recipient intends unlawful use or commission of an unlawful act."
+                },
+                {
+                    question: "A person intentionally sells a rifle to a 17-year-old. What is the penalty under 46.06?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No offense if parent consents"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.06(a)(2) prohibits selling a firearm to a child < 18. The base penalty under (d) is MA. It's only enhanced to SJF if the weapon is a handgun."
+                },
+                {
+                    question: "A person intentionally sells a *handgun* to a 17-year-old. What is the penalty under 46.06?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 46.06(d)(1) enhances the penalty for violating (a)(2) [transfer to minor] to SJF if the weapon is a handgun."
+                },
+                {
+                    question: "Is parental *verbal* consent an affirmative defense to selling a firearm to a minor under 46.06?",
+                    options: ["Yes", "No", "Only if witnessed", "Only for long guns"],
+                    answer: "No",
+                    explanation: "Sec. 46.06(c) requires *written* permission for a sale, or effective consent (which can sometimes be verbal, but typically for non-sales) for other transfers."
+                },
+                {
+                    question: "Selling a firearm to a person known to be intoxicated is what level offense under 46.06?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.06(a)(3) prohibits this. The base penalty under (d) is Class A Misdemeanor."
+                },
+                 {
+                    question: "Selling a firearm to a person known to be a felon released from prison 4 years ago is what level offense under 46.06?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "No offense, past 3 years"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.06(a)(4) prohibits selling to a felon before the 5th anniversary of release. The base penalty under (d) is Class A Misdemeanor."
+                },
+                {
+                    question: "A person knowingly purchases a handgun while subject to an active final Protective Order. Offense?",
+                    options: ["Yes, 46.06(a)(6)", "No, only seller is liable", "Yes, only if used unlawfully", "No, unless felon"],
+                    answer: "Yes, 46.06(a)(6)",
+                    explanation: "Sec. 46.06(a)(6) prohibits knowingly purchasing/receiving a handgun while subject to an active PO."
+                },
+                {
+                    question: "A person prohibited from possessing firearms knowingly lies on the federal Form 4473 at a licensed dealer. What is the penalty under 46.06?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Federal offense only"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 46.06(a)(7) prohibits this conduct, and (d)(2) makes it a State Jail Felony."
+                },
+                {
+                    question: "Does the definition of 'Active protective order' in 46.06 include a temporary protective order issued before a hearing?",
+                    options: ["Yes", "No", "Only if violence occurred", "Only if children involved"],
+                    answer: "No",
+                    explanation: "Sec. 46.06(b)(2) explicitly states 'The term does not include a temporary protective order issued before the court holds a hearing on the matter'."
+                },
+
+                // 46.07 Interstate Purchase
+                {
+                    question: "Under Sec. 46.07, can a Texas resident legally purchase a handgun in Oklahoma, assuming they are not otherwise prohibited?",
+                    options: ["Yes", "No, only long guns", "No, only in Texas", "Only if they have an FFL"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.07 allows residents to purchase firearms, ammunition, etc., in another state if not otherwise precluded by law, conforming to federal law (which allows handgun purchases from FFLs in contiguous states)."
+                },
+
+                // 46.08 Hoax Bombs
+                {
+                    question: "Possessing a hoax bomb is an offense under 46.08 only if done with specific intent to...",
+                    options: ["Sell it", "Transport it across state lines", "Make another believe it's real OR cause alarm to officials", "Use it in a prank"],
+                    answer: "Make another believe it's real OR cause alarm to officials",
+                    explanation: "Sec. 46.08(a) requires intent to use it to (1) make another believe it's an explosive/incendiary device OR (2) cause alarm/reaction by public safety officials."
+                },
+                {
+                    question: "What is the penalty for Hoax Bomb (46.08)?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 46.08(b) sets the penalty as Class A Misdemeanor."
+                },
+
+                // 46.09 Components of Explosives
+                {
+                    question: "Possessing components of an explosive weapon under 46.09 requires intent to...",
+                    options: ["Sell the components", "Combine them into an explosive weapon for use in a criminal endeavor", "Use them for fireworks", "Store them safely"],
+                    answer: "Combine them into an explosive weapon for use in a criminal endeavor",
+                    explanation: "Sec. 46.09(a) requires 'intent to combine the components into an explosive weapon for use in a criminal endeavor'."
+                },
+                {
+                    question: "What is the penalty for Components of Explosives (46.09)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.09(b) sets the penalty as F3."
+                },
+
+                // 46.10 DW in Penal Institution
+                {
+                    question: "An inmate possesses a sharpened piece of metal capable of causing death in a prison. Offense?",
+                    options: ["Yes, 46.10", "No, not a firearm", "Only if used", "Only if found during search"],
+                    answer: "Yes, 46.10",
+                    explanation: "Sec. 46.10(a)(2) prohibits possessing or concealing a deadly weapon while confined. A sharpened metal piece likely qualifies as a deadly weapon based on its manner of use or intended use."
+                },
+                {
+                    question: "What is the penalty for Deadly Weapon in Penal Institution (46.10)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.10(d) sets the penalty as F3."
+                },
+                {
+                    question: "Is it an affirmative defense to 46.10 (DW in Penal Institution) that the inmate's possession was authorized by a correctional officer?",
+                    options: ["Yes", "No", "Only if in writing", "Only for guards"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.10(b) provides an affirmative defense if the conduct was authorized by an employee of the institution."
+                },
+
+                // 46.11 School Zone Enhancement
+                {
+                    question: "The penalty for a Ch. 46 offense is increased to the next highest category under 46.11 if the actor knew it occurred within how many feet of a school premises?",
+                    options: ["100 feet", "300 feet", "500 feet", "1,000 feet"],
+                    answer: "300 feet",
+                    explanation: "Sec. 46.11(a)(1) specifies 'within 300 feet of the premises of a school'."
+                },
+                {
+                    question: "Does the school zone enhancement under 46.11 apply if the underlying offense was 46.03(a)(1) - possessing a weapon *on* school premises?",
+                    options: ["Yes", "No", "Only if weapon discharged", "Only for firearms"],
+                    answer: "No",
+                    explanation: "Sec. 46.11(b) explicitly states 'This section does not apply to an offense under Section 46.03(a)(1)'."
+                },
+                {
+                    question: "A person commits Unlawful Possession of Body Armor by Felon (46.041 - F3) while standing 200 feet from an elementary school, knowing their location. What is the enhanced penalty under 46.11?",
+                    options: ["Felony of the Third Degree (no change)", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 46.11(a) increases the punishment to the 'next highest category'. The next highest category from F3 is F2."
+                },
+                 {
+                    question: "Does the school zone enhancement (46.11) apply to offenses committed on premises where a University Interscholastic League (UIL) event is taking place?",
+                    options: ["Yes", "No", "Only for high school events", "Only for championship events"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.11(a)(2)(B) includes premises where 'an event sponsored or sanctioned by the University Interscholastic League is taking place'."
+                },
+
+                // 46.12 Maps
+                {
+                    question: "Under 46.12, can a map approved by a city council serve as prima facie evidence of weapon-free zone boundaries?",
+                    options: ["Yes", "No", "Only if certified by DPS", "Only if created by state engineer"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.12(a) allows maps approved by the governing body (e.g., city council) via resolution/ordinance to be admissible and serve as prima facie evidence."
+                },
+
+                // 46.13 Accessible to Child
+                {
+                    question: "What is the age threshold for a 'Child' under 46.13 (Making Firearm Accessible)?",
+                    options: ["Younger than 14", "Younger than 15", "Younger than 17", "Younger than 18"],
+                    answer: "Younger than 17",
+                    explanation: "Sec. 46.13(a)(1) defines 'Child' as 'a person younger than 17 years of age'."
+                },
+                {
+                    question: "A person leaves a loaded handgun unsecured on a table. Their 10-year-old child finds it. What mental state must the person have regarding failing to secure or leaving the gun accessible for an offense under 46.13?",
+                    options: ["Intentional", "Knowing", "Reckless", "Criminal Negligence"],
+                    answer: "Criminal Negligence",
+                    explanation: "Sec. 46.13(b) requires the person act 'with criminal negligence' in failing to secure or leaving the firearm accessible."
+                },
+                {
+                    question: "What is the base penalty for Making a Firearm Accessible to a Child (46.13)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense if accidental"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 46.13(d) sets the base penalty as Class C Misdemeanor."
+                },
+                {
+                    question: "The penalty for Making a Firearm Accessible to a Child (46.13) is enhanced to Class A Misdemeanor if the child...",
+                    options: ["Points the firearm at someone", "Takes the firearm off the premises", "Discharges the firearm causing death or SBI", "Sells the firearm"],
+                    answer: "Discharges the firearm causing death or SBI",
+                    explanation: "Sec. 46.13(e) enhances the penalty to Class A if the child discharges the firearm causing death or SBI."
+                },
+                {
+                    question: "Which scenario constitutes an affirmative defense under 46.13 (Making Firearm Accessible)?",
+                    options: ["The child found the key to the gun safe", "The child accessed the gun while supervised by an 18-year-old for hunting", "The child was only playing with the unloaded gun", "The parent told the child not to touch the gun"],
+                    answer: "The child accessed the gun while supervised by an 18-year-old for hunting",
+                    explanation: "Sec. 46.13(c)(1) provides an affirmative defense if access was supervised by someone >18 for hunting, sporting, or other lawful purposes."
+                },
+                {
+                    question: "Under 46.13(f), if a child causes their own death by accessing a family member's unsecured firearm, when can the family member be arrested?",
+                    options: ["Immediately", "After 24 hours", "Not before the 7th day after the offense", "Only after indictment"],
+                    answer: "Not before the 7th day after the offense",
+                    explanation: "Sec. 46.13(f) prohibits arrest before the 7th day under these specific circumstances."
+                },
+                {
+                    question: "A 'Readily dischargeable firearm' under 46.13 means a firearm loaded with ammunition. Does it matter if a round is in the chamber?",
+                    options: ["Yes, round must be chambered", "No, only requires ammo to be loaded", "Yes, safety must be off", "No, even unloaded is included"],
+                    answer: "No, only requires ammo to be loaded",
+                    explanation: "Sec. 46.13(a)(2) defines it as 'loaded with ammunition, whether or not a round is in the chamber'."
+                },
+
+                // 46.14 Firearm Smuggling
+                {
+                    question: "Firearm Smuggling (46.14) involves knowingly engaging in the *business* of transporting/transferring firearms known to be illegally acquired. What constitutes 'business'?",
+                    options: ["One transfer for personal use", "Transporting 5+ firearms", "Conduct on more than one occasion OR for profit/remuneration", "Transfer across state lines"],
+                    answer: "Conduct on more than one occasion OR for profit/remuneration",
+                    explanation: "Sec. 46.14(a) defines 'engages in the business' as conduct occurring (1) on more than one occasion; OR (2) for profit or any other form of remuneration."
+                },
+                {
+                    question: "What is the base penalty for Firearm Smuggling (46.14)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 46.14(b) sets the base penalty as F3."
+                },
+                {
+                    question: "Firearm Smuggling (46.14) is enhanced to a Felony of the Second Degree if committed with respect to how many firearms in a single episode?",
+                    options: ["Two or more", "Three or more", "Five or more", "Ten or more"],
+                    answer: "Three or more",
+                    explanation: "Sec. 46.14(b) enhances to F2 if 'committed with respect to three or more firearms in a single criminal episode'."
+                },
+
+                // 46.15 Nonapplicability / Exemptions
+                {
+                    question: "Does 46.02 (UCW) apply to an off-duty peace officer carrying a handgun?",
+                    options: ["Yes", "No", "Only if in uniform", "Only if authorized by chief"],
+                    answer: "No",
+                    explanation: "Sec. 46.15(a)(1) exempts peace officers from 46.02 and 46.03, 'regardless of whether the peace officer... is engaged in the actual discharge of the officer's... duties'."
+                },
+                 {
+                    question: "Does 46.02 (UCW) generally apply to a person lawfully hunting on the premises where hunting is conducted?",
+                    options: ["Yes", "No", "Only applies to handguns", "Only applies if near a road"],
+                    answer: "No",
+                    explanation: "Sec. 46.15(b)(3) exempts persons engaging in lawful hunting/fishing/sporting activity on the immediate premises or en route, if the weapon is commonly used in the activity."
+                },
+                 {
+                    question: "Does 46.02 (UCW) apply to a person carrying a handgun under the authority of an LTC, provided it's concealed or in a holster?",
+                    options: ["Yes", "No", "Only applies if intoxicated", "Only applies if under 21"],
+                    answer: "No",
+                    explanation: "Sec. 46.15(b)(6) exempts a person carrying an LTC and a handgun concealed or in a holster from 46.02, 46.03(a)(14), and 46.04(a-1)."
+                },
+                 {
+                    question: "A person is traveling interstate by car. Does 46.02 (UCW) apply to them carrying a handgun in the vehicle?",
+                    options: ["Yes", "No, traveling exemption applies", "Only if handgun is unloaded", "Only if handgun is locked"],
+                    answer: "No, traveling exemption applies",
+                    explanation: "Sec. 46.15(b)(2) exempts persons who are 'traveling' from 46.02, 46.03(a)(14), and 46.04(a-1)."
+                },
+                 {
+                    question: "An honorably retired peace officer holds a proficiency certificate and proper ID. Are they exempt from 46.02 (UCW) and 46.03 (Places Prohibited)?",
+                    options: ["Yes", "No", "Only exempt from 46.02", "Only exempt from 46.03"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.15(a)(5) exempts qualified honorably retired officers meeting the criteria from both 46.02 and 46.03."
+                },
+                 {
+                    question: "A licensed Personal Protection Officer (PPO) is working plain-clothes and carrying concealed. Are they generally exempt from 46.02 (UCW)?",
+                    options: ["Yes", "No", "Only if weapon is visible", "Only if client is present"],
+                    answer: "Yes",
+                    explanation: "Sec. 46.15(b)(5)(B)(ii) exempts PPOs on duty or traveling who are *not* in uniform and carrying concealed."
+                },
+                 {
+                    question: "During a declared state of disaster, a person evacuates carrying a handgun. How long does the exemption under 46.15(k) typically last?",
+                    options: ["24 hours", "72 hours", "168 hours (7 days)", "Duration of disaster"],
+                    answer: "168 hours (7 days)",
+                    explanation: "Sec. 46.15(k)(2) provides the exemption for not more than 168 hours, unless extended by the governor."
+                },
+                {
+                    question: "Can a person carry a handgun in an emergency shelter during a disaster under 46.15(l) even if the shelter operator prohibits it?",
+                    options: ["Yes, disaster exemption overrides", "No, authorization is required", "Only if concealed", "Only if unloaded"],
+                    answer: "No, authorization is required",
+                    explanation: "Sec. 46.15(l)(2) requires authorization from the owner/controller/operator, and (l)(3) requires compliance with their rules."
+                },
+                {
+                    question: "Which sections explicitly do NOT apply to a properly certified First Responder carrying a handgun while on duty under 46.15(r)?",
+                    options: ["46.02 and 46.03", "Only 46.02", "Only 46.03", "46.04 and 46.05"],
+                    answer: "46.02 and 46.03",
+                    explanation: "Sec. 46.15(r) states 'Sections 46.02 and 46.03 do not apply...' to qualifying first responders."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Update quiz description with the current number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                 if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                 }
+
+                // Shuffle the quiz data array randomly
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear existing questions
+                
+                // Create HTML for each question
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Keep track of the original index before shuffling to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Build options HTML, ensuring values are properly escaped
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                         optionsHtml += `<label class="block"><input type="radio" name="q${index}" value="${escapedOptionValue}" data-original-index="${originalIndex}" class="mr-2">${escapedOptionText}</label>`;
+                    });
+                    
+                    // Escape question text
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML = `
+                        <p class="font-semibold mb-2">${index + 1}. ${escapedQuestion}</p>
+                        <div class="space-y-2">${optionsHtml}</div>
+                        <div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>
+                    `;
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Load the quiz initially
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector(`input[name="q${index}"]:checked`);
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll(`input[name="q${index}"]`);
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered'); // Reset feedback classes
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex; // Get original index
+                        const q = quizData[originalIndex]; // Get the correct question data
+                        
+                        // Escape answer and explanation for safe HTML insertion
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = `<strong>Correct!</strong> ${escapedExplanation}`;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = `<strong>Incorrect.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find original question index even if unanswered to show correct answer
+                         const firstRadio = questionDiv.querySelector(`input[name="q${index}"]`);
+                         if (firstRadio) {
+                             const originalIndex = firstRadio.dataset.originalIndex;
+                             const q = quizData[originalIndex];
+                             const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                             feedback.innerHTML = `<strong>Unanswered.</strong> The correct answer is "${escapedCorrectAnswerText}". ${escapedExplanation}`;
+                         } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.'; // Fallback
+                         }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden'); // Show feedback
+                    
+                    // Disable radio buttons after checking
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Display final score and percentage
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = `Your Score: ${score} / ${totalQuestions}`;
+                quizPercentageEl.textContent = `Percentage: ${percentage}%`;
+                
+                quizResultsDiv.classList.remove('hidden'); // Show results div
+                checkAnswersBtn.classList.add('hidden'); // Hide submit button
+                retakeQuizBtn.classList.remove('hidden'); // Show retake button
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden'); // Hide results
+                retakeQuizBtn.classList.add('hidden'); // Hide retake button
+                checkAnswersBtn.classList.remove('hidden'); // Show submit button
+                loadQuiz(); // Reload the quiz (questions will be reshuffled)
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 46 - Weapons", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.46.htm" },
+                 { name: "Gov Code Ch. 411, Subch H - LTC", url: "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.411.htm#H" },
+                 { name: "PC 30.06 - Trespass by LTC (Concealed)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.06"},
+                 { name: "PC 30.07 - Trespass by LTC (Open Carry)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.30.htm#30.07"},
+                 { name: "Federal Law - 18 USC 926C (Retired LEO Carry)", url: "https://uscode.house.gov/view.xhtml?req=(title:18%20section:926C%20edition:prelim)"}
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name)); // Sort alphabetically
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                // Escape resource name for safe HTML insertion
+                const escapedName = res.name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                link.innerHTML = `<i class="fas fa-external-link-alt mr-2"></i>${escapedName}`;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 43 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-eye-slash mr-2"></i>Ch. 43: Public Indecency
+            </h1>
+            <a href="https://theaugdev.github.io/TCOLE/" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="definitions-a" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (A) (43.01)
+                </button>
+                <button data-tab="prostitution-offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-hand-holding-dollar mr-2"></i> Prostitution Offenses (A)
+                </button>
+                <button data-tab="definitions-b" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book-open mr-2"></i> Definitions (B) (43.21)
+                </button>
+                <button data-tab="obscenity-offenses" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-theater-masks mr-2"></i> Obscenity Offenses (B)
+                </button>
+                <button data-tab="offenses-minors" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-child mr-2"></i> Offenses re Minors (B)
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Definitions (Prostitution) Tab -->
+            <div id="definitions-a" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Subchapter A: Key Definitions (Sec. 43.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Access Software Provider</span>
+                            <p class="definition-desc">Provider of software or tools that filter, screen, transmit, receive, search, or otherwise manage content.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Deviate Sexual Intercourse</span>
+                            <p class="definition-desc">Any contact between the genitals of one person and the mouth or anus of another person.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Fee</span>
+                            <p class="definition-desc">Payment or offer of payment in the form of money, goods, services, or other benefit.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Information Content Provider</span>
+                            <p class="definition-desc">Any person or entity wholly or partly responsible for the creation or development of information provided through an interactive computer service.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Interactive Computer Service</span>
+                            <p class="definition-desc">Any service, system, or provider that enables computer access by multiple users to a server (e.g., provides Internet access).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Internet</span>
+                            <p class="definition-desc">The international computer network of federal and nonfederal interoperable packet switched data networks.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Premises</span>
+                            <p class="definition-desc">Has the meaning assigned by Sec. 481.134, Health and Safety Code.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Prostitution</span>
+                            <p class="definition-desc">The offense defined in Sec. 43.02 (offering/agreeing to *receive* a fee for sexual conduct).</p>
+                        </div>
+                         <div class="definition-item">
+                            <span class="definition-term">School</span>
+                            <p class="definition-desc">A public or private primary or secondary school.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual Contact</span>
+                            <p class="definition-desc">Any touching of the anus, breast, or any part of the genitals of another person with intent to arouse or gratify the sexual desire of any person.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual Conduct</span>
+                            <p class="definition-desc">Includes deviate sexual intercourse, sexual contact, and sexual intercourse.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Sexual Intercourse</span>
+                            <p class="definition-desc">Any penetration of the female sex organ by the male sex organ.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Solicitation of Prostitution</span>
+                            <p class="definition-desc">The offense defined in Sec. 43.021 (offering/agreeing to *pay* a fee for sexual conduct).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prostitution Offenses Tab -->
+            <div id="prostitution-offenses" class="tab-content space-y-6">
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.02" target="_blank" class="text-red-600 hover:underline">Sec. 43.02. Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person knowingly <strong>offers or agrees to receive a fee</strong> from another to engage in sexual conduct.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class B Misdemeanor</strong></li>
+                                <li>1-2 Previous Convictions: <strong class="font-semibold text-red-700">Class A Misdemeanor</strong></li>
+                                <li>3+ Previous Convictions: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Defense (d):</strong> It is a defense if actor was a victim of Trafficking (20A.02) or Compelling Prostitution (43.05).</li>
+                        <li><strong class="font-semibold">Enhancement Note (e):</strong> Deferred adjudication counts as a previous conviction for enhancement.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.021" target="_blank" class="text-red-600 hover:underline">Sec. 43.021. Solicitation of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person knowingly <strong>offers or agrees to pay a fee</strong> to another for sexual conduct.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                                <li>1+ Previous Conviction: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>Person solicited is < 18 (or represented/believed to be): <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Enhancement (b-1):</strong> Punishment increased to next highest category if offense occurs on or within 1,000 feet of school premises or school/UIL event.</li>
+                        <li><strong class="font-semibold">Enhancement Note (c):</strong> Deferred adjudication counts as a previous conviction for enhancement.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.03" target="_blank" class="text-red-600 hover:underline">Sec. 43.03. Promotion of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person (acting *other than* as prostitute receiving own fees) knowingly: (1) <strong>Receives money/property</strong> per agreement to participate in prostitution proceeds; OR (2) <strong>Solicits another</strong> to engage in sexual conduct with another for compensation.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>1+ Previous Conviction: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                                <li>Involves person < 18: <strong class="font-semibold text-red-700">Felony of the First Degree</strong> (knowledge of age not required)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.031" target="_blank" class="text-red-600 hover:underline">Sec. 43.031. Online Promotion of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person owns, manages, or operates an <strong>Interactive Computer Service (ICS)</strong> or <strong>Information Content Provider (ICP)</strong> with intent to promote prostitution.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>1+ Previous Conviction (this or 43.041) OR Involves person < 18: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.04" target="_blank" class="text-red-600 hover:underline">Sec. 43.04. Aggravated Promotion of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person knowingly owns, invests in, finances, controls, supervises, or manages a prostitution enterprise that uses <strong>two or more</strong> prostitutes.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                    </ul>
+                </div>
+
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.041" target="_blank" class="text-red-600 hover:underline">Sec. 43.041. Aggravated Online Promotion of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person (as ICS/ICP operator) with intent to promote prostitution of <strong>five or more</strong> persons.</li>
+                        <li><strong class="font-semibold">Penalties (b):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                                <li>1+ Previous Conviction OR Involves <strong>two or more</strong> persons < 18: <strong class="font-semibold text-red-700">Felony of the First Degree</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.05" target="_blank" class="text-red-600 hover:underline">Sec. 43.05. Compelling Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person knowingly: (1) Causes another by <strong>force, threat, coercion, or fraud</strong> to commit prostitution; (2) Causes by <strong>any means</strong> a child <strong>< 18</strong> to commit prostitution; OR (3) Causes by <strong>any means</strong> a <strong>disabled individual</strong> to commit prostitution.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                        <li><strong class="font-semibold">"Coercion" Definition (d):</strong> Includes destroying/withholding government records/ID, causing intoxication, or withholding alcohol/drugs from a chemically dependent person.</li>
+                        <li><strong class="font-semibold">No Defense (e):</strong> Not a defense that the child or disabled individual lacked culpable mental state or did not complete the act.</li>
+                    </ul>
+                </div>
+                
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.06" target="_blank" class="text-red-600 hover:underline">Sec. 43.06. Accomplice Witness; Testimony and Immunity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(a)</strong> A party to an offense under this subchapter may be required to testify.</li>
+                        <li><strong class="font-semibold">(b)</strong> A party required to testify may not be prosecuted for that offense (gains immunity).</li>
+                        <li><strong class="font-semibold">(d)</strong> A conviction can be had on the <strong>uncorroborated testimony</strong> of a party to the offense.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.032" target="_blank" class="text-red-600 hover:underline">Sec. 43.032. Continuous Promotion of Prostitution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Commits offense under 43.03 (Promotion) <strong>two or more times</strong> during a period of <strong>30 or more days</strong>.</li>
+                        <li><strong class="font-semibold">Jury Note (b):</strong> Jury does not need to be unanimous on specific dates/acts, only that 2+ acts occurred in a 30+ day period.</li>
+                        <li><strong class="font-semibold">Penalty (e):</strong> <strong class="font-semibold text-red-700">Felony of the First Degree</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Definitions (Obscenity) Tab -->
+            <div id="definitions-b" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Subchapter B: Key Definitions (Sec. 43.21)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item">
+                            <span class="definition-term">Obscene</span>
+                            <p class="definition-desc">The three-prong test: (A) Average person, applying contemporary community standards, finds it appeals to prurient interest; (B) Depicts/describes patently offensive sexual acts (ultimate acts, masturbation, lewd exhibition, etc.); AND (C) Lacks serious literary, artistic, political, and scientific value.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Material</span>
+                            <p class="definition-desc">Anything tangible capable of arousing interest (reading, observation, sound). *Does not* include an actual 3D obscene device.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Performance</span>
+                            <p class="definition-desc">A play, motion picture, dance, or other exhibition performed before an audience.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Patently Offensive</span>
+                            <p class="definition-desc">So offensive on its face as to affront current community standards of decency.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Promote</span>
+                            <p class="definition-desc">To manufacture, issue, sell, give, provide, lend, mail, deliver, transfer, transmit, publish, distribute, circulate, disseminate, present, exhibit, or advertise, or offer/agree to do same.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Wholesale Promote</span>
+                            <p class="definition-desc">To promote for the purpose of *resale*.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Obscene Device</span>
+                            <p class="definition-desc">A device (dildo, artificial vagina) designed or marketed as useful *primarily* for stimulation of human genital organs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obscenity Offenses Tab -->
+            <div id="obscenity-offenses" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.22" target="_blank" class="text-red-600 hover:underline">Sec. 43.22. Obscene Display or Distribution</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Person intentionally or knowingly displays/distributes obscene material AND is <strong>reckless</strong> about whether a person is present who will be offended or alarmed.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.23" target="_blank" class="text-red-600 hover:underline">Sec. 43.23. Obscenity</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Knowing its content/character, <strong>wholesale promotes</strong> or possesses w/ intent to wholesale promote obscene material/device.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (b): <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (c):</strong> Knowing its content/character: (1) <strong>Promotes</strong> or possesses w/ intent to promote obscene material/device; OR (2) Produces, presents, or directs an obscene <strong>performance</strong>.
+                            <ul class="list-disc list-inside ml-4"><li>Penalty (d): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Presumption (e):</strong> Person promoting in course of business is presumed to know content/character.</li>
+                         <li><strong class="font-semibold">Presumption (f):</strong> Person possessing <strong>six or more</strong> obscene devices is presumed to possess with intent to promote.</li>
+                         <li><strong class="font-semibold">Affirmative Defense (g):</strong> For bona fide medical, psychiatric, judicial, legislative, or law enforcement purpose.</li>
+                         <li><strong class="font-semibold">Enhancement (h):</strong> Offense under (a) or (c) becomes <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> if material visually depicts a child < 18 (or image indistinguishable from child).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.28" target="_blank" class="text-red-600 hover:underline">Sec. 43.28. Certain Sexually Oriented Performances Prohibited</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Sexually Oriented Performance" (a)(2):</strong> Visual performance featuring a nude performer OR performer engaging in sexual conduct, that appeals to prurient interest in sex.</li>
+                        <li><strong class="font-semibold">"Sexual Conduct" (a)(1):</strong> Includes simulated sex acts, lewd exhibition of genitals, contact, or sexual gesticulations w/ prosthetics.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person engages in sexually oriented performance: (1) On <strong>public property</strong> where it could be viewed by a child; OR (2) In the <strong>presence of an individual < 18</strong>.</li>
+                        <li><strong class="font-semibold">Penalty (c):</strong> <strong class="font-semibold text-red-700">Class A Misdemeanor</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Offenses re Minors Tab -->
+            <div id="offenses-minors" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.231" target="_blank" class="text-red-600 hover:underline">Sec. 43.231. Promotion or Possession of Child-like Sex Doll</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Child-like sex doll":</strong> An obscene, anatomically correct doll, mannequin, or robot with features of a child, intended for sexual stimulation.</li>
+                        <li><strong class="font-semibold">Offenses (b):</strong> Person knowingly: (1) <strong>Promotes</strong> a doll; (2) <strong>Possesses w/ intent to promote</strong> a doll; OR (3) <strong>Possesses</strong> a doll.</li>
+                        <li><strong class="font-semibold">Penalties (c, d, e):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(1) Promote: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                                <li>(2) Possess w/ Intent: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>(3) Possess: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Presumption (f):</strong> Possessing <strong>two or more</strong> dolls is presumed intent to promote.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (g):</strong> Bona fide law enforcement purpose.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.235" target="_blank" class="text-red-600 hover:underline">Sec. 43.235. Possession, Promotion, or Production of Certain Visual Material Appearing to Depict Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b)(1):</strong> Knowingly possesses, accesses, or promotes <strong>obscene</strong> visual material depicting what *appears* to be a child < 18 (e.g., cartoon, AI).</li>
+                        <li><strong class="font-semibold">Offense (b)(2):</strong> Uses image of actual child < 18 to *train* an AI model to produce child pornography.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                                <li>1 Prior Conviction (this, 43.23, 43.26, etc.): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>2+ Prior Convictions: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.24" target="_blank" class="text-red-600 hover:underline">Sec. 43.24. Sale, Distribution, or Display of Harmful Material to Minor</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Minor":</strong> Individual < 18.</li>
+                        <li><strong class="font-semibold">"Harmful Material":</strong> Material (A) appeals to prurient interest of *minor*; (B) is patently offensive to adult standards re what's suitable for *minors*; AND (C) is utterly without redeeming social value for *minors*.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Knowing material is harmful: (1) Knowing person is minor, <strong>sells/distributes/exhibits</strong> to minor; (2) <strong>Displays</strong> harmful material & is reckless if minor present; OR (3) <strong>Hires/employs/uses</strong> minor to assist in acts.</li>
+                        <li><strong class="font-semibold">Defense (c-1):</strong> Actor was spouse of minor.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (c-2):</strong> Actor was judicial or LE officer on duty.</li>
+                        <li><strong class="font-semibold">Penalties (d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>(b)(1) or (b)(2): <strong class="font-semibold text-red-700">Class A Misdemeanor</strong></li>
+                                <li>(b)(3) (Hiring Minor): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.25" target="_blank" class="text-red-600 hover:underline">Sec. 43.25. Sexual Performance by a Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Sexual Performance":</strong> Performance including sexual conduct by child < 18.</li>
+                        <li><strong class="font-semibold">"Sexual Conduct":</strong> Includes sexual contact, actual/simulated intercourse, lewd exhibition of genitals/anus/female breast below areola, etc.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Knowing character/content, <strong>employs, authorizes, or induces</strong> child < 18 to engage in sexual conduct/performance. Also offense for parent/guardian to <strong>consent</strong>.
+                             <ul class="list-disc list-inside ml-4"><li>Penalty (c): <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> (F1 if victim < 14).</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (d):</strong> Knowing character/content, <strong>produces, directs, or promotes</strong> performance including sexual conduct by child < 18.
+                             <ul class="list-disc list-inside ml-4"><li>Penalty (e): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong> (F2 if victim < 14).</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Affirmative Defense (f):</strong> Actor was spouse, LEO on duty, or not more than 2 years older than child.</li>
+                    </ul>
+                </div>
+
+                 <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.251" target="_blank" class="text-red-600 hover:underline">Sec. 43.251. Employment Harmful to Children</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Child":</strong> Person < 21.</li>
+                        <li><strong class="font-semibold">Offense (b):</strong> Person employs, authorizes, or induces a child (< 21) to work: (1) In a <strong>sexually oriented commercial activity</strong>; OR (2) In any place of business requiring child to work <strong>nude or topless</strong>.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong> <strong class="font-semibold text-red-700">Felony of the Second Degree</strong> (F1 if child < 14).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.26" target="_blank" class="text-red-600 hover:underline">Sec. 43.26. Possession or Promotion of Child Pornography</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">"Depiction of a child":</strong> Image of actual child < 18 OR recognizable image of actual child < 18 used to create material (e.g., AI).</li>
+                        <li><strong class="font-semibold">"Depiction of a computer-generated child":</strong> Image appearing to be < 18, created by AI/software, and virtually indistinguishable from actual child.</li>
+                        <li><strong class="font-semibold">Offense (a-1):</strong> Knowingly possess/access w/ intent visual material of <strong>actual child</strong> (< 18) engaging in sexual conduct.
+                            <ul class="list-disc list-inside ml-4"><li>Base Penalty (c-1): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (a-2):</strong> Knowingly possess/access w/ intent visual material of <strong>computer-generated child</strong> engaging in sexual conduct.
+                             <ul class="list-disc list-inside ml-4"><li>Base Penalty (c-3): <strong class="font-semibold text-red-700">State Jail Felony</strong>.</li></ul>
+                        </li>
+                         <li><strong class="font-semibold">Offense (e):</strong> Knowingly <strong>promote</strong> (or possess w/ intent) material of <strong>actual child</strong>.
+                            <ul class="list-disc list-inside ml-4"><li>Base Penalty (g, S.B. 1621): <strong class="font-semibold text-red-700">Felony of the Second Degree</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Offense (e-1):</strong> Knowingly <strong>promote</strong> (or possess w/ intent) material of <strong>computer-generated child</strong>.
+                            <ul class="list-disc list-inside ml-4"><li>Base Penalty (g-1): <strong class="font-semibold text-red-700">Felony of the Third Degree</strong>.</li></ul>
+                        </li>
+                        <li><strong class="font-semibold">Enhancements (c-1/c-3):</strong> Penalties increase for prior convictions or quantity (10-49 images, 50+ images).</li>
+                        <li><strong class="font-semibold">Presumption (f):</strong> Rebuttable presumption that depiction is of an actual child, not computer-generated.</li>
+                        <li><strong class="font-semibold">Affirmative Defense (h-2):</strong> For computer-generated (a-2, e-1) offenses, actor not more than 2 years older than depicted child.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.261" target="_blank" class="text-red-600 hover:underline">Sec. 43.261. Electronic Transmission of Certain Visual Material Depicting Minor</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> A <strong>minor</strong> (< 18) intentionally or knowingly: (1) By electronic means <strong>promotes to another minor</strong> visual material depicting minor in sexual conduct (if actor or another minor produced it); OR (2) <strong>Possesses in electronic format</strong> material depicting another minor in sexual conduct (if actor or another minor produced it).</li>
+                        <li><strong class="font-semibold">Penalties (c, d):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">Class C Misdemeanor</strong>.</li>
+                                <li>Enhancement (c)(1)(A): (Promotion) <strong class="font-semibold text-red-700">Class B Misdemeanor</strong> if done w/ intent to harass, annoy, alarm, etc.</li>
+                                <li>Enhancement (c/d): <strong class="font-semibold text-red-700">Class B</strong> for 1 prior, <strong class="font-semibold text-red-700">Class A</strong> for 2+ priors.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Affirmative Defense (e):</strong> Depicted only actor/other minor in dating relationship (max 2 yr age diff) OR spouse, AND material only promoted between them.</li>
+                        <li><strong class="font-semibold">Defense (f):</strong> (Possession) Actor didn't produce/solicit, received from minor, AND destroyed w/in reasonable time.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.262" target="_blank" class="text-red-600 hover:underline">Sec. 43.262. Possession or Promotion of Lewd Visual Material Depicting Child</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (b):</strong> Knowingly possesses, accesses, or promotes visual material depicting <strong>lewd exhibition</strong> of genitals/pubic area of child < 18, that appeals to prurient interest, AND has no serious value.</li>
+                        <li><strong class="font-semibold">Penalties (c):</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Base Offense: <strong class="font-semibold text-red-700">State Jail Felony</strong></li>
+                                <li>1 Previous Conviction: <strong class="font-semibold text-red-700">Felony of the Third Degree</strong></li>
+                                <li>2+ Previous Convictions: <strong class="font-semibold text-red-700">Felony of the Second Degree</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">No Defense (d):</strong> Not a defense that the depicted child consented.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.27" target="_blank" class="text-red-600 hover:underline">Sec. 43.27. Duty to Report</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">(b)</strong> A <strong>business</strong> that develops or processes visual material and determines it may be evidence of a crime under this subchapter <strong>shall report</strong> its existence to local law enforcement.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 43)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (136 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources</h2>
+                    <p class="mb-6 text-gray-600">Quick links to official Texas statutes and related definitions.</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <!-- Links will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 43) ---
+            const quizData = [
+                // 43.01 Definitions (A)
+                {
+                    question: "Under 43.01, 'Deviate Sexual Intercourse' is any contact between the genitals of one person and the _____ or _____ of another.",
+                    options: ["Mouth, Hand", "Mouth, Anus", "Anus, Breast", "Genitals, Mouth"],
+                    answer: "Mouth, Anus",
+                    explanation: "Sec. 43.01(1-a) defines it as contact between genitals and the mouth or anus."
+                },
+                {
+                    question: "Under 43.01, 'Sexual Conduct' includes deviate sexual intercourse, sexual intercourse, and...",
+                    options: ["Sexual Contact", "Lewd Exhibition", "Nudity", "Prostitution"],
+                    answer: "Sexual Contact",
+                    explanation: "Sec. 43.01(4) defines 'Sexual Conduct' as deviate sexual intercourse, sexual contact, and sexual intercourse."
+                },
+                {
+                    question: "Under 43.01, 'Fee' can mean money, goods, services, or...",
+                    options: ["A promise", "Other benefit", "A contractual obligation", "A political favor"],
+                    answer: "Other benefit",
+                    explanation: "Sec. 43.01(1-b) defines 'Fee' as 'money, goods, services, or other benefit'."
+                },
+                {
+                    question: "Under 43.01, 'Sexual Intercourse' is defined as...",
+                    options: ["Any sexual contact", "Any penetration of the female sex organ by the male sex organ", "Any penetration of the anus or mouth", "Any touching of the genitals"],
+                    answer: "Any penetration of the female sex organ by the male sex organ",
+                    explanation: "Sec. 43.01(5) provides this specific definition for 'Sexual Intercourse'."
+                },
+                {
+                    question: "Under 43.01, 'Sexual Contact' is any touching of the anus, breast, or genitals with...",
+                    options: ["Intent to cause harm", "Intent to arouse or gratify sexual desire", "Reckless disregard", "No specific intent required"],
+                    answer: "Intent to arouse or gratify sexual desire",
+                    explanation: "Sec. 43.01(3) requires the 'intent to arouse or gratify the sexual desire of any person'."
+                },
+                {
+                    question: "Under 43.01, 'Interactive Computer Service' is a service that enables computer access by...",
+                    options: ["A single user", "Multiple users", "Government agencies only", "Law enforcement only"],
+                    answer: "Multiple users",
+                    explanation: "Sec. 43.01(1-d) defines it as a service that 'provides or enables computer access to a computer server by multiple users'."
+                },
+                {
+                    question: "Under 43.01, 'Access software provider' includes software that filters, screens, or...",
+                    options: ["Transmits content", "Creates content", "Stores content", "Monetizes content"],
+                    answer: "Transmits content",
+                    explanation: "Sec. 43.01(1) definitions include tools that 'transmit, receive, display, forward, cache, search... content'."
+                },
+                {
+                    question: "The term 'Internet' is defined as the international computer network of both federal and nonfederal interoperable packet switched data networks.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.01(1-e) provides this definition."
+                },
+                {
+                    question: "Is 'prostitution' as defined in 43.01 the act of paying for sex or receiving payment for sex?",
+                    options: ["Paying for sex (Solicitation)", "Receiving payment for sex (Prostitution)", "Both", "Neither"],
+                    answer: "Receiving payment for sex (Prostitution)",
+                    explanation: "Sec. 43.01(2) defines 'Prostitution' as the offense in 43.02, which is *receiving* a fee. 43.01(6) defines 'Solicitation' as the offense in 43.021, which is *paying* a fee."
+                },
+                {
+                    question: "An 'Information Content Provider' (43.01) is a person responsible for the ___ of information provided through an interactive computer service.",
+                    options: ["Transmission", "Storage", "Creation or development", "Security"],
+                    answer: "Creation or development",
+                    explanation: "Sec. 43.01(1-c) defines it as a person 'wholly or partly responsible for the creation or development of information...'"
+                },
+
+                // 43.02 Prostitution
+                {
+                    question: "A person commits Prostitution (43.02) if they knowingly offer or agree to _____ a fee for sexual conduct.",
+                    options: ["Pay", "Receive", "Solicit", "Negotiate"],
+                    answer: "Receive",
+                    explanation: "Sec. 43.02(a) defines Prostitution as offering or agreeing to *receive* a fee."
+                },
+                {
+                    question: "What is the base penalty for Prostitution (43.02)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 43.02(c) lists the base offense as a Class B Misdemeanor."
+                },
+                {
+                    question: "Prostitution (43.02) becomes a State Jail Felony if the actor has how many previous convictions?",
+                    options: ["One", "Two", "Three or more", "It never becomes a felony"],
+                    answer: "Three or more",
+                    explanation: "Sec. 43.02(c)(2) enhances the offense to a State Jail Felony for three or more previous convictions."
+                },
+                {
+                    question: "What is the penalty for Prostitution (43.02) if the actor has *two* previous convictions?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 43.02(c)(1) enhances to Class A for one *or two* previous convictions."
+                },
+                {
+                    question: "It is a defense to Prostitution (43.02) if the actor was a victim of Trafficking (20A.02) or...",
+                    options: ["Aggravated Promotion (43.04)", "Solicitation (43.021)", "Compelling Prostitution (43.05)", "Obscenity (43.23)"],
+                    answer: "Compelling Prostitution (43.05)",
+                    explanation: "Sec. 43.02(d) provides a defense if the actor was a victim of 20A.02 or 43.05."
+                },
+                {
+                    question: "Under 43.02(e), does a 'deferred adjudication' count as a previous conviction for enhancement purposes?",
+                    options: ["Yes", "No", "Only if the defendant violated probation", "Only for felony offenses"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.02(e) states a defendant is previously convicted if they entered a plea for deferred adjudication, regardless of subsequent discharge."
+                },
+
+                // 43.021 Solicitation
+                {
+                    question: "A person commits Solicitation of Prostitution (43.021) if they knowingly offer or agree to _____ a fee for sexual conduct.",
+                    options: ["Pay", "Receive", "Waive", "Accept"],
+                    answer: "Pay",
+                    explanation: "Sec. 43.021(a) defines Solicitation as offering or agreeing to *pay* a fee."
+                },
+                {
+                    question: "What is the base penalty for Solicitation of Prostitution (43.021)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.021(b) lists the base offense as a State Jail Felony."
+                },
+                {
+                    question: "Solicitation of Prostitution (43.021) becomes a Felony of the Second Degree if the person solicited is...",
+                    options: ["Over 65", "Younger than 18", "A public servant", "Chemically dependent"],
+                    answer: "Younger than 18",
+                    explanation: "Sec. 43.021(b)(2) enhances the offense to F2 if the person is < 18 (or represented/believed to be)."
+                },
+                {
+                    question: "What is the penalty for Solicitation (43.021) if the actor has *one* previous conviction?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.021(b)(1) enhances the offense to F3 for a previous conviction."
+                },
+                {
+                    question: "The penalty for Solicitation of Prostitution (43.021) is increased to the next highest category if committed within 1,000 feet of a...",
+                    options: ["Church", "Hospital", "School", "Daycare center"],
+                    answer: "School",
+                    explanation: "Sec. 43.021(b-1) provides an enhancement for offenses occurring on or within 1,000 feet of school premises or school/UIL events."
+                },
+                {
+                    question: "Does the 1,000-foot school zone enhancement (43.021b-1) apply to an official 'University Interscholastic League' (UIL) event?",
+                    options: ["Yes", "No", "Only for high school events", "Only for football games"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.021(b-1)(2)(B) explicitly includes 'an event sponsored or sanctioned by the University Interscholastic League'."
+                },
+                {
+                    question: "A person commits base Solicitation (SJF). The offense occurs 500 feet from a high school. What is the new penalty?",
+                    options: ["State Jail Felony (no change)", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.021(b-1) increases the punishment to the 'next highest category'. The next highest from SJF is F3."
+                },
+                {
+                    question: "A person solicits someone they believe is 17 (F2). The offense occurs 500 feet from a school. What is the new penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree (no change)", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.021(b-1) increases the punishment to the 'next highest category'. The base offense is F2, so the next highest is F1."
+                },
+
+                // 43.03 Promotion
+                {
+                    question: "A person commits Promotion of Prostitution (43.03) if, *not* as a prostitute, they knowingly receive money from prostitution proceeds OR...",
+                    options: ["Pay a fee for sexual conduct", "Solicit another to engage in sexual conduct with another for compensation", "Agree to receive a fee for sexual conduct", "Own a massage parlor"],
+                    answer: "Solicit another to engage in sexual conduct with another for compensation",
+                    explanation: "Sec. 43.03(a)(2) includes soliciting another *for* another person."
+                },
+                {
+                    question: "What is the base penalty for Promotion of Prostitution (43.03)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.03(b) lists the base offense as a Felony of the Third Degree."
+                },
+                {
+                    question: "What is the penalty for Promotion of Prostitution (43.03) with one prior conviction?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.03(b)(1) enhances the penalty to F2 for one previous conviction."
+                },
+                {
+                    question: "Promotion of Prostitution (43.03) becomes a Felony of the First Degree if the actor's conduct involves a person...",
+                    options: ["Younger than 18", "With a disability", "Over 65", "Who is a family member"],
+                    answer: "Younger than 18",
+                    explanation: "Sec. 43.03(b)(2) enhances the offense to F1 if it involves a person younger than 18."
+                },
+                {
+                    question: "Is it an element of 43.03 (Promotion, F1) that the actor *knew* the person involved was younger than 18?",
+                    options: ["Yes, knowledge is required", "No, knowledge of age is not required", "Only if the actor is the parent", "Only if the actor is 3+ years older"],
+                    answer: "No, knowledge of age is not required",
+                    explanation: "Sec. 43.03(b)(2) states 'regardless of whether the actor knows the age of the person at the time of the offense'."
+                },
+                
+                // 43.031 Online Promotion
+                {
+                    question: "Online Promotion of Prostitution (43.031) is committed by a person who owns, manages, or operates an...",
+                    options: ["Adult bookstore", "Interactive Computer Service (ICS) or Information Content Provider (ICP)", "Hotel or motel", "Vehicle for hire"],
+                    answer: "Interactive Computer Service (ICS) or Information Content Provider (ICP)",
+                    explanation: "Sec. 43.031(a) specifically applies to owners/managers/operators of an ICS or ICP."
+                },
+                {
+                    question: "What is the base penalty for Online Promotion of Prostitution (43.031)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.031(b) lists the base offense as F3."
+                },
+                {
+                    question: "Online Promotion of Prostitution (43.031) is enhanced to F2 if the actor has a prior conviction OR...",
+                    options: ["The offense involves a person < 18", "The offense involves 2+ persons", "The offense involves 5+ persons", "The actor makes over $10,000"],
+                    answer: "The offense involves a person < 18",
+                    explanation: "Sec. 43.031(b)(2) enhances to F2 if the conduct involves a person < 18."
+                },
+
+                // 43.032 Continuous Promotion
+                {
+                    question: "A person commits Continuous Promotion of Prostitution (43.032) if they commit 43.03 two or more times in what period?",
+                    options: ["24 hours", "7 days", "30 or more days", "One year"],
+                    answer: "30 or more days",
+                    explanation: "Sec. 43.032(a) requires 2+ acts during a period that is 30 or more days in duration."
+                },
+                {
+                    question: "What is the penalty for Continuous Promotion of Prostitution (43.032)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.032(e) lists the offense as a Felony of the First Degree."
+                },
+                {
+                    question: "For 43.032 (Continuous Promotion), must the jury agree unanimously on the specific dates of the offenses?",
+                    options: ["Yes, dates must be unanimous", "No, jury only needs to agree 2+ acts occurred in a 30+ day period", "Yes, and the specific acts must be unanimous", "No, only a majority is needed"],
+                    answer: "No, jury only needs to agree 2+ acts occurred in a 30+ day period",
+                    explanation: "Sec. 43.032(b) states the jury is *not* required to agree unanimously on specific conduct or exact dates."
+                },
+
+                // 43.04 Aggravated Promotion
+                {
+                    question: "What is the penalty for Aggravated Promotion of Prostitution (43.04)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.04(b) lists the offense as a Felony of the First Degree."
+                },
+                {
+                    question: "Aggravated Promotion of Prostitution (43.04) requires managing a prostitution enterprise that uses...",
+                    options: ["One or more prostitutes", "Two or more prostitutes", "Five or more prostitutes", "Ten or more prostitutes"],
+                    answer: "Two or more prostitutes",
+                    explanation: "Sec. 43.04(a) requires an enterprise that uses 'two or more prostitutes'."
+                },
+
+                // 43.041 Aggravated Online Promotion
+                {
+                    question: "Aggravated Online Promotion of Prostitution (43.041) requires intent to promote how many persons?",
+                    options: ["One or more", "Two or more", "Five or more", "Ten or more"],
+                    answer: "Five or more",
+                    explanation: "Sec. 43.041(a) requires intent to promote the prostitution of *five or more* persons."
+                },
+                {
+                    question: "What is the base penalty for Aggravated Online Promotion of Prostitution (43.041)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.041(b) lists the base offense as F2."
+                },
+                {
+                    question: "Aggravated Online Promotion (43.041) (base F2) becomes an F1 if the actor has a prior conviction OR the conduct involves...",
+                    options: ["Five or more persons < 18", "Two or more persons < 18", "One person < 18", "One person < 14"],
+                    answer: "Two or more persons < 18",
+                    explanation: "Sec. 43.041(b)(2) enhances to F1 if it involves *two or more* persons younger than 18."
+                },
+                
+                // 43.05 Compelling Prostitution
+                {
+                    question: "A person commits Compelling Prostitution (43.05) if they cause another to commit prostitution by force, threat, coercion, or...",
+                    options: ["Payment", "Fraud", "Persuasion", "Solicitation"],
+                    answer: "Fraud",
+                    explanation: "Sec. 43.05(a)(1) lists force, threat, coercion, or fraud."
+                },
+                {
+                    question: "Compelling Prostitution (43.05) is committed if a person causes a child < 18 to commit prostitution by...",
+                    options: ["Any means", "Force only", "Threat only", "Force or threat only"],
+                    answer: "Any means",
+                    explanation: "Sec. 43.05(a)(2) states 'by any means' for a child younger than 18."
+                },
+                {
+                    question: "What is the penalty for Compelling Prostitution (43.05)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.05(b) lists the offense as a Felony of the First Degree."
+                },
+                {
+                    question: "For Compelling Prostitution (43.05), 'Coercion' includes destroying/withholding government records, causing intoxication, or...",
+                    options: ["Offering a large fee", "Making false promises", "Withholding alcohol/drugs from a chemically dependent person", "Threatening to report an offense"],
+                    answer: "Withholding alcohol/drugs from a chemically dependent person",
+                    explanation: "Sec. 43.05(d)(3) includes withholding substances from a chemically dependent person."
+                },
+                {
+                    question: "Compelling Prostitution (43.05a3) includes causing a 'disabled individual' to commit prostitution by 'any means'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.05(a)(3) mirrors the '< 18' provision, making it an offense to cause a disabled individual to commit prostitution 'by any means'."
+                },
+                {
+                    question: "Is it a defense to 43.05 (Compelling Prostitution) that the child < 18 did not complete the act of prostitution?",
+                    options: ["Yes", "No", "Only if the child refused", "Only if no fee was paid"],
+                    answer: "No",
+                    explanation: "Sec. 43.05(e)(2) states it is 'not a defense' that the child 'did not complete the act of prostitution'."
+                },
+
+                // 43.06 Accomplice Witness
+                {
+                    question: "Under 43.06, can a conviction for a prostitution offense be based *only* on the uncorroborated testimony of a party to the offense?",
+                    options: ["Yes", "No", "Only if the party is the victim", "Only if the defendant confesses"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.06(d) explicitly states a conviction may be had upon the uncorroborated testimony of a party."
+                },
+                {
+                    question: "If a party to an offense under Subchapter A is required to testify, can they be prosecuted for that offense?",
+                    options: ["Yes, they can still be prosecuted", "No, they may not be prosecuted for that offense", "Only if they are granted immunity by the judge", "Only if they are not the primary actor"],
+                    answer: "No, they may not be prosecuted for that offense",
+                    explanation: "Sec. 43.06(b) states the party 'may not be prosecuted for any offense about which he is required to furnish evidence or testify'."
+                },
+
+                // 43.21 Definitions (B)
+                {
+                    question: "Which is NOT part of the 3-prong test for 'Obscene' under 43.21?",
+                    options: ["Appeals to the prurient interest", "Is patently offensive", "Causes public alarm", "Lacks serious literary, artistic, political, and scientific value"],
+                    answer: "Causes public alarm",
+                    explanation: "Sec. 43.21(a)(1) lists (A) prurient interest, (B) patently offensive, and (C) lacks serious value. Public alarm is not part of this test (it's in 43.22)."
+                },
+                {
+                    question: "Under 43.21, 'Material' is anything tangible but does *not* include...",
+                    options: ["A book", "A photograph", "An actual three-dimensional obscene device", "A sound recording"],
+                    answer: "An actual three-dimensional obscene device",
+                    explanation: "Sec. 43.21(a)(2) explicitly excludes 'an actual three dimensional obscene device' from the definition of 'Material'."
+                },
+                {
+                    question: "What is the definition of 'Wholesale Promote' under 43.21?",
+                    options: ["To promote to 10 or more people", "To promote for the purpose of resale", "To promote using the internet", "To promote an obscene performance"],
+                    answer: "To promote for the purpose of resale",
+                    explanation: "Sec. 43.21(a)(6) defines it as promoting 'for purpose of resale'."
+                },
+                {
+                    question: "Under 43.21, 'Material' is defined as anything tangible, while 'Performance' is defined as an exhibition before an audience.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.21(a)(2) defines 'Material' as 'anything tangible' and (a)(3) defines 'Performance' as a 'play, motion picture, dance, or other exhibition performed before an audience'."
+                },
+                {
+                    question: "Under 43.21(a)(1)(B)(ii), 'Obscene' includes patently offensive representations of 'covered male genitals in a discernibly turgid state'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.21(a)(1)(B)(ii) explicitly includes this in the definition of 'obscene'."
+                },
+                {
+                    question: "Under 43.21(a)(1)(B)(ii), 'Obscene' includes patently offensive representations of 'a device designed and marketed as useful primarily for stimulation of the human genital organs'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.21(a)(1)(B)(ii) also includes this in the definition."
+                },
+                {
+                    question: "The definition of 'Promote' (43.21) includes 'advertise'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.21(a)(5) lists 'exhibit, or advertise, or to offer or agree to do the same'."
+                },
+                {
+                    question: "An 'Obscene Device' (43.21) is designed or marketed as useful _____ for stimulation of human genital organs.",
+                    options: ["Exclusively", "Primarily", "Occasionally", "Partially"],
+                    answer: "Primarily",
+                    explanation: "Sec. 43.21(a)(7) defines it as 'useful *primarily* for the stimulation...'"
+                },
+
+                // 43.22 Obscene Display
+                {
+                    question: "A person commits Obscene Display or Distribution (43.22) if they I/K display obscene material AND are _____ about whether a person is present who will be offended.",
+                    options: ["Knowingly", "Intentionally", "Reckless", "Negligent"],
+                    answer: "Reckless",
+                    explanation: "Sec. 43.22(a) requires the actor be 'reckless' about whether an offended person is present."
+                },
+                {
+                    question: "What is the penalty for Obscene Display or Distribution (43.22)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "No offense"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 43.22(b) lists the offense as a Class C Misdemeanor."
+                },
+
+                // 43.23 Obscenity
+                {
+                    question: "A person commits Obscenity (43.23a) if, knowing its content, they 'wholesale promote' obscene material. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.23(a) is the offense, and (b) lists the penalty as a State Jail Felony."
+                },
+                {
+                    question: "A person commits Obscenity (43.23c) if, knowing its content, they 'promote' (not wholesale) obscene material. What is the penalty?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 43.23(c) is the offense, and (d) lists the penalty as a Class A Misdemeanor."
+                },
+                {
+                    question: "A person commits Obscenity (43.23c) if they produce, present, or direct an obscene...",
+                    options: ["Material", "Device", "Performance", "Website"],
+                    answer: "Performance",
+                    explanation: "Sec. 43.23(c)(2) specifically covers producing, presenting, or directing an obscene 'performance'."
+                },
+                {
+                    question: "A person who promotes obscene material in the course of business is presumed to do so with...",
+                    options: ["Intent to harm", "Knowledge of its content and character", "A reckless mental state", "A criminal enterprise"],
+                    answer: "Knowledge of its content and character",
+                    explanation: "Sec. 43.23(e) creates this presumption."
+                },
+                {
+                    question: "Under 43.23(f), possession of how many obscene devices creates a presumption of intent to promote?",
+                    options: ["One or more", "Two or more", "Six or more", "Twenty or more"],
+                    answer: "Six or more",
+                    explanation: "Sec. 43.23(f) creates a presumption for 'six or more obscene devices'."
+                },
+                {
+                    question: "Which of these is an affirmative defense to Obscenity (43.23)?",
+                    options: ["The material was for personal use", "The actor was promoting for a bona fide medical or judicial purpose", "The material was not 'patently offensive' to the actor", "The actor did not make a profit"],
+                    answer: "The actor was promoting for a bona fide medical or judicial purpose",
+                    explanation: "Sec. 43.23(g) provides an affirmative defense for bona fide medical, psychiatric, judicial, legislative, or law enforcement purposes."
+                },
+                {
+                    question: "The penalty for Obscenity (43.23) is enhanced to an F2 if the material depicts...",
+                    options: ["An elderly person", "A public servant", "An animal", "A child younger than 18"],
+                    answer: "A child younger than 18",
+                    explanation: "Sec. 43.23(h) enhances the offense to F2 if the material depicts a child < 18 or an image indistinguishable from one."
+                },
+                {
+                    question: "The penalty for Obscenity (43.23) is enhanced to F2 if it depicts a child or an image that is 'virtually indistinguishable' from a child.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.23(h)(2) includes an image 'virtually indistinguishable' from a child < 18."
+                },
+                {
+                    question: "The enhancement under 43.23(h) applies if the image was 'created, adapted, or modified to be the image of an identifiable child'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.23(h)(3) includes this provision for identifiable children."
+                },
+
+                // 43.231 Child-like Sex Doll
+                {
+                    question: "Under 43.231, a 'child-like sex doll' is defined as an obscene, anatomically correct doll, mannequin, or _____ with child features.",
+                    options: ["Toy", "Robot", "Statue", "Drawing"],
+                    answer: "Robot",
+                    explanation: "Sec. 43.231(a) defines it as a 'doll, mannequin, or robot'."
+                },
+                {
+                    question: "What is the penalty for *possessing* a child-like sex doll under 43.231(b)(3)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.231(e) lists the penalty for (b)(3) Possession as a State Jail Felony."
+                },
+                {
+                    question: "What is the penalty for *possessing with intent to promote* a child-like sex doll under 43.231(b)(2)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.231(d) lists the penalty for (b)(2) Poss w/ Intent as F3."
+                },
+                {
+                    question: "What is the penalty for *promoting* a child-like sex doll under 43.231(b)(1)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.231(c) lists the penalty for (b)(1) Promotion as a Felony of the Second Degree."
+                },
+                {
+                    question: "Possessing how many child-like sex dolls creates a presumption of intent to promote under 43.231(f)?",
+                    options: ["Two or more", "Three or more", "Five or more", "Six or more"],
+                    answer: "Two or more",
+                    explanation: "Sec. 43.231(f) creates this presumption for 'two or more' dolls."
+                },
+                {
+                    question: "What is the affirmative defense to 43.231 (Child-like Sex Doll)?",
+                    options: ["Bona fide medical purpose", "Bona fide law enforcement purpose", "Bona fide artistic purpose", "Personal use"],
+                    answer: "Bona fide law enforcement purpose",
+                    explanation: "Sec. 43.231(g) provides an affirmative defense *only* for a 'bona fide law enforcement purpose'."
+                },
+
+                // 43.235 AI/Cartoon
+                {
+                    question: "Sec. 43.235 makes it an offense to possess/promote *obscene* visual material that *appears* to be a child < 18 (e.g., AI/cartoon).",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.235(b)(1) covers 'obscene visual material' 'appearing to be of a child < 18... including a cartoon or animation'."
+                },
+                {
+                    question: "What is the base penalty for possessing obscene visual material *appearing* to be a child (e.g., AI/cartoon) under 43.235?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.235(c) lists the base offense as a State Jail Felony."
+                },
+                {
+                    question: "The penalty for 43.235 (Obscene AI/Cartoon) is enhanced to F3 for one prior conviction, and F2 for...?",
+                    options: ["Two or more prior convictions", "One prior felony conviction", "Possessing 10+ images", "Promoting the material"],
+                    answer: "Two or more prior convictions",
+                    explanation: "Sec. 43.235(c)(2) enhances to F2 if shown the person has 'previously been convicted two or more times' of listed offenses."
+                },
+                {
+                    question: "It is an offense under 43.235(b)(2) to use an image of an actual child to _____ an AI model to produce child pornography.",
+                    options: ["View", "Train", "Sell", "Delete"],
+                    answer: "Train",
+                    explanation: "Sec. 43.235(b)(2) makes it an offense to use an actual child's image 'with the intent to train an artificial intelligence model...'"
+                },
+
+                // 43.24 Harmful Material
+                {
+                    question: "Under 43.24, 'Harmful Material' is defined by its effect on and suitability for...",
+                    options: ["Adults", "Minors (< 18)", "Children (< 14)", "The general public"],
+                    answer: "Minors (< 18)",
+                    explanation: "Sec. 43.24(a) defines 'Minor' as < 18, and 'Harmful Material' (a)(2) is based on the prurient interest of a *minor*, standards for *minors*, and value for *minors*."
+                },
+                {
+                    question: "What is the base penalty for selling/distributing harmful material to a minor (43.24b1)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 43.24(d) lists the penalty for (b)(1) and (b)(2) as a Class A Misdemeanor."
+                },
+                {
+                    question: "What is the penalty for hiring or employing a minor to distribute harmful material (43.24b3)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.24(d) enhances the offense under (b)(3) to a Felony of the Third Degree."
+                },
+                {
+                    question: "It is a defense to 43.24 (Harmful Material) if the actor was...",
+                    options: ["The minor's parent", "The minor's teacher", "The minor's spouse", "The minor's sibling"],
+                    answer: "The minor's spouse",
+                    explanation: "Sec. 43.24(c-1) provides a defense if 'the actor was the spouse of the minor at the time of the offense'."
+                },
+                {
+                    question: "A person commits 43.24(b)(2) if they display harmful material and are _____ about whether a minor is present.",
+                    options: ["Knowingly", "Intentionally", "Reckless", "Negligent"],
+                    answer: "Reckless",
+                    explanation: "Sec. 43.24(b)(2) requires the actor be 'reckless about whether a minor is present who will be offended or alarmed'."
+                },
+
+                // 43.25 Sexual Performance
+                {
+                    question: "Under 43.25, 'Sexual Conduct' includes 'lewd exhibition of the genitals, the anus, or any portion of the female breast below...'",
+                    options: ["The nipple", "The top of the areola", "The bottom of the areola", "The clavicle"],
+                    answer: "The top of the areola",
+                    explanation: "Sec. 43.25(a)(2) defines sexual conduct to include lewd exhibition 'below the top of the areola'."
+                },
+                {
+                    question: "A person (not parent) 'employs, authorizes, or induces' a child < 18 to engage in a sexual performance (43.25b). What is the base penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.25(c) lists the base penalty for (b) as a Felony of the Second Degree."
+                },
+                {
+                    question: "The offense in 43.25(b) (induces child) is enhanced to F1 if the victim is...",
+                    options: ["Younger than 17", "Younger than 15", "Younger than 14", "Younger than 10"],
+                    answer: "Younger than 14",
+                    explanation: "Sec. 43.25(c) enhances to F1 if the victim is 'younger than 14 years of age'."
+                },
+                {
+                    question: "A person 'produces, directs, or promotes' a sexual performance by a child < 18 (43.25d). What is the base penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.25(e) lists the base penalty for (d) as a Felony of the Third Degree."
+                },
+                {
+                    question: "The offense in 43.25(d) (produces performance) is enhanced to F2 if the victim is...",
+                    options: ["Younger than 17", "Younger than 15", "Younger than 14", "Younger than 10"],
+                    answer: "Younger than 14",
+                    explanation: "Sec. 43.25(e) enhances the offense to F2 if the victim is 'younger than 14 years of age'."
+                },
+                {
+                    question: "Which is an affirmative defense to Sexual Performance by a Child (43.25)?",
+                    options: ["The child consented", "The child was paid", "The actor was the spouse of the child", "The performance was artistic"],
+                    answer: "The actor was the spouse of the child",
+                    explanation: "Sec. 43.25(f) lists spousal relationship, LEO on duty, or being not more than 2 years older as affirmative defenses."
+                },
+                {
+                    question: "Is it an affirmative defense to 43.25 (Sexual Performance by Child) that the actor is 'not more than two years older than the child'?",
+                    options: ["Yes", "No", "Only if they were in a dating relationship", "Only if the child consented"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.25(f)(3) provides this affirmative defense."
+                },
+                {
+                    question: "A parent who 'consents' to their child < 18 participating in a sexual performance commits what offense (43.25b)?",
+                    options: ["No offense, only the producer is liable", "Class A Misdemeanor", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.25(b) makes it an offense for a parent to consent, and (c) sets the penalty as an F2 (or F1 if child < 14)."
+                },
+                {
+                    question: "Under 43.25, is 'simulated' sexual conduct included in the definition of 'sexual conduct'?",
+                    options: ["Yes", "No", "Only if it involves children", "Only if it is 'patently offensive'"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.25(a)(2) includes 'actual or simulated sexual intercourse, deviate sexual intercourse, sexual bestiality...'"
+                },
+                {
+                    question: "The definition of 'Sexual Conduct' in 43.25 (Sexual Performance) is different from 43.01 (Prostitution) because it adds items like 'sexual bestiality' and 'lewd exhibition'.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.25(a)(2) has a broader definition, including 'sexual bestiality, masturbation, sado-masochistic abuse, or lewd exhibition,' which are not in 43.01(4)."
+                },
+                {
+                    question: "Under 43.25(a)(6), 'Simulated' sexual conduct requires the explicit depiction AND...",
+                    options: ["The appearance of actual sexual conduct", "The actor must be nude", "The actor must be paid", "The performance must be live"],
+                    answer: "The appearance of actual sexual conduct",
+                    explanation: "Sec. 43.25(a)(6) defines 'Simulated' as an explicit depiction that 'creates the appearance of actual sexual conduct' and involves uncovered breasts, genitals, or buttocks."
+                },
+                {
+                    question: "Is knowledge of the child's age required for an offense under 43.25 (Sexual Performance by Child)?",
+                    options: ["Yes, knowledge is required", "No, knowledge of age is not required", "Only for the F1 enhancement", "Only if the actor is a parent"],
+                    answer: "No, knowledge of age is not required",
+                    explanation: "Sec. 43.25(h) states 'Conduct under this section constitutes an offense regardless of whether the actor knows the age of the victim...'"
+                },
+                {
+                    question: "Under 43.25(g), which is *not* a listed method for determining a child's age in a sexual performance case?",
+                    options: ["Personal inspection of the child", "Inspection of the photograph or motion picture", "A sworn affidavit from the child", "Expert medical testimony"],
+                    answer: "A sworn affidavit from the child",
+                    explanation: "Sec. 43.25(g) lists personal inspection, inspection of the media, oral testimony, and expert testimony. It does not list an affidavit from the child."
+                },
+
+                // 43.251 Employment Harmful
+                {
+                    question: "For Employment Harmful to Children (43.251), what is the age of the 'Child'?",
+                    options: ["Younger than 17", "Younger than 18", "Younger than 21", "Younger than 14"],
+                    answer: "Younger than 21",
+                    explanation: "Sec. 43.251(a)(1) specifically defines 'Child' as 'a person younger than 21 years of age' for this section."
+                },
+                {
+                    question: "What is the base penalty for employing a 20-year-old to work nude in a 'sexually oriented commercial activity' (43.251)?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.251(c) lists the base penalty as F2."
+                },
+                {
+                    question: "What is the penalty for employing a 13-year-old to work in a 'sexually oriented commercial activity' (43.251)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "The base offense under 43.251 is F2, but (c) enhances it to F1 if the child is 'younger than 14 years of age'."
+                },
+                {
+                    question: "Under 43.251, 'Nude' includes being clothed in a manner that leaves any portion of the female breast below the top of the areola uncovered or visible through...",
+                    options: ["Any clothing", "Less than fully opaque clothing", "Mesh or lace", "Wet clothing"],
+                    answer: "Less than fully opaque clothing",
+                    explanation: "Sec. 43.251(a)(4)(B) includes 'visible through less than fully opaque clothing'."
+                },
+                {
+                    question: "A 'Sexually oriented commercial activity' (43.251) includes a 'nude studio', 'love parlor', or...",
+                    options: ["Strip club", "Liquor store", "Massage establishment", "Online website"],
+                    answer: "Massage establishment",
+                    explanation: "Sec. 43.251(a)(5) lists 'massage establishment, nude studio, modeling studio, love parlor, or other similar commercial enterprise...'"
+                },
+
+                // 43.26 Child Pornography
+                {
+                    question: "What is the base penalty for Possession of Child Pornography (Actual Child) under 43.26(a-1)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.26(c-1) lists the base penalty for (a-1) as a Felony of the Third Degree."
+                },
+                {
+                    question: "What is the base penalty for Possession of Child Pornography (Computer-Generated Child) under 43.26(a-2)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.26(c-3) lists the base penalty for (a-2) as a State Jail Felony."
+                },
+                {
+                    question: "Possession of 10-49 images of actual child porn (43.26a-1) enhances the penalty to...",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.26(c-1)(1)(B) enhances the offense to F2 for 10 to 49 depictions."
+                },
+                {
+                    question: "Possession of 50 or more images of actual child porn (43.26a-1) enhances the penalty to...",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.26(c-1)(2)(B)(i) enhances the offense to F1 for 50 or more depictions."
+                },
+                {
+                    question: "What is the base penalty for Promotion of Child Pornography (Actual Child) under 43.26(e)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.26(g) (as amended by S.B. 1621, 2025) lists the base penalty for (e) as a Felony of the Second Degree."
+                },
+                {
+                    question: "What is the base penalty for Promotion of Child Pornography (Computer-Generated Child) under 43.26(e-1)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.26(g-1) lists the base penalty for (e-1) as a Felony of the Third Degree."
+                },
+                {
+                    question: "Under 43.26, is there a rebuttable presumption that a depiction is of an actual child and not computer-generated?",
+                    options: ["Yes", "No", "Only if the image is high-resolution", "Only if the state proves identity"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.26(f)(2) creates this rebuttable presumption."
+                },
+                {
+                    question: "Possession of Child Porn (43.26a-1) requires the actor 'knows or should have known' the depiction was of a child < 18.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.26(a-1)(2) includes this 'knows or should have known' mental state regarding the child's age."
+                },
+                {
+                    question: "Possession of Computer-Generated Child Porn (43.26a-2) is an offense if the actor knows/should know it *appears* to be < 18 OR *believes* it is an actual child < 18.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.26(a-2)(2) provides these two alternative mental states."
+                },
+                {
+                    question: "What is the penalty for possessing 5 images of *actual* child porn (43.26a-1)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "This is the base offense under (c-1) (fewer than 10 depictions), which is an F3."
+                },
+                {
+                    question: "What is the penalty for possessing 5 images of *computer-generated* child porn (43.26a-2)?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor"],
+                    answer: "State Jail Felony",
+                    explanation: "This is the base offense under (c-3) (fewer than 10 depictions), which is an SJF."
+                },
+                {
+                    question: "Under 43.26, a 'Depiction of a child' includes an image of an actual child < 18, OR an image of a 'recognizable' actual child < 18 used to create AI material.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.26(a)(1) provides these two definitions for 'Depiction of a child' (actual child material)."
+                },
+                {
+                    question: "A 'Depiction of a computer-generated child' (43.26) is one that appears to be < 18, is made by AI/software, AND is...",
+                    options: ["Patently offensive", "Appeals to prurient interest", "Virtually indistinguishable from an actual child", "Intended for promotion"],
+                    answer: "Virtually indistinguishable from an actual child",
+                    explanation: "Sec. 43.26(a)(2)(C) requires it be 'virtually indistinguishable from an actual child younger than 18 years of age'."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Actual Child, 43.26a-1) if the actor possesses visual material depicting conduct constituting Aggravated Sexual Assault (22.011(a)(2))?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Felony of the First Degree (25-life)"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.26(c-1)(2)(B)(ii) enhances the offense to F1 if it 'visually depicts conduct constituting an offense under Section 22.011(a)(2)'."
+                },
+                {
+                    question: "The penalty for Possession of Child Porn (Actual Child, 43.26a-1) is enhanced if the actor is an employee at a child-care facility, residential treatment facility, or...",
+                    options: ["A public school", "A hospital", "A shelter/facility serving youth that receives state funds", "Any government building"],
+                    answer: "A shelter/facility serving youth that receives state funds",
+                    explanation: "Sec. 43.26(c-1)(3)(A) lists these specific employments, including '(iii) an employee at a shelter or facility that serves youth and that receives state funds'."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Actual Child, 43.26a-1) if the actor displays it in a *school library*?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Felony of the First Degree (25-life)"],
+                    answer: "Felony of the First Degree (25-life)",
+                    explanation: "Sec. 43.26(c-1)(3)(B) enhances the penalty to F1 with a minimum of 25 years if displayed in a school library."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Actual Child, 43.26a-1) if the depiction is of a child *younger than 10* (base offense, < 10 images)?",
+                    options: ["Felony of the Third Degree (no change)", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.26(c-2)(1) states that an offense punishable as F3 is 'increased to the next higher category of offense' (F2) if the child is < 10."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Actual Child, 43.26a-1) *with 50+ images* if the depiction is of a child *younger than 10*?",
+                    options: ["Felony of the First Degree (no change)", "Felony of the First Degree (min 15 yrs)", "Felony of the First Degree (min 25 yrs)", "Life felony"],
+                    answer: "Felony of the First Degree (min 15 yrs)",
+                    explanation: "The base for 50+ images is F1 (c-1)(2). Sec. 43.26(c-2)(2) increases the *minimum term* for an offense under (c-1)(2) to 15 years."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Computer-Generated, 43.26a-2) if the actor possesses 50 or more depictions?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.26(c-3)(2)(B) enhances the offense to F2 for '50 or more visual depictions'."
+                },
+                {
+                    question: "What is the penalty for Possession of Child Porn (Computer-Generated, 43.26a-2) if the actor displays it in a *school library*?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the Second Degree (min 10 yrs)", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree (min 10 yrs)",
+                    explanation: "Sec. 43.26(c-3)(3)(B) enhances the penalty to F2 with a minimum term of 10 years if displayed in a school library."
+                },
+                {
+                    question: "If possession of computer-generated child porn (43.26a-2) depicts a child *appearing < 10* (base offense, < 10 images), what is the penalty?",
+                    options: ["State Jail Felony (no change)", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.26(c-4) increases the punishment 'to the next higher category'. The base SJF becomes an F3."
+                },
+                {
+                    question: "What is the penalty for Promotion of Child Porn (Actual Child, 43.26e) if the actor promotes 10-49 depictions?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Felony of the First Degree (min 15 yrs)"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.26(g)(1)(B) (S.B. 1621) enhances the penalty to F1 for 10-49 depictions."
+                },
+                {
+                    question: "What is the penalty for Promotion of Child Porn (Actual Child, 43.26e) if the material depicts a child *younger than 10*?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Felony of the First Degree (min 15 yrs)"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 43.26(g)(1)(C) (S.B. 1621) enhances the penalty to F1 if the child appears to be < 10."
+                },
+                {
+                    question: "What is the penalty for Promotion of Child Porn (Actual Child, 43.26e) if the actor promotes 50+ images?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Felony of the First Degree (min 15 yrs)"],
+                    answer: "Felony of the First Degree (min 15 yrs)",
+                    explanation: "Sec. 43.26(g)(2)(A) (S.B. 1621) enhances to F1 with a 15-year minimum for 50 or more depictions."
+                },
+                {
+                    question: "What is the penalty for Promotion of Child Porn (Computer-Generated, 43.26e-1) if the actor promotes 50+ images?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the Second Degree (min 10 yrs)", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree (min 10 yrs)",
+                    explanation: "Sec. 43.26(g-1)(2) enhances to F2 with a 10-year minimum for 50 or more depictions."
+                },
+                {
+                    question: "It is an affirmative defense to 43.26 (Computer-Generated) if the actor is not more than ___ years older than the depicted child.",
+                    options: ["One", "Two", "Three", "Five"],
+                    answer: "Two",
+                    explanation: "Sec. 43.26(h-2) provides this affirmative defense with a 2-year age gap for computer-generated offenses (a-2, e-1)."
+                },
+                {
+                    question: "Is there an affirmative defense to 43.26 (Actual Child) if the actor is not more than 2 years older than the depicted child?",
+                    options: ["Yes", "No", "Only for possession", "Only for promotion"],
+                    answer: "No",
+                    explanation: "Sec. 43.26(h-2) *only* applies to (a-2) and (e-1) (computer-generated). This defense for actual child material is in 43.25(f)(3) and 43.261(e)(1)(A), not 43.26."
+                },
+
+                // 43.261 Minor Transmitting
+                {
+                    question: "A 17-year-old minor promotes visual material of sexual conduct to another 17-year-old minor. What is the base offense level under 43.261?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 43.261(c) lists the base offense for (b)(1) Promotion by a minor as a Class C Misdemeanor."
+                },
+                {
+                    question: "The offense in 43.261 (Minor promotes) becomes a Class B Misdemeanor if the actor promoted the material with intent to...",
+                    options: ["Make money", "Impress friends", "Harass, annoy, alarm, abuse, torment, embarrass, or offend", "Store it for later"],
+                    answer: "Harass, annoy, alarm, abuse, torment, embarrass, or offend",
+                    explanation: "Sec. 43.261(c)(1)(A) enhances to Class B for this specific intent."
+                },
+                {
+                    question: "It is an affirmative defense to 43.261 (Minor promotes) if the material was only between the actor and another minor in a dating relationship AND...",
+                    options: ["They are the same age", "They are not more than two years older or younger", "They are both over 16", "They intend to marry"],
+                    answer: "They are not more than two years older or younger",
+                    explanation: "Sec. 43.261(e)(1)(A) provides this defense, requiring the max 2-year age difference in a dating relationship."
+                },
+                {
+                    question: "It is a defense to 43.261(b)(2) (Minor possesses) if the actor received the material from another minor, did not solicit it, AND...",
+                    options: ["Reported it to a parent", "Destroyed it within a reasonable amount of time", "Forwarded it to law enforcement", "Deleted the sender's contact info"],
+                    answer: "Destroyed it within a reasonable amount of time",
+                    explanation: "Sec. 43.261(f)(3) provides this defense, requiring destruction within a reasonable time."
+                },
+                {
+                    question: "For 43.261 (Electronic Transmission by Minor), does 'visual material' include AI-generated images that are 'virtually indistinguishable' from an actual minor?",
+                    options: ["Yes", "No", "Only if the actor created it", "Only if the actor is over 17"],
+                    answer: "Yes",
+                    explanation: "Sec. 43.261(b-1)(2) explicitly includes 'a depiction... created using an artificial intelligence application... that to a reasonable person is virtually indistinguishable from an actual minor'."
+                },
+                {
+                    question: "A minor commits 43.261(b)(1) by promoting to another minor, or 43.261(b)(2) by...?",
+                    options: ["Possessing in electronic format", "Viewing on a website", "Creating the material", "Receiving the material"],
+                    answer: "Possessing in electronic format",
+                    explanation: "Sec. 43.261(b)(2) defines the second offense as 'possesses in an electronic format visual material...'"
+                },
+                {
+                    question: "A minor possesses material under 43.261(b)(2). What is the base penalty?",
+                    options: ["No offense", "Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 43.261(d) lists the base offense for (b)(2) Possession as a Class C Misdemeanor."
+                },
+                {
+                    question: "A minor promotes material under 43.261(b)(1) with *no* intent to harass. They have *one* prior conviction. What is the penalty?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 43.261(c)(1)(B) enhances to Class B for one prior conviction."
+                },
+                {
+                    question: "A minor promotes material under 43.261(b)(1) *with* intent to harass. This is their *first* offense. What is the penalty?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 43.261(c)(1)(A) enhances to Class B if the actor promoted with intent to harass, annoy, etc."
+                },
+                {
+                    question: "A minor promotes material under 43.261(b)(1) and has *two* prior convictions. What is the penalty?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 43.261(c)(2)(B) enhances to Class A for two or more prior convictions."
+                },
+                {
+                    question: "It is an affirmative defense to 43.261 (Minor Transmits) if the visual material depicted only the actor or their spouse.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.261(e)(1)(B) provides this affirmative defense if the other minor was the actor's spouse."
+                },
+                {
+                    question: "The defense in 43.261(f) (received and destroyed) applies to which offense?",
+                    options: ["(b)(1) Promotion", "(b)(2) Possession", "Both", "Neither"],
+                    answer: "(b)(2) Possession",
+                    explanation: "Sec. 43.261(f) states 'It is a defense to prosecution under Subsection (b)(2)...'"
+                },
+                
+                // 43.262 Lewd Material
+                {
+                    question: "What is the base penalty for possessing/promoting 'lewd visual material' depicting a child (43.262)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 43.262(c) lists the base offense as a State Jail Felony."
+                },
+                {
+                    question: "Is it a defense to 43.262 (Lewd Visual Material) that the depicted child consented?",
+                    options: ["Yes", "No", "Only if the child was over 14", "Only if the child was paid"],
+                    answer: "No",
+                    explanation: "Sec. 43.262(d) explicitly states 'It is not a defense... that the depicted child consented'."
+                },
+                {
+                    question: "What is the penalty for 43.262 (Lewd Visual Material) with *one* prior conviction under 43.26 or 43.262?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 43.262(c)(1) enhances the base SJF to F3 for one prior conviction."
+                },
+                {
+                    question: "What is the penalty for 43.262 (Lewd Visual Material) with *two or more* prior convictions under 43.26 or 43.262?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 43.262(c)(2) enhances to F2 for two or more prior convictions."
+                },
+                {
+                    question: "Under 43.262 (Lewd Visual Material), 'visual material' includes AI-generated images that are 'virtually indistinguishable' from an actual child.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.262(b-1)(2) explicitly includes these AI-generated images."
+                },
+                {
+                    question: "The offense of 43.262 (Lewd Visual Material) requires the material to depict a lewd exhibition, appeal to prurient interest, AND...",
+                    options: ["Be patently offensive", "Have no serious literary, artistic, political, or scientific value", "Be promoted for sale", "Be possessed in electronic format"],
+                    answer: "Have no serious literary, artistic, political, or scientific value",
+                    explanation: "Sec. 43.262(b)(3) includes the third prong of the Obscenity test, 'has no serious literary, artistic, political, or scientific value'."
+                },
+
+                // 43.27 Duty to Report
+                {
+                    question: "Who has a 'Duty to Report' under 43.27 if they find visual material that may be evidence of a crime under this subchapter?",
+                    options: ["Any private citizen", "A school teacher", "A business that develops or processes visual material", "A parent or guardian"],
+                    answer: "A business that develops or processes visual material",
+                    explanation: "Sec. 43.27(b) places this duty on businesses that develop or process visual material."
+                },
+
+                // 43.28 Sexually Oriented Performance
+                {
+                    question: "A person commits an offense under 43.28 if they engage in a 'sexually oriented performance' on public property where viewable by a child OR...",
+                    options: ["On private property", "In the presence of an individual younger than 18", "After 10 PM", "If they receive compensation"],
+                    answer: "In the presence of an individual younger than 18",
+                    explanation: "Sec. 43.28(b)(2) also prohibits the performance 'in the presence of an individual younger than 18 years of age'."
+                },
+                {
+                    question: "What is the penalty for engaging in a sexually oriented performance in the presence of a 17-year-old (43.28)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 43.28(c) lists the penalty as a Class A Misdemeanor."
+                },
+                {
+                    question: "Under 43.28, 'Sexual Conduct' includes sexual gesticulations using accessories or prosthetics that 'exaggerate' sexual characteristics.",
+                    options: ["True", "False"],
+                    answer: "True",
+                    explanation: "Sec. 43.28(a)(1)(E) includes this in the definition of 'sexual conduct' for this section."
+                },
+                {
+                    question: "A 'Sexually Oriented Performance' (43.28) features a nude performer OR a performer engaging in sexual conduct, AND...",
+                    options: ["Is done for compensation", "Appeals to the prurient interest in sex", "Occurs at night", "Is patently offensive"],
+                    answer: "Appeals to the prurient interest in sex",
+                    explanation: "Sec. 43.28(a)(2)(B) requires that the performance 'appeals to the prurient interest in sex'."
+                },
+                {
+                    question: "Is compensation required for an offense under 43.28 (Sexually Oriented Performance)?",
+                    options: ["Yes, compensation is required", "No, it is an offense regardless of compensation", "Only if the performer is nude", "Only if the performance is on public property"],
+                    answer: "No, it is an offense regardless of compensation",
+                    explanation: "Sec. 43.28(b) states 'regardless of whether compensation for the performance is expected or received'."
+                }
+            ];
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Adjust paragraph text to reflect the actual number of questions
+                const quizIntroP = document.querySelector('#knowledge-check p');
+                if (quizIntroP) {
+                     quizIntroP.textContent = `Test your understanding of the material. (${quizData.length} Questions)`;
+                }
+
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 43 - Public Indecency", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm" },
+                 { name: "Ch. 43, Subchapter A - Prostitution", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.01" },
+                 { name: "Ch. 43, Subchapter B - Obscenity", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.43.htm#43.21" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
+
