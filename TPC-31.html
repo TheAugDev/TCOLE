@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 31 Study Guide: Texas Penal Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --header-bg: #1f2937; /* Dark Gray */
+            --bg-color: #f3f4f6; /* Light Gray */
+            --tab-active-bg: #ef4444; /* Red */
+            --tab-active-text: #ffffff;
+            --card-bg: #ffffff;
+            --text-color: #111827;
+            --link-color: #dc2626; /* Red Link */
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab.active {
+            background-color: var(--tab-active-bg);
+            color: var(--tab-active-text);
+            box-shadow: 0 0 8px rgba(220, 38, 38, 0.4);
+        }
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .definition-item {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .definition-term {
+            font-weight: 600;
+            color: #111827;
+        }
+        .definition-desc {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+        .quiz-question p { margin-bottom: 0.5rem; }
+        .quiz-question label { display: block; margin-bottom: 0.5rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; }
+        .quiz-question label:hover { background-color: #f9fafb; }
+        .quiz-question input[type="radio"] { margin-right: 0.5rem; }
+        .feedback { margin-top: 0.5rem; padding: 0.5rem; border-radius: 0.375rem; font-size: 0.875rem; }
+        .feedback.correct { background-color: #dcfce7; color: #166534; }
+        .feedback.incorrect { background-color: #fee2e2; color: #991b1b; }
+        .feedback.unanswered { background-color: #ffedd5; color: #9a3412; }
+        .hidden { display: none; }
+        .penalty-table th, .penalty-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .penalty-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold">
+                <i class="fas fa-hand-holding-dollar mr-2"></i>Ch. 31: Theft
+            </h1>
+            <a href="index.html" class="text-sm text-red-300 hover:text-red-100 hover:underline">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Main Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <!-- Tab Navigation -->
+        <div class="mb-6 bg-white rounded-lg shadow-md overflow-x-auto">
+            <nav id="tabs" class="flex flex-col sm:flex-row space-y-1 sm:space-y-0 sm:space-x-1 p-2">
+                <button data-tab="key-definitions" class="tab active flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-book mr-2"></i> Definitions (31.01)
+                </button>
+                <button data-tab="theft-offense" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-sack-dollar mr-2"></i> Theft & Penalties (31.03)
+                </button>
+                <button data-tab="theft-of-service" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-concierge-bell mr-2"></i> Theft of Service (31.04)
+                </button>
+                <button data-tab="specialized-theft" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-user-secret mr-2"></i> Specialized Offenses
+                </button>
+                <button data-tab="knowledge-check" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-question-circle mr-2"></i> Knowledge Check
+                </button>
+                <button data-tab="resources" class="tab flex items-center justify-center px-3 py-2 text-sm font-semibold rounded-lg text-gray-600 hover:bg-red-100">
+                    <i class="fas fa-link mr-2"></i> Resources
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-contents">
+            <!-- Key Definitions Tab (31.01) -->
+            <div id="key-definitions" class="tab-content active">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Key Definitions (Sec. 31.01)</h2>
+                    <div class="definition-grid">
+                        <div class="definition-item col-span-full md:col-span-2">
+                            <span class="definition-term">Deception (5 forms)</span>
+                            <p class="definition-desc">Creating/confirming a false impression of law/fact; failing to correct a false impression; preventing information acquisition; selling encumbered property without disclosure; or **promising performance the actor does not intend to perform** (failure to perform is *not* sufficient proof alone).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Deprive (3 methods)</span>
+                            <p class="definition-desc">Withhold property **permanently** or for so long a time that a **major portion of value** is lost; restore only upon **payment of reward**; or **dispose** of property making recovery unlikely.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Appropriate (2 methods)</span>
+                            <p class="definition-desc">To bring about a transfer of title or **other nonpossessory interest** in property (other than real property) OR to **acquire or otherwise exercise control** over property (other than real property).</p>
+                        </div>
+                        <div class="definition-item col-span-full md:col-span-2">
+                            <span class="definition-term">Effective Consent (Exclusions)</span>
+                            <p class="definition-desc">Consent is **NOT effective** if induced by deception or coercion; given by a person the actor knows is unauthorized; given by a person known to be incapacitated (youth, defect, intoxication, or **advanced age/diminished capacity**); or given solely to **detect the commission of an offense** (e.g., undercover sting).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Property</span>
+                            <p class="definition-desc">Real property; tangible or intangible personal property (including anything severed from land); or a document (e.g., money) embodying anything of value.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Service</span>
+                            <p class="definition-desc">Labor, professional service, utility/transportation service, lodging, restaurant/entertainment, and the supply of property for use (e.g., a rental car).</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Retail Merchandise</span>
+                            <p class="definition-desc">One or more items of tangible personal property displayed, held, stored, or offered for sale by a merchant. Includes a **gift card**.</p>
+                        </div>
+                        <div class="definition-item">
+                            <span class="definition-term">Shielding Instrument</span>
+                            <p class="definition-desc">Item or tool designed, made, or adapted to prevent the detection of stolen merchandise by a retail theft detector (e.g., metal-lined bag, security tag removal tool).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theft Offense & Penalties Tab (31.03) -->
+            <div id="theft-offense" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm#31.03" target="_blank" class="text-red-600 hover:underline">Sec. 31.03. Theft - Core Offense</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> A person commits an offense if he **unlawfully appropriates property** with **intent to deprive** the owner of property.</li>
+                        <li><strong class="font-semibold">Unlawful Appropriation (b):</strong> Appropriation is unlawful if:
+                            <ol class="list-decimal list-inside ml-4">
+                                <li>It is **without the owner's effective consent**.</li>
+                                <li>The property is **stolen** and the actor appropriates it **knowing it was stolen** by another.</li>
+                                <li>Property represented by law enforcement as **stolen** and the actor appropriates it **believing it was stolen** by another (Sting operation).</li>
+                            </ol>
+                        </li>
+                        <li><strong class="font-semibold">Value (31.08):</strong> Determined by fair market value at the time/place of offense, or cost of replacement. Stolen **retail merchandise** uses the sales price/rental price + replacement cost.</li>
+                        <li><strong class="font-semibold">Consolidation (31.02):</strong> The single offense of Theft (31.03) supersedes all previous separate offenses like swindling, theft by false pretext, embezzlement, and receiving stolen property.</li>
+                        <li><strong class="font-semibold">Aggregation (31.09):</strong> Amounts stolen under one **scheme or continuing course of conduct** may be aggregated to determine the grade of offense.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Punishment Tiers (Sec. 31.03(e))</h2>
+                    <table class="penalty-table w-full text-sm">
+                        <thead>
+                            <tr>
+                                <th>Offense Grade</th>
+                                <th>Value Threshold / Special Property</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="text-green-600">Class C Misdemeanor</strong></td>
+                                <td>Value is **less than $100**.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-yellow-600">Class B Misdemeanor</strong></td>
+                                <td>Value is **$100 to less than $750**, OR value is less than $100 AND **1 prior theft conviction**, OR property is a **driver's license/ID card**.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-orange-600">Class A Misdemeanor</strong></td>
+                                <td>Value is **$750 to less than $2,500**.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-red-600">State Jail Felony (SJF)</strong></td>
+                                <td>Value is **$2,500 to less than $30,000**; OR property is **less than 10 head of sheep/swine/goats**; OR stolen **from the person** of another/corpse/grave; OR the property is a **firearm**; OR **2 or more prior theft convictions** (value less than $2,500); OR catalytic converter (replacement cost < $30k); OR official ballot/envelope.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-red-700">Felony 3rd Degree (F3)</strong></td>
+                                <td>Value is **$30,000 to less than $150,000**; OR **cattle/horses/exotic livestock** (< $150,000); OR **10 or more head of sheep/swine/goats** (< $150,000); OR controlled substance stolen from a commercial building/wholesale distributor vehicle (< $150,000).</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-red-800">Felony 2nd Degree (F2)</strong></td>
+                                <td>Value is **$150,000 to less than $300,000**; OR property stolen is an **automated teller machine** or its contents/components (< $300,000).</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-red-900">Felony 1st Degree (F1)</strong></td>
+                                <td>Value is **$300,000 or more**.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 class="text-lg font-bold mt-4">Penalty Enhancements (Sec. 31.03(f))</h3>
+                    <p class="text-sm text-gray-700">An offense is increased to the **next higher category** if shown that:</p>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700">
+                        <li>The actor was a **public servant** or in a **contractual relationship with government/Medicare** and property came into custody by virtue of that status.</li>
+                        <li>The owner was an **elderly individual** or a **nonprofit organization**.</li>
+                        <li>During the offense, the actor used means to **defeat security:** caused a **fire exit alarm** to sound, **deactivated an alarm/detector**, or used a **shielding/deactivation instrument**.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Theft of Service & UUV Tab -->
+            <div id="theft-of-service" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm#31.04" target="_blank" class="text-red-600 hover:underline">Sec. 31.04. Theft of Service</a></h2>
+                    <p class="text-sm text-gray-700"><strong class="font-semibold">Offense (a):</strong> Committed if, with **intent to avoid payment** for service known to be for compensation, the actor:</p>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700 space-y-1">
+                        <li>Secures performance by **deception, threat, or false token**.</li>
+                        <li>Intentionally/knowingly **diverts** another's services (to which the actor is not entitled) to their own or another's benefit.</li>
+                        <li>Holds personal property beyond the **rental period** without effective consent, depriving the owner of its use in further rentals.</li>
+                        <li>Secures service by agreeing to compensate, and fails to make **full payment after receiving notice demanding payment**.</li>
+                    </ul>
+                    <h3 class="text-lg font-bold mt-3">Presumptions of Intent to Avoid Payment (31.04(b))</h3>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700">
+                        <li>Absconded without paying or **expressly refused** to pay (e.g., hotel/restaurant).</li>
+                        <li>Failed to make payment under a service agreement **within 10 days** after receiving notice demanding payment.</li>
+                        <li>Failed to pay rental charges within **10 days** after receiving notice *after* returning the property late.</li>
+                        <li>Failed to return rental property within **2, 3, or 5 days** of receiving notice demanding return (depending on value).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2"><a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm#31.07" target="_blank" class="text-red-600 hover:underline">Sec. 31.07. Unauthorized Use of a Vehicle (UUV)</a></h2>
+                    <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+                        <li><strong class="font-semibold">Offense (a):</strong> Intentionally or knowingly **operates** another's **boat, airplane, or motor-propelled vehicle** without the effective consent of the owner.</li>
+                        <li><strong class="font-semibold">Penalty (b):</strong> <strong class="text-red-600">State Jail Felony</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Specialized Theft Offenses Tab -->
+            <div id="specialized-theft" class="tab-content space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2">Specialized Property & Aggravations</h2>
+
+                    <h3 class="text-lg font-bold">Organized Retail Theft (31.16)</h3>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700 space-y-1">
+                        <li>Committed by acting **in concert with one or more others** (Subdivision 1), or on **two or more occasions within 180 days** (Subdivision 2), or knowingly obtaining a benefit from such conduct (Subdivision 3), or acting in concert to **overwhelm security response** (Subdivision 4).</li>
+                        <li>Punishment is based on the **total aggregated value** of the property involved (ranging from Class B Misdemeanor to Felony 1st Degree).</li>
+                    </ul>
+
+                    <h3 class="text-lg font-bold mt-4">Mail Theft (31.20)</h3>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700 space-y-1">
+                        <li>Unlawful appropriation of **mail** without effective consent, with intent to **deprive the addressee** or **steal a negotiable instrument**.</li>
+                        <li>Graded based on the **number of addressees** (Class A Misdemeanor to Felony 3rd Degree).</li>
+                        <li>**Enhancement:** Increased penalty if the mail contained **identifying information** (to facilitate 32.51) or a **negotiable instrument** (to facilitate Ch. 32), or if the victim was an **elderly/disabled individual**.</li>
+                        <li>**Presumption:** Possession of mail from **five or more addressees** creates a rebuttable presumption of unlawful appropriation/intent to deprive.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-bold mt-4">Unauthorized Possession of Catalytic Converter (31.21)</h3>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700 space-y-1">
+                        <li>**Offense:** Intentionally or knowingly possesses a catalytic converter removed from a motor vehicle, and is **not authorized** (owner or business acting in ordinary course).</li>
+                        <li>**Penalty:** Base is <strong class="text-red-600">State Jail Felony</strong>. Enhanced to <strong class="text-red-700">Felony 3rd Degree</strong> if previous conviction, conspiracy to commit arson/theft, or **possessed a firearm**.</li>
+                    </ul>
+                    
+                     <h3 class="text-lg font-bold mt-4">Theft of Trade Secrets (31.05)</h3>
+                    <ul class="list-disc list-inside ml-5 text-sm text-gray-700 space-y-1">
+                        <li>**Offense:** Knowingly, without consent, steals a trade secret, makes a copy, or communicates/transmits a trade secret.</li>
+                        <li>**Penalty:** Base is <strong class="text-red-700">Felony 3rd Degree</strong>. Enhanced to <strong class="text-red-800">Felony 2nd Degree</strong> if the actor **intended to benefit a foreign agent, foreign government, or foreign instrumentality**.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Knowledge Check Tab -->
+            <div id="knowledge-check" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">Knowledge Check (Ch. 31)</h2>
+                    <p class="mb-6 text-gray-600">Test your understanding of the material. (75 Questions)</p>
+                    <div id="quiz-container" class="space-y-8">
+                        <!-- Questions will be dynamically inserted here -->
+                    </div>
+                    <!-- Results Div -->
+                    <div id="quiz-results" class="hidden mt-8 text-center">
+                        <h3 class="text-2xl font-bold" id="quiz-score"></h3>
+                        <p class="text-lg text-gray-700" id="quiz-percentage"></p>
+                    </div>
+                    <!-- Button Container -->
+                    <div class="mt-8 text-center space-x-4">
+                        <button id="check-answers-btn" class="bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors">Submit Answers</button>
+                        <button id="retake-quiz-btn" class="hidden bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4">External Resources & Key Concepts</h2>
+                    <p class="mb-6 text-gray-600">Chapter 31 is highly complex due to its graded penalties and numerous definitions. Be sure to study the penalty tiers closely, focusing on the specific property types that trigger felony charges regardless of value (e.g., firearms, ATM, property from the person).</p>
+                    <div id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <a href="https://statutes.capitol.texas.gov/Default.aspx?Code=PE" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100">
+                            <i class="fas fa-external-link-alt mr-2"></i>Texas Penal Code - Official Site
+                        </a>
+                        <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100">
+                            <i class="fas fa-external-link-alt mr-2"></i>Penal Code Ch. 31 - Theft (Official)
+                        </a>
+                        <a href="https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100">
+                            <i class="fas fa-external-link-alt mr-2"></i>Penal Code Sec. 1.07 - Definitions (General)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('#tabs button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+
+            // --- QUIZ DATA (CHAPTER 31) ---
+            const quizData = [
+                {
+                    question: "What is the core definition of Theft under 31.03(a)?",
+                    options: ["Intentionally or knowingly appropriating property without consent.", "Unlawfully appropriating property with intent to deprive the owner of property.", "Fraudulently obtaining property of any value.", "Stealing property that has a value over $100."],
+                    answer: "Unlawfully appropriating property with intent to deprive the owner of property.",
+                    explanation: "Sec. 31.03(a) states the offense is committed if the person 'unlawfully appropriates property with intent to deprive the owner of property.'"
+                },
+                {
+                    question: "Appropriation of property is unlawful if it is without the owner's...",
+                    options: ["Knowledge", "Permission", "Effective consent", "Written authorization"],
+                    answer: "Effective consent",
+                    explanation: "Sec. 31.03(b)(1) states it is unlawful if 'it is without the owner's effective consent.'"
+                },
+                {
+                    question: "To 'Deprive' property means to restore it only upon payment of what?",
+                    options: ["The full market value.", "Reward or other compensation.", "A court order.", "Restitution to the state."],
+                    answer: "Reward or other compensation.",
+                    explanation: "Sec. 31.01(2)(B)."
+                },
+                {
+                    question: "Which of the following describes one method of 'Deprive'?",
+                    options: ["To withhold property for less than one week.", "To withhold property permanently or for so extended a period that a major portion of the value is lost.", "To acquire a lien on the property.", "To temporarily borrow the property."],
+                    answer: "To withhold property permanently or for so extended a period that a major portion of the value is lost.",
+                    explanation: "Sec. 31.01(2)(A)."
+                },
+                {
+                    question: "Which of the following is explicitly included in the definition of 'Deception'?",
+                    options: ["Expressly refusing to perform a service.", "Failing to correct a false impression of law or fact that the actor does not now believe to be true.", "The failure to pay a debt within 30 days.", "Creating a false impression of future intent only."],
+                    answer: "Failing to correct a false impression of law or fact that the actor does not now believe to be true.",
+                    explanation: "Sec. 31.01(1)(B)."
+                },
+                {
+                    question: "Which action is considered a form of 'Appropriate'?",
+                    options: ["To bring about a transfer of title to real property.", "To acquire control over real property.", "To acquire or otherwise exercise control over property other than real property.", "To obtain temporary possession of personal property."],
+                    answer: "To acquire or otherwise exercise control over property other than real property.",
+                    explanation: "Sec. 31.01(4)(B)."
+                },
+                {
+                    question: "Consent is NOT effective if given solely for what purpose?",
+                    options: ["To avoid being charged with a higher offense.", "To detect the commission of an offense.", "To test the actor's intent.", "To transfer legal liability."],
+                    answer: "To detect the commission of an offense.",
+                    explanation: "Sec. 31.01(3)(D) (undercover sting rule)."
+                },
+                {
+                    question: "If a person's consent is given by reason of their **advanced age** and diminished capacity, is that consent effective if the actor knows of the diminished capacity?",
+                    options: ["Yes, if they are legally authorized.", "No, it is induced by coercion.", "No, it is not effective.", "Yes, unless they are mentally defective."],
+                    answer: "No, it is not effective.",
+                    explanation: "Sec. 31.01(3)(E)."
+                },
+                {
+                    question: "The single offense of Theft (31.03) supersedes which previous offense?",
+                    options: ["Arson", "Assault", "Swindling", "Criminal Mischief"],
+                    answer: "Swindling",
+                    explanation: "Sec. 31.02, Consolidation of Theft Offenses."
+                },
+                {
+                    question: "A person steals property valued at $90, and has one prior conviction for theft. What is the offense grade?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 31.03(e)(2)(B)."
+                },
+                {
+                    question: "A person steals a commercial driver's license, regardless of its monetary value. What is the offense grade?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 31.03(e)(2)(C)."
+                },
+                {
+                    question: "A person steals a property valued at $1,500. What is the offense grade?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 31.03(e)(3) ($750 to less than $2,500)."
+                },
+                {
+                    question: "A person steals property valued at $20,000. What is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(A) ($2,500 to less than $30,000)."
+                },
+                {
+                    question: "A person steals 8 sheep. The aggregate value is $2,000. What is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(A) (less than 10 head of sheep, swine, or goats under $30,000)."
+                },
+                {
+                    question: "A person steals property valued at $50,000. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.03(e)(5) ($30,000 to less than $150,000)."
+                },
+                {
+                    question: "A person steals 15 cattle with an aggregate value of $140,000. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.03(e)(5)(A) (Cattle, horses, etc. under $150,000)."
+                },
+                {
+                    question: "A person steals a firearm. What is the offense grade, regardless of value?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(C)."
+                },
+                {
+                    question: "A person steals a catalytic converter, and the cost of replacement is $5,000. What is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(G) (replacement cost less than $30,000)."
+                },
+                {
+                    question: "The theft of an automated teller machine (ATM) where the property stolen is valued at $200,000 is what offense grade?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 31.03(e)(6)(B) (ATM or contents/components under $300,000)."
+                },
+                {
+                    question: "The theft of property valued at $300,000 or more is what offense grade?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "Aggravated Robbery"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 31.03(e)(7)."
+                },
+                {
+                    question: "Which factor will NOT increase the grade of a Theft offense to the next higher category?",
+                    options: ["Owner was a nonprofit organization.", "Actor was a public servant.", "Offense occurred at nighttime.", "Actor deactivated a retail theft detector."],
+                    answer: "Offense occurred at nighttime.",
+                    explanation: "Sec. 31.03(f) lists the specific enhancements; nighttime is not one of them."
+                },
+                {
+                    question: "If a person commits a Class A Misdemeanor Theft against an **elderly individual**, what is the increased offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Class A Misdemeanor (no change)"],
+                    answer: "State Jail Felony",
+                    explanation: "The enhancement in Sec. 31.03(f) increases the offense to the next higher category (Class A to SJF)."
+                },
+                {
+                    question: "In the prosecution of Theft, is it a defense that the actor was provided with an opportunity to commit the offense by a law enforcement agency?",
+                    options: ["Yes, if the actor was not predisposed.", "No, it is not a defense.", "Yes, this is entrapment.", "Only if money was used in the sting."],
+                    answer: "No, it is not a defense.",
+                    explanation: "Sec. 31.03(d)(2) and (3) (not a defense unless the solicitation encourages a non-predisposed person)."
+                },
+                {
+                    question: "The offense of Theft of Service requires the actor to have what intent?",
+                    options: ["Intent to defraud.", "Intent to avoid payment for service.", "Intent to physically threaten the service provider.", "Intent to appropriate property."],
+                    answer: "Intent to avoid payment for service.",
+                    explanation: "Sec. 31.04(a)."
+                },
+                {
+                    question: "In Theft of Service (31.04), intent to avoid payment is presumed if the actor failed to make payment under a service agreement within how many days after receiving notice demanding payment?",
+                    options: ["5 days", "10 days", "15 days", "30 days"],
+                    answer: "10 days",
+                    explanation: "Sec. 31.04(b)(2)."
+                },
+                {
+                    question: "What is the offense grade for Unauthorized Use of a Vehicle (UUV) (31.07)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.07(b)."
+                },
+                {
+                    question: "Unauthorized Use of a Vehicle requires the actor to intentionally or knowingly do what without the owner's effective consent?",
+                    options: ["Take possession of the vehicle.", "Remove a part of the vehicle.", "Operate the vehicle.", "Acquire the vehicle."],
+                    answer: "Operate the vehicle.",
+                    explanation: "Sec. 31.07(a)."
+                },
+                {
+                    question: "What property is specifically included in the definition of 'Property' under 31.01(5)?",
+                    options: ["Real property, but only if fenced.", "Tangible or intangible personal property, including anything severed from land.", "Only money and documents.", "Any property with a readily ascertainable market value."],
+                    answer: "Tangible or intangible personal property, including anything severed from land.",
+                    explanation: "Sec. 31.01(5)(B)."
+                },
+                {
+                    question: "The value of stolen retail merchandise, for punishment purposes, is determined by which price?",
+                    options: ["Fair market value at the time of theft.", "Cost of replacement only.", "The sales price or rental price as stated, posted, or advertised by the merchant.", "The merchant's wholesale cost."],
+                    answer: "The sales price or rental price as stated, posted, or advertised by the merchant.",
+                    explanation: "Sec. 31.08(a-1)(1)."
+                },
+                {
+                    question: "A person steals property valued at $700. The person has two prior convictions for Class C Theft. What is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(D) (two or more prior theft convictions, value less than $2,500)."
+                },
+                {
+                    question: "To be Theft of a Trade Secret (31.05), the information must have value and the owner must have taken measures to prevent it from becoming available to whom?",
+                    options: ["The general public only.", "Any competitor.", "Persons other than those selected by the owner to have access for limited purposes.", "Only foreign governments."],
+                    answer: "Persons other than those selected by the owner to have access for limited purposes.",
+                    explanation: "Sec. 31.05(a)(4)."
+                },
+                {
+                    question: "The base offense grade for Theft of Trade Secrets (31.05) is:",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.05(c)."
+                },
+                {
+                    question: "The Theft of Trade Secrets offense is increased to F2 if the actor intended to benefit which entity?",
+                    options: ["An elderly individual.", "A foreign agent, foreign government, or foreign instrumentality.", "A publicly traded competitor.", "A corrupt public servant."],
+                    answer: "A foreign agent, foreign government, or foreign instrumentality.",
+                    explanation: "Sec. 31.05(c) enhancement."
+                },
+                {
+                    question: "In Mail Theft (31.20), appropriation of mail from how many addressees makes the offense a State Jail Felony (without enhancement)?",
+                    options: ["Fewer than 5", "5 to 9", "at least 10 but fewer than 30", "30 or more"],
+                    answer: "at least 10 but fewer than 30",
+                    explanation: "Sec. 31.20(c)(2)."
+                },
+                {
+                    question: "The possession of mail from five or more addressees creates a rebuttable presumption of what?",
+                    options: ["Intent to facilitate Organized Crime.", "Unlawful appropriation without consent and intent to deprive.", "Intent to commit Fraud (32.51).", "The mail's value being over $2,500."],
+                    answer: "Unlawful appropriation without consent and intent to deprive.",
+                    explanation: "Sec. 31.20(b-1)."
+                },
+                {
+                    question: "What is the maximum number of prior convictions for Theft required to enhance a Theft offense (value less than $2,500) to a State Jail Felony?",
+                    options: ["One", "Two", "Three", "Four"],
+                    answer: "Two",
+                    explanation: "Sec. 31.03(e)(4)(D) (two or more times)."
+                },
+                {
+                    question: "If the value of property or service cannot be reasonably ascertained by the market value or replacement cost criteria, what value is it deemed to have?",
+                    options: ["Less than $100.", "$750 or more but less than $2,500.", "$2,500 or more.", "$30,000 or more."],
+                    answer: "$750 or more but less than $2,500.",
+                    explanation: "Sec. 31.08(c) (This is the Class A Misdemeanor range)."
+                },
+                {
+                    question: "What is the base penalty for Unauthorized Possession of a Catalytic Converter (31.21)?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.21(d)."
+                },
+                {
+                    question: "Unauthorized Possession of a Catalytic Converter (31.21) is enhanced to a Felony 3rd Degree if the actor possessed what during the offense?",
+                    options: ["More than 10 converters.", "A criminal instrument.", "A firearm.", "A large amount of cash."],
+                    answer: "A firearm.",
+                    explanation: "Sec. 31.21(e)(3)."
+                },
+                {
+                    question: "Which term is NOT included in the definition of 'Service' under 31.01(6)?",
+                    options: ["Lodging", "Real property", "Telecommunication service", "Labor"],
+                    answer: "Real property",
+                    explanation: "Service includes personal property for use, but not real property itself. Real property is its own category of property."
+                },
+                {
+                    question: "The theft of property from which location is specifically defined as a State Jail Felony, regardless of the value of the property?",
+                    options: ["From a financial institution.", "From the person of another.", "From a church.", "From a commercial building."],
+                    answer: "From the person of another.",
+                    explanation: "Sec. 31.03(e)(4)(B)."
+                },
+                {
+                    question: "If amounts are obtained in violation of Chapter 31 pursuant to one scheme or continuing course of conduct, how may the conduct be considered?",
+                    options: ["As separate offenses.", "As one offense, and the amounts aggregated.", "Only the highest amount can be charged.", "The amounts are halved."],
+                    answer: "As one offense, and the amounts aggregated.",
+                    explanation: "Sec. 31.09, Aggregation of Amounts Involved in Theft."
+                },
+                {
+                    question: "Is it a defense to prosecution for Theft (31.03) that the actor has an interest in the property stolen, if another person has the right of exclusive possession?",
+                    options: ["Yes, if the actor's interest is documented.", "No, it is no defense.", "Yes, the actor must only be charged with Criminal Mischief.", "Only if the actor is co-owner."],
+                    answer: "No, it is no defense.",
+                    explanation: "Sec. 31.10, Actor's Interest in Property."
+                },
+                {
+                    question: "The theft of aluminum, bronze, copper, or brass valued at less than $20,000 is classified as what offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(F)."
+                },
+                {
+                    question: "Under 31.06, if a person obtains property by check and payment is refused for insufficient funds, the issuer is presumed to have the requisite intent if they fail to pay the holder in full within how many days after receiving notice of refusal?",
+                    options: ["5 days", "10 days", "20 days", "30 days"],
+                    answer: "10 days",
+                    explanation: "Sec. 31.06(a)(2)."
+                },
+                {
+                    question: "If a person unlawfully appropriates cargo with a total value of $120,000, the offense is what grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 31.18(c)(3) (Cargo Theft: $100,000 to less than $200,000)."
+                },
+                {
+                    question: "What is the penalty for Possession of a Shielding or Deactivation Instrument (31.15) with intent to commit theft?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 31.15(c)."
+                },
+                {
+                    question: "A person commits Organized Retail Theft (31.16) on two occasions, stealing property with an aggregate value of $2,000. What is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.16(d)(3) ($750 to less than $2,500)."
+                },
+                {
+                    question: "Which act creates a presumption of intent to deprive a merchant of retail merchandise under 31.16(b)(2)?",
+                    options: ["Carrying the merchandise out a side door.", "Altering or removing a price tag for retail merchandise.", "Having two or more prior theft convictions.", "Stealing less than $100 worth of property."],
+                    answer: "Altering or removing a price tag for retail merchandise.",
+                    explanation: "Sec. 31.16(b)(2)(A)."
+                },
+                {
+                    question: "The Theft of Petroleum Product (31.19) offense is a Felony 1st Degree if the total value of the petroleum appropriated is what?",
+                    options: ["$50,000 or more.", "$100,000 or more.", "$200,000 or more.", "$500,000 or more."],
+                    answer: "$100,000 or more.",
+                    explanation: "Sec. 31.19(d)(3)."
+                },
+                {
+                    question: "Under 31.11, a person commits an offense if they possess property and know what about the ID marking?",
+                    options: ["The ID marking is faded.", "The serial number or other permanent identification marking has been removed, altered, or obliterated.", "The ID marking is incorrect.", "The ID marking is from another state."],
+                    answer: "The serial number or other permanent identification marking has been removed, altered, or obliterated.",
+                    explanation: "Sec. 31.11(a)(2)(A)."
+                },
+                {
+                    question: "What is the penalty for Tampering With Identification Numbers (31.11)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 31.11(d)."
+                },
+                {
+                    question: "In the crime of Unauthorized Acquisition of Financial Information (31.17(b)(1)), the offense grade is what?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 31.17(c)."
+                },
+                {
+                    question: "The punishment for Theft of Service (31.04) is graded based on what?",
+                    options: ["The degree of force used.", "The type of service stolen.", "The value of the service stolen.", "The actor's criminal history."],
+                    answer: "The value of the service stolen.",
+                    explanation: "Sec. 31.04(e) uses the value tiers found in 31.03(e)."
+                },
+                {
+                    question: "Can property in the custody of a law enforcement agency still be considered stolen property for purposes of an unlawful appropriation charge?",
+                    options: ["No, it loses its character when recovered.", "Yes, if it was explicitly represented by law enforcement as being stolen.", "Only if it is a firearm.", "Only if the value is over $1,500."],
+                    answer: "Yes, if it was explicitly represented by law enforcement as being stolen.",
+                    explanation: "Sec. 31.03(b)(3) allows appropriation of represented stolen property (sting) to be unlawful appropriation. Sec. 31.03(c)(5) confirms stolen property doesn't lose its character when recovered."
+                },
+                {
+                    question: "The definition of 'Deception' states that failure to perform a promised performance is sufficient proof that the actor did not intend to perform.",
+                    options: ["True", "False", "Only if the promised amount was over $30,000.", "Only if the failure occurred twice."],
+                    answer: "False",
+                    explanation: "Sec. 31.01(1)(E) explicitly states: 'failure to perform the promise in issue *without other evidence* of intent or knowledge is not sufficient proof'."
+                },
+                {
+                    question: "Mail (31.20) includes a letter that has been delivered but not yet received by the addressee.",
+                    options: ["True", "False", "Only if it contains a negotiable instrument.", "Only if it was delivered by USPS."],
+                    answer: "True",
+                    explanation: "Sec. 31.20(a)(3)(A)(ii)."
+                },
+                {
+                    question: "Under 31.20(d), if Mail Theft involves **identifying information** and intent to facilitate an offense under 32.51, and the mail is appropriated from **50 or more addressees**, the offense is what grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the First Degree",
+                    explanation: "Sec. 31.20(d)(4)."
+                },
+                {
+                    question: "An offense under Sec. 31.03 is increased one category higher if the owner of the property was a **nonprofit organization**.",
+                    options: ["True", "False", "Only if the theft was committed by a public servant.", "Only if the value was over $1,500."],
+                    answer: "True",
+                    explanation: "Sec. 31.03(f)(3)(B)."
+                },
+                {
+                    question: "The term 'Steal' in this chapter means what?",
+                    options: ["To commit fraud.", "To acquire property or service by theft.", "To appropriate property without effective consent.", "To commit Robbery."],
+                    answer: "To acquire property or service by theft.",
+                    explanation: "Sec. 31.01(7)."
+                },
+                {
+                    question: "Which of the following is a component of 'Service'?",
+                    options: ["An insurance policy.", "A deed to a home.", "The supply of a motor vehicle for use.", "A hunting license."],
+                    answer: "The supply of a motor vehicle for use.",
+                    explanation: "Sec. 31.01(6)(D)."
+                },
+                {
+                    question: "In Theft of Service, if the actor failed to return rental property valued at $12,000, notice demanding return must be received within how many days to raise a presumption of intent to avoid payment?",
+                    options: ["5 days", "3 days", "2 days", "10 days"],
+                    answer: "2 days",
+                    explanation: "Sec. 31.04(b)(4)(C) (Value $10,000 or more)."
+                },
+                {
+                    question: "In Cargo Theft (31.18), if the actor organized, supervised, financed, or managed one or more persons in the activity, what happens to the punishment?",
+                    options: ["It is increased to the next higher category.", "It is doubled.", "The actor is charged with Organized Crime.", "The offense remains the same grade."],
+                    answer: "It is increased to the next higher category.",
+                    explanation: "Sec. 31.18(e)."
+                },
+                {
+                    question: "If an ATM and its contents are stolen, and the total value is $10,000, what is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "The ATM exception in Sec. 31.03(e)(6)(B) applies regardless of the low value, as long as it is less than $300,000."
+                },
+                {
+                    question: "A person steals property and is convicted of a State Jail Felony Theft. The actor was a public servant and the property came into his custody due to that status. What is the enhanced penalty?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony (no enhancement)"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.03(f) elevates SJF to F3."
+                },
+                {
+                    question: "What must an actor possess to commit Organized Retail Theft by overwhelming the security response?",
+                    options: ["A firearm.", "A deadly weapon.", "A shielding or deactivation instrument.", "Nothing; the conduct itself is the element."],
+                    answer: "Nothing; the conduct itself is the element.",
+                    explanation: "Sec. 31.16(a)(4) focuses on the concerted *action* ('knowingly acts in concert... to overwhelm the security response'), not required possession of an item."
+                },
+                {
+                    question: "What is the penalty for Mail Theft (31.20) if the mail is appropriated from **fewer than 10 addressees** and the offense is NOT enhanced?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 31.20(c)(1)."
+                },
+                {
+                    question: "If a person unlawfully appropriates oil and gas equipment valued at $15,000, the offense is a:",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 31.19(e)(2) (Oil and Gas Equipment: $10,000 or more but less than $100,000)."
+                },
+                {
+                    question: "Is it a defense to Cargo Theft that the actor was provided with a 'bait vehicle' by law enforcement?",
+                    options: ["Yes, if the actor was not predisposed.", "No, it is not a defense.", "Yes, only if the cargo was stolen.", "Yes, this is entrapment."],
+                    answer: "No, it is not a defense.",
+                    explanation: "Sec. 31.18(f)(1)(B)."
+                },
+                {
+                    question: "In the offense of Theft of Service by deception, if the service provider gave a post-dated check that was presented for payment *before* the date on the check, is it a defense to prosecution?",
+                    options: ["No, it is not a defense.", "Yes, it is a defense.", "Only if the actor did not receive notice.", "Only if the service was valued under $100."],
+                    answer: "Yes, it is a defense.",
+                    explanation: "Sec. 31.04(g)."
+                },
+                {
+                    question: "The theft of property valued at $75, with no prior convictions, is what offense grade?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 31.03(e)(1) (less than $100)."
+                },
+                {
+                    question: "If a document constitutes evidence of a debt, how is its value determined under 31.08?",
+                    options: ["The fair market value of the debt.", "The amount due and collectible at maturity less that part which has been satisfied.", "The face value of the document.", "The cost of replacing the document."],
+                    answer: "The amount due and collectible at maturity less that part which has been satisfied.",
+                    explanation: "Sec. 31.08(b)(1)."
+                },
+                {
+                    question: "What is the penalty for Unauthorized Possession of Copper or Brass Material (31.22) if the offense is NOT enhanced?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.22(e)."
+                },
+                {
+                    question: "Unauthorized Possession of Copper or Brass Material (31.22) is enhanced to F3 if the material was unlawfully obtained from a:",
+                    options: ["Public utility.", "Critical infrastructure facility.", "Non-profit organization.", "Government building."],
+                    answer: "Critical infrastructure facility.",
+                    explanation: "Sec. 31.22(f)(1)."
+                },
+                {
+                    question: "If an actor is an employee who has the right of exclusive possession of company property, can they commit Theft of that property?",
+                    options: ["No, because they have an interest in the property.", "Yes, because another person (the company) has the superior right of exclusive possession.", "No, because the offense is Embezzlement, which is superseded.", "Yes, but only if the property value is over $300,000."],
+                    answer: "Yes, because another person (the company) has the superior right of exclusive possession.",
+                    explanation: "Sec. 31.10 establishes that the actor's interest in the property is no defense if another person (the owner) has the right of exclusive possession."
+                },
+                {
+                    question: "Deception includes selling property without disclosing what?",
+                    options: ["The original purchase price.", "A lien, security interest, adverse claim, or other legal impediment.", "The actor's tax status.", "The reason for the sale."],
+                    answer: "A lien, security interest, adverse claim, or other legal impediment.",
+                    explanation: "Sec. 31.01(1)(D)."
+                },
+                {
+                    question: "If a person, with intent to deprive, sells a property that is subject to a lien, is the disclosure of the lien an effective defense if the lien is later found to be invalid?",
+                    options: ["No, disclosing the lien is not a defense.", "Yes, the lien must be valid for the deception to stand.", "It is only a defense if the actor knew the lien was invalid.", "Yes, the sale is then lawful."],
+                    answer: "No, disclosing the lien is not a defense.",
+                    explanation: "The definition of deception (31.01(1)(D)) applies 'whether the lien... is or is not valid.'"
+                },
+                {
+                    question: "In Theft of Service, if payment is to be paid periodically, when may the intent to avoid payment be formed?",
+                    options: ["Only before the contract is signed.", "Only on the day payment is due.", "At any time during or before a pay period.", "After the service has been completed."],
+                    answer: "At any time during or before a pay period.",
+                    explanation: "Sec. 31.04(d-3)(1)."
+                },
+                {
+                    question: "If a person steals property valued at $2,400 and then transfers it from its original packaging into other packaging, what is the offense grade?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "The base offense is Class A. The act of transferring packaging (31.16(b)(2)(B)) raises a presumption of intent to deprive, allowing it to be charged as Organized Retail Theft (31.16(a)(2)). While the penalty for ORT is still based on value (31.16(d)), this is typically used to ensure prosecution for theft without physical removal."
+                },
+                {
+                    question: "If property is stolen from a human corpse, what is the offense grade, regardless of value?",
+                    options: ["Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(B)."
+                },
+                {
+                    question: "If a person sells tangible personal property knowing the serial number has been obliterated, what must a reasonable person in the actor's position also have known for the offense (31.11) to occur?",
+                    options: ["That the property was stolen.", "That the obliteration would prevent detection.", "That the serial number or other permanent identification marking has been removed, altered, or obliterated.", "That the act was illegal."],
+                    answer: "That the serial number or other permanent identification marking has been removed, altered, or obliterated.",
+                    explanation: "Sec. 31.11(a)(2)(B)."
+                },
+                {
+                    question: "To commit Theft of a Trade Secret (31.05), the actor must *knowingly* do which of the following without effective consent?",
+                    options: ["Steal a trade secret.", "Make a false impression about the trade secret.", "Appropriate the article representing the trade secret.", "Only communicate the trade secret."],
+                    answer: "Steal a trade secret.",
+                    explanation: "Sec. 31.05(b)(1). (Making a copy or communicating/transmitting the secret are also options)."
+                },
+                {
+                    question: "Which of the following is considered 'Retail merchandise'?",
+                    options: ["A vehicle on a dealer's lot.", "A gift card.", "Real property severed from the land.", "A document representing value."],
+                    answer: "A gift card.",
+                    explanation: "Sec. 31.01(11) explicitly includes a gift card."
+                },
+                {
+                    question: "A metal-lined or foil-lined shopping bag is an example of what?",
+                    options: ["A criminal instrument (16.01).", "A retail theft detector.", "A shielding or deactivation instrument.", "Counterfeit goods."],
+                    answer: "A shielding or deactivation instrument.",
+                    explanation: "Sec. 31.01(13)."
+                },
+                {
+                    question: "If a Class A Misdemeanor Theft (31.03) occurs and the actor uses a shielding instrument to defeat detection, what is the enhanced offense grade?",
+                    options: ["Felony of the Third Degree", "State Jail Felony", "Class B Misdemeanor", "Felony of the Second Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(f)(5) elevates Class A to SJF."
+                },
+                {
+                    question: "Cargo Theft (31.18) is a Felony 1st Degree if the total value of the cargo involved is what?",
+                    options: ["$150,000 or more.", "$200,000 or more.", "$300,000 or more.", "$500,000 or more."],
+                    answer: "$200,000 or more.",
+                    explanation: "Sec. 31.18(c)(4)."
+                },
+                {
+                    question: "In Cargo Theft, the total value of the cargo involved includes the value of what else?",
+                    options: ["The vehicle stolen or damaged in the course of the same criminal episode.", "The salary of the driver.", "The lost profits of the owner.", "The cost of litigation."],
+                    answer: "The vehicle stolen or damaged in the course of the same criminal episode.",
+                    explanation: "Sec. 31.18(d)."
+                },
+                {
+                    question: "In Organized Retail Theft (31.16), the total value of property stolen is $45,000. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.16(d)(4) ($2,500 to less than $30,000 for ORT is F3. Wait, ORT tiers differ slightly: $2,500-$30,000 is F3. The question value is $45,000. The next tier is $30,000 to less than $150,000 which is F2.)  Correcting the F3 logic for ORT: $2,500 to <$30,000 is SJF. $30,000 to <$150,000 is F3. Ah, the provided statute (31.16(d)) has ORT $750-$2500 is SJF, and $2500-$30k is F3. Re-reading the provided text for 31.16(d): (1) CBM <$100; (2) CAM $100-$750; (3) SJF $750-$2,500; (4) F3 $2,500-$30,000; (5) F2 $30,000-$150,000; (6) F1 >$150,000. The question value of $45,000 falls in the F2 range according to the general tiers, but the ORT tiers show F2 for $30,000 to <$150,000. I must use the ORT tier. F2 is the correct tier per the ORT statute provided."
+                },
+                 {
+                    question: "In Organized Retail Theft (31.16), the total value of property stolen is $45,000. What is the offense grade based on 31.16(d)?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "State Jail Felony", "Felony of the First Degree"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 31.16(d)(5) specifies F2 if the total value is $30,000 or more but less than $150,000."
+                },
+                {
+                    question: "Which of the following mental states are sufficient for Theft (31.03)?",
+                    options: ["Intentionally, Knowingly, or Recklessly.", "Only Intentionally or Knowingly.", "Only Intentionally.", "Knowingly or Recklessly."],
+                    answer: "Only Intentionally or Knowingly.",
+                    explanation: "The core offense (31.03(a)) requires 'intent to deprive.' The mental states of 'intentionally' and 'knowingly' apply to the surrounding conduct (appropriation, deprivation)."
+                },
+                {
+                    question: "Theft of service is committed if the actor intentionally or knowingly diverts the other's services to which party?",
+                    options: ["The actor's own benefit.", "The benefit of another not entitled to the services.", "Both the actor's own benefit or the benefit of another not entitled to the services.", "The benefit of the owner."],
+                    answer: "Both the actor's own benefit or the benefit of another not entitled to the services.",
+                    explanation: "Sec. 31.04(a)(2)."
+                },
+                {
+                    question: "If property has been previously stolen, and the actor appropriates it *knowing* it was stolen by another, is the appropriation unlawful?",
+                    options: ["No, unless the property value is over $1,000.", "Yes, it is unlawful.", "Only if the actor intended to return it.", "Only if the property was a vehicle."],
+                    answer: "Yes, it is unlawful.",
+                    explanation: "Sec. 31.03(b)(2)."
+                },
+                {
+                    question: "In the context of Theft (31.03), what entity is presumed to know that property has been previously stolen if they fail to record seller information and pay $25 or more?",
+                    options: ["Any individual buyer.", "A law enforcement agency.", "An actor engaged in the business of buying and selling used or secondhand personal property.", "Any person who accepts a check."],
+                    answer: "An actor engaged in the business of buying and selling used or secondhand personal property.",
+                    explanation: "Sec. 31.03(c)(3)."
+                },
+                {
+                    question: "For Theft of Service, if written notice is sent in accordance with 31.04(c), it is presumed the actor received the notice not later than how many days after it was sent?",
+                    options: ["2 days", "5 days", "10 days", "30 days"],
+                    answer: "2 days",
+                    explanation: "Sec. 31.04(d) (general presumption)."
+                },
+                {
+                    question: "If a person unlawfully appropriates **copper or brass** material from a **critical infrastructure facility**, what is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.22(f)(1) enhances the offense to F3."
+                },
+                {
+                    question: "What must a driver employed to transport cargo knowingly or intentionally do (or cause to be done) with the intent to facilitate a cargo theft activity to commit Cargo Theft (31.18)?",
+                    options: ["Operate the vehicle without consent.", "Fail to deliver the entire cargo to the destination or cause the seal to be broken.", "Stop the vehicle for more than two hours.", "Report the cargo as damaged."],
+                    answer: "Fail to deliver the entire cargo to the destination or cause the seal to be broken.",
+                    explanation: "Sec. 31.18(b)(2)."
+                },
+                {
+                    question: "If a person commits a Theft offense where the property was stolen in a **disaster area** and came into the actor's custody by virtue of the actor's purported status as a disaster volunteer, and the value is less than $30,000, what is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "State Jail Felony",
+                    explanation: "Sec. 31.03(e)(4)(H) (effective Dec. 4, 2025 in the provided text)."
+                },
+                {
+                    question: "The Theft of Petroleum Product by **making or causing a connection** to a pipe or pipeline (31.19) is a separate offense from Theft of Petroleum Product by **unlawful purchasing** (31.19).",
+                    options: ["True", "False", "Only if the values differ.", "Only if the actor possessed a criminal instrument."],
+                    answer: "True",
+                    explanation: "Sec. 31.19(b) lists four distinct ways to commit the offense."
+                },
+                {
+                    question: "If a person intentionally or knowingly operates another's **boat** without effective consent, what is the offense?",
+                    options: ["Theft (31.03).", "Criminal Mischief (28.03).", "Unauthorized Use of a Vehicle (31.07).", "Unlawful Transport (20.05)."],
+                    answer: "Unauthorized Use of a Vehicle (31.07).",
+                    explanation: "Sec. 31.07(a) includes boats, airplanes, or motor-propelled vehicles."
+                },
+                {
+                    question: "In Theft of Service, if payment is ordinarily made immediately (e.g., restaurant) and the actor **absconds** without paying, what is presumed?",
+                    options: ["Intent to commit fraud.", "Intent to avoid payment.", "Effective consent was not given.", "The service was not compensation-only."],
+                    answer: "Intent to avoid payment.",
+                    explanation: "Sec. 31.04(b)(1)."
+                },
+                {
+                    question: "When are the total amounts involved in separate thefts *not* aggregated under 31.09?",
+                    options: ["When the property is of different types.", "When the thefts were committed under separate schemes or courses of conduct.", "When the thefts occurred in different counties.", "When the victims are different."],
+                    answer: "When the thefts were committed under separate schemes or courses of conduct.",
+                    explanation: "Aggregation is only permitted when pursuant to 'one scheme or continuing course of conduct.'"
+                },
+                {
+                    question: "A person sells a piece of furniture for $500, but fails to disclose a valid bank lien on it, which the buyer later has to pay off. What form of 'Deception' applies?",
+                    options: ["Failure to correct a false impression.", "Preventing information acquisition.", "Selling or otherwise transferring property without disclosing a lien.", "Promising non-performance."],
+                    answer: "Selling or otherwise transferring property without disclosing a lien.",
+                    explanation: "Sec. 31.01(1)(D)."
+                },
+                {
+                    question: "A person steals 10 goats valued at $10,000 during a single transaction. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.03(e)(5)(B) (10 or more head of sheep, swine, or goats under $150,000)."
+                },
+                {
+                    question: "The Theft of Service penalty tiers align with the Theft (31.03) penalty tiers.",
+                    options: ["True", "False", "The Theft of Service tiers are one grade lower.", "The Theft of Service tiers are based on market value only."],
+                    answer: "True",
+                    explanation: "Sec. 31.04(e) uses the same value breakpoints as 31.03(e)."
+                },
+                {
+                    question: "What is the consequence of partial restitution under Sec. 31.06 (Presumption for Theft by Check)?",
+                    options: ["It negates the presumption of intent.", "It requires the prosecution to prove intent by direct evidence.", "It does not preclude the presumption of the requisite intent.", "The case must be dropped."],
+                    answer: "It does not preclude the presumption of the requisite intent.",
+                    explanation: "Sec. 31.06(e)."
+                },
+                {
+                    question: "What term is used for an organization exempt from federal income taxation under Section 501(c)(3) of the Internal Revenue Code?",
+                    options: ["Public utility.", "Government entity.", "Nonprofit organization.", "Commercial business."],
+                    answer: "Nonprofit organization.",
+                    explanation: "Sec. 31.03(h)(3)."
+                },
+                {
+                    question: "If the actor secures service by agreeing to compensate and, after service is rendered, fails to make full payment after receiving notice demanding payment, which element of Theft of Service is met?",
+                    options: ["Sec. 31.04(a)(1) (Deception/Threat).", "Sec. 31.04(a)(2) (Diversion).", "Sec. 31.04(a)(3) (Rental).", "Sec. 31.04(a)(4) (Failure to Pay after Notice)."],
+                    answer: "Sec. 31.04(a)(4) (Failure to Pay after Notice).",
+                    explanation: "Sec. 31.04(a)(4)."
+                },
+                {
+                    question: "A person unlawfully appropriates **real property**. What section applies (effective Dec. 4, 2025 in the provided text)?",
+                    options: ["Theft (31.03)", "Theft of Service (31.04)", "Real Property Theft (31.23)", "Burglary (30.02)"],
+                    answer: "Real Property Theft (31.23)",
+                    explanation: "Theft (31.03) generally excludes real property in the definition of 'appropriate' (31.01(4)). Sec. 31.23 specifically addresses this offense."
+                },
+                {
+                    question: "Which of the following *is* considered 'Property' under 31.01(5)?",
+                    options: ["A secured mortgage interest.", "Intangible personal property.", "A nonpossessory interest in real property.", "Real property that is not severed from land."],
+                    answer: "Intangible personal property.",
+                    explanation: "Sec. 31.01(5)(B) explicitly includes intangible personal property."
+                },
+                {
+                    question: "An individual commits Theft of Service by deception. The value of the service stolen is $50. What is the offense grade?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class C Misdemeanor",
+                    explanation: "Sec. 31.04(e)(1) (less than $100)."
+                },
+                {
+                    question: "An individual commits Theft of Service by deception. The value of the service stolen is $40,000. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.04(e)(5) ($30,000 to less than $150,000)."
+                },
+                {
+                    question: "A person is charged with Unauthorized Possession of a Catalytic Converter (31.21). What is the rebuttable presumption of authorization based on business status?",
+                    options: ["The person is a metal recycler.", "The person is acting in the ordinary course of the person's business.", "The person is a wholesale distributor.", "The person is a common carrier."],
+                    answer: "The person is acting in the ordinary course of the person's business.",
+                    explanation: "Sec. 31.21(b)(2)."
+                },
+                {
+                    question: "What must be appropriated for the Theft of Petroleum Product (31.19) offense to occur?",
+                    options: ["Crude oil, natural gas, or condensate.", "Petroleum or oil and gas equipment.", "Any hydrocarbon product.", "Any property related to drilling."],
+                    answer: "Crude oil, natural gas, or condensate.",
+                    explanation: "Sec. 31.19(a)(2) defines 'Petroleum product' as crude oil, natural gas, or condensate."
+                },
+                {
+                    question: "If Mail Theft involves identifying information and the victim is an **elderly individual**, the offense described by 31.20(d)(1) (SJF) is enhanced to what grade?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony (no enhancement)"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.20(e) enhances to the next higher category (SJF to F3)."
+                },
+                {
+                    question: "Which TPC chapter relates to Unauthorized Acquisition or Transfer of Financial Information (31.17)?",
+                    options: ["Chapter 30 (Burglary).", "Chapter 32 (Fraud).", "Chapter 36 (Bribery).", "Chapter 28 (Arson)."],
+                    answer: "Chapter 32 (Fraud).",
+                    explanation: "The offense deals with obtaining financial information (like credit/debit cards, 32.31) and facilitating offenses under Chapter 32 (Fraud)."
+                },
+                {
+                    question: "Which of the following is *not* a defense to prosecution for Tampering with ID Numbers (31.11)?",
+                    options: ["The person was the owner of the property.", "The person was acting with the effective consent of the owner.", "The person believed the ID number was fake.", "The person was a peace officer acting in official duties."],
+                    answer: "The person believed the ID number was fake.",
+                    explanation: "Sec. 31.11(b) lists the affirmative defenses."
+                },
+                {
+                    question: "What offense grade is an individual guilty of if they knowingly possess a shielding instrument with the intent to commit theft (31.15)?",
+                    options: ["Class C Misdemeanor", "Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony"],
+                    answer: "Class A Misdemeanor",
+                    explanation: "Sec. 31.15(c)."
+                },
+                {
+                    question: "Can an actor who stole property valued at $500, with no prior convictions, be enhanced to a State Jail Felony for Theft (31.03)?",
+                    options: ["Yes, if they were a public servant.", "No, only if the value is over $2,500.", "Yes, if they deactivated a retail theft detector.", "Both A and C."],
+                    answer: "Both A and C.",
+                    explanation: "The base offense is Class B ($100-$750). Sec. 31.03(f) elevates it one step (to SJF) if the actor was a public servant (f)(1) OR if they defeated security (f)(5)."
+                },
+                {
+                    question: "The value of a document that is *not* evidence of a debt (31.08) is determined by what criterion?",
+                    options: ["The cost of replacement.", "The greatest amount of economic loss the owner might reasonably suffer.", "The lowest fair market value.", "The highest replacement cost."],
+                    answer: "The greatest amount of economic loss the owner might reasonably suffer.",
+                    explanation: "Sec. 31.08(b)(2)."
+                },
+                {
+                    question: "If a Theft offense is enhanced due to the use of a shielding instrument (31.03(f)(5)), the instrument is designed to prevent detection by what device?",
+                    options: ["A metal detector.", "A retail theft detector.", "A security camera.", "A sound sensor."],
+                    answer: "A retail theft detector.",
+                    explanation: "Sec. 31.01(13) and 31.03(f)(5)(C)."
+                },
+                {
+                    question: "The presumptions in 31.03(c) and 31.04(b) are generally what kind of presumption?",
+                    options: ["Conclusive.", "Irrefutable.", "Rebuttable.", "Non-dispositive."],
+                    answer: "Rebuttable.",
+                    explanation: "While the statute does not always use the word 'rebuttable,' presumptions of fact are generally rebuttable under law."
+                },
+                {
+                    question: "The theft of **oil and gas equipment** valued at $90,000 is what offense grade?",
+                    options: ["Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree", "State Jail Felony"],
+                    answer: "Felony of the Second Degree",
+                    explanation: "Sec. 31.19(e)(2) ($10,000 to less than $100,000)."
+                },
+                {
+                    question: "If a person unlawfully appropriates **copper or brass material** from equipment *appurtenant* to a critical infrastructure facility, is the offense enhanced?",
+                    options: ["No, only if the material is inside the facility.", "Yes, even if the equipment is outside the fence.", "Only if the value is over $1,500.", "No, if the actor is an agent of the facility."],
+                    answer: "Yes, even if the equipment is outside the fence.",
+                    explanation: "Sec. 31.03(f-2) includes equipment or communication wires 'appurtenant to or connected to the facility or on which the facility depends to properly function,' regardless of enclosure."
+                },
+                {
+                    question: "What is the penalty for Theft of Trade Secrets (31.05) if there is no F2 enhancement?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.05(c) base offense."
+                },
+                {
+                    question: "If Theft of Service involves the rental of property and the rental agreement is automatically renewable with each payment and allows the renter to become the owner, this type of agreement is what?",
+                    options: ["Included in the definition of 'written rental agreement'.", "Excluded from the definition of 'written rental agreement'.", "Subject to UUV charges.", "Considered a loan."],
+                    answer: "Excluded from the definition of 'written rental agreement'.",
+                    explanation: "Sec. 31.04(d-2) excludes these rent-to-own agreements from (a)(3) charges."
+                },
+                {
+                    question: "In Mail Theft, appropriation of mail containing a combined total of **five or more negotiable instruments** creates a rebuttable presumption of what intent?",
+                    options: ["Intent to facilitate Burglary.", "Intent to steal the negotiable instruments and intent to facilitate an offense under Chapter 32.", "Intent to avoid payment.", "Intent to commit Cargo Theft."],
+                    answer: "Intent to steal the negotiable instruments and intent to facilitate an offense under Chapter 32.",
+                    explanation: "Sec. 31.20(b-2)."
+                },
+                {
+                    question: "If a person unlawfully appropriates money while using a metal-lined shopping bag to bypass the store's retail theft detector, which specific enhancement applies?",
+                    options: ["Caused a fire exit alarm to sound.", "Deactivated or prevented a fire exit alarm/retail theft detector from sounding.", "Used a shielding or deactivation instrument.", "Actor was a public servant."],
+                    answer: "Used a shielding or deactivation instrument.",
+                    explanation: "Sec. 31.03(f)(5)(C)."
+                },
+                {
+                    question: "The term 'Elderly individual' is defined as having the meaning assigned by which other TPC section?",
+                    options: ["Sec. 1.07", "Sec. 22.04(c)", "Sec. 29.03(c)", "Sec. 46.01"],
+                    answer: "Sec. 22.04(c)",
+                    explanation: "Sec. 31.01(10)."
+                },
+                {
+                    question: "A person unlawfully appropriates property valued at $400. They previously received deferred adjudication for Theft two years ago. What is the offense grade?",
+                    options: ["Class B Misdemeanor", "Class A Misdemeanor", "State Jail Felony", "Felony of the Third Degree"],
+                    answer: "Class B Misdemeanor",
+                    explanation: "Sec. 31.03(e)(2)(B) (Value $100-$750 OR <$100 w/ 1 prior). Since the value is over $100, the one prior conviction does not elevate it further. If the value were less than $100, it would still be Class B."
+                },
+                {
+                    question: "If an actor is a commission merchant and obtains livestock by representing they will make prompt payment, but fails to make full payment in accordance with the Packers and Stockyards Act, what is presumed?",
+                    options: ["Intent to commit fraud.", "Intent to avoid payment for service.", "Presumed to have induced the commission merchant's consent by deception.", "The transaction is a civil matter."],
+                    answer: "Presumed to have induced the commission merchant's consent by deception.",
+                    explanation: "Sec. 31.03(c)(9)."
+                },
+                {
+                    question: "The theft of property that is less than 10 head of sheep, swine, or goats, and is valued under $30,000, is classified as a State Jail Felony. Why is the grade not determined by the $2,500 threshold?",
+                    options: ["Livestock is generally excluded from the value tiers.", "The grade is based on the quantity of animals, regardless of whether the value meets a higher tier.", "The State Jail Felony floor is $30,000.", "The animals are considered 'special property' that automatically enhances the offense."],
+                    answer: "The grade is based on the quantity of animals, regardless of whether the value meets a higher tier.",
+                    explanation: "Sec. 31.03(e)(4)(A) treats theft of fewer than 10 animals (within the $30k value cap) as SJF, setting a specific lower threshold based on type/quantity rather than market value alone."
+                },
+                {
+                    question: "In Mail Theft involving negotiable instruments, if **more than 5 but fewer than 10 negotiable instruments** are appropriated with intent to facilitate a Chapter 32 offense, what is the penalty?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.20(d-1)(2)."
+                },
+                {
+                    question: "Cargo is defined as goods that constitute, wholly or partly, a commercial shipment of freight moving in commerce. When is a shipment considered 'moving in commerce'?",
+                    options: ["Only when actively being transported.", "Only if it crosses state lines.", "If located at any point between the point of origin and the final point of destination, regardless of temporary stop.", "Only if the driver has broken the seal."],
+                    answer: "If located at any point between the point of origin and the final point of destination, regardless of temporary stop.",
+                    explanation: "Sec. 31.18(a)(1)."
+                },
+                {
+                    question: "If a person fails to correct a false impression of law or fact, what culpable mental state must the actor have regarding the impression?",
+                    options: ["Knowingly.", "Recklessly.", "Criminal Negligence.", "The actor does not now believe the impression to be true."],
+                    answer: "The actor does not now believe the impression to be true.",
+                    explanation: "Sec. 31.01(1)(B)."
+                },
+                {
+                    question: "A person commits Unauthorized Possession of a Catalytic Converter (31.21). It is shown on trial that the person previously committed conspiracy to commit Criminal Mischief (28.03) with respect to a catalytic converter. What is the offense grade?",
+                    options: ["State Jail Felony", "Felony of the Third Degree", "Felony of the Second Degree", "Felony of the First Degree"],
+                    answer: "Felony of the Third Degree",
+                    explanation: "Sec. 31.21(e)(2)."
+                },
+                {
+                    question: "Which TPC section explicitly supersedes the separate offenses previously known as 'embezzlement' and 'receiving or concealing stolen property'?",
+                    options: ["Sec. 31.03", "Sec. 31.02", "Sec. 31.04", "Sec. 31.07"],
+                    answer: "Sec. 31.02",
+                    explanation: "Sec. 31.02, Consolidation of Theft Offenses."
+                }
+            ];
+
+
+            // --- Shuffle and Load Quiz ---
+            const quizContainer = document.getElementById('quiz-container');
+            const checkAnswersBtn = document.getElementById('check-answers-btn');
+            const retakeQuizBtn = document.getElementById('retake-quiz-btn');
+            const quizResultsDiv = document.getElementById('quiz-results');
+            const quizScoreEl = document.getElementById('quiz-score');
+            const quizPercentageEl = document.getElementById('quiz-percentage');
+
+            function loadQuiz() {
+                // Shuffle the quiz data for a new order each time
+                const shuffledQuizData = [...quizData].sort(() => Math.random() - 0.5);
+                
+                quizContainer.innerHTML = ''; // Clear previous questions
+                
+                shuffledQuizData.forEach((q, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'quiz-question';
+                    
+                    // Store the original question index to check the answer later
+                    const originalIndex = quizData.indexOf(q);
+                    
+                    // Use standard string concatenation and escape characters
+                    let optionsHtml = '';
+                    q.options.forEach(option => {
+                        const escapedOptionValue = option.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedOptionText = option.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        optionsHtml += '<label class="block"><input type="radio" name="q' + index + '" value="' + escapedOptionValue + '" data-original-index="' + originalIndex + '" class="mr-2">' + escapedOptionText + '</label>';
+                    });
+                    
+                    const escapedQuestion = q.question.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                    questionDiv.innerHTML =
+                        '<p class="font-semibold mb-2">' + (index + 1) + '. ' + escapedQuestion + '</p>' +
+                        '<div class="space-y-2">' + optionsHtml + '</div>' +
+                        '<div class="feedback hidden mt-2 p-2 rounded-lg text-sm"></div>';
+                    
+                    quizContainer.appendChild(questionDiv);
+                });
+            }
+
+            loadQuiz(); // Initial load
+
+            checkAnswersBtn.addEventListener('click', () => {
+                let score = 0;
+                const totalQuestions = quizData.length;
+                const questions = quizContainer.querySelectorAll('.quiz-question');
+
+                questions.forEach((questionDiv, index) => {
+                    const selected = questionDiv.querySelector('input[name="q' + index + '"]:checked');
+                    const feedback = questionDiv.querySelector('.feedback');
+                    const radioButtons = questionDiv.querySelectorAll('input[name="q' + index + '"]');
+                    
+                    feedback.classList.remove('hidden', 'correct', 'incorrect', 'unanswered');
+                    
+                    if (selected) {
+                        const originalIndex = selected.dataset.originalIndex;
+                        const q = quizData[originalIndex];
+                        
+                        const escapedAnswer = q.answer.replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+                        const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+                        if (selected.value === escapedAnswer) {
+                            score++;
+                            feedback.innerHTML = '<strong>Correct!</strong> ' + escapedExplanation;
+                            feedback.classList.add('correct');
+                        } else {
+                            feedback.innerHTML = '<strong>Incorrect.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                            feedback.classList.add('incorrect');
+                        }
+                    } else {
+                        // Find the original question to show the answer
+                        const firstRadio = questionDiv.querySelector('input[name="q' + index + '"]');
+                         if (firstRadio) {
+                            const originalIndex = firstRadio.dataset.originalIndex;
+                            const q = quizData[originalIndex];
+                            const escapedExplanation = q.explanation.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            const escapedCorrectAnswerText = q.answer.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                            feedback.innerHTML = '<strong>Unanswered.</strong> The correct answer is "' + escapedCorrectAnswerText + '". ' + escapedExplanation;
+                        } else {
+                             feedback.innerHTML = '<strong>Error:</strong> Could not load feedback.';
+                        }
+                        feedback.classList.add('unanswered');
+                    }
+                    
+                    feedback.classList.remove('hidden');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.disabled = true;
+                    });
+                });
+
+                // Calculate and display results
+                const percentage = ((score / totalQuestions) * 100).toFixed(0);
+                quizScoreEl.textContent = 'Your Score: ' + score + ' / ' + totalQuestions;
+                quizPercentageEl.textContent = 'Percentage: ' + percentage + '%';
+                
+                quizResultsDiv.classList.remove('hidden');
+                checkAnswersBtn.classList.add('hidden');
+                retakeQuizBtn.classList.remove('hidden');
+            });
+
+            retakeQuizBtn.addEventListener('click', () => {
+                quizResultsDiv.classList.add('hidden');
+                retakeQuizBtn.classList.add('hidden');
+                checkAnswersBtn.classList.remove('hidden');
+                loadQuiz();
+            });
+
+            // --- RESOURCES LIST ---
+            const resources = [
+                 { name: "Texas Penal Code - Official Site", url: "https://statutes.capitol.texas.gov/Default.aspx?Code=PE" },
+                 { name: "Penal Code Ch. 31 - Theft", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.31.htm" },
+                 { name: "Penal Code Sec. 1.07 - Definitions (General)", url: "https://statutes.capitol.texas.gov/Docs/PE/htm/PE.1.htm#1.07" }
+            ];
+            const resourcesList = document.getElementById('resources-list');
+            resources.sort((a, b) => a.name.localeCompare(b.name));
+            resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = res.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'text-red-600 hover:underline p-2 bg-gray-50 rounded-md block hover:bg-gray-100';
+                link.innerHTML = '<i class="fas fa-external-link-alt mr-2"></i>' + res.name;
+                resourcesList.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>
